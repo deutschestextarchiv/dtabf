@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_44">
+  <title>Klammerungen in Listen</title>
+  <body>
+    <p>Klammerungen von Textstücken treten häufig innerhalb von Listen oder Listenähnlichen
+      Strukturen auf. Sie werden innerhalb der übergeordneten Liste durch ein eigenes
+        <codeph>&lt;item&gt;</codeph>-Element umschlossen, innerhalb dessen die zusammengefassten
+      Textstücke wiederum als <codeph>&lt;item&gt;</codeph>s in einer Liste stehen. Das Ziel der
+      Klammerung steht als reiner Text innerhalb des übergeordneten
+      <codeph>&lt;item&gt;</codeph>-Elements.</p>
+    <codeblock outputclass="language-xml">&lt;list&gt;
+  &lt;item&gt;
+    &lt;list rendition="#rightBraced"&gt;
+      &lt;item&gt;Element 1 der geklammerten Liste&lt;/item&gt;&lt;lb/&gt;
+      &lt;item&gt;Element 2 der geklammerten Liste&lt;/item&gt;&lt;lb/&gt;
+      &lt;item&gt;Element n der geklammerten Liste&lt;/item&gt;
+    &lt;/list&gt;
+  gemeinsamer Textbaustein hinten&lt;/item&gt;&lt;lb/&gt;
+&lt;/list&gt;&lt;lb/&gt;</codeblock>
+    <codeblock outputclass="language-xml">&lt;list&gt;
+  &lt;item&gt;gemeinsamer Textbaustein vorn
+    &lt;list rendition="#leftBraced"&gt;
+      &lt;item&gt;Element 1 der geklammerten Liste&lt;/item&gt;&lt;lb/&gt;
+      &lt;item&gt;Element 2 der geklammerten Liste&lt;/item&gt;&lt;lb/&gt;
+      &lt;item&gt;Element n der geklammerten Liste&lt;/item&gt;&lt;lb/&gt;
+    &lt;/list&gt;
+  &lt;/item&gt;
+&lt;/list&gt;&lt;lb/&gt;</codeblock>
+    <example>
+      <title>Kodierung von Klammerungen in Listen (1)</title><fig>
+        <image href="img/gSN1EkEPyA.png"/>
+        <codeblock outputclass="language-xml">&lt;list&gt;
+  &lt;item&gt;
+    &lt;list rendition="#rightBraced"&gt;
+      &lt;item&gt;1. &lt;hi rendition="#aq"&gt;Ciliaris.&lt;/hi&gt;&lt;/item&gt;&lt;lb/&gt;
+      &lt;item&gt;2. &lt;hi rendition="#aq"&gt;Orbicularis ſupe-&lt;lb/&gt;rior.&lt;/hi&gt;&lt;/item&gt;&lt;lb/&gt;
+      &lt;item&gt;3. &lt;hi rendition="#aq"&gt;Orbicularis infe-&lt;lb/&gt;rior.&lt;/hi&gt;&lt;/item&gt;&lt;lb/&gt;
+      &lt;item&gt;4. &lt;hi rendition="#aq"&gt;Levator ſeu rectus.&lt;/hi&gt;&lt;/item&gt;&lt;lb/&gt;
+    &lt;/list&gt;
+    &lt;hi rendition="#aq"&gt;Palpebras&lt;lb/&gt;movent clau-&lt;lb/&gt;dunt &amp;amp; ape-&lt;lb/&gt;riunt.&lt;/hi&gt;
+  &lt;/item&gt;
+&lt;/list&gt;</codeblock>
+           <p><i>Quelle: <xref
+              href="http://www.deutschestextarchiv.de/buerger_candidatus_1692/40"
+              format="html" scope="external">Bürger, Peter: Candidatus Chirurgiae. Königsberg, 1692.
+              [Faksimile 40]</xref>
+          </i></p>
+      </fig>
+    </example>
+    <example>
+      <title>Kodierung von Klammerungen in Listen (2)</title><fig>
+        <image href="img/YI4qhVzfvl.png"/>
+        <codeblock outputclass="language-xml">&lt;list&gt;
+  &lt;item&gt;
+    &lt;list rendition="#rightBraced"&gt;
+      &lt;item&gt;&lt;hi rendition="#g"&gt;John Meſſinger&lt;/hi&gt;&lt;/item&gt;&lt;lb/&gt;
+      &lt;item&gt;&lt;hi rendition="#g"&gt;James Lemen&lt;/hi&gt; jr.&lt;/item&gt;
+    &lt;/list&gt;
+    &lt;hi rendition="#g"&gt;St. Clair&lt;/hi&gt; (Grafſchaft)
+  &lt;/item&gt;&lt;lb/&gt;
+  &lt;item&gt;
+    &lt;list rendition="#rightBraced"&gt;
+      &lt;item&gt;&lt;hi rendition="#g"&gt;Georg Fiſcher&lt;/hi&gt;&lt;/item&gt;&lt;lb/&gt;
+      &lt;item&gt;&lt;hi rendition="#g"&gt;Elias Kent Kone&lt;/hi&gt;&lt;/item&gt;
+    &lt;/list&gt;
+    &lt;hi rendition="#g"&gt;Randolph&lt;/hi&gt; -
+  &lt;/item&gt;
+&lt;/list&gt;&lt;lb/&gt;</codeblock>
+           <p><i>Quelle: <xref
+              href="http://www.deutschestextarchiv.de/ernst_nordamerika_1820/195"
+              format="html" scope="external">Ernst, Ferdinand: Bemerkungen auf einer Reise durch das
+              Innere der vereinigten Staaten von Nord-Amerika im Jahre 1819. Hildesheim, 1820.
+              [Faksimile 195]</xref>
+          </i></p>
+      </fig>
+    </example>
+  </body>
+</topic>

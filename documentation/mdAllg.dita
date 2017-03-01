@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ifv_gg2_qs">
+  <title>Grundstruktur der Kodierung von Metadaten</title>
+    <titlealts><navtitle>Metadaten Grundstruktur</navtitle></titlealts>
+  <body>
+      <p>Die Metadaten werden im Element <codeph>&lt;teiHeader&gt;</codeph> erfasst. Dabei umfassen die Metadaten im TEI-Header folgende Angaben:</p>
+    <ul>
+      
+      <li>die Titel- und Quellenangaben zur vorliegenden Textausgabe (innerhalb
+                von <codeph>&lt;fileDesc&gt;</codeph>; siehe dazu Kap. <xref
+                href="mdBiblAngaben.dita">Bibliographische
+                Angaben</xref>), </li>
+      
+      <li>Angaben zu den editorischen Richtlinien, welche der Ausgabe zugrunde
+                liegen (innerhalb von <codeph>&lt;encodingDesc&gt;</codeph>;
+                siehe dazu Kap. <xref href="mdEncodingDesc.dita"
+                >Editorische Richtlinien</xref>) sowie </li>
+      
+      <li>erste inhaltliche Angaben zum Text (innerhalb von <codeph>&lt;profileDesc&gt;</codeph>; 
+        siehe dazu Kap. <xref href="mdProfileDesc.dita">Dokumentklassifikationen</xref>).
+      </li>
+      
+    </ul>
+    <codeblock outputclass="language-xml">&lt;teiHeader&gt;
+  &lt;fileDesc&gt;[Bibliographische Angaben]&lt;/fileDesc&gt;
+  &lt;encodingDesc&gt;[Editorische Richtlinien]&lt;/encodingDesc&gt;
+  &lt;profileDesc&gt;[Dokumentklassifikationen]&lt;/profileDesc&gt;
+&lt;/teiHeader&gt;</codeblock>
+  </body>
+</topic>

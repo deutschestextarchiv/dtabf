@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_20">
+  <title>Mehrfach referenzierte Fußnoten</title>
+  <body>
+    <p>Wird eine Fußnote mehrfach in einen Text eingewiesen, so
+      steht der Fußnotentext an der Stelle der ersten
+      Fußnotenreferenz im Fließtext. Das zugehörige
+        <codeph>&lt;note&gt;</codeph>-Element erhält
+      eine <codeph>@xml:id</codeph>. Weitere Referenzen auf
+      diese Fußnote werden innerhalb eigener
+        <codeph>&lt;note&gt;</codeph>-Elemente
+      wiedergegeben, die jedoch leer bleiben, d.h. der
+      Fußnotentext wird hier nicht wiederholt. Mittels eines
+        <codeph>@sameAs</codeph>-Attributs wird von den
+      folgenden <codeph>&lt;note&gt;</codeph>-Elementen auf
+      die <codeph>@xml:id</codeph> des
+        <codeph>&lt;note&gt;</codeph>-Elements
+      verwiesen, welches den Fußnotentext enthält.</p>
+    <codeblock outputclass="language-xml">&lt;p>
+  [Text]
+    &lt;note place="foot" n="[Fußnotenreferenz x]" xml:id="[ID-Fußnote]">
+      [Fußnotentext]
+    &lt;/note>
+  [weiterer Text.]&lt;/p>
+&lt;p>
+  [weiterer Text]
+    &lt;note place="foot" n="[Fußnotenreferenz x]" sameAs="#[ID-Fußnote]"/>
+  [weiterer Text].
+&lt;/p></codeblock>
+    <example>
+      <title>Kodierung mehrfach referenzierter Fußnoten</title>
+      <fig><image href="img/xrcJtWOcqu.png" scale="70"/>
+        <codeblock outputclass="language-xml">&lt;p&gt;[...]&lt;hi rendition="#fr"&gt;machte das Buch zu, und fieng ſeine Pre-&lt;lb/&gt;
+  digt an&lt;/hi&gt;
+    &lt;note xml:id="note-0058" place="foot" n="*)"&gt;
+      &lt;hi rendition="#fr"&gt;Froez&lt;/hi&gt; iſt indeſſen ein Mann, der doch mit unter&lt;lb/&gt;
+      gute Nachrichten giebt. [...]
+    &lt;/note&gt;.
+  Wir finden gegen dieſe letzte Er-&lt;lb/&gt;
+  za&amp;#x0364;hlung nichts einzuwenden. Wenn aber der&lt;lb/&gt;
+  Pater die Anmuth und Beredſamkeit, [...] 
+  ſo ſehr herausſtreicht; ſo iſt er entweder&lt;lb/&gt;
+  ſelbſt ein Budſoiſt, oder er muß nicht gewußt&lt;lb/&gt;
+  haben, was Anmuth, u&amp;#x0364;berzeugende und ru&amp;#x0364;hrende&lt;lb/&gt;
+  Beredſamkeit ſey
+    &lt;note sameAs="#note-0058" xml:id="note-0058a" place="foot" n="*)"/&gt;
+.&lt;/p&gt;&lt;lb/&gt;</codeblock>
+       <p><i>Quelle: <xref href="http://www.deutschestextarchiv.de/poppe_charakteristik02_1777/58" format="html" scope="external">[Poppe, Johann Friedrich]: Characteristik der merkwürdigsten Asiatischen Nationen. Bd. 2. Breslau, 1777. [Faksimile 58]</xref></i></p>
+      </fig>
+    </example>
+  </body>
+</topic>

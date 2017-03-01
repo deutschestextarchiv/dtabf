@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_d23_ntj_qs">
+  <title>Spalten</title>
+  <body>
+    <p>Spaltenumbrüche werden mittels <codeph>&lt;cb/&gt;</codeph> ausgezeichnet. Dabei markiert
+      das <codeph>&lt;cb&gt;</codeph>-Element jeweils den Beginn einer neuen Spalte.
+      Spaltenzählung wird durch ein <codeph>@n</codeph>-Attribut innerhalb von
+      <codeph>&lt;cb&gt;</codeph> wiedergegeben. </p>
+    <p>Verschiedene Erscheinungsformen von Spalten sind möglich:</p>
+    <p>a) Der Text eines Bandes ist gänzlich in Spalten organisiert: In diesen Fällen ist in
+      der Vorlage die Seitennummerierung in der Regel durch Spaltenzählung ersetzt. Die
+      jeweilige Spaltennummer wird in der Transkription innerhalb des
+      <codeph>&lt;cb&gt;</codeph>-Elements als Wert des <codeph>@n</codeph>-Attributs wiedergegeben. Die
+      Seitenzählung wird daneben im <codeph>@n</codeph>-Attribut innerhalb des
+      <codeph>&lt;pb&gt;</codeph>-Elements rekonstruiert. Wechseln sich im Band gezählte und
+      ungezählte Spalten ab, so werden die fehlenden Spaltennummern nicht rekonstruiert. Es
+      wird jedoch fortlaufend eine (ggf. rekonstruierte) Seitenzählung beibehalten.</p>
+    <codeblock outputclass="language-xml">&lt;pb facs="#f[Bildnummer]" n="[[rekonstruierte Seitenzahl]]"/&gt;&lt;cb n="[Spaltenzahl]"/&gt;</codeblock>
+    <p>oder:</p>
+    <codeblock outputclass="language-xml">&lt;pb facs="#f[Bildnummer]" n="[[rekonstruierte Seitenzahl]]"/&gt;&lt;cb/&gt;</codeblock>
+    <p outputclass="phase2">b) Der Text eines Bandes ist seitenweise organisiert, wird jedoch gelegentlich durch
+      Spaltendruck unterbrochen. In diesem Fall wird der Beginn des Spaltensatzes mittels <codeph>&lt;cb type="start"/&gt;</codeph>, 
+      das Ende des Spaltensatzes analog mittels <codeph>&lt;cb type="end"/&gt;</codeph> gekennzeichnet. Spaltenumbrüche innerhalb des Spaltensatzes werden 
+      mittels des leeren <codeph>&lt;cb&gt;</codeph>-Elements wiedergegeben.</p>
+      <note type="notice"><i><b>Abweichende Regelung Phase 1:</b> b) Der Text eines Bandes ist seitenweise organisiert, wird jedoch gelegentlich durch
+      Spaltendruck unterbrochen. In diesem Fall steht ein leeres <codeph>&lt;cb&gt;</codeph>-Element am Beginn jeder Spalte.</i></note>
+    <p outputclass="phase2">c) Fußnoten- oder Endnotentext, Register und Verzeichnisse sind in Spalten gesetzt. Auch hier wird der Beginn des Spaltensatzes mittels <codeph>&lt;cb type="start"/&gt;</codeph>, 
+      das Ende des Spaltensatzes analog mittels <codeph>&lt;cb type="end"/&gt;</codeph> gekennzeichnet. Spaltenumbrüche innerhalb des Spaltensatzes werden 
+      wiederum mittels des leeren <codeph>&lt;cb&gt;</codeph>-Elements wiedergegeben.</p>
+      <note type="notice"><i><b>Abweichende Regelung Phase 1:</b> c) Fußnoten- oder Endnotentext, Register und Verzeichnisse sind in Spalten gesetzt. In diesem Fall markiert ebenfalls ein leeres 
+      <codeph>&lt;cb&gt;</codeph>-Element den jeweiligen Spaltenbeginn.</i></note>
+  </body>
+</topic>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_27">
+    <title>Nachsatz</title>
+    <body>
+        <p>Ein Nachsatz am Schluss eines Kapitels oder des Buchtextes wird
+            mittels des <codeph>&lt;trailer&gt;</codeph>- Elements
+            gekennzeichnet: </p>
+        <codeblock outputclass="language-xml">&lt;trailer&gt;[Nachsatz]&lt;/trailer&gt;</codeblock>
+        <example> <title>Kodierung eines Nachsatzes</title> <fig>
+            <image href="img/CLzL3jCwSr.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;Von der Mutter hab’ ich die beſten Nachrichten.&lt;/p&gt;&lt;lb/&gt;
+&lt;closer&gt;
+  &lt;signed&gt;Bettine.&lt;/signed&gt;&lt;lb/&gt;
+&lt;/closer&gt;
+&lt;trailer&gt;Ende des erſten Bandes.&lt;/trailer&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/arnimb_goethe01_1835/388"
+                format="html" scope="external">Arnim, Bettina von: Goethe's
+                Briefwechsel mit einem Kinde. Bd. 1. Berlin, 1835. [Faksimile
+                388]</xref></i></p>
+            </fig> </example>
+    </body>
+</topic>

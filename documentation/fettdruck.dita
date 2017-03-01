@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_fd">
+   <title>Fettdruck</title>
+   <body>
+      <example>
+         <title>Kodierung von fett gedrucktem Text</title><fig>
+            <image href="img/gkVUOa8TFw.png"/>
+            <codeblock outputclass="language-xml">Stichwörter: &lt;hi rendition="#b"&gt;&lt;hi rendition="#fr"&gt;Jahrhundert&lt;/hi&gt;&lt;/hi&gt;</codeblock>
+              <p><i>Quelle: <xref
+               href="http://www.deutschestextarchiv.de/sanders_woerterbuchschreiber_1889/65"
+               format="html" scope="external">Sanders, Daniel: Aus der Werkstatt eines
+               Wörterbuchschreibers. Plaudereien. Berlin, 1889. [Faksimile 65]</xref>
+         </i></p>
+         </fig>
+     </example>
+   </body>
+</topic>

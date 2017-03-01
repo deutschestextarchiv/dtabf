@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_tmf_vk2_qs">
+  <title>Editorischer Kommentar zur zugrundeliegenden Quelle <codeph>(//fileDesc/sourceDesc/biblFull/notesStmt)</codeph></title>
+    <titlealts><navtitle>Notes Statement (Source)</navtitle></titlealts>
+  <body>
+    <p>Editorische Hinweise zur zugrundeliegenden Quelle werden innerhalb der 
+      <codeph>&lt;biblFull&gt;</codeph>-Angabe der <i>Source Description</i> im Element 
+      <codeph>&lt;notesStmt&gt;</codeph> wiedergegeben. Der jeweilige Wortlaut des 
+      Kommentars steht im Notes Statement im Unterelement 
+      <codeph>&lt;note type="remarkSource"&gt;</codeph>. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;notesStmt&gt;
+  &lt;note type="remarkSource"&gt;[Kommentar zur zugrundeliegenden Ausgabe]&lt;/note&gt;
+&lt;/notesStmt&gt;</codeblock>
+    <p>Die Hinweise im <codeph>&lt;notesStmt&gt;</codeph> umfassen z.B. die Begründung 
+      der Auswahl der Ausgabe, falls diese nicht der Erstausgabe 
+      des Werks entspricht. Weiterhin werden hier fehlerhafte bzw. unvollständige 
+      Angaben des Titelblattes, welche in den Metadaten des TEI-Headers durch die 
+      jeweils korrekte bzw. normalisierte Angabe ersetzt wurden, dokumentiert.
+    </p><!-- 
+    <h1>Rekonstruierte Angaben</h1>
+    <p>Sind Angaben wie beispielweise das Publikationsdatum, der Publikationsort oder -verlag, Autorendaten oder Angaben zur übergeordneten Publikation nicht zweifelsfrei der Primärquelle zu entnehmen (das trifft auch auf Falschangaben zu), dann sind die entsprechenden Angaben in ihrer korrekten Form innerhalb eines <code>&lt;supplied&gt;</code>-Elements zu setzen. Beispiel (Publikationsort fehlt in der Quelle, ist aber nachweislich „Leipzig“):</p>
+    
+    <pre>&lt;publicationStmt&gt;
+  &lt;pubPlace&gt;&lt;supplied&gt;Leipzig&lt;/supplied&gt;&lt;/pubPlace&gt;
+  [weitere Angaben ...]
+&lt;/publicationStmt&gt;</pre>
+  -->
+  </body>
+</topic>

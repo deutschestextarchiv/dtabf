@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_38">
+<title>Verknüpfung diskontinuierlicher Vers-Teile</title>
+   <titlealts><navtitle>Diskontinuierliche Vers-Teile</navtitle></titlealts>
+         <body>
+                        <p>Verse können aus Platzgründen in der Zeile des vorangehenden oder folgenden Verses 
+  fortgeführt werden. Um dies darzustellen, werden die Attribute <codeph>@prev</codeph>, 
+  <codeph>@next</codeph> und <codeph>@xml:id</codeph> eingesetzt. Zur Verwendung dieser Attribute s. Kap. 
+  <xref href="diskontTextpassagen.dita">Unterbrechungen zusammenhängender Textbestandteile</xref>.
+</p>
+            <p><i>Fortführung eines Verses in der Zeile des nachfolgenden Verses:</i>
+            </p>
+            <codeblock outputclass="language-xml">&lt;l xml:id="[ID Vers 1]" next="#[ID Schluss Vers 1]"&gt;[Beginn Vers 1]&lt;/l&gt;
+&lt;lb/&gt;
+&lt;l&gt;[Vers 2]&lt;/l&gt;
+&lt;l xml:id="[ID Schluss Vers 1]" prev="#[ID Vers 1]"&gt;[Schluss Vers 1]&lt;/l&gt;
+&lt;lb/&gt;
+</codeblock>
+            <p><i>Fortführung eines Verses in der Zeile des vorangehenden Verses:</i>
+            </p>
+            <codeblock outputclass="language-xml">&lt;l&gt;[Vers 1]&lt;/l&gt;
+&lt;l xml:id="[ID Schluss Vers 2]" prev="#[ID Vers 2]"&gt;[Schluss Vers 2]&lt;/l&gt;
+&lt;lb/&gt;
+&lt;l xml:id="[ID Vers 2]" next="#[ID Schluss Vers 2]"&gt;[Vers 2]&lt;/l&gt;
+&lt;lb/&gt;
+</codeblock>
+            <note type="note">Die Attribute <codeph>@prev</codeph> und <codeph>@next</codeph> sind also
+  semantisch, nicht linear zu verstehen, d.h. <codeph>@next</codeph> kann
+  <b>vor</b> dem dazugehörigen <codeph>@prev</codeph> stehen, wenn dies den
+  Gegebenheiten der Vorlage entspricht.
+</note>
+         </body>
+      </topic>

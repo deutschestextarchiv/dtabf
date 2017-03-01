@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jBodyAllg">
+  <title>Allgemeine Hinweise zur Erfassung und Strukturierung des Textkörpers bei Zeitungen</title>
+    <titlealts><navtitle>Textkörper Zeitungen allgemein</navtitle></titlealts>
+  <body>
+    <p>
+  Die <b>Grundstrukturierung</b> innerhalb der Zeitung/Zeitschrift erfolgt mittels 
+  <codeph>&lt;div&gt;</codeph>-Elementen. Dabei werden Gruppen von Artikeln ebenso wie die 
+  einzelnen Artikel selbst von typisierten <codeph>&lt;div&gt;</codeph>-Elementen umschlossen. 
+  Die möglichen Werte für die jeweiligen <codeph>&lt;div&gt;</codeph>-Elemente werden im 
+      Folgenden näher vorgestellt.
+</p>
+  </body>
+</topic>

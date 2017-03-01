@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="klammerungAllg">
+  <title>Grundstruktur der Kodierung von Klammerungen</title>
+    <titlealts><navtitle>Klammerungen Grundstruktur</navtitle></titlealts>
+  <body>
+           <p>Es kann vorkommen, dass Textausschnitte durch zeilenübergreifende Klammerung
+            miteinander verbunden sind, wodurch deren Zusammengehörigkeit auf einer bestimmten 
+            Ebene angezeigt wird. In diesem Fall wird die Klammerung je nach Kontext für die 
+            Kollektion der geklammerten Textausschnitte oder für das Ziel der Klammerung angezeigt. 
+            Das betreffende Element erhält ein <codeph>@rendition</codeph>-Attribut, welches folgende Werte 
+            annehmen kann:</p>
+            <ul>
+            
+               <li>
+                  <codeph>"#rightBraced"</codeph>: Klammerung am rechten Rand des Textes im betreffenden Element</li>
+            
+               <li>
+                  <codeph>"#leftBraced"</codeph>: Klammerung am linken Rand des Textes im betreffenden Element</li>
+            
+               <li>
+                  <codeph>"#topBraced"</codeph>: Klammerung am oberen Rand des Textes im betreffenden Element</li>
+            
+               <li>
+                  <codeph>"#bottomBraced"</codeph>: Klammerung am unteren Rand des Textes im betreffenden Element</li>
+          
+            </ul>
+            <p>Die Richtung, in welche die Klammer jeweils zeigt, wird nicht eigens gekennzeichnet.</p>
+            <p>In der Regel werden Klammerungen durch Listen dargestellt.</p>
+            <codeblock outputclass="language-xml">&lt;list rendition="#[Klammerungswert]"&gt;</codeblock>
+            <p>Lediglich im Drama und in Tabellen können andere Elemente betroffen sein:</p>
+            <p>Drama:</p>
+            <codeblock outputclass="language-xml">&lt;stage rendition="#[Klammerungswert]">
+&lt;speaker rendition="#[Klammerungswert]">
+&lt;roleDesc rendition="#[Klammerungswert]"></codeblock>
+            <p>Tabelle:</p>
+            <codeblock outputclass="language-xml">&lt;cell rendition="#[Klammerungswert]"&gt;</codeblock>
+         </body>
+</topic>

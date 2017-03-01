@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_9">
+<title>Widmungen</title>
+         <body>
+                        <p>Widmungen stehen in der Regel am Beginn eines Buches und somit innerhalb des <codeph>&lt;front&gt;</codeph>-
+  Elements.
+</p>
+            <codeblock outputclass="language-xml">&lt;div type="dedication"&gt;
+  &lt;p&gt;[Widmungstext]&lt;/p&gt;
+&lt;/div&gt;</codeblock>
+         </body>
+      </topic>

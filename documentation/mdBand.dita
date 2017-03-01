@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_lrh_y32_qs">
+  <title>Band</title>
+  <body>
+    <p>Die Bandangabe eines Werkes auf dessen Titelseiten wird in den ausführlichen Titeldaten 
+      entsprechend der Vorlage wiedergegeben.
+    </p>
+    <p>In der Kurztitelangabe steht verkürzt "<codeph>Bd. [Nummer]</codeph>". Dabei steht grundsätzlich 
+      "<codeph>Bd.</codeph>", ungeachtet der Bezeichnung des Bandes (z.B. als "Heft" oder "Teil") in der 
+      Vorlage.
+    </p>
+    <example>
+        <title>Bandangabe im Kurztitel</title>
+      <p><i>Siehe: </i><xref href="http://www.deutschestextarchiv.de/euler_algebra02_1770" scope="external" format="html">http://www.deutschestextarchiv.de/euler_algebra02_1770</xref></p>
+
+    </example>
+  </body>
+</topic>

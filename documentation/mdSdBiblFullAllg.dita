@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="mdBiblFullAllg">
+  <title>Grundstruktur der <i>Full Bibliographic Citation</i> <codeph>(//fileDesc/sourceDesc/biblFull)</codeph></title>
+    <titlealts><navtitle>Full Bibliographic Citation Grundstruktur</navtitle></titlealts>
+  <body>
+    <p>Die vollständigen bibliographischen Angaben (<codeph>&lt;biblFull&gt;</codeph>) innerhalb der 
+      <i>Source Description</i> umfassen die Titelangaben zur Quelle (<codeph>&lt;titleStmt&gt;</codeph>) 
+      mit den Angaben zu Titel (<codeph>&lt;title&gt;</codeph>), Autor (<codeph>&lt;author&gt;</codeph>) und 
+      ggf. Herausgeber/Übersetzer (<codeph>&lt;editor&gt;</codeph>) des Werks. Darüber hinaus enthält das 
+      <codeph>&lt;biblFull&gt;</codeph>-Element die Angabe zur Art der Ausgabe (<codeph>&lt;editionStmt&gt;</codeph>) 
+      sowie Hinweise zum Seitenumfang des zugrundeliegenden Bandes (<codeph>&lt;extent&gt;</codeph>), zu den 
+      Rahmenbedingungen der Textausgabe (<codeph>&lt;publicationStmt&gt;</codeph>) und, im Falle nicht-selbständiger 
+      Textausgaben, zur übergeordneten Zeitschrift oder Reihe (<codeph>&lt;seriesStmt&gt;</codeph>).
+    </p>
+    <codeblock outputclass="language-xml">&lt;sourceDesc&gt;
+  &lt;bibl&gt;[Zitiertitel]&lt;/bibl&gt;
+  &lt;biblFull&gt;
+    &lt;titleStmt&gt;
+      &lt;title&gt;[Titel, Untertitel, Band]&lt;/title&gt;
+      &lt;author&gt;[Autor]&lt;/author&gt; &lt;!-- ggf. mehrfach zu verwenden --&gt;
+      &lt;editor&gt;[Herausgeber/Übersetzer]&lt;/editor&gt; &lt;!-- ggf. mehrfach zu verwenden --&gt;
+    &lt;/titleStmt&gt;
+    &lt;editionStmt&gt;
+      &lt;edition&gt;[Art der zugrundeliegenden Textausgabe]&lt;/edition&gt;
+    &lt;/editionStmt&gt;
+    &lt;extent&gt;
+      &lt;measure type="pages"&gt;[Umfang des Bandes in Seiten]&lt;/measure&gt;
+    &lt;/extent&gt;
+    &lt;publicationStmt&gt;[Angaben zur Band-Ausgabe]&lt;/publicationStmt&gt;
+    &lt;seriesStmt&gt;[Angaben zur Reihe]&lt;/seriesStmt&gt; &lt;!-- gegebenenfalls --&gt;
+  &lt;/biblFull&gt;
+&lt;/sourceDesc&gt;</codeblock>
+  </body>
+</topic>

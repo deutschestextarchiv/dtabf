@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_sc">
+   <title>Kapitälchen</title>
+   <body>
+      <example>
+         <title>Kodierung von Kapitälchen</title><fig>
+            <image href="img/E8wtUz6x2i.png"/>
+            <codeblock outputclass="language-xml">&lt;hi rendition="#k"&gt;Ando-Tsus-sima-no-Kami&lt;/hi&gt;</codeblock>
+            <p><i>Quelle: <xref
+               href="http://www.deutschestextarchiv.de/berg_ostasien01_1864/380"
+               format="html" scope="external">[Berg, Albert]: Die preussische Expedition nach
+               Ost-Asien. Bd. 1. Berlin, 1864. [Faksimile 380]</xref>
+            </i></p>
+         </fig></example>
+   </body>
+</topic>

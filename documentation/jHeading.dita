@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jHeading">
+  <title>Der Titelkopf</title>
+    <titlealts><navtitle>Titelkopf</navtitle></titlealts>
+  <body>
+    <p>
+  Der Titelkopf der jeweiligen Ausgabe steht im <codeph>&lt;front&gt;</codeph>-Bereich des
+  TEI-Dokuments. Er wird mit dem Element <codeph>&lt;titlePage&gt;</codeph> umschlossen, welches das 
+  Attribut-Wert-Paar <tt>@type="heading"</tt> erhält, um anzuzeigen, dass der Titel- bzw. Zeitungskopf 
+  nicht wie gewöhnlich eine gesamte Titelseite umfasst.
+</p>
+<p>  
+  Der Titel der Zeitungs- bzw. Zeitschriftenausgabe wird innerhalb <codeph>von &lt;titlePage&gt;</codeph> mit dem Element 
+  <codeph>&lt;docTitle&gt;</codeph> umschlossen. Die einzelnen Teile des Titels stehen innerhalb
+  von <codeph>&lt;docTitle&gt;</codeph> in einzelnen <codeph>&lt;titlePart&gt;</codeph>-Elementen.
+  Dabei erhält <codeph>&lt;titlePart&gt;</codeph> das Attribut <tt>@type</tt> mit den 
+  möglichen Werten <tt>"main"</tt> (Haupttitel) und <tt>"sub"</tt> (Untertitel).
+</p>
+<p>
+  Eine Druckerlaubnis zu Beginn der Titelei wird innerhalb des <codeph>&lt;docTitle&gt;</codeph>-Elements im Element
+  <codeph>&lt;titlePart&gt;</codeph> wiedergegeben, welches das für Zeitungen/Zeitschriften spezifische Attribut-Wert-Paar
+  <tt>@type="jImprimatur"</tt> erhält. Steht die Druckerlaubnis am Schluss der Titelei oder am Schluss
+  der Ausgabe, so wird sie mit dem Element <codeph>&lt;div type="imprimatur"&gt;</codeph> umschlossen.
+</p>
+<p>
+  Hinweise zum Druck werden im Element <codeph>&lt;docImprint&gt;</codeph> wiedergegeben. 
+  Dabei steht das Datum der Ausgabe im Unterelement <codeph>&lt;docDate&gt;</codeph>, der 
+  Publikationsort im Unterelement <codeph>&lt;pubPlace&gt;</codeph> und die mögliche 
+  Angabe der Druckerei (Impressum) im Unterelement <codeph>&lt;publisher&gt;</codeph>. (Vgl. 
+  <xref href="titelblatt.dita">Kapitel: Titelblatt</xref>.)
+</p>
+<note type="attention">
+  Steht das Impressum nicht am Beginn, sondern am Schluss der Ausgabe, so
+  wird dieses an der Stelle seines Vorkommens mit dem Element <codeph>&lt;div type="imprint"&gt;</codeph>
+  kodiert. (Vgl. <xref href="anhAllg.dita">Kapitel: Anhang</xref>.)
+</note>
+<codeblock outputclass="language-xml">&lt;front&gt;
+  &lt;titlePage type="heading"&gt;
+    &lt;docTitle&gt;
+      &lt;titlePart type="jImprimatur"&gt;[Druckerlaubnis]&lt;/titlePart&gt; &lt;!-- gegebenenfalls --&gt;
+      &lt;titlePart type="main"&gt;[Haupttitel der Ausgabe]&lt;/titlePart&gt;
+      &lt;titlePart type="sub"&gt;[Untertitel der Ausgabe]&lt;/titlePart&gt;
+    &lt;/docTitle&gt;
+    &lt;docImprint&gt;
+      &lt;docDate&gt;[Datum der Ausgabe]&lt;/docDate&gt;
+      &lt;pubPlace&gt;[Erscheinungsort]&lt;/pubPlace&gt;
+      &lt;publisher&gt;[Druckerei-/Verlagsangabe]&lt;/publisher&gt;
+    &lt;/docImprint&gt;
+  &lt;/titlePage&gt;
+&lt;/front&gt;
+</codeblock>
+  </body>
+</topic>

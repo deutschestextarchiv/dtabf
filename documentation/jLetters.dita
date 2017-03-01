@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jLetters">
+  <title>Leserbriefe</title>
+  <body>
+    <p>
+    Leserbriefe werden durch <codeph>&lt;div&gt;</codeph>-Elemente erster Ebene umschlossen, welche das 
+    Attribut-Wert-Paar <codeph>@type="jReadersLetters"</codeph> erhalten. Der jeweilige Brief wird durch ein 
+    <codeph>&lt;div&gt;</codeph>-Element tieferer Ebene umschlossen, welches den <codeph>@type</codeph>-Wert 
+    <codeph>"letter"</codeph> erhält.
+  </p>
+  <table>
+      <tgroup cols="3">
+          <thead>
+              <row>
+                  <entry>Kategorie</entry>
+                  <entry><codeph>@type</codeph>-Wert</entry>
+                  <entry>Hierarchie-Ebene (empfohlen)</entry>
+              </row>
+          </thead>
+          <tbody>
+              <row>
+                  <entry>Leserbriefe</entry>
+                  <entry><codeph>jReadersLetters</codeph></entry>
+                  <entry>1</entry>
+              </row>
+              <row>
+                  <entry>Brief</entry>
+                  <entry><codeph>letter</codeph></entry>
+                  <entry>2 | 3 | ...</entry>
+              </row>
+              
+          </tbody>
+      </tgroup>
+      </table>
+  
+  <codeblock outputclass="language-xml">&lt;div type="jReadersLetters"&gt;
+  &lt;div type="letter"&gt;[Brief]&lt;/div&gt;
+  &lt;div type="letter"&gt;[Weiterer Brief]&lt;/div&gt;
+&lt;/div&gt;</codeblock>
+
+  <p>
+    Sind innerhalb der Rubrik "Leserbriefe" einzelne Leserbriefe wiederum gruppiert, so 
+    können mehrere <codeph>&lt;div type="jReadersLetters"&gt;</codeph>-Elemente 
+    ineinander geschachtelt werden.
+  </p>
+  <codeblock outputclass="language-xml">&lt;div type="jReadersLetters"&gt; &lt;!-- Rubrik Leserbriefe --&gt;
+  &lt;div type="jReadersLetters"&gt; &lt;!-- erste Gruppe von Leserbriefen --&gt;
+    &lt;div type="letter"&gt;[Leserbriefl]&lt;/div&gt;
+    &lt;div type="letter"&gt;[Weiterer Leserbrief]&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div type="jReadersLetters"&gt; &lt;!-- zweite Gruppe von Leserbriefen --&gt;
+    &lt;div type="letter"&gt;[Leserbrief]&lt;/div&gt;
+    &lt;div type="letter"&gt;[Weiterer Leserbrief]&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</codeblock>
+  </body>
+</topic>

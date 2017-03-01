@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_45">
+    <title>Verse im Drama</title>
+    <body>
+        <p>Auch bei in Versform geschriebenen Dramen wird die Rede in
+            <codeph>&lt;p&gt;</codeph>-Elementen wiedergegeben.</p>
+        <example> <title>Verse im Drama</title> <fig>
+            <image href="img/JtghjG0qAj.png"/>
+            <codeblock outputclass="language-xml">&lt;sp who="#FAU"&gt;
+  &lt;speaker&gt;&lt;hi rendition="#g"&gt;Fauſt&lt;/hi&gt;.&lt;/speaker&gt;&lt;lb/&gt;
+  &lt;p&gt;Es klopft? Herein! Wer will mich wieder plagen?&lt;/p&gt; 
+&lt;/sp&gt;&lt;lb/&gt; 
+&lt;sp who="#MEP"&gt; 
+  &lt;speaker&gt;&lt;hi rendition="#g"&gt;Mephiſtopheles&lt;/hi&gt;.&lt;/speaker&gt;&lt;lb/&gt; 
+  &lt;p&gt;Ich bin's.&lt;/p&gt; 
+&lt;/sp&gt;&lt;lb/&gt; 
+&lt;sp who="#FAU"&gt; 
+  &lt;speaker&gt;&lt;hi rendition="#g"&gt;Fauſt&lt;/hi&gt;.&lt;/speaker&gt;&lt;lb/&gt; 
+  &lt;p&gt;&lt;hi rendition="#et"&gt;Herein!&lt;/hi&gt;&lt;/p&gt;
+&lt;/sp&gt;&lt;lb/&gt; 
+&lt;sp who="#MEP"&gt; 
+  &lt;speaker&gt;&lt;hi rendition="#g"&gt;Mephiſtopheles&lt;/hi&gt;.&lt;/speaker&gt;&lt;lb/&gt; 
+  &lt;p&gt;&lt;hi rendition="#et"&gt;Du mußt es dreymal ſagen,&lt;/hi&gt;&lt;/p&gt;
+&lt;/sp&gt;&lt;lb/&gt;</codeblock>
+             <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/goethe_faust01_1808/103"
+                format="html" scope="external">Goethe, Johann Wolfgang von:
+                Faust. Eine Tragödie. Tübingen, 1808. [Faksimile
+                103]</xref></i></p>
+            </fig> </example>
+        <p>Durch Sprecherwechsel bedingte Unterbrechungen von Versen können
+            durch Verknüpfung der umschließenden
+            <codeph>&lt;p&gt;</codeph>-Elemente mittels der Attribute
+            <codeph>@xml:id</codeph>, <codeph>@prev</codeph> und
+            <codeph>@next</codeph> wiedergegeben werden (s. Kap.: <xref
+            href="diskontTextpassagen.dita"
+            >Unterbrechungen zusammenhängender Textbestandteile</xref>).</p>
+        <note type="attention">Diese Form der tieferen Texterschließung wurde
+            für die Werke des DTA-Korpus nicht angewandt. </note>
+        <p>Gereimte Passagen oder Gesänge innerhalb eines in Prosaform
+            verfassten Dramas werden hingegen als Versgruppen
+            (<codeph>&lt;lg&gt;</codeph>) gekennzeichnet.</p>
+    </body>
+</topic>

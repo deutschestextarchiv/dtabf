@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_59">
+    <title>Register mit Untertiteln</title>
+    <body>
+        <p>Ist das Register in verschiedene Unterabschnitte eingeteilt, werden
+            diese mittels mehreren <codeph>&lt;div&gt;</codeph>-Elementen
+            strukturiert. </p>
+        <codeblock outputclass="language-xml">&lt;back&gt;
+  &lt;div n="1" type="index"&gt;
+    &lt;head&gt;[Registertitel]&lt;/head&gt;
+    &lt;div n="2"&gt;
+      &lt;head&gt;[Untertitel 1]&lt;/head&gt;
+      &lt;list&gt;
+        &lt;item&gt;[Stichwort]
+          &lt;ref&gt;[Seitenzahl]&lt;/ref&gt;
+        &lt;/item&gt;
+      &lt;/list&gt;
+    &lt;/div&gt;
+    &lt;div n="2"&gt;
+      &lt;head&gt;[Untertitel 2]&lt;/head&gt;
+      &lt;list&gt;
+        &lt;item&gt;[Stichwort]
+          &lt;ref&gt;[Seitenzahl]&lt;/ref&gt;
+        &lt;/item&gt;
+      &lt;/list&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/back&gt;</codeblock>
+    </body>
+</topic>

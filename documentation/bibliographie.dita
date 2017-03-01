@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_26">
+    <title>Bibliographie</title>
+    <body>
+        <p>Eine Bibliographie innerhalb des Textbereichs (z.B. am
+            Kapitelbeginn), kann mittels des Elements
+            <codeph>&lt;listBibl&gt;</codeph> ausgezeichnet werden. Jede
+            bibliographische Angabe wird innerhalb von
+            <codeph>&lt;listBibl&gt;</codeph> mittels
+            <codeph>&lt;bibl&gt;[...]&lt;/bibl&gt;</codeph> realisiert. Die
+            Verwendung des <codeph>&lt;listBibl&gt;</codeph>-Elements ist
+            optional. </p>
+        <codeblock outputclass="language-xml">&lt;listBibl&gt;
+  &lt;bibl&gt;[bibliographische Angabe 1]&lt;/bibl&gt;
+  &lt;bibl&gt;[bibliographische Angabe 2]&lt;/bibl&gt;
+  [...]
+  &lt;bibl&gt;[bibliographische Angabe n]&lt;/bibl&gt;
+&lt;/listBibl&gt;</codeblock>
+        <example> <title>Bibliographie im Textbereich</title> <fig>
+            <image href="img/A47gRvWiVP.png"/>
+            <codeblock outputclass="language-xml">&lt;div n="2"&gt;
+  &lt;head&gt;&lt;hi rendition="#b"&gt;&lt;hi rendition="#aq"&gt;I.&lt;/hi&gt; Der Begriff der Volkswirtſchaft.&lt;/hi&gt;&lt;/head&gt;&lt;lb/&gt;
+  &lt;listBibl&gt;
+    &lt;bibl&gt;v. &lt;hi rendition="#g"&gt;Hermann&lt;/hi&gt;, Staatswirtſchaftliche Unterſuchungen. 1832. 1870. —&lt;/bibl&gt;
+    &lt;bibl&gt; v. &lt;hi rendition="#g"&gt;Mangoldt&lt;/hi&gt;, Volks-&lt;lb/&gt;wirtſchaft, in Bluntſchli, St.W. —&lt;/bibl&gt;
+    &lt;bibl&gt;&lt;hi rendition="#g"&gt;Knies&lt;/hi&gt;, Die politiſche Ökonomie vom Standpunkt der geſchichtlichen&lt;lb/&gt;
+      Methode. 1853 u. 1883. —&lt;/bibl&gt;
+    &lt;bibl&gt;&lt;hi rendition="#g"&gt;Adolf Wagner&lt;/hi&gt;, Grundlegung der allg. oder theor. Volkswirtſchafts-&lt;lb/&gt;
+      lehre. 1876. 3. Aufl. 1892—94. —&lt;/bibl&gt;
+    &lt;bibl&gt;&lt;hi rendition="#g"&gt;Schäffle&lt;/hi&gt;, Das geſellſchaftliche Syſtem der menſchlichen Wirt-&lt;lb/&gt;
+      ſchaft. 1873.—&lt;/bibl&gt;
+    &lt;bibl&gt; v. &lt;hi rendition="#g"&gt;Schönberg&lt;/hi&gt;, Handbuch der politiſchen Ökonomie. 1882 — 1896 (hauptſächlich die&lt;lb/&gt;
+      einleitenden und allgemeinen Abſchnitte von v. Schönberg, v. Scheel und Neumann). —&lt;/bibl&gt;
+    &lt;bibl&gt;&lt;hi rendition="#g"&gt;Schmoller&lt;/hi&gt;,&lt;lb/&gt;
+      Städtiſche, territoriale und ſtaatliche Wirtſchaftspolitik. J. f. G.V. 1884 und Schmoller U. U. —&lt;/bibl&gt;
+    &lt;bibl&gt;&lt;lb/&gt;&lt;hi rendition="#g"&gt;Bücher&lt;/hi&gt;, Entſtehung der Volkswirtſchaft. 1893 u. 1898. —&lt;/bibl&gt;
+    &lt;bibl&gt; v. &lt;hi rendition="#g"&gt;Philippovich&lt;/hi&gt;, Grundriß der&lt;lb/&gt;politiſchen Ökonomie. 1893 u. 1898.&lt;lb/&gt;
+      &lt;hi rendition="#g"&gt;Gerber&lt;/hi&gt;, Grundzüge eines Syſtems des deutſchen Staatsrechts. 1865 u. 1869. —&lt;/bibl&gt;
+    &lt;bibl&gt;&lt;hi rendition="#g"&gt;van Krieken&lt;/hi&gt;,&lt;lb/&gt;Über die ſog. organiſche Staatslehre. 1873. —&lt;/bibl&gt;
+    &lt;bibl&gt;&lt;hi rendition="#g"&gt;Gierke&lt;/hi&gt;, Die Grundbegriffe des Staatsrechts und die&lt;lb/&gt;
+      neueſten Staatsrechtstheorien. Z. f. St.W. 1874.&lt;/bibl&gt;
+  &lt;/listBibl&gt;&lt;lb/&gt;
+  &lt;p&gt;1. &lt;hi rendition="#g"&gt;Vorbemerkung&lt;/hi&gt;. Die Volkswirtſchaft, deren allgemeine wiſſenſchaftliche&lt;lb/&gt;[...]&lt;/p&gt;
+[...]&lt;/div&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/schmoller_grundriss01_1900/17"
+                format="html" scope="external">Schmoller, Gustav: Grundriß der
+                Allgemeinen Volkswirtschaftslehre. Bd. 1. Leipzig, 1900.
+                [Faksimile 17]</xref></i></p>
+            </fig> </example>
+      <section>
+        <title>Bibliographische Angaben im Fließtext (Level 3)</title>
+      <p>Auch im Fließtext kann das Element <codeph>&lt;bibl&gt;</codeph> verwendet werden, um auf 
+        bibliographische Angaben hinzuweisen. Mithilfe eines darunter geordneten <codeph>&lt;ref&gt;</codeph>-Elements
+        kann auf eine externe (ausführlichere) Literaturangabe verwiesen werden. Die Verwendung von <codeph>&lt;bibl&gt;</codeph> und untergeornetem <codeph>&lt;ref&gt;</codeph> im Fließtext ist optional (Level 3).
+      </p>
+        <fig>
+          <image href="img/sandrartBiblRef.jpg" scale="60"/>
+          <codeblock outputclass="language-xml">&lt;p>[...] weil man beym Homerus in &#x017F;einen 
+  &lt;bibl>&lt;ref target="http://ta.sandrart.net/-bibliography-2345">Iliaden&lt;/ref>&lt;/bibl> 
+li&#x017F;et/ daß [...]&lt;/p></codeblock>
+          <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/sandrart_academie0203_1679/7"
+                format="html" scope="external">Sandrart, Joachim von: L’Academia Todesca. della Architectura, Scultura &amp; Pittura: Oder Teutsche Academie der Edlen Bau- Bild- und Mahlerey-Künste. Bd. 2,3. Nürnberg, 1679.
+                [Faksimile 7]</xref></i></p>
+        </fig>
+      
+        <p>Zur Auszeichnung von Literaturverzeichnissen am Buchschluss
+            (Bibliographie im &lt;back&gt;-Bereich) s. Kap. <xref
+            href="anhang.dita"
+            >Anhang</xref>. </p>
+        </section>
+    </body>
+</topic>

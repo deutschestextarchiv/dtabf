@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="transkription">
+  <title>Richtlinien zur Transkription</title>
+  <titlealts><navtitle>Transkription</navtitle></titlealts>
+    <abstract><shortdesc>Richtlinien zur Erfassung der Volltexte</shortdesc></abstract>
+  <body>
+    <p>Ziel des Deutschen Textarchivs (DTA) ist die Erstellung eines
+            disziplinenübergreifenden Volltextkorpus deutschsprachiger Texte.
+            Grundlage hierfür bilden digitale Faksimiles historischer Druckwerke
+            (Entstehungszeit der Drucke zwischen ca. 1650 und 1900). Das Korpus
+            umfasst Werke verschiedener Textsorten, literarischer Gattungen und
+            wissenschaftlicher Disziplinen. Ziel des Projekts ist die
+            Bereitstellung und – aufgrund der großen Textmenge weitestgehend
+            automatische – linguistische Aufbereitung eines vielseitigen,
+            umfangreichen Textbestandes auf dieser heterogenen Grundlage. </p>
+
+<p>Die Erfassung der Texte im DTA erfolgt nach dem Prinzip der Wahrung des
+            historischen Sprachstandes der Texte. Aufgrund dieser Zielsetzung
+            wird darauf geachtet, bei der Texterfassung die Zahl der
+            (unvermeidbaren) Interpretationen typographischer Gegebenheiten
+            gering zu halten. Um unbewusste Modernisierungen oder Korrekturen zu
+            vermeiden, werden die Texte von Nicht-Muttersprachlern eingegeben
+            (siehe dazu auch <xref
+            href="http://www.deutschestextarchiv.de/doku/workflow#Die_Volltextdigitalisierung"
+            scope="external" format="html">Volltextdigitalisierung im Deutschen
+            Textarchiv</xref>). Eine Druckfehlerkorrektur erfolgt daher während
+            der Erfassung nicht, kann aber im Erschließungs- und
+            Korrekturprozess eingeschränkt vorgenommen werden. </p>
+
+<p>Aus dem Prinzip größtmöglicher Bewahrung des Vorlagentextes bei
+            gleichzeitiger Konzentration auf die lexikalischen Gegebenheiten
+            ergeben sich für die Texterfassung die folgenden Richtlinien. </p>
+  </body>
+</topic>

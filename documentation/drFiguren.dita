@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_40">
+    <title>Figurenaufstellung</title>
+    <body>
+        <p>Die dem Drama vorangestellte Auflistung der mitwirkenden Figuren wird
+            mittels <codeph>&lt;div n="[Ebene]"&gt;</codeph> ausgezeichnet. Ist
+            die Auflistung der Figuren mit einem entsprechenden Titel versehen,
+            so wird dieser innerhalb des <codeph>&lt;div&gt;</codeph>-Elements
+            in einem <codeph>&lt;head&gt;</codeph>-Element wiedergegeben. Die
+            eigentliche Liste der Figuren wird mittels eines
+            <codeph>&lt;castList&gt;</codeph>-Elements ausgezeichnet. Jede
+            gelistete Figur wird innerhalb der <codeph>&lt;castList&gt;</codeph>
+            mit einem <codeph>&lt;castItem&gt;</codeph>-Element umschlossen. </p>
+        <codeblock outputclass="language-xml">&lt;div n="[Ebene]"&gt;
+  &lt;head&gt;[Titel der Figurenaufstellung]&lt;/head&gt;&lt;!-- falls vorhanden --&gt;
+  &lt;castList&gt;
+    &lt;castItem&gt;[Figur 1]&lt;/castItem&gt;
+    &lt;castItem&gt;[Figur 2]&lt;/castItem&gt;
+  &lt;/castList&gt;
+&lt;/div&gt;</codeblock>
+        <p>Der Name der jeweiligen Figur steht in einem
+            <codeph>&lt;role&gt;</codeph>-Element, welches dem
+            <codeph>&lt;castItem&gt;</codeph>-Element untergeordnet ist. Ein
+            Attribut <codeph>@xml:id</codeph> innerhalb des
+            <codeph>&lt;role&gt;</codeph>-Elements weist der Figur eine
+            eindeutige Identifikation zu. Eine der Figur ggf. zugeordnete
+            Funktion wird innerhalb von <codeph>&lt;castItem&gt;</codeph> in
+            einem <codeph>&lt;roleDesc&gt;</codeph>-Element wiedergegeben. </p>
+        <codeblock outputclass="language-xml">
+  &lt;castItem&gt;
+    &lt;role xml:id="[ID]"&gt;[Name der Figur]&lt;/role&gt;
+    &lt;roleDesc&gt;[Funktion]&lt;/roleDesc&gt;&lt;!-- falls vorhanden --&gt;
+  &lt;/castItem&gt;
+</codeblock>
+        <p>Gruppen von Figuren, denen in der Vorlage gemeinsam eine Funktion
+            zugeordnet wird (in der Regel graphisch durch Klammerung
+            dargestellt), werden innerhalb der <codeph>&lt;castList&gt;</codeph>
+            mit einem <codeph>&lt;castGroup&gt;</codeph>-Element umschlossen.
+            Die den Figuren einer Gruppe gemeinsame Funktion wird innerhalb der
+            <codeph>&lt;castGroup&gt;</codeph> in einem
+            <codeph>&lt;roleDesc&gt;</codeph>-Element realisiert. Jede Figur
+            wird mit einem <codeph>&lt;castItem&gt;</codeph>-Element
+            umschlossen, welches die oben beschriebenen Funktionen aufweist.</p>
+        <codeblock outputclass="language-xml">&lt;castGroup>
+  &lt;roleDesc>[Funktion]&lt;/roleDesc>
+  &lt;castItem>&lt;role xml:id="[ID]">[Figur 1]&lt;/role>&lt;/castItem>
+  &lt;castItem>&lt;role xml:id="[ID]">[Figur 2]&lt;/role>&lt;/castItem>
+&lt;/castGroup></codeblock>
+
+        <example> <title>Figurenaufstellung I</title> <fig>
+            <image href="img/j_i8JBjJxE.png"/>
+            <codeblock outputclass="language-xml">&lt;castList&gt;
+  &lt;head&gt;
+    &lt;hi rendition="#c"&gt;&lt;hi rendition="#g"&gt;Perſonen&lt;/hi&gt;.&lt;/hi&gt;
+  &lt;/head&gt;&lt;lb/&gt;
+  &lt;castItem&gt;
+    &lt;role xml:id="JUP"&gt;&lt;hi rendition="#g"&gt;Jupiter&lt;/hi&gt;,&lt;/role&gt;
+    &lt;roleDesc&gt;in der Geſtalt des Amphitryon.&lt;/roleDesc&gt;
+  &lt;/castItem&gt;&lt;lb/&gt;
+  &lt;castItem&gt;
+    &lt;role xml:id="MER"&gt;&lt;hi rendition="#g"&gt;Merkur&lt;/hi&gt;,&lt;/role&gt;
+    &lt;roleDesc&gt;in der Geſtalt des Soſias.&lt;/roleDesc&gt;
+  &lt;/castItem&gt;&lt;lb/&gt;
+  &lt;castItem&gt;
+    &lt;role xml:id="AMP"&gt;&lt;hi rendition="#g"&gt;Amphitryon&lt;/hi&gt;,&lt;/role&gt;
+    &lt;roleDesc&gt;Feldherr der Thebaner.&lt;/roleDesc&gt;
+  &lt;/castItem&gt;&lt;lb/&gt;
+  &lt;castItem&gt;
+    &lt;role xml:id="SOS"&gt;&lt;hi rendition="#g"&gt;Soſias&lt;/hi&gt;,&lt;/role&gt;
+    &lt;roleDesc&gt;ſein Diener.&lt;/roleDesc&gt;
+  &lt;/castItem&gt;
+&lt;/castList&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/kleist_amphytrion_1807/17"
+                format="html" scope="external">Kleist, Heinrich von: Amphitryon.
+                Dresden, 1807. [Faksimile 17]</xref></i></p>
+            </fig> </example>
+
+        <p>Um Klammerungen innerhalb von <codeph>&lt;castGroup&gt;</codeph>
+            anzuzeigen, wird das <codeph>@rendition</codeph>-Attribut verwendet,
+            welches die Werte <codeph>#rightBraced</codeph>,
+            <codeph>#leftBraced</codeph>, <codeph>#bottomBraced</codeph>,
+            <codeph>#topBraced"</codeph> erhalten kann (vgl. Kap. <xref
+            href="klammerung.dita">Klammerungen</xref>). </p>
+
+        <example> <title>Klammerung in Figurenaufstellungen</title> <fig>
+            <image href="img/4le9MRBrlh.png"/>
+            <codeblock outputclass="language-xml">&lt;castList&gt;
+  &lt;castItem&gt;
+    &lt;role xml:id="ATT"&gt;&lt;hi rendition="#g"&gt;Attus Tullus&lt;/hi&gt;, Oberfeldherr.&lt;/role&gt;
+  &lt;/castItem&gt;&lt;lb/&gt;
+  &lt;castGroup rendition="#rightBraced"&gt;
+    &lt;castItem&gt;
+      &lt;role xml:id="LUC"&gt;
+        &lt;hi rendition="#g"&gt;Lucumo&lt;/hi&gt;
+      &lt;/role&gt;
+    &lt;/castItem&gt;&lt;lb/&gt;
+    &lt;castItem&gt;
+      &lt;role xml:id="VOLT"&gt;
+        &lt;hi rendition="#g"&gt;Volturio&lt;/hi&gt;
+      &lt;/role&gt;
+    &lt;/castItem&gt;&lt;lb/&gt;
+    &lt;castItem&gt;
+      &lt;role xml:id="ARU"&gt;
+        &lt;hi rendition="#g"&gt;Aruntius&lt;/hi&gt;
+      &lt;/role&gt;
+    &lt;/castItem&gt;&lt;lb/&gt;
+    &lt;castItem&gt;
+      &lt;role xml:id="POR"&gt;
+        &lt;hi rendition="#g"&gt;Porus&lt;/hi&gt;
+      &lt;/role&gt;
+    &lt;/castItem&gt;
+    &lt;roleDesc&gt;Feldherren.&lt;/roleDesc&gt;
+  &lt;/castGroup&gt;
+&lt;/castList&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/collin_coriolan_1804/11"
+                format="html" scope="external">Collin, Heinrich Joseph von:
+                Coriolan. Berlin, 1804. [Faksimile 11]</xref></i></p>
+            </fig> </example>
+
+        <p>Einen Spezialfall stellen Nennungen von Schauspielern dar, die in
+            einer Aufführung des Dramas eingesetzt wurden. Diese Schauspieler
+            werden mit dem <codeph>&lt;actor&gt;</codeph>-Element ausgezeichnet: </p>
+        <codeblock outputclass="language-xml">&lt;castItem&gt;
+  &lt;role xml:id="[ID]"&gt;[Figur]&lt;/role&gt;
+  &lt;roleDesc&gt;[Funktion]&lt;/roleDesc&gt;&lt;!-- falls vorhanden --&gt;
+  &lt;actor&gt;[Schauspieler]&lt;/actor&gt;
+&lt;/castItem&gt;</codeblock>
+
+        <example> <title>Figurenaufstellung mit Nennung des Schauspielers/der
+                Schauspielerin</title> <fig>
+            <image href="img/HiXXMapbCd.png"/>
+            <codeblock outputclass="language-xml">&lt;castList&gt;
+  &lt;head&gt;
+    &lt;hi rendition="#c"&gt;Perſonen.&lt;/hi&gt;
+  &lt;/head&gt;&lt;lb/&gt;
+  &lt;milestone rendition="#hr" unit="section"/&gt;&lt;lb/&gt;
+  &lt;p&gt;
+    &lt;hi rendition="#c"&gt;Beſetzung im k. k. priv. Theater an der Wien.&lt;/hi&gt;
+  &lt;/p&gt;&lt;lb/&gt;
+  &lt;milestone rendition="#hr" unit="section"/&gt;&lt;lb/&gt;
+  &lt;castItem&gt;
+    &lt;role xml:id="GRI"&gt;
+      &lt;hi rendition="#b"&gt;Grillhofer,&lt;/hi&gt;
+    &lt;/role&gt;
+    &lt;roleDesc&gt;ein reicher Bauer.&lt;/roleDesc&gt;
+    &lt;space dim="horizontal"/&gt;
+    &lt;actor&gt;
+      &lt;hi rendition="#et"&gt;Herr Martinelli.&lt;/hi&gt;
+    &lt;/actor&gt;
+  &lt;/castItem&gt;&lt;lb/&gt;
+  &lt;castItem&gt;
+    &lt;role xml:id="DUS"&gt;
+      &lt;hi rendition="#b"&gt;Duſterer,&lt;/hi&gt;
+    &lt;/role&gt;
+    &lt;roleDesc&gt;ſein Schwager.&lt;/roleDesc&gt;
+    &lt;space dim="horizontal"/&gt;
+    &lt;actor&gt;
+      &lt;hi rendition="#et"&gt;〃 Frieſe.&lt;/hi&gt;
+    &lt;/actor&gt;
+  &lt;/castItem&gt;
+&lt;/castList&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/anzengruber_gwissenswurm_1874/11"
+                format="html" scope="external">Anzengruber, Ludwig: Der
+                G'wissenswurm. Wien, 1874. [Faksimile 11]</xref></i></p>
+            </fig> </example>
+    </body>
+</topic>

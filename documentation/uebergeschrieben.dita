@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ueb">
+   <title>Übergeschriebenes</title>
+   <body>
+     <p>
+      Kombinationen aus Zeichen mit übergeschriebenen Zeichen, für die es keine 
+      Unicode-Entsprechung gibt, werden mittels <codeph>&lt;hi @rendition="#stacked"&gt;</codeph> 
+      ausgezeichnet. Die betreffenden Zeichen werden entsprechend der Unicode-Empfehlung für die 
+      <xref href="http://unicode.org/notes/tn28/UTN28-PlainTextMath-v2.pdf" scope="external" format="pdf">Schreibung 
+      von Binomialkoeffizienten</xref> mittels einer unterbrochenen Pipe (¦ U+00A6 BROKEN BAR) 
+      voneinander getrennt. Dabei steht das Basiszeichen jeweils an erster Stelle.</p>
+      <example>
+         <title>Übergeschriebene Zeichen</title><fig>
+            <image href="img/rh21LavgZb.png"/>
+            <codeblock outputclass="language-xml">0,28 &lt;hi rendition="#stacked"&gt;P&amp;#x0336; ￤ ˙˙˙ ￤ ˙˙&lt;/hi&gt;</codeblock>
+            <p><i>Quelle: <xref
+               href="http://www.deutschestextarchiv.de/quenstedt_mineralogie_1854/510"
+               format="html" scope="external">Quenstedt, Friedrich August: Handbuch der
+               Mineralogie. Tübingen, 1855. [Faksimile 510]</xref></i></p>
+         </fig></example>
+     <p>Folgen mehrere übergeschriebene Zeichen übereinander, so wird <codeph>&lt;hi rendition="#stacked"&gt;</codeph> 
+     geschachtelt.</p>
+     <example>
+         <title>Mehrfach übereinander geschriebene Zeichen</title><fig>
+            <image href="img/bachUebergeschr.png"/>
+            <codeblock outputclass="language-xml">&lt;hi rendition="#stacked"&gt;2 ￤ 4&lt;/hi&gt;
+und
+&lt;hi rendition="#stacked"&gt;2 ￤ 4 ￤ 6&lt;/hi&gt;</codeblock>
+            <p><i>Quelle: <xref
+               href="http://www.deutschestextarchiv.de/bach_versuch02_1762/107"
+               format="html" scope="external">Bach, Carl Philipp Emanuel: Versuch über die wahre Art das Clavier zu spielen. Bd. 2. Berlin, 1762. [Faksimile 107]</xref></i></p>
+         </fig></example>
+   </body>
+</topic>

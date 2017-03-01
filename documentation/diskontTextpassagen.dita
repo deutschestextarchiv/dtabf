@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_dktp">
+  <title>Bezüge zwischen Textbestandteilen eines Dokuments</title>
+    <titlealts><navtitle>Interne Textbezüge</navtitle></titlealts>
+  <body>
+    <p>Aufeinander Bezug nehmende Textteile, die durch Elementgrenzen voneinander getrennt sind, 
+        werden miteinander verknüpft. Dabei sind zweierlei Bezüge möglich: </p>
+  </body>
+</topic>

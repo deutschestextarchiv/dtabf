@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_qrw_sk2_qs">
+  <title>Die Angaben zur übergeordneten Zeitschrift/Reihe der Quelle <codeph>(//fileDesc/sourceDesc/biblFull/seriesStmt)</codeph></title>
+    <titlealts><navtitle>Series Statement (Source)</navtitle></titlealts>
+  <body>
+    <p>Ist die Vorlage als Band einer Reihe oder als Aufsatz innerhalb eines Bandes erschienen,
+      so werden die Angaben zur Reihe in einem <i>Series Statement</i> (<codeph>&lt;seriesStmt&gt;</codeph>) 
+      innerhalb der <i>Source Description</i> festgehalten.
+    </p>
+    <p>Dabei wird der Titel der übergeordneten Reihe/Zeitschrift in einem oder mehreren 
+      <codeph>&lt;title&gt;</codeph>-Element(en) wiedergegeben. Das Attribut <codeph>@level</codeph> spezifiziert, welcher 
+      Art die übergeordnete Publikation ist. Es kann die Werte <codeph>'s'</codeph> (series; Reihe) und <codeph>'j'</codeph> 
+      (journal; Zeitschrift) annehmen. Das <codeph>@type</codeph>-Attribut gibt die Art des genannten Titels an. Es kann die Werte 
+      <codeph>'main'</codeph> (Haupttitel) und <codeph>'sub'</codeph> (Untertitel) haben.
+    </p>
+    <p>Der Ort der Publikation innerhalb der genannten Zeitschrift/Reihe wird in dem Element <codeph>&lt;biblScope&gt;</codeph> wiedergegeben. 
+      Hierfür kann es mehrfach verwendet werden, wobei das <codeph>@unit</codeph>-Attribut die Art der jeweiligen Angabe spezifiziert.
+      Das <codeph>@unit</codeph>-Attribut kann dabei die folgenden Werte annehmen: 
+    </p>
+    <ul>
+      
+      <li>
+        <codeph>volume</codeph>: Jahrgang bei Zeitschriften/Band bei Reihen</li>
+      
+      <li>
+        <codeph>issue</codeph>: Heft bei Zeitschriften</li>
+      
+      <li>
+        <codeph>pages</codeph>: bei Zeitschriften Angabe, welche Seiten der Artikel umfasst</li>
+      
+    </ul>
+    <p>Das <i>Series Statement</i> ist somit unterschiedlich strukturiert, je nachdem, ob es sich bei dem 
+      vorliegenden Werk um eine Monographie oder unselbständige Publikation innerhalb einer Reihe oder einen 
+      Artikel innerhalb einer Zeitschrift handelt.
+    </p>
+    <p>Im Falle einer Monographie innerhalb einer Reihe ist das <codeph>&lt;seriesStmt&gt;</codeph> wie folgt aufgebaut:
+    </p>
+    <codeblock outputclass="language-xml">&lt;seriesStmt&gt;
+  &lt;title level="s" type="main"&gt;[Haupttitel der Reihe]&lt;/title&gt;
+  &lt;title level="s" type="sub"&gt;[ggf. Untertitel der Reihe]&lt;/title&gt;
+  &lt;biblScope unit="volume"&gt;[Bandbezeichnung für die Monographie innerhalb der Reihe]&lt;/biblScope&gt;
+&lt;/seriesStmt&gt;</codeblock>
+    <p>Im Falle einer <i>unselbständigen Publikation</i> innerhalb eines Sammelbandes in einer Reihe ist das 
+      <codeph>&lt;seriesStmt&gt;</codeph> wie folgt aufgebaut:
+    </p>
+    <codeblock outputclass="language-xml">&lt;seriesStmt&gt;
+  &lt;title level="s" type="main"&gt;[Haupttitel der Reihe]&lt;/title&gt;
+  &lt;title level="s" type="sub"&gt;[ggf. Untertitel der Reihe]&lt;/title&gt;
+  &lt;biblScope unit="volume"&gt;[Bandbezeichnung für den Sammelband innerhalb der Reihe]&lt;/biblScope&gt;
+  &lt;biblScope unit="pages"&gt;[Seitenangabe]&lt;/biblScope&gt;
+&lt;/seriesStmt&gt;</codeblock>
+    <p>Im Falle einer <i>unselbständigen Publikation</i> innerhalb einer Zeitschrift 
+      ist das <codeph>&lt;seriesStmt&gt;</codeph> wie folgt aufgebaut:
+    </p>
+    <codeblock outputclass="language-xml">&lt;seriesStmt&gt;
+  &lt;title level="j" type="main"&gt;[Haupttitel der Zeitschrift]&lt;/title&gt;
+  &lt;title level="j" type="sub"&gt;[ggf. Untertitel der Zeitschrift]&lt;/title&gt;
+  &lt;biblScope unit="volume"&gt;[Jahrgang]&lt;/biblScope&gt;
+  &lt;biblScope unit="issue"&gt;[Heft]&lt;/biblScope&gt;
+  &lt;biblScope unit="pages"&gt;[Seitenangabe]&lt;/biblScope&gt;
+&lt;/seriesStmt&gt;</codeblock>
+  </body>
+</topic>

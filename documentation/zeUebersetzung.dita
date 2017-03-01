@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_34">
+    <title>Übersetzungen von Zitaten</title>
+    <body>
+        <p>Ist einem Zitat in Originalsprache eine Übersetzung beigegeben, so
+            wird diese Übersetzung ebenfalls mit dem Element
+            <codeph>&lt;quote&gt;</codeph> umschlossen. Ein möglicherweise der
+            Übersetzung beigegebener Autor wird in einem
+            <codeph>&lt;bibl&gt;</codeph>-Element angegeben. Beide Teile
+            (<codeph>&lt;quote&gt;</codeph> und <codeph>&lt;bibl&gt;</codeph>)
+            werden mit einem <codeph>&lt;cit&gt;</codeph>-Element umschlossen.
+            (Vgl. die <xref
+            href="zeMitAutor.dita"
+            >Hinweise zur Auszeichnung von Zitaten mit Nennung des Autors</xref>
+            bzw. <xref href="zeOhneAutor.dita">ohne Nennung des
+            Autors</xref>.) </p>
+        <p>Das Element <codeph>&lt;quote&gt;</codeph> der Übersetzung erhält ein
+            Attribut-Wert-Paar <codeph>@type="translation"</codeph>. Das Element
+            <codeph>&lt;quote&gt;</codeph> des Originalzitats erhält ein
+            Attribut-Wert-Paar <codeph>@xml:lang="[ISO 639-3 Code]"</codeph>, in
+            welchem die Sprache spezifiziert ist. (Zur Auszeichnung
+            fremdsprachlichen Materials s. unten Kap. <xref
+            href="inlineAnnotation.dita"
+            >Fremdsprachliches Material</xref>.) </p>
+        <p>Beide <codeph>&lt;quote&gt;</codeph>-Elemente (Originalzitat und
+            dessen Übersetzung) werden mittels <codeph>@xml:id</codeph> und
+            <codeph>@corresp</codeph> miteinander verknüpft. </p>
+        <codeblock outputclass="language-xml">&lt;cit&gt;
+  &lt;quote xml:lang="[ISO 639-3 Code]" xml:id="[ID-Originalzitat]" corresp="[ID-Übersetzung]"&gt;[Zitat in Originalsprache]&lt;/quote&gt;
+  &lt;bibl&gt;[Urheber des Zitats]&lt;/bibl&gt;
+&lt;/cit&gt;
+&lt;cit&gt;&lt;!-- gegebenenfalls --&gt;
+  &lt;quote type="translation" xml:id="[ID-Übersetzung]" corresp="[ID-Originalzitat]"&gt;[Zitat in Übersetzung]&lt;/quote&gt;
+  &lt;bibl&gt;[Urheber des Zitats/der Übersetzung]&lt;/bibl&gt;&lt;!-- gegebenenfalls --&gt;
+&lt;/cit&gt;
+</codeblock>
+
+        <example> <title>Kodierung von übersetzten Zitaten</title> <fig>
+            <image href="img/NVwr1q5NEH.png"/><p/>
+            <image href="img/ZM1qb4lx9Z.png"/>
+            <codeblock outputclass="language-xml">&lt;quote corresp="qte2b" xml:id="qte2a" xml:lang="lat"&gt;
+  &lt;hi rendition="#aq"&gt;Laudatas oſtentat auis Iunonia pennas.&lt;lb/&gt;
+  Si tacite ſpectes, illa recondit opes.&lt;/hi&gt;
+&lt;/quote&gt;&lt;lb/&gt;
+&lt;p&gt;
+  &lt;hi rendition="#c"&gt;Das iſt/&lt;/hi&gt;
+&lt;/p&gt;&lt;lb/&gt;
+&lt;pb n="266" facs="#f0276"&gt;&lt;lb/&gt;
+&lt;quote type="translation" corresp="#qte2a" xml:id="qte2b"&gt;
+  &lt;lg type="poem"&gt;
+    &lt;l&gt;Wenn du den Pfawen wirſt hoch ru&amp;#x0364;hmen/&lt;/l&gt;&lt;lb/&gt;
+    &lt;l&gt;So zeigt er dir ſeins Schwantzes Blumen.&lt;/l&gt;&lt;lb/&gt;
+    &lt;l&gt;Bleibſtu aber ſtillſchweigend beſtehen/&lt;/l&gt;&lt;lb/&gt;
+    &lt;l&gt;So leſt er ſeinen Schatz nicht ſehen.&lt;/l&gt;
+  &lt;/lg&gt;
+&lt;/quote&gt;&lt;lb/&gt;
+            </codeblock>
+            <p><i>Quelle a: <xref
+                href="http://www.deutschestextarchiv.de/rollenhagen_reysen_1603/275"
+                format="html" scope="external">Rollenhagen, Gabriel: Vier Bücher
+                Wunderbarlicher biß daher vnerhörter/ vnd vngleublicher
+                Jndianischer reysen. Magdeburg, 1603. [Faksimile 275]</xref></i></p>
+            <p><i>Quelle b: <xref
+                href="http://www.deutschestextarchiv.de/rollenhagen_reysen_1603/276"
+                format="html" scope="external">Ebd. [Faksimile 276]</xref></i></p>
+            </fig> </example>
+        
+         
+    </body>
+</topic>

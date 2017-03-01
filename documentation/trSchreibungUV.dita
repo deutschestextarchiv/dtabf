@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="trUv">
+  <title>Unterscheidung von u und v</title>
+<body>
+<p>
+  Die Grapheme <tt>u</tt> und <tt>v</tt>, die in den Vorlagen jeweils sowohl den
+  Laut <tt>/u/</tt> als auch den Laut <tt>/f/</tt> repräsentieren können, werden vorlagengetreu
+  wiedergegeben.
+  (z.&#x202f;B. <tt>vnd</tt>, <tt>vnuertig</tt>).
+</p>
+</body>
+</topic>

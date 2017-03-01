@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+  <topic id="topic_a54_t2p_yw">
+    <title>Besonderheiten der Kapitelstruktur</title>
+    <titlealts><navtitle>Kapitelstruktur</navtitle></titlealts>
+    <body>
+      <section>
+          <title>Kapitel</title>
+          
+          <p>Kapitel in Manuskripten werden mit dem Element <codeph>&lt;div&gt;</codeph> umschlossen. Dabei kann das <codeph>@type</codeph>-Attribut
+            neben den im DTABf erlaubten Werten zusätzliche Werte für manuskripttypische Textsorten enthalten:
+          </p>
+          <table>
+            <tgroup cols="2">
+              <thead>
+                <row>
+                  <entry><codeph>@type</codeph></entry>
+                  <entry>Bedeutung</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry><codeph>session</codeph></entry>
+                  <entry>Mitschrift einer Vorlesungsstunde</entry>
+                </row>
+                <row>
+                  <entry><codeph>letter</codeph></entry>
+                  <entry>Brief</entry>
+                </row>
+              </tbody>
+            </tgroup>
+
+        </table>
+        <codeblock outputclass="language-xml">&lt;div type="session"&gt;[Mitschrift einer Vorlesungsstunde]&lt;/div&gt;</codeblock></section>
+    <section>
+        
+        
+          <title>Titel</title>
+          
+          <p>Ist der Titel eines Kapitels im Manuskript am Rand eingetragen, so erhält das Element
+            <codeph>&lt;head&gt;</codeph> ein <codeph>@type</codeph>-Attribut, welches die Werte <codeph>"leftMargin"</codeph> 
+            (Eintragung am linken Rand) oder <codeph>"rightMargin"</codeph> (Eintragung am rechten Rand) erhalten kann.
+          </p>
+    </section>
+      <codeblock outputclass="language-xml">&lt;head type="leftMargin"&gt;[Titel am linken Blattrand]&lt;/head&gt;</codeblock>
+      <codeblock outputclass="language-xml">&lt;head type="rightMargin"&gt;[Titel am rechten Blattrand]&lt;/head&gt;</codeblock>
+    </body>
+  </topic>
+

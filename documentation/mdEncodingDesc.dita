@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_k15_1lj_qs">
+  <title>Editorische Richtlinien <codeph>(//encodingDesc)</codeph></title>
+    <titlealts><navtitle>Encoding Description</navtitle></titlealts>
+  <body>
+    <p>Hinweise zu den editorischen Richtlinien, die der DTA-Textausgabe zugrunde liegen, werden in der 
+      <i>Encoding Description</i> (<codeph>&lt;encodingDesc&gt;</codeph>) festgehalten.</p>
+    <p>Dabei beinhaltet das 
+      Unterelement <i>Editorial Description</i> Angaben zur Erfassungsart für den jeweiligen Text sowie 
+      zum Grad der Konformität des Textes mit den DTA-Richtlinien (<xref href="http://www.deutschestextarchiv.de/doku/richtlinien" format="html">DTA-Transkriptionsrichtlinien</xref> und 
+      <xref href="http://www.deutschestextarchiv.de/doku/basisformat" format="html">DTA-Basisformat</xref>).
+    </p>
+    <p>
+      Das Unterelement <i>Tags Declaration</i> enthält in mehreren <codeph>&lt;rendition&gt;</codeph>-Elementen 
+      die Angabe, wie die <codeph>@rendition</codeph>-Werte des TEI-Textes beim Rendering in CSS aufgelöst 
+      werden sollen.
+    </p>
+    <codeblock outputclass="language-xml">&lt;encodingDesc&gt;
+  &lt;editorialDecl&gt;
+    &lt;p&gt;[Angaben zu den Transkriptions- und Annotationsrichtlinien]&lt;/p&gt;
+    &lt;p&gt;[weitere Angaben zu den Transkriptions- und Annotationsrichtlinien]&lt;/p&gt;
+  &lt;/editorialDecl&gt;
+  &lt;rendition scheme="css" xml:id="rendition-[@rendition-Wert]"&gt;[CSS-Entsprechung]&lt;/rendition&gt;
+&lt;/encodingDesc&gt;</codeblock>
+    <note type="attention">Die CSS-Entsprechungen, die im DTA für die jeweiligen <codeph>@rendition</codeph>-Werte genutzt wurden,
+    sind im Kapitel <xref href="typogrAllg.dita">Typographische Besonderheiten - Richtlinien der Kodierung</xref> 
+    dokumentiert.</note>
+  </body>
+</topic>

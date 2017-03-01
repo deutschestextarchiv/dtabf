@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jLinking">
+  <title>Verknüpfungen diskontinuierlicher Artikelteile</title>
+    <titlealts><navtitle>Verknüpfungen</navtitle></titlealts>
+  <body>
+    <p>
+  Wird ein Artikel unterbrochen, entweder, weil er in einer späteren Ausgabe fortgesetzt wird, oder,
+  weil innerhalb der Ausgabe Beiträge einer anderen Kategorie (z.B. des Feuilletons) eingeschoben
+  werden, so werden die Teile des betreffenden Artikels miteinander verknüpft. 
+</p>
+<p>
+  Innerhalb einer Ausgabe erfolgt die Verknüpfung durch die Attribute <codeph>@prev</codeph>, <codeph>@next</codeph> 
+  und <codeph>@xml:id</codeph>. Für eine genauere Beschreibung dieser Verknüpfungsmethode vgl. 
+  <xref href="einschub.dita">Kapitel: Einschübe und diskontinuierliche Textpassagen</xref>.
+</p>
+<p>
+  Wird ein Artikel unterbrochen und in einer späteren Ausgabe fortgesetzt, so erfolgt die Verknüpfung
+  der einzelnen Teilartikel über das <codeph>&lt;ref&gt;</codeph>-Element, welches entweder leer ist oder 
+  den in der Quelle gegebenen Hinweis auf eine folgende Forsetzung umschließt. Sämtliche Teile eines 
+  Artikels werden mit <codeph>&lt;ref&gt;</codeph>-Elementen versehen. Diese stehen am Schluss des 
+  Teilartikels, falls in einer späteren Ausgabe eine Fortsetzung folgt, oder am Beginn eines Artikels, 
+  falls auf einen vorhergehenden Teilartikel verwiesen werden soll. Der eigentliche Verweis erfolgt 
+  über das Attribut <codeph>@target</codeph>, welches den Pfad zu dem entsprechenden Artikel sowie die 
+  eindeutige Artikel-ID enthält.
+</p>
+<p><b>Beispiel: Verknüpfung von drei Artikelteilen in unterschiedlichen Ausgaben</b></p>
+<codeblock outputclass="language-xml">&lt;body>&lt;!-- Ausgabe 1 -->
+  &lt;!-- [...] -->
+  &lt;div type="jArticle" xml:id="[xml:id-Teil-1]">&lt;!-- Artikel Teil 1 -->
+    &lt;p>[Beginn des Artikels]&lt;/p>
+    &lt;p>[weiterer Artikeltext]&lt;/p>
+    &lt;p>
+      &lt;ref target="[URI-Ausgabe-2/xml:id-Teil-2]">[Hinweis auf Fortsetzung, z.B. "Forts. folgt"]&lt;/ref>
+    &lt;/p>
+  &lt;/div>
+  &lt;!-- [...] -->
+&lt;/body>
+&lt;body>&lt;!-- Ausgabe 2 -->
+  &lt;!-- [...] -->
+  &lt;div type="jArticle" xml:id="[xml:id-Teil-2]">&lt;!-- Artikel Teil 2 -->
+    &lt;p>&lt;ref target="[URI-Ausgabe-1/xml:id-Teil-1]"/>&lt;/p>
+    &lt;p>[Artikeltext]&lt;/p>
+    &lt;p>[weiterer Artikeltext]&lt;/p>
+    &lt;p>
+      &lt;ref target="[URI-Ausgabe-3/xml:id-Teil-3]">[Hinweis auf Fortsetzung, z.B. "Forts. folgt"]&lt;/ref>
+    &lt;/p>
+  &lt;/div>
+  &lt;!-- [...] -->
+&lt;/body>
+&lt;body>&lt;!-- Ausgabe 3 -->
+  &lt;!-- [...] -->
+  &lt;div type="jArticle" xml:id="[xml:id-Teil-3]">&lt;!-- Artikel Teil 3 -->
+    &lt;p>
+      &lt;ref target="[URI-Ausgabe-2/xml:id-Teil-2]"/>
+    &lt;/p>
+    &lt;p>[Artikeltext]&lt;/p>
+    &lt;p>[Schluss des Artikels]&lt;/p>
+  &lt;/div>
+  &lt;!-- [...] -->
+&lt;/body>
+</codeblock>
+  </body>
+</topic>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_abbg">
+  <title>Grundstruktur der Kodierung von Abbildungen</title>
+  <titlealts><navtitle>Abbildungen Grundstruktur</navtitle></titlealts>
+  <body>
+    <p>Es gibt diverse Formen von Abbildungen, z.B. den Text illustrierende Abbildungen, Tafeln,
+      Karten, Notenbeispiele, Graphen, spezielle Sonderzeichen. </p>
+    <p>Abbildungen können jeweils einen Titel (<codeph>&lt;head&gt;</codeph>) und nähere
+      Bilderläuterungen (wiedergegeben als normaler Text in Absätzen: <codeph>&lt;p&gt;</codeph>)
+      enthalten:</p>
+    <codeblock outputclass="language-xml">&lt;figure&gt;
+  &lt;head&gt;[ggf. Titel der Abbildung]&lt;/head&gt;
+  &lt;p&gt;[ggf. Erläuterung zur Abbildung im Text]&lt;/p&gt;
+&lt;/figure&gt;</codeblock>
+    <p>Die Elemente <codeph>&lt;head&gt;</codeph> und <codeph>&lt;p&gt;</codeph> sind dabei
+      optional. Steht eine Abbildung ohne Titel oder weitere Erläuterung, wird sie durch ein leeres
+        <codeph>&lt;figure/&gt;</codeph>-Element dokumentiert.</p>
+    <example>
+      <title>Abbildung mit Titel</title><fig>
+        <image href="img/U9c7EFoy2w.png"/>
+        <codeblock outputclass="language-xml">&lt;figure&gt;
+  &lt;head&gt;Fig. 274.&lt;/head&gt;
+&lt;/figure&gt;</codeblock>
+        <p><i>Quelle: <xref
+              href="http://www.deutschestextarchiv.de/wanderley_bauconstructionslehre02_1878/279"
+              format="html" scope="external">Wanderley, Germano: Handbuch der Bauconstruktionslehre.
+              2. Aufl. Bd. 2. Die Constructionen in Stein. Leipzig, 1878. [Faksimile 279]</xref>
+          </i></p>
+      </fig>
+    </example>
+    <example>
+      <title>Abbildung mit Titel und Erläuterungen</title><fig>
+        <image href="img/YivGAoZFH_.png"/>
+        <codeblock outputclass="language-xml">&lt;figure&gt;
+  &lt;head&gt;&lt;hi rendition="#g"&gt;Fig&lt;/hi&gt;. 13.&lt;/head&gt;
+  &lt;p&gt;&lt;hi rendition="#g"&gt;Fig&lt;/hi&gt;. 13. &lt;hi rendition="#g"&gt;Helm&lt;/hi&gt; 
+  mit Zimier des Königs&lt;lb/&gt;&lt;hi rendition="#g"&gt;Jakob I. von Arragonien&lt;/hi&gt; 
+  (1206—1276).&lt;lb/&gt; Orientalisierend. Armeria Real zu Madrid.&lt;/p&gt;
+&lt;/figure&gt;&lt;lb/&gt;</codeblock>
+        <p><i>Quelle: <xref
+              href="http://www.deutschestextarchiv.de/boeheim_waffenkunde_1890/49"
+              format="html" scope="external">Boeheim, Wendelin: Handbuch der Waffenkunde. Leipzig,
+              1890. [Faksimile 49]</xref>
+          </i></p>
+      </fig></example>
+  </body>
+</topic>

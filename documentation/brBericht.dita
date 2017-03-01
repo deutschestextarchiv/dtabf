@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_51">
+    <title>Briefähnliche Berichte</title>
+    <body>
+        <p>Grußformeln, Datums- und Ortsangaben in briefähnlichen Textpassagen
+            (z.B. in Vorreden an den Leser, Vorworten, Einleitungen) werden wie
+            in Briefen behandelt.</p>
+        <example> <title>Datumsangaben in briefähnlichen Berichten</title> <fig>
+            <image href="img/xZkvMl_Ycr.png"/>
+            <codeblock outputclass="language-xml">&lt;div n="1"&gt;
+  &lt;head&gt;V.&lt;/head&gt;&lt;lb/&gt;
+  &lt;opener&gt;
+    &lt;dateline&gt;
+          Auf dem Berge &lt;placeName&gt;Hissarlik&lt;/placeName&gt;, 24. November 1871.
+        &lt;/dateline&gt;
+  &lt;/opener&gt;&lt;lb/&gt;
+  &lt;p&gt;Seit meinem Bericht vom 18. und 21. d. M. habe ich,&lt;lb/&gt;
+trotz des fortwährenden Regenwetters, noch drei Tage&lt;lb/&gt;
+gearbeitet; leider aber sehe ich mich jetzt gezwungen,&lt;lb/&gt;[...]
+&lt;/p&gt;
+&lt;/div&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/schliemann_trojanische_1874/103"
+                format="html" scope="external">Schliemann, Heinrich: Trojanische
+                Alterthümer. Bericht über die Ausgrabungen in Troja. Leipzig,
+                1874. [Faksimile 103]</xref></i></p>
+            </fig> </example>
+        
+    </body>
+</topic>

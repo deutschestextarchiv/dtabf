@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="DTABfjArtStruct">
+  <title>Strukturierung innerhalb eines Artikels</title>
+    <titlealts><navtitle>Artikelstruktur</navtitle></titlealts>
+  <body>
+    <p>
+  <b>Titel von Artikeln oder Artikelgruppen</b> werden jeweils im <codeph>&lt;head&gt;</codeph>-Element 
+  des <codeph>&lt;div&gt;</codeph>-Elements wiedergegeben. 
+  (Vgl. <xref href="div.dita">Kapitel: Texteinteilung auf Kapitelebene</xref>.)
+</p>
+<p>
+  <b>Angaben zum Autor, Ort und Datum zu Beginn eines Artikels</b> werden als Titel des Artikels behandelt und im
+  Element <codeph>&lt;head&gt;</codeph> wiedergegeben. Die Autorangabe bzw. dessen Korrespondenzzeichen 
+  steht im Element <codeph>&lt;bibl&gt;</codeph>, welches das Unterelement <codeph>&lt;author&gt;</codeph>
+  erhält. Die Orts- und Datumsangabe erfolgt im Element <codeph>&lt;dateline&gt;</codeph>.
+</p>
+<codeblock outputclass="language-xml">&lt;div type="jArticle"&gt;
+  &lt;head&gt;
+    &lt;bibl&gt;
+      &lt;author&gt;[Autorname oder Korrespondenzzeichen]&lt;/author&gt;
+    &lt;/bibl&gt;
+    &lt;dateline&gt;[Ort, Datum]&lt;/dateline&gt;
+  &lt;/head&gt;
+&lt;/div&gt;</codeblock>
+<p>
+  Stehen die <b>Angaben zum Autor, Ort und Datum am Artikelende</b>, so werden sie am Ort
+ihres Auftretens mittels &lt;bibl&gt;/&lt;author&gt; bzw. &lt;dateline&gt; wiedergegeben. 
+</p>
+<codeblock outputclass="language-xml">&lt;div type="jArticle"&gt;
+  &lt;p&gt;[Artikeltext]&lt;/p&gt;
+  &lt;bibl&gt;
+    &lt;author&gt;[Autorname oder Korrespondenzzeichen]&lt;/author&gt;
+  &lt;/bibl&gt;
+  &lt;dateline&gt;[Ort, Datum]&lt;/dateline&gt;
+&lt;/div&gt;</codeblock>
+<p>
+  Die <b>Texterfassung</b> erfolgt seitenweise, wobei der Text einer Seite von der linken oberen Ecke aus 
+  artikelweise erfasst wird. Jeder Artikel erhält ein Attribut <codeph>@xml:id</codeph>, über welches jeweils
+  eine eindeutige ID zugeordnet wird.
+</p>
+  </body>
+</topic>

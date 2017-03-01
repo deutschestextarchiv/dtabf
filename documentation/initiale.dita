@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ini">
+  <title>Initialen</title>
+  <body>
+    <example>
+      <title>Kodierung von Initialen (1)</title><fig>
+        <image href="img/zOxTW_9m2f.png" scale="50"/>
+        <codeblock outputclass="language-xml">&lt;hi rendition="#in"&gt;V&lt;/hi&gt;a&amp;#x0364;terchen</codeblock>
+        <p><i>Quelle: <xref
+              href="http://www.deutschestextarchiv.de/campe_robinson02_1780/9"
+              format="html" scope="external">Campe, Joachim Heinrich: Robinson der Jüngere. Bd. 2.
+              Hamburg, 1780. [Faksimile 9]</xref>
+          </i></p>
+      </fig></example>
+    <example>
+      <title>Kodierung von Initialen (2)</title><fig>
+        <image href="img/tn154ms3HG.png" scale="60"/>
+        <codeblock outputclass="language-xml">&lt;hi rendition="#in"&gt;D&lt;/hi&gt;u</codeblock>
+        <p><i>Quelle: <xref
+              href="http://www.deutschestextarchiv.de/goetze_zeitvertreib01_1783/38"
+              format="html" scope="external">Goeze, Johann August Ephraim: Zeitvertreib und
+              Unterricht für Kinder vom dritten bis zehnten Jahr in kleinen Geschichten. Bd. 1.
+              Leipzig, 1783. [Faksimile 38]</xref>
+          </i></p>
+      </fig></example>
+    <example>
+      <title>Kodierung von Initialen (3)</title><fig>
+        <image href="img/gA_M6EFBDV.png" scale="80"/>
+        <codeblock outputclass="language-xml">&lt;hi rendition="#in"&gt;A&lt;/hi&gt;poll! nimm deine Leyer wieder,</codeblock>
+        <p><i>Quelle: <xref
+              href="http://www.deutschestextarchiv.de/karsch_gedichte_1792/188"
+              format="html" scope="external">Karsch, Anna Luise: Gedichte. Berlin, 1792. [Faksimile
+              188]</xref>
+          </i></p>
+      </fig></example>
+    <p>Initialen werden immer nur einmal wiedergegeben, auch wenn sie sich über mehrere Zeilen
+      erstrecken. Die Größe der jeweiligen Initiale wird nicht gesondert vermerkt. </p>
+    <example>
+      <title>Umgang mit mehrzeiligen Initialen</title><fig>
+        <image href="img/NrdJwXFcOf.png" scale="60"/>
+        <codeblock outputclass="language-xml">&lt;hi rendition="#in"&gt;J&lt;/hi&gt;ch</codeblock>
+        <p><i>Quelle: <xref
+              href="http://www.deutschestextarchiv.de/goetze_zeitvertreib01_1783/9"
+              format="html" scope="external">Goeze, Johann August Ephraim: Zeitvertreib und
+              Unterricht für Kinder vom dritten bis zehnten Jahr in kleinen Geschichten. Bd. 1.
+              Leipzig, 1783. [Faksimile 9]</xref>
+          </i></p>
+      </fig></example>
+  </body>
+</topic>

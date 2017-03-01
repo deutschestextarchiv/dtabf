@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_rjg_xg2_qs">
+  <title>Umgang mit Diakritika</title>
+  <body>
+    <p>Diakritika, die sich auf eine eindeutige moderne Entsprechung abbilden lassen,
+      werden entsprechend normalisiert. Dies betrifft z.B. die folgenden Zeichen:
+    </p>
+    <table>
+      <tgroup cols="2">
+        <colspec colname="col1"/>
+        <colspec colname="col2"/>
+        <thead>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">Historische Schreibung</entry>
+            <entry morerows="0" namest="col2" nameend="col2">Umsetzung als</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">aͤ, oͤ, uͤ</entry>
+            <entry morerows="0" namest="col2" nameend="col2">ä, ö, ü</entry>
+          </row>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">ſ</entry>
+            <entry morerows="0" namest="col2" nameend="col2">s</entry>
+          </row>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">ſs, ſz</entry>
+            <entry morerows="0" namest="col2" nameend="col2">ß</entry>
+          </row>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1" outputclass="specialfont">Ꝛ, ꝛ</entry>
+            <entry morerows="0" namest="col2" nameend="col2">R, r</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Diakritika, für die keine eindeutige Entsprechung gefunden werden kann (z.B. 
+      kontextbezogen ů) werden nicht normalisiert. In diesem Fall wird das 
+      entsprechende Unicode-Zeichen gesetzt.
+    </p>
+  </body>
+</topic>

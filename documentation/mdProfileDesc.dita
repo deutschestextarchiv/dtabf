@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_mcx_clj_qs">
+  <title>Dokumentklassifikationen <codeph>(//profileDesc)</codeph></title>
+    <titlealts><navtitle>Profile Description</navtitle></titlealts>
+  <body>
+    <p>Die <i>Profile Description</i> enthält Angaben zu den Sprachen, in welchen der Text hauptsächlich
+      verfasst ist (<codeph>&lt;langUsage&gt;/&lt;language ident="[Code nach ISO 639-3]"&gt;</codeph>, <xref href="http://www-01.sil.org/iso639-3/codes.asp" scope="external" format="html">→ ISO 639-3</xref>), sowie Klassifizierungen der Texte 
+      nach Textsorte, Thema und Herkunft des DTA-Volltextes (<codeph>&lt;textClass&gt;</codeph>).
+    </p>
+    <p>Für die Klassifizierung nach Textsorten und Themen sind Mehrfachklassifizierungen möglich. 
+      Die jeweils verwendeten Deskriptoren werden im Element <codeph>&lt;classCode&gt;</codeph> wiedergegeben. 
+      Das Attribut <codeph>@scheme</codeph> in <codeph>&lt;classCode&gt;</codeph> enthält einen Verweis auf das 
+      zugrundeliegende Klassifikationsschema, z.B. das 
+      <xref href="http://www.deutschestextarchiv.de/doku/klassifikation" scope="external" format="html">Klassifikationsschema der DTA-Kernkorpus-Texte</xref>. 
+    </p>
+    <p>Um die im DTA publizierten digitalisierten Volltextausgaben entsprechend ihrer Herkunft in Subkorpora zu
+      gruppieren, enthalten die Metadaten Angaben über den Kontext, in welchem der Volltext entstanden ist, sowie, 
+      damit einhergehend, zur Erfassungsmethode (z.B. <codeph>china</codeph>, <codeph>ocr</codeph>, <codeph>mts</codeph>, 
+      <codeph>aedit</codeph>, <codeph>gutenberg</codeph>, <codeph>wikisource</codeph>). Die entsprechende Angabe erfolgt jeweils in einem 
+      <codeph>&lt;classCode&gt;</codeph>-Element, wiederum mit einem Verweis auf das zugrundeliegende Klassifikationsschema 
+      (hier: das <xref href="http://www.deutschestextarchiv.de/doku/klassifikation" scope="external" format="html">Klassifikationsschema der DTA-Kernkorpus-Texte</xref>) 
+      im <codeph>@scheme</codeph>-Attribut. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;profileDesc&gt;
+  &lt;langUsage&gt;
+    &lt;language ident="[Code nach ISO 639-3, z.B. deu]"&gt;[Sprache, z.B. German]&lt;/language&gt;
+  &lt;/langUsage&gt;
+  &lt;textClass&gt;
+    &lt;classCode scheme="[URL DTA-Hauptklassifikation]"&gt;[Textsorte lt. DTA-Hauptklassifikation]&lt;/classCode&gt;
+    &lt;classCode scheme="[URL DTA-Subklassifikation]"&gt;[Textsorte lt. DTA-Subklassifikation]&lt;/classCode&gt;
+    &lt;classCode scheme="[URL DWDS-Hauptklassifikation01]"&gt;[Textsorte lt. DWDS-Hauptklassifikation 1]&lt;/classCode&gt;
+    &lt;classCode scheme="[URL DWDS-Subklassifikation01]"&gt;[Textsorte lt. DWDS-Subklassifikation 1]&lt;/classCode&gt;
+    &lt;classCode scheme="[URL DWDS-Hauptklassifikation02]"&gt;[Textsorte lt. DWDS-Hauptklassifikation 2]&lt;/classCode&gt;
+    &lt;classCode scheme="[URL DWDS-Subklassifikation02]"&gt;[Textsorte lt. DWDS-Subklassifikation 2]&lt;/classCode&gt;
+    &lt;classCode scheme="[URL Klassifikation Textherkunft]"&gt;[Herkunft des DTA-Volltextes]&lt;/classCode&gt;
+  &lt;/textClass&gt;
+&lt;/profileDesc&gt;</codeblock>
+  </body>
+</topic>

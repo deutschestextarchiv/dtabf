@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ly5_rdq_yw">
+  <title>Besonderheiten bei den Metadaten</title>
+    <titlealts><navtitle>Besonderheiten Metadaten</navtitle></titlealts>
+  <body>
+   
+      <p>
+        Die Metadaten erhalten zusätzlich zu den 
+        <xref href="metadaten.dita">DTA-Metadaten-Richtlinien</xref> 
+        weitere Manuskript-spezifische Elemente.
+      </p>
+      <p>
+        Das Element <xref href="mdSdBibl.dita"><codeph>&lt;bibl&gt;</codeph> 
+          der Source Description</xref> erhält den <codeph>@type</codeph>-Wert <codeph>"MAN"</codeph> für Manuskripte.
+      </p>
+      <p>
+        Die Manuscript Description enthält bei Manuskripten das Element <codeph>&lt;handDesc&gt;</codeph>,
+        welches die Hände des Manuskripts in jeweils einem <codeph>&lt;handNote&gt;</codeph>-Element beschreibt. 
+        Das Element <codeph>&lt;handNote&gt;</codeph> erhält dabei eine <tt>@xml:id</tt>, in welcher die jeweilige 
+        Hand eindeutig identifiziert wird. Auf diesen Identifier kann im Text mittels des <tt>@hand</tt>-Attributs 
+        verwiesen werden.
+      </p>
+  </body>
+</topic>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="trApostrophe">
+  <title>Weitere Sonderzeichen</title>
+<body>
+<p>
+  Der Umgang mit Sonderzeichen, die nicht in der Unicode-Tabelle enthalten sind und somit
+  nicht kodiert werden können, wird im Kapitel <xref href="gapSupplied.dita">Schwer bzw. nicht entzifferbare Zeichen</xref> 
+  des DTA-Basisformats näher erläutert.
+</p>
+  </body>
+</topic>

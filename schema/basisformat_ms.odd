@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">ODD file for the DTA 'base format' for manuscripts (DTABf-M)</title>
+                <editor corresp="#DTACorpusPublisher">
+                    <persName ref="http://d-nb.info/gnd/115266127"><surname>Geyken</surname><forename>Alexander</forename></persName>
+                    <persName ref="http://d-nb.info/gnd/1018099549"><surname>Haaf</surname><forename>Susanne</forename></persName>
+                    <persName ref="http://d-nb.info/gnd/1019062681"><surname>Jurish</surname><forename>Bryan</forename></persName>
+                    <persName><surname>Boenig</surname><forename>Matthias</forename></persName>
+                    <persName><surname>Thomas</surname><forename>Christian</forename></persName>
+                    <persName><surname>Wiegand</surname><forename>Frank</forename></persName>
+                </editor>
+                <respStmt>
+                    <persName ref="http://d-nb.info/gnd/1018099549"><surname>Haaf</surname><forename>Susanne</forename></persName>
+                    <resp>Creation of the DTABf ODDs; Maintenance and updates of the DTABf components (ODD, RNG, documentation)</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName type="project" xml:lang="de">Deutsches Textarchiv</orgName>
+                    <orgName type="project" xml:lang="en">German Text Archive</orgName>
+                    <email>dta@bbaw.de</email>
+                    <address><addrLine>Jägerstr. 22/23, 10117 Berlin</addrLine></address>
+                </publisher>
+                <pubPlace>Berlin</pubPlace>
+                <date type="publication">2017-01-31</date>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en">
+                        <p>Distributed under the Creative Commons Attribution-ShareAlike 3.0 Germany (CC BY-SA 3.0 DE) Licence.</p>
+                    </licence>
+                </availability>
+                <idno type="URLWeb">http://www.deutschestextarchiv.de/basisformat_ms.odd</idno>
+            </publicationStmt>
+            <notesStmt>
+                <note type="remarkDocument">This is the current ODD version for the <ref
+                        target="http://www.deutschestextarchiv.de/basisformat_ms.rng">DTA base format
+                        schema for manuscripts (DTABf-M)</ref>.</note>
+            </notesStmt>
+            <sourceDesc>
+                <p>First version published 08-2016.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>This ODD was created according to the 
+                <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html">XML/TEI P5
+                    guidelines for the TEI schema personalization and customization</ref>.</p>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <divGen type="toc"/>
+        </front>
+        <body>
+            <p>This is the TEI Customization for the DTA 'base format', used by the DFG Project
+                Deutsches Textarchiv (The German Text Archive).</p>
+            <schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="file:///C:/Users/Haaf/Documents/DTABf/ChainingODDs/out/basisformat_all.xml">
+                <!-- required modules -->
+                <moduleRef key="core" except="sp speaker stage"/>
+                <moduleRef key="header"/>
+                <moduleRef key="tei"/>
+                <moduleRef key="textstructure" except="docImprint docEdition imprimatur"/>
+                <!-- optional modules -->
+                <moduleRef key="figures"/>
+                <moduleRef key="linking"/>
+                <moduleRef key="msdescription" except="typeDesc"/>
+                <moduleRef key="namesdates"/>
+                <moduleRef key="textcrit"/>
+                <moduleRef key="transcr"/>
+                
+                <elementSpec ident="div" module="textstructure" mode="change">
+                    <attList>
+                        <attDef ident="type" mode="change">
+                            <valList type="closed" mode="replace">
+                                <valItem ident="appendix"><desc>Anhang</desc></valItem>
+                                <valItem ident="contents"><desc>Inhaltsverzeichnis</desc></valItem>
+                                <valItem ident="index"><desc>Verzeichnis</desc></valItem>
+                                <valItem ident="poem"><desc>Gedicht</desc></valItem>
+                                <!-- Level 3 -->
+                                <valItem ident="chapter"><desc>(Level 3:) Kapitel</desc></valItem>
+                                <valItem ident="diaryEntry"><desc>(Level 3:) Tagebucheintrag</desc></valItem>
+                                <valItem ident="letter"><desc>(Level 3:) Brief</desc></valItem> 
+                                <valItem ident="recipe"><desc>(Level 3:) Rezept</desc></valItem>
+                                <valItem ident="session"><desc>(Level 3:) Vorlesungsstunde/Lehreinheit/Vortrag</desc></valItem>
+                            </valList>
+                        </attDef>
+                     </attList>
+                </elementSpec>
+                <elementSpec ident="corr" module="core" mode="change">
+                    <attList>
+                        <attDef ident="type" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="fw" module="transcr" mode="change">
+                   <attList>
+                       <attDef ident="type" mode="change" usage="req">
+                           <valList type="closed" mode="replace">
+                               <valItem ident="catch"><desc>Kustode</desc></valItem>
+                               <valItem ident="pageNum"><desc>Seitennummer</desc></valItem>
+                               <valItem ident="folNum"><desc>Blattnummer</desc></valItem>
+                               <valItem ident="sig"><desc>Bogensignatur</desc></valItem>
+                           </valList>
+                       </attDef>
+                   </attList>
+               </elementSpec>
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_hr">
+<title>Horizontale Trennlinien</title>
+         <body>
+                        <p>Auf horizontale Trennlinien oder verzierte Trennelemente zwischen Textpassagen wird
+            mittels des <codeph>&lt;milestone&gt;</codeph>-Elements hingewiesen:</p>
+            <codeblock outputclass="language-xml">&lt;milestone unit="section" rendition="#hr"/&gt;&lt;lb/&gt;</codeblock>
+            <p>Berücksichtigt werden dabei allein Trennelemente zwischen Textpassagen oder am Ende
+            eines Abschnitts. Trennlinien zwischen dem Text und dem Fußnotenbereich/der Kopfzeile
+            bleiben hingegen unberücksichtigt. </p>
+           <example>
+             <title>Kodierung von horizontalen Trennlinien</title><fig>
+               <image href="img/ftVsBchW7h.png" scalefit="yes"></image>
+               <codeblock outputclass="language-xml">&lt;div n="1"> 
+  &lt;head> &lt;hi rendition="#b">&lt;hi rendition="#g">Vorwort&lt;/hi>.&lt;/hi> &lt;/head>&lt;lb/> 
+  &lt;milestone rendition="#hr" unit="section"/>&lt;lb/>
+  &lt;p>„&lt;hi rendition="#in">E&lt;/hi>rſt die Fremde lehrt uns, 
+    was wir an der Heimath be-&lt;lb/> ſitzen.“ [...]
+  &lt;/p>&lt;lb/>
+&lt;/div></codeblock>
+               <p><i>Quelle: 
+                 <xref href="http://www.deutschestextarchiv.de/fontane_brandenburg01_1862/11" format="html"  scope="external">Fontane,
+                   Theodor: Wanderungen durch die Mark Brandenburg. [Bd. 1: Die Grafschaft
+                   Ruppin. Der Barnim. Der Teltow]. Berlin, 1862. [Faksimile 11]</xref>
+               </i></p>
+             </fig></example>
+            <p>Eine Einfärbung der Linien bzw. Trennelemente kann durch die Verwendung der
+            Attribut-Wert-Kombination <codeph>@rendition="#hrBlue"</codeph> bzw.
+            <codeph>@rendition="#hrRed"</codeph> kodiert werden.</p>
+         </body>
+      </topic>

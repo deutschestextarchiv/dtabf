@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_67">
+<title>Auflösung von Abkürzungen</title>
+    <titlealts><navtitle>Abkürzungen</navtitle></titlealts>
+         <body>
+                        <p>Abkürzungen werden vorlagengetreu übernommen, d.h. sie werden nicht stillschweigend aufgelöst. 
+      Für die Auflösung von Abkürzungen steht das Element <codeph>&lt;choice&gt;</codeph> mit den 
+      Unterelementen <codeph>&lt;abbr&gt;</codeph> und <codeph>&lt;expan&gt;</codeph> zur Verfügung. Dabei
+      steht in <codeph>&lt;abbr&gt;</codeph> die Abkürzung, wie sie aus der Vorlage übernommen wurde. In 
+      <codeph>&lt;expan&gt;</codeph> steht die expandierte Form der Abkürzung.</p>
+            <codeblock outputclass="language-xml">&lt;choice&gt;
+  &lt;abbr&gt;[Abkürzung entsprechend der Vorlage]&lt;/abbr&gt;
+  &lt;expan&gt;[Auflösung/Expansion der Abkürzung]&lt;/expan&gt;
+&lt;/choice&gt;</codeblock>
+            <p>Soll eine Abkürzung nur als solche markiert werden ohne Angabe der zugehörigen Expansion, so
+        wird das Element <codeph>&lt;abbr&gt;</codeph> gesetzt. Die Elemente <codeph>&lt;choice&gt;</codeph>
+        und <codeph>&lt;expan&gt;</codeph> entfallen in diesem Fall. 
+      </p>
+            <codeblock outputclass="language-xml">&lt;abbr&gt;[Abkürzung entsprechend der Vorlage]&lt;/abbr&gt;</codeblock>
+            <note type="caution">Eine Expansion kann jedoch nie ohne die zugehörige, aus der Vorlage entnommene Abkürzung
+        stehen (stillschweigende Auflösungen von Abkürzungen sind unzulässig). Das Element 
+        <codeph>&lt;expan&gt;</codeph> kann somit nie ohne zugehöriges <codeph>&lt;choice&gt;</codeph> und 
+        <codeph>&lt;abbr&gt;</codeph> stehen. 
+      </note>
+            <p>Abkürzungen werden generell mit dem im Unicode-Standard dafür vorhandenen Zeichen wiedergegeben.
+        Findet sich für eine Abkürzung kein Äquivalent im Unicode-Standard, so kann die stellvertretende
+        Unicode-Entität <codeph>&amp;#xFFFC;</codeph> (OBJECT REPLACEMENT CHARACTER) gesetzt werden. In diesem Fall sollte 
+        die korrekte Auflösung der betreffenden Abkürzung im Element <codeph>&lt;expan&gt;</codeph> wiedergegeben
+        werden.
+      </p>
+            <p>Zur Kodierung nicht entzifferbarer bzw. nicht interpretierbarer Auflösungen vgl. Kap. 
+        <xref href="gapSupplied.dita">Schwer bzw. nicht entzifferbare Zeichen und Auslassungen</xref>
+      
+            </p>
+         </body>
+      </topic>

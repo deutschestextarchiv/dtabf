@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_32">
+    <title>Epigraphe</title>
+    <body>
+        <section><title>Allgemeines</title>
+        <p>Epigraphe, d.h. Sinnsprüche am Beginn eines Buches, Kapitels oder
+            Abschnittes, werden mit dem Element
+            <codeph>&lt;epigraph&gt;</codeph> ausgezeichnet. Der eigentliche
+            Epigraphtext wird, wenn es sich um Prosatext handelt, in Paragraphen
+            (<codeph>&lt;p&gt;</codeph>) wiedergegeben. Handelt es sich um ein
+            Epigraph in Versform, so wird es durch das
+            <codeph>&lt;lg&gt;</codeph>-Element umrahmt (s. Kap. <xref
+            href="zeVers.dita"
+            >Zitate/Epigraphe als Versgruppen</xref>). </p>
+</section>
+        <section>
+        <title>Epigraph, das kein Zitat darstellt:</title>
+        <codeblock outputclass="language-xml">&lt;epigraph&gt;
+  &lt;p&gt;[Epigraphtext]&lt;/p&gt;
+&lt;/epigraph&gt;</codeblock>
+</section>
+        <example> <title>Epigraphe, die keine Zitate sind</title> <fig>
+            <image href="img/rdDfXDNxcs.png"/>
+            <codeblock outputclass="language-xml">
+&lt;epigraph&gt;
+  &lt;p&gt;Audiatur et altera pars.&lt;/p&gt;
+&lt;/epigraph&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/curtius_sprachforschung_1885/98"
+                format="html" scope="external">Curtius, Georg: Zur Kritik der
+                neuesten Sprachforschung. Leipzig, 1885. [Faksimile
+                98]</xref></i></p>
+            </fig> </example>
+<section>
+        <title>Zitat als Epigraph ohne Nennung des Urhebers: </title>
+        
+        <codeblock outputclass="language-xml">&lt;epigraph&gt;
+  &lt;quote&gt;[Zitattext]&lt;/quote&gt;
+&lt;/epigraph&gt;</codeblock>
+</section>
+        <example> <title>Zitat als Epigraph ohne Nennung des Urhebers</title> <fig>
+            <image href="img/uKIglJOHU5.png"/>
+            <codeblock outputclass="language-xml">&lt;epigraph&gt;
+  &lt;quote&gt;„De subjecto vetustissimo&lt;lb/&gt;
+  novissimam promovemus scientiam.“&lt;/quote&gt;
+&lt;/epigraph&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/ebbinghaus_gedaechtnis_1885/9"
+                format="html" scope="external">Ebbinghaus, Hermann: Über das
+                Gedächtnis. Leipzig, 1885. [Faksimile 9]</xref></i></p>
+            </fig> </example>
+<section>
+        <title>Zitat als Epigraph mit Nennung des Urhebers (beispielhaft): </title>
+        <codeblock outputclass="language-xml">&lt;epigraph&gt;
+  &lt;cit&gt;
+    &lt;quote&gt;[Zitattext]&lt;/quote&gt;
+    &lt;bibl&gt;[Urheber des Zitats]&lt;/bibl&gt;
+  &lt;/cit&gt;
+&lt;/epigraph&gt;</codeblock>
+</section>
+        <example> <title>Zitat als Epigraph mit Nennung des Urhebers</title> <fig>
+            <image href="img/J35mYDmL83.png"/>
+            <codeblock outputclass="language-xml">&lt;epigraph&gt;
+  &lt;cit&gt;
+    &lt;quote&gt;Süſses Leben! Schöne freundliche Gewohnheit&lt;lb/&gt;
+des Daſeyns und Wirkens! — von dir&lt;lb/&gt;
+ſoll ich ſcheiden?&lt;/quote&gt;
+    &lt;lb/&gt;
+    &lt;bibl&gt;&lt;hi rendition="#k"&gt;Göthe&lt;/hi&gt;,&lt;/bibl&gt;
+  &lt;/cit&gt;
+&lt;/epigraph&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/hufeland_leben_1797/7"
+                format="html" scope="external">Hufeland, Christoph Wilhelm: Die
+                Kunst das menschliche Leben zu verlängern. Jena, 1797.
+                [Faksimile 7]</xref></i></p>
+            </fig> </example>
+    </body>
+</topic>

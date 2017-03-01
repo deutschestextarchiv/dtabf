@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_v24_pk2_qs">
+  <title>Die Umfangsangabe zur zugrundeliegenden Quelle <codeph>(//fileDesc/sourceDesc/biblFull/extent)</codeph></title>
+    <titlealts><navtitle>Extent (Source)</navtitle></titlealts>
+  <body>
+    <p>Die Umfangsangabe (<codeph>&lt;extent&gt;</codeph>) im <codeph>&lt;biblFull&gt;</codeph>-Element der 
+      <i>Source Description</i> enthält die Angaben über den Seitenumfang der unmittelbaren Vorlage 
+      des DTA-Volltextes. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;extent&gt;
+  &lt;measure type="pages"&gt;[Umfang der Vorlage]&lt;/measure&gt;
+&lt;/extent&gt;</codeblock>
+  </body>
+</topic>

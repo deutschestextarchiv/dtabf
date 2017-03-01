@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_imb_x32_qs">
+  <title>Verlag</title>
+  <body>
+    <p>Der Name des Verlags bzw. der Druckerei eines Werks wird grundsätzlich vorlagengetreu wiedergegeben.
+    </p>
+    <p><i>Ausnahmen:</i>
+    </p>
+    <ul>
+      
+      <li>Namenszusätze (z.B. "&amp; Co.", "und Söhne") werden nicht wiedergegeben.</li>
+      
+      <li>
+        Für Werke, die im Selbstverlag erschienen sind, steht ungeachtet der Vorlage grundsätzlich
+        der Terminus "<codeph>Selbstverlag</codeph>".
+      </li>
+      
+    </ul>
+    <example><title>Angabe des Selbstverlags</title>
+      <p><i>Siehe: </i><xref href="http://www.deutschestextarchiv.de/euler_algebra02_1770" scope="external" format="html">http://www.deutschestextarchiv.de/euler_algebra02_1770</xref></p>
+    </example>
+  </body>
+</topic>

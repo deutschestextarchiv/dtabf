@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_58">
+    <title>Einfache Registerform</title>
+    <body>
+        <p>Register werden mittels <codeph>&lt;div&gt;</codeph>-Elementen
+            umschlossen, die das Attribut-Wert-Paar
+            <codeph>@type="index"</codeph> erhalten. </p>
+        <p>Das eigentliche Register wird sodann in Form einer Liste
+            (<codeph>&lt;list&gt;</codeph>) strukturiert, wobei jeder
+            Registereintrag in einem <codeph>&lt;item&gt;</codeph>-Element
+            verzeichnet wird. </p>
+        <p> Die Seitenzahlen im Registereintrag werden innerhalb des
+            <codeph>&lt;item&gt;</codeph>-Elements mit einem
+            <codeph>&lt;ref&gt;</codeph>-Element umschlossen. Jede Seitenzahl
+            bekommt ein separates <codeph>&lt;ref&gt;</codeph>-Element, auch
+            wenn die Seitenzahlen direkt hintereinander stehen. Eventuelle
+            Satzzeichen stehen außerhalb der
+            <codeph>&lt;ref&gt;</codeph>-Elemente.</p>
+        <p>Weisen Registereinträge Untereinträge auf, so werden diese als
+            geschachtelte Listen ausgezeichnet. </p>
+
+        <codeblock outputclass="language-xml">&lt;back&gt;
+  &lt;div type="index"&gt;
+    &lt;head&gt;[Titel des Registers]&lt;/head&gt;
+    &lt;list&gt;
+      &lt;item&gt;[Stichwort1]
+        &lt;ref target="#[Seitenzahl1]"&gt;[Seitenzahl1]&lt;/ref&gt;
+        &lt;ref target="#[Seitenzahl2]"&gt;[Seitenzahl2]&lt;/ref&gt;
+      &lt;/item&gt;
+      &lt;item&gt;[StichwortX]
+        &lt;ref target="#[SeitenzahlX]"&gt;[SeitenzahlX]&lt;/ref&gt;
+      &lt;/item&gt;
+    &lt;/list&gt;
+  &lt;/div&gt;
+&lt;/back&gt;</codeblock>
+    </body>
+</topic>

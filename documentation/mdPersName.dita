@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_f5g_pj2_qs">
+  <title>Die Unterstrukturierung des Elements <codeph>//persName</codeph></title>
+    <titlealts><navtitle>Personal Name</navtitle></titlealts>
+  <body>
+    <p>Der Name einer Person wird in einem <codeph>&lt;persName&gt;</codeph>-Element festgehalten. Das <codeph>@ref</codeph>-Attribut 
+      in <codeph>&lt;persName&gt;</codeph> ermöglicht den Verweis (qua URL) auf eine Ressource, die zusätzliche Angaben zu 
+      der betreffenden Person enthält, etwa auf den Datensatz zu dieser Person in der 
+      <xref href="http://www.dnb.de/DE/Standardisierung/GND/gnd_node.html" scope="external" format="html">Gemeinsamen Normdatei (GND)</xref>. Konnte ein Name 
+      in der GND nicht nachgewiesen werden, so erhält das <codeph>@ref</codeph>-Attribut des <codeph>&lt;persName&gt;</codeph>-Elements 
+        den Wert <codeph>"nognd"</codeph>. 
+    </p>
+    <p>Folgende Unterelemente des Elements <codeph>&lt;persName&gt;</codeph> sind möglich:
+    </p>
+    <table>
+      <tgroup cols="2">
+        <colspec colname="col1"/>
+        <colspec colname="col2"/>
+        <thead>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">Element</entry>
+            <entry morerows="0" namest="col2" nameend="col2">Funktion</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">
+              <codeph>surname</codeph>
+            </entry>
+            <entry morerows="0" namest="col2" nameend="col2">Familienname</entry>
+          </row>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">
+              <codeph>forename</codeph>
+            </entry>
+            <entry morerows="0" namest="col2" nameend="col2">Vorname</entry>
+          </row>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">
+              <codeph>nameLink</codeph>
+            </entry>
+            <entry morerows="0" namest="col2" nameend="col2">Namenszusatz, z.B. Adelsprädikat</entry>
+          </row>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">
+              <codeph>genName</codeph>
+            </entry>
+            <entry morerows="0" namest="col2" nameend="col2">Generation</entry>
+          </row>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">
+              <codeph>addName</codeph>
+            </entry>
+            <entry morerows="0" namest="col2" nameend="col2">ggf. Pseudonym oder sonstiger zusätzlicher Name</entry>
+          </row>
+          <row>
+            <entry morerows="0" namest="col1" nameend="col1">
+              <codeph>roleName</codeph>
+            </entry>
+            <entry morerows="0" namest="col2" nameend="col2">staatstragende Funktion/offizieller Titel der Person</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+      <note type="attention">Das Element <codeph>&lt;roleName&gt;</codeph> enthält nur staatstragende Funktionen oder offizielle Titel; 
+       Berufsbezeichnungen und sonstige Funktionen werden hier <i>nicht</i> angegeben.</note>
+    <example>
+    <title>Friedrich II., König von Preußen
+    </title>
+<codeblock outputclass="language-xml">&lt;persName ref="http://d-nb.info/gnd/118535749"&gt;
+  &lt;forename&gt;Friedrich&lt;/forename&gt;
+  &lt;genName&gt;II.&lt;/genName&gt;
+  &lt;roleName&gt;König von Preußen&lt;/roleName&gt;
+&lt;/persName&gt;</codeblock>
+        </example>
+    <example><title>Novalis</title>
+<codeblock outputclass="language-xml">&lt;persName ref="http://d-nb.info/gnd/118588893"&gt;
+  &lt;surname&gt;Hardenberg&lt;/surname&gt;
+  &lt;forename&gt;Georg Philipp Friedrich&lt;/forename&gt;
+  &lt;nameLink&gt;von&lt;/nameLink&gt;
+  &lt;addName&gt;Novalis&lt;/addName&gt;
+&lt;/persName&gt;</codeblock></example>
+    <example><title>Karl von Moor</title>
+<codeblock outputclass="language-xml">&lt;persName ref="nognd"&gt;
+  &lt;surname&gt;Moor&lt;/surname&gt;
+  &lt;forename&gt;Karl&lt;/forename&gt;
+  &lt;nameLink&gt;von&lt;/nameLink&gt;
+&lt;/persName&gt;</codeblock></example>
+  </body>
+</topic>

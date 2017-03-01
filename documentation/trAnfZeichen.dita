@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="trAnfZeichen">
+  <title>Anführungszeichen</title>
+<body>
+<p>
+  Die Anführungszeichen im Text werden mit den entsprechenden Unicode-Entitäten
+  abgebildet, damit ihre eindeutige Zuordnung zum Text (linksanschmiegend,
+  rechtsanschmiegend, oben oder unten) festgelegt wird.
+</p>
+
+<table>
+  <tgroup cols="3"><thead><row>
+    <entry>Zeichen</entry>
+    <entry>Entität</entry>
+    <entry>Beschreibung</entry>
+  </row></thead>
+  <tbody><row>
+    <entry><tt>‘</tt></entry>
+    <entry><tt>U+2018</tt></entry>
+    <entry><tt>LEFT SINGLE QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>’</tt></entry>
+    <entry><tt>U+2019</tt></entry>
+    <entry><tt>RIGHT SINGLE QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>‚</tt></entry>
+    <entry><tt>U+201A</tt></entry> 
+    <entry><tt>SINGLE LOW-9 QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>‛</tt></entry>
+    <entry><tt>U+201B</tt></entry> 
+    <entry><tt> SINGLE HIGH-REVERSED-9 QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>“</tt></entry>
+    <entry><tt>U+201C</tt></entry> 
+    <entry><tt>LEFT DOUBLE QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>”</tt></entry>
+    <entry><tt>U+201D</tt></entry> 
+    <entry><tt>RIGHT DOUBLE QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>„</tt></entry>
+    <entry><tt>U+201E</tt></entry> 
+    <entry><tt>DOUBLE LOW-9 QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>‟</tt></entry>
+    <entry><tt>U+201F</tt></entry> 
+    <entry><tt>DOUBLE HIGH-REVERSED-9 QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>‹</tt></entry>
+    <entry><tt>U+2039</tt></entry> 
+    <entry><tt>SINGLE LEFT-POINTING ANGLE QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>›</tt></entry>
+    <entry><tt>U+203A</tt></entry> 
+    <entry><tt>SINGLE RIGHT-POINTING ANGLE QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>«</tt></entry>
+    <entry><tt>U+00AB</tt></entry> 
+    <entry><tt>LEFT-POINTING DOUBLE ANGLE QUOTATION MARK</tt></entry>
+  </row>
+  <row>
+    <entry><tt>»</tt></entry>
+    <entry><tt>U+00BB</tt></entry> 
+    <entry><tt>RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK</tt></entry>
+  </row></tbody></tgroup>
+</table>
+
+<p>
+  Für die einfachen und doppelten Anführungszeichen vgl. die Unicode-Tabelle
+  <xref href="http://www.unicode.org/charts/PDF/U2000.pdf" scope="external" format="pdf">General Punctuation</xref>
+</p>
+
+<p>
+  Für die französischen Anführungszeichen vgl. die Unicode-Tabelle <xref href="http://www.unicode.org/charts/PDF/U0080.pdf" scope="external" format="pdf">Controls
+  and Latin-1 Supplement</xref>
+</p>
+</body>
+</topic>

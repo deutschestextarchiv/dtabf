@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_63">
+    <title>Eigennamen</title>
+    <body>
+        <p>Die Auszeichnung von Eigennamen (Level 3) erfolgt in auf die Semantik
+            der jeweiligen Eigennamen spezifizierten Elementen:</p>
+        <ul>
+            <li> <codeph>&lt;persName&gt;</codeph>: Personenname</li>
+            <li> <codeph>&lt;orgName&gt;</codeph>: Name einer Organisation</li>
+            <li> <codeph>&lt;placeName&gt;</codeph>: Ortsname</li>
+            <li> <codeph>&lt;name type="artificialWork"&gt;</codeph>: Benennung
+                eines Kunstwerks oder Gebäudes</li>
+        </ul>
+        <p>Dabei wird das Element <codeph>&lt;persName&gt;</codeph> nicht weiter
+            unterstrukturiert (d.h. es erfolgt beispielsweise keine weitere
+            Unterscheidung zwischen Vorname und Familienname einer Person).
+            Namenszusätze, die <b>nicht</b> in der Quelle stehen, werden in der
+            Transkription <b>nicht</b> wiedergegeben. </p>
+        <p>Alle genannten Eigennamen-Elemente können ein Attribut
+            <codeph>@ref</codeph> enthalten. Dieses erhält als Wert eine
+            eindeutige URI, welche auf eine externe Ressource verweist, die den
+            betreffenden Eigennamen näher spezifiziert (z.B. Verweise auf die
+            Gemeinsame Normdatei GND, den Getty-Thesaurus oder eine eigens
+            zusammengestellte Eigennamen-Datenbank). </p>
+        <example> <title>Eigennamen I</title> 
+          <fig>
+            <image href="img/Q7aiY3wZJJ.png"/>
+            <codeblock outputclass="language-xml">&lt;persName ref="http://d-nb.info/gnd/118710788"&gt;Papst Innocenz X.&lt;/persName&gt;</codeblock>
+              <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/berg_ostasien03_1873/35"
+                format="html" scope="external">[Berg, Albert]: Die preussische
+                Expedition nach Ost-Asien. Bd. 3. Berlin, 1873. [Faksimile
+                35]</xref></i></p>
+            </fig> </example>
+        <example> <title>Eigennamen II</title> <fig>
+            <image href="img/hUh2gsmazm.png"/>
+            <codeblock outputclass="language-xml">&lt;persName ref="http://isni-url.oclc.nl/isni/0000000081390848"&gt;Lindesay Brine&lt;/persName&gt; und &lt;persName ref="http://isni-url.oclc.nl/isni/0000000083618666"&gt;Andrew Wilson&lt;/persName&gt;.</codeblock>
+             <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/berg_ostasien03_1873/15"
+                format="html" scope="external">[Berg, Albert]: Die preussische
+                Expedition nach Ost-Asien. Bd. 3. Berlin, 1873. [Faksimile
+                15]</xref></i></p>
+            </fig> </example>
+        <p><b>Trunkierte Eigennamen</b> (z.B. Nord- und Ostsee) werden als
+            solche markiert, indem ein Attribut-Wert-Paar
+            <codeph>@full="abb"</codeph> (für "Abkürzung") in das jeweils
+            umschließende Eigennamen-Element aufgenommen wird. </p>
+        <codeblock outputclass="language-xml">&lt;placeName full="abb"&gt;Nord-&lt;/placeName&gt; und &lt;placeName&gt;Ostsee&lt;/placeName&gt;</codeblock>
+        <p>Auf die vollständige Form des durch Trunkierung abgekürzten
+            Eigennamens zeigt der Verweis auf eine externe Ressource im
+            <codeph>@ref</codeph>-Attribut (s. oben). Der vervollständigte
+            Eigenname kann daneben auch im Text mithilfe des
+            <codeph>&lt;choice&gt;</codeph>-Elements mit den Unterelementen
+            <codeph>&lt;orig&gt;</codeph> und <codeph>&lt;reg&gt;</codeph>
+            wiedergegeben werden. </p>
+        <codeblock outputclass="language-xml">&lt;placeName full="abb"&gt;
+  &lt;choice&gt;
+    &lt;orig&gt;Nord-&lt;/orig&gt;
+    &lt;reg&gt;Nordsee&lt;/reg&gt;
+  &lt;/choice&gt;
+&lt;/placeName&gt;
+und &lt;placeName&gt;Ostsee&lt;/placeName&gt;
+</codeblock>
+        <p>Zur Verwendung von <codeph>&lt;choice&gt;</codeph> s. auch Kap. <xref href="editorEingriff.dita">Editorische Eingriffe</xref> </p>
+    </body>
+</topic>

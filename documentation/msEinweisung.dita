@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_cxn_c3p_yw">
+  <title>Einweisung einer Hinzufügung in den Text</title>
+    <titlealts><navtitle>Einweisungszeichen</navtitle></titlealts>
+  <body>
+      <p>
+        Wird eine Hinzufügung in den Text eingewiesen (durch Pfeil, Referenzzeichen, o.&#x202f;ä.), 
+        so wird durch das Element <codeph>&lt;metamark/&gt;</codeph> auf das jeweilige 
+        Einweisungszeichen hingewiesen. Das Element <codeph>&lt;metamark/&gt;</codeph> ist
+        dabei ein leeres Element, welches innerhalb des <codeph>&lt;add&gt;</codeph>-Elements
+        steht. 
+      </p>
+      <codeblock outputclass="language-xml">&lt;add&gt;&lt;metamark/&gt;[Hinzufügung]&lt;/add&gt;</codeblock>
+      <note type="caution">Die genaue Ausführung des Einweisungszeichen wird <b>nicht</b> näher beschrieben.
+      </note>
+  </body>
+</topic>

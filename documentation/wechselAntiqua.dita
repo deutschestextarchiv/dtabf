@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_aq">
+  <title>Wechsel zur Antiquaschrift</title>
+  <body>
+    <example>
+      <title>Kodierung des Wechsels zur Antiquaschrift</title><fig>
+        <image href="img/WZxEDkBMlE.png"/>
+        <codeblock outputclass="language-xml">die &lt;hi rendition="#aq"&gt;differentia specifica&lt;/hi&gt; der Religion.</codeblock>
+        <p><i>Quelle: <xref
+          href="http://www.deutschestextarchiv.de/feuerbach_christentum_1841/36"
+          format="html" scope="external">Feuerbach, Ludwig: Das Wesen des Christentums. Leipzig,
+          1841. [Faksimile 36]</xref>
+        </i></p>
+      </fig></example>
+    <p>Antiquapassagen werden nur dann gesondert ausgezeichnet, wenn sie innerhalb von
+      Frakturtexten auftreten. Auch innerhalb eines Wortes kann es zum Wechsel zwischen Antiqua und
+      Fraktur kommen. </p>
+    
+  </body>
+</topic>

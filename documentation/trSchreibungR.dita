@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="trR">
+  <title>r-Grapheme</title>
+<body>
+<p>
+  Für das sog. <tt>runde r</tt> steht die Unicode-Entität <tt>&#xa75b; (U+A75B, LATIN SMALL LETTER R ROTUNDA)</tt>. Es findet sich
+  häufig in Zusammenhang mit dem heute gebräuchlichen <tt>r</tt> oder als <tt>et</tt>-Substituent
+  in Abkürzungen für <tt>et cetera</tt>.
+</p>
+
+<p>Beispiel (rundes r als heutiges <tt>r</tt> und als <tt>et</tt>):</p>
+
+<table>
+  <tgroup cols="2">
+    <thead>
+      <row>
+        <entry>Vorlage</entry>
+      <entry>Transkription</entry>
+      </row>
+    </thead>
+    <tbody>
+      <row>
+        <entry><image href="img/herr.jpg"><alt>Herr (mit rundem r)</alt></image></entry>
+        <entry><codeph>Her&amp;#xA75B;</codeph></entry>
+      </row>
+      <row>
+        <entry><image href="img/etc.jpg"><alt>etc. (mit rundem r)</alt></image></entry>
+        <entry><codeph>&amp;#xA75B;c.</codeph></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table></body>
+</topic>

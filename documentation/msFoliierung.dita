@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_a43_4dq_yw">
+  <title>Seiten- und Blattnummerierung</title>
+  <body>
+    
+      <p>
+        Seitenumbrüche werden entsprechend den <xref href="seitenFacsNr.dita">DTABf-Richtlinien für die 
+          Auszeichnung von Seitenzahlen</xref> wie folgt erfasst: 
+      </p>
+      <codeblock outputclass="language-xml">&lt;pb facs="#f[Bildnummer]" n="[Seitenzahl]"/&gt;</codeblock>
+      <p>
+        Auch wenn das Manuskript nicht selbst paginiert ist, steht dennoch immer das 
+        <codeph>&lt;pb&gt;</codeph>-Element, das im <codeph>@facs</codeph>-Attribut die Faksimilenummer enthält.
+      </p>
+      <p>
+        Ist das Manuskript darüber hinaus foliiert, so wird die Folionummer im
+        <codeph>&lt;fw&gt;</codeph>-Element wiedergegeben, welches das Attribut-Wert-Paar
+        <codeph>@type="folNum"</codeph> enthält.
+      </p>
+      <codeblock outputclass="language-xml">&lt;fw type="folNum"&gt;[Blattzahl]&lt;/fw&gt;</codeblock>
+ 
+  </body>
+</topic>

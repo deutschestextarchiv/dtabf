@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_33">
+    <title>Zitate/Epigraphe als Versgruppen</title>
+    <body>
+        <p>Ist das Zitat/Epigraph in Versen geschrieben, so wird es außerdem als
+            <codeph>&lt;lg&gt;</codeph> gekennzeichnet: </p>
+        <codeblock outputclass="language-xml">&lt;epigraph&gt; &lt;!-- sofern vorhanden --&gt;
+  &lt;cit&gt;
+    &lt;quote&gt;
+      &lt;lg&gt;
+        &lt;head&gt;[Titel]&lt;/head&gt; &lt;!-- sofern vorhanden --&gt;
+        &lt;l&gt;[Vers]&lt;/l&gt;
+        &lt;l&gt;[Vers]&lt;/l&gt;
+      &lt;/lg&gt;
+    &lt;/quote&gt;
+    &lt;bibl&gt;[Urheber des Gedichts]&lt;/bibl&gt; &lt;!-- sofern vorhanden --&gt;
+  &lt;/cit&gt;
+&lt;/epigraph&gt;</codeblock>
+        
+        <example>
+    <title>Kodierung von Zitaten in Versform</title>
+    <fig><image href="img/Od5z6vJ6Ec.png"/>
+    
+    <codeblock outputclass="language-xml">&lt;epigraph&gt;
+  &lt;cit rendition="#et"&gt;
+    &lt;quote&gt;
+      &lt;lg&gt;
+        &lt;l&gt;Hier quillt die träumeriſche,&lt;/l&gt;&lt;lb/&gt;
+        &lt;l&gt;Urjugendliche Friſche;&lt;/l&gt;&lt;lb/&gt;
+        &lt;l&gt;In ahnungsvoller Hülle&lt;/l&gt;&lt;lb/&gt;
+        &lt;l&gt;Die ganze Lebensfülle.&lt;/l&gt;
+      &lt;/lg&gt;
+    &lt;/quote&gt;
+    &lt;bibl&gt;&lt;hi rendition="#g"&gt;Lenau&lt;/hi&gt;&lt;/bibl&gt;.
+  &lt;/cit&gt;
+&lt;/epigraph&gt;&lt;lb/&gt;</codeblock>
+        <p><i>Quelle: <xref href="http://www.deutschestextarchiv.de/rossmaessler_wald_1863/33" format="html" scope="external">Roßmäßler, Emil Adolf: Der Wald. Leipzig u. a., 1863. [Faksimile 33]</xref></i></p>
+    </fig></example>
+    </body>
+</topic>

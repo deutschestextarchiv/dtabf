@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_36">
+    <title>Gedichte in Prosawerken</title>
+    <body>
+        <p>Gedichte in Prosawerken und Gedichtbänden mit einfacher Struktur
+            (d.h. nur Gedichttitel und Strophen, keine zusätzlichen
+            Textbestandteile) werden mittels <codeph>&lt;lg&gt;</codeph>s
+            strukturiert. Dabei umschließt das Element
+            <codeph>&lt;lg&gt;</codeph> zum einen das gesamte Gedicht, wobei
+            diese Verwendung durch das Attribut-Wert-Paar
+            <codeph>@type="poem"</codeph> angezeigt wird. Das
+            <codeph>&lt;lg&gt;</codeph>-Element umschließt weiterhin jede
+            einzelne Strophe. In diesem Fall steht kein
+            <codeph>@type</codeph>-Attribut. Bei mehrstrophigen Gedichten wird
+            die jeweilige Strophennummer im <codeph>@n</codeph>-Attribut des
+            <codeph>&lt;lg&gt;</codeph>-Elements angegeben. Der Gedichttitel
+            steht im <codeph>&lt;head&gt;</codeph>-Element der äußeren
+            <codeph>&lt;lg&gt;</codeph>. Verse werden innerhalb der
+            <codeph>&lt;lg&gt;</codeph> mittels
+            <codeph>&lt;l&gt;[...]&lt;/l&gt;</codeph> ausgezeichnet. Ein Vers
+            kann dabei über einen Zeilenumbruch hinausreichen. </p>
+        <codeblock outputclass="language-xml">&lt;lg type="poem"&gt;
+  &lt;head&gt;[Titel]&lt;/head&gt; &lt;!-- sofern vorhanden --&gt;
+  &lt;lg n="[Strophennummer]"&gt; &lt;!-- sofern kein einstrophiges Gedicht --&gt;
+    &lt;l&gt;[Vers]&lt;/l&gt;
+    &lt;l&gt;[Vers]&lt;/l&gt;
+  &lt;/lg&gt;
+&lt;/lg&gt;</codeblock>
+        <example> <title>Kodierung von Gedichten in Prosawerken</title> <fig>
+            <image href="img/o2JSxkY8WB.png"/>
+            <codeblock outputclass="language-xml">&lt;p>
+  Möchte das Lied vom &lt;hi rendition="#g">deutſchen&lt;/hi> Helgoland, das Karl&lt;lb/>
+  Tannen in Bremen bereits vor zwölf Jahren ſang, überall in&lt;lb/>
+  ganz Deutſchland erklingen und jeden Deutſchen daran erinnern,&lt;lb/>
+  daß die Inſel ein verlorenes Kind unſerer Mutter Germania&lt;lb/>
+  iſt, welches wir zurückfordern müſſen und wollen.
+&lt;/p>&lt;lb/>
+&lt;lg type="poem">
+  &lt;lg n="1">
+    &lt;l>Im Meer, im herrlich deutſchen Meer&lt;/l>&lt;lb/>
+    &lt;l>Klagt Wind und Woge laut und ſchwer,&lt;/l>&lt;lb/>
+    &lt;l>Und jede Welle trägt es fort&lt;/l>&lt;lb/>
+    &lt;l>Von dem verlor’nen Kind das Wort&lt;/l>&lt;lb/>
+    &lt;l>Roth is de Kant,&lt;/l>&lt;lb/>
+    &lt;l>Witt is dat Sand,&lt;/l>&lt;lb/>
+    &lt;l>Das iſt das &lt;hi rendition="#g">deutſche&lt;/hi> Helgoland!&lt;/l>
+  &lt;/lg>&lt;lb/>
+  &lt;lg n="2">
+    &lt;l>Germania, du Mutter mein!&lt;/l>&lt;lb/>
+    &lt;l>Du ſammelſt deine Glieder ein;&lt;/l>&lt;lb/>
+    &lt;l>Vergiß auch nicht dein kleinſtes Kind,&lt;/l>&lt;lb/>
+    &lt;l>Umbrauſt von Wogendrang und Wind.&lt;/l>&lt;lb/>
+    &lt;l>Roth is de Kant,&lt;/l>&lt;lb/>
+    &lt;l>Witt is dat Sand,&lt;/l>&lt;lb/>
+    &lt;l>Das iſt das &lt;hi rendition="#g">deutſche&lt;/hi> Helgoland!&lt;/l>
+  &lt;/lg>
+&lt;/lg>&lt;lb/></codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/werner_seeleben_1880/214"
+                format="html" scope="external">Werner, Reinhold von:
+                Erinnerungen und Bilder aus dem Seeleben. Berlin, 1880.
+                [Faksimile 214]</xref></i></p>
+            </fig> </example>
+    </body>
+</topic>

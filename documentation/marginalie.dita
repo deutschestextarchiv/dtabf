@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_24">
+    <title>Randbemerkungen (Marginalien)</title>
+    <titlealts><navtitle>Marginalien</navtitle></titlealts>
+    <body>
+        <p>Für die Auszeichnung von Marginalien wird ebenso wie für Fuß- und
+            Endnoten das Element <codeph>&lt;note&gt;</codeph> verwendet. Das
+            Attribut <codeph>@place</codeph> kann die Werte
+            <codeph>right</codeph> und <codeph>left</codeph> annehmen, welche
+            die Position der Marginalie in Bezug auf den Textbereich
+            spezifizieren. </p>
+        <codeblock outputclass="language-xml">&lt;note place="right"&gt;[rechts vom Text stehende Marginalien]&lt;/note&gt;
+&lt;note place="left"&gt;[links vom Text stehende Marginalien]&lt;/note&gt;</codeblock>
+        <p>Rechts vom Text (<codeph>@place="right"</codeph>) stehende
+            Marginalien werden unmittelbar nach der Zeile, auf deren Höhe sie
+            beginnen, transkribiert, links vom Text
+            (<codeph>@place="left"</codeph>) stehende Marginalien unmittelbar
+            vor der Zeile, auf deren Höhe sie beginnen. </p>
+        <example> <title>Kodierung von Marginalien am linken Rand</title> <fig>
+            <image href="img/eOZw1swX4p.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;Der folgende Kaiser, 
+  &lt;hi rendition="#k"&gt;Yuṅ-tšin&lt;/hi&gt;, vertrieb bei seiner Thron-&lt;lb/&gt;
+    &lt;note place="left"&gt;
+      1723.
+    &lt;/note&gt;
+  besteigung 1723 alle Missionare als Ruhestörer. Einige hielten sich&lt;lb/&gt;
+  [...]
+&lt;/p&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/berg_ostasien03_1873/36"
+                format="html" scope="external">[Berg, Albert]: Die preussische
+                Expedition nach Ost-Asien. Bd. 3. Berlin, 1873. [Faksimile
+                36]</xref></i></p>
+            </fig> </example>
+        <example> <title>Kodierung von Marginalien am rechten Rand</title> <fig>
+            <image href="img/Io0IuZbxlS.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;[...]&lt;lb/&gt;
+  Die Todtenopfer und andere Gebräuche, welche er als bürgerliche&lt;lb/&gt;
+  duldete, wurden von den Dominicanern als götzendienerisch ver-&lt;lb/&gt;
+  dammt und allen chinesischen Christen unter Androhung der Höllen-
+    &lt;note place="right"&gt;
+      1644.
+    &lt;/note&gt;&lt;lb/&gt;
+  strafen verboten. Papst Innocenz X. bestätigte dieses Urtheil, das
+    &lt;note place="right"&gt;
+      1655.
+    &lt;/note&gt;&lt;lb/&gt;
+  Alexander VII. auf Vorstellung der Jesuiten wieder aufhob. Die&lt;lb/&gt;
+  [...]
+&lt;/p&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/berg_ostasien03_1873/35"
+                format="html" scope="external">[Berg, Albert]: Die preussische
+                Expedition nach Ost-Asien. Bd. 3. Berlin, 1873. [Faksimile
+                35]</xref></i></p>
+            </fig> </example>
+        <p>Steht eine Marginalie am linken Rand direkt am Beginn eines neuen
+            Paragraphen, so wird sie mit innerhalb des
+            <codeph>&lt;p&gt;</codeph>-Elements wiedergegeben.</p>
+        <example> <title>Kodierung von Marginalien am Beginn eines neuen Paragraphen</title> <fig>
+            <image href="img/DdYcYPlXK1.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;
+  &lt;note place="left"&gt;
+    Vnſer ge-&lt;lb/&gt;
+    rechtig-&lt;lb/&gt;
+    keit iſt auf&lt;lb/&gt;
+    keine Cre-&lt;lb/&gt;
+    atur ge-&lt;lb/&gt;
+    gru&amp;#x0364;ndet/&lt;lb/&gt;
+    ſondern&lt;lb/&gt;
+    auff Gott.
+  &lt;/note&gt; 5. Vnſere gerechtigkeit kan auff kei-&lt;lb/&gt;
+  nen Engel gebawet werden. Dann es iſt&lt;lb/&gt;
+  [...]
+&lt;/p&gt;</codeblock>
+           <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/arndt_christentum02_1610/64"
+                format="html" scope="external">Arndt, Johann: Vom wahren
+                Christenthumb. Bd. 2. Magdeburg, 1610. [Faksimile
+                64]</xref></i></p> </fig> </example>
+        <p>Ist eine Marginalie in den Text eingewiesen, so besteht die
+            Möglichkeit (Level 3), diesen Verweis analog zum Verfahren bei der
+            <xref href="endnote.dita"
+            >Auszeichnung von Endnoten</xref> wiederzugeben. Die Marginalie wird
+            dabei wie oben beschrieben transkribiert. Im
+            <codeph>&lt;note&gt;</codeph>-Element, das die Marginalie
+            umschließt, steht ein <codeph>@n</codeph>-Attribut, welches als Wert
+            das Referenzzeichen der Marginalie erhält. Das korrespondierende
+            Referenzzeichen im Text wird mit einem untypisierten
+            <codeph>&lt;note&gt;</codeph>-Element umschlossen. Beide
+            <codeph>&lt;note&gt;</codeph>-Elemente werden mittels
+            <codeph>@xml:id</codeph> und <codeph>@corresp</codeph> miteinander
+            verknüpft (vgl. dazu Kap. <xref
+            href="parallelePassagen.dita"
+            >4.2.2</xref>). </p>
+        <codeblock outputclass="language-xml">&lt;p>
+  [Text Zeilenbeginn]
+    &lt;note n="[Referenz]" xml:id="[ID-Referenz]" corresp="#[ID-Marginalie]"/>
+  [Text Zeilenschluss]
+    &lt;note place="right" n="[Referenz]" xml:id="[ID-Marginalie]" corresp="#[ID-Referenz]">[Marginalie]&lt;/note></codeblock>
+    </body>
+</topic>

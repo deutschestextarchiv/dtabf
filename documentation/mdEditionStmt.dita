@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_xjx_kj2_qs">
+  <title>Hinweise zur Art der vorliegenden Textausgabe <codeph>(//fileDesc/editionStmt)</codeph></title>
+    <titlealts><navtitle>Edition Statement</navtitle></titlealts>
+  <body>
+    <p>Das <i>Edition Statement</i> beinhaltet im Unterelement <codeph>&lt;edition&gt;</codeph>
+      die Angabe zur Art der vorliegenden DTA-Publikation des jeweiligen Werks.</p><!-- neu 16.08. -->
+    <codeblock outputclass="language-xml">&lt;editionStmt&gt;
+  &lt;edition&gt;[Art der DTA-Ausgabe, d.i. "Vollständige digitalisierte Ausgabe"]&lt;/edition&gt;<!-- neu 16.08. -->
+&lt;/editionStmt&gt;</codeblock>
+  </body>
+</topic>

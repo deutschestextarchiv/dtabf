@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_drn_5wd_qs">
+  <title>Nutzung des DTA-Basisformat-Schemas</title>
+  <body>
+    <section>
+        <title>Verfügbarkeit des Schemas</title>
+    <p>Das <b>Relax-NG-Schema</b> des DTA-Basisformats befindet sich unter der Adresse:
+      <xref href="http://www.deutschestextarchiv.de/basisformat.rng" scope="external" format="html">http://www.deutschestextarchiv.de/basisformat.rng</xref>.
+    </p>
+    <p>Die zugrundeliegende <b>ODD-Datei</b> befindet sich unter der Adresse:
+      <xref href="http://www.deutschestextarchiv.de/basisformat.odd" scope="external" format="html">http://www.deutschestextarchiv.de/basisformat.odd</xref>.
+    </p>
+    <p>Der zugehörige ergänzende <b>Schematron-Regelsatz</b> ist zugänglich unter der Adresse:
+      <xref href="http://www.deutschestextarchiv.de/basisformat.sch" scope="external" format="html">http://www.deutschestextarchiv.de/basisformat.sch</xref>.
+    </p>
+    </section>
+      <section>
+          <title>Statisches vs. aktuelles Schema</title>
+    <p>Das DTA-Basisformat ist zwar in seiner Spezifikation weitgehend stabil. Dennoch gibt es immer 
+      wieder Änderungen, die unter Umständen nicht abwärtskompatibel sind, d.h. Dokumente, die 
+      einmal gegen das DTA-Basisformat-Schema unter der Adresse 
+        <xref href="http://www.deutschestextarchiv.de/basisformat.rng" scope="external" format="html">http://www.deutschestextarchiv.de/basisformat.rng</xref>
+      validiert haben, validieren nicht garantiert immer gegen dieses Schema. Deswegen kann es sinnvoll 
+      sein, sich eine lokale Kopie des Schemas zu sichern und diese in den XML-Quellen zu referenzieren.
+    </p>
+      </section>
+      <section>
+          <title>Spezifikation des DTABf-Schemas in einer XML-Datei</title>
+    <p>Eine zum DTA-Basisformat kompatible Datei sollte die Spezifikation des DTABf-Schemas sowie der ergänzenden DTABf-Schematron-Regeln 
+      enthalten. Daraus resultiert die folgende Grundstruktur für DTABf-Dateien: 
+    </p>
+    <codeblock outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt;
+&lt;?xml-model href="http://www.deutschestextarchiv.de/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?&gt;
+&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;
+  &lt;teiHeader&gt;[Metadaten]&lt;/teiHeader&gt;
+  &lt;text&gt;[Text]&lt;/text&gt;
+&lt;/TEI&gt;</codeblock>
+    <p>Wenn eine lokale Version des Schemas vorgehalten wird, lautet die Schema-Spezifikation entsprechend:
+    </p>
+    <codeblock outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-model href="file:/pfad/zur/datei/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt;
+&lt;?xml-model href="file:/pfad/zur/datei/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?&gt;
+&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;
+  &lt;teiHeader&gt;[Metadaten]&lt;/teiHeader&gt;
+  &lt;text&gt;[Text]&lt;/text&gt;
+&lt;/TEI&gt;</codeblock><!--A BR tag was used here in the original source.-->
+    <p>Eine <i>Vorlagedatei</i>, die für die Erarbeitung DTA-Basisformat-kompatibler TEI-Dateien zugrunde gelegt werden kann, findet sich unter
+      <xref href="http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml" format="html">http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml</xref>.
+    </p>
+          <p>Der kommerzielle XML-Editor <b><xref href="http://www.oxygenxml.com/" scope="external" format="html">oXygen</xref></b> unterstützt die Einbindung eines Schemas in eine XML-Datei mit entsprechenden Oberflächenfunktionen:</p>
+          <fig><image href="img/schemaoxygen.png" scale="60"></image><p>Einbinden des DTABf-Schemas in ein XML-Dokument im oXygen-XML-Editor</p></fig>
+      </section>
+      <section>
+          <title>Validierung von XML-Dokumenten gegen das DTA-Basisformat</title>
+    <p>Der <xref href="http://www.oxygenxml.com/" scope="external" format="html">oXygen-XML-Editor</xref> validiert die Dokumente direkt während der Bearbeitung gegen das jeweils eingebundene Schema und gibt bei Validierungsproblemen entsprechende Fehlermeldungen aus.</p>
+          <p>Darüber hinaus existieren diverse Kommandozeilentools, die XML-Dokumente gegen ein Relax-NG-Schema validieren 
+      können. Einige Beispiele dazu:</p>
+    <codeblock outputclass="language-xml"><xref href="http://www.thaiopensource.com/relaxng/jing.html" scope="external" format="html">jing</xref> http://www.deutschestextarchiv.de/basisformat.rng quelldatei.xml
+  
+<xref href="http://xmlstar.sourceforge.net/" scope="external" format="html">xmlstarlet</xref> val -r http://www.deutschestextarchiv.de/basisformat.rng quelldatei.xml</codeblock>
+    <p>Die Validierung gegen das Schematron-Schema kann von der Kommandozeile mit Probatron erfolgen:</p>
+    <codeblock outputclass="language-xml">java -jar <xref href="https://github.com/yeyanbo/probatron" scope="external" format="html">probatron.jar</xref> quelldatei.xml</codeblock>
+      </section>
+      
+  </body>
+</topic>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ksc_htj_qs">
+  <title>Grundstruktur der Kodierung von Orientierungshilfen im Buchblock</title>
+    <titlealts><navtitle>Orientierungshilfen Grundstruktur</navtitle></titlealts>
+  <body>
+    <p>Orientierungshilfen wie Kolumentitel, Bogensignatur und Kustoden werden mit dem
+      Element <codeph>&lt;fw&gt;</codeph> ausgezeichnet. Dieses enthält die Attribute
+      <codeph>@type</codeph> zur Angabe der Art der Orientierungshilfe und <codeph>@place</codeph> zur
+      Angabe der Position auf der Seite.</p>
+  </body>
+</topic>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_jm3_qdq_yw">
+  <title>Wiedergabe von Bibliotheksstempeln</title>
+    <titlealts><navtitle>Bibliotheksstempel</navtitle></titlealts>
+  <body>
+      <p>
+        Enthält das Manuskript Bibliotheksstempel als Besitzvermerke, so werden diese
+        im <codeph>&lt;figure&gt;</codeph>-Element wiedergegeben, welches das Attribut-Wert-Paar
+        <codeph>@type="stamp"</codeph> enthält.
+      </p>
+  </body>
+</topic>

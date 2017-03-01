@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_hht_ndc_bv">
+  <title>Zeilen- und Spaltenbenennungen</title>
+  <body>
+   <p>Der Kopf einer Tabellenspalte oder -zeile, welcher die Art der Angaben in der jeweiligen
+      Spalte/Zeile spezifiziert, kann mittels des Attribut-Wert-Paares
+        <codeph>@role="label"</codeph> innerhalb von <codeph>&lt;cell&gt;</codeph> gekennzeichnet
+      werden. Diese Angabe ist fakultativ (Level 3). </p>
+      <p><i>Tabelle mit Spaltenrubriken:</i></p>
+    <codeblock outputclass="language-xml">&lt;table&gt;
+  &lt;head&gt;[ggf. Titel der Tabelle]&lt;/head&gt;
+  &lt;row&gt;
+    &lt;cell role="label"&gt;[Kopf der 1. Spalte]&lt;/cell&gt;
+    &lt;cell role="label"&gt;[Kopf der 2. Spalte]&lt;/cell&gt;
+    &lt;cell role="label"&gt;[Kopf der 3. Spalte]&lt;/cell&gt;
+  &lt;/row&gt;
+  &lt;row&gt;
+    &lt;cell&gt;[Text einer Tabellen-Zelle der 1. Spalte]&lt;/cell&gt;
+    &lt;cell&gt;[Text einer Tabellen-Zelle der 2. Spalte]&lt;/cell&gt;
+    &lt;cell&gt;[Text einer Tabellen-Zelle der 3. Spalte]&lt;/cell&gt;
+  &lt;/row&gt;
+  ...
+&lt;/table&gt;</codeblock>
+      <p><i>Tabelle mit Zeilenrubriken:</i></p>
+    <codeblock outputclass="language-xml">&lt;table&gt;
+  &lt;head&gt;[ggf. Titel der Tabelle]&lt;/head&gt;
+  &lt;row&gt;
+    &lt;cell role="label"&gt;[Kopf der 1. Zeile]&lt;/cell&gt;
+    &lt;cell&gt;[Text einer Tabellen-Zelle der 1. Zeile]&lt;/cell&gt;
+    &lt;cell&gt;[Text einer Tabellen-Zelle der 1. Zeile]&lt;/cell&gt;
+  &lt;/row&gt;
+  &lt;row&gt;
+    &lt;cell role="label"&gt;[Kopf der 2. Zeile]&lt;/cell&gt;
+    &lt;cell&gt;[Text einer Tabellen-Zelle der 2. Zeile]&lt;/cell&gt;
+    &lt;cell&gt;[Text einer Tabellen-Zelle der 2. Zeile]&lt;/cell&gt;
+  &lt;/row&gt;
+  ...
+&lt;/table&gt;</codeblock>
+   
+  </body>
+</topic>

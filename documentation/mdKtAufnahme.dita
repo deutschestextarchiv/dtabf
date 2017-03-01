@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_fgv_y32_qs">
+  <title>Kurztitelaufnahme</title>
+  <body>
+      <p>Die Titelangabe innerhalb der Kurztitelaufnahme orientiert sich an der Vorlage. Sie ist 
+      jedoch in ihrer Länge möglichst zu begrenzen, um die schnelle Erfassung der bibliographischen 
+      Angabe zu ermöglichen. Die Titelangabe wird ungeachtet der Vorlage grundsätzlich mit einem 
+      Großbuchstaben eingeleitet.
+    </p>
+      <section>
+          <title>Überblick über Kurztitelaufnahmen nach Dokumentsorte</title>
+    <dl>
+      
+      <dlentry>
+        <dt>Monographien:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. <i>Druckort</i>, <i>Jahr</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Band einer mehrbändigen Ausgabe:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. Bd. <i>Bandnummer</i>: <i>ggf. Bandtitel</i>. <i>Druckort</i>, <i>Jahr</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Band eines Reihe:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. <i>Druckort</i>, <i>Jahr</i> (= <i>Reihentitel</i>, Bd. <i>Bandnummer</i>).
+        </dd>
+      </dlentry>
+      <dlentry>
+        <dt>Unselbständige Schrift in einer Zeitschrift/Zeitung:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. In: <i>Kurztitel der Zeitschrift/Zeitung Nummer</i> (<i>Jahr</i>), S. <i>Seitenangabe</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Unselbständige Schrift in einem Sammelband:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. In: <i>Kurztitel des Sammelbandes</i>. <i>Druckort</i>, <i>Jahr</i>, S. <i>Seitenangabe</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Kapitel einer Monographie:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. In: <i>Kurztitel der Monographie</i>. <i>Druckort</i>, <i>Jahr</i>, S. <i>Seitenangabe</i>.</dd>
+      </dlentry>
+    </dl>
+      </section>
+      <section>
+          <title>Spezialfälle</title>
+    <dl>
+      <dlentry>
+        <dt>Spätere Ausgabe:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. <i>Nummer der Auflage</i>. Aufl. <i>Druckort</i>, <i>Jahr</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Mehrere Verfasser:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>; <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. <i>Druckort</i>, <i>Jahr</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Verfasser mit Adelsprädikat:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i> 
+          <i>Adelsprädikat</i>: <i>Kurztitel</i>. <i>Druckort</i>, <i>Jahr</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Unbekannter Verfasser:</dt>
+        <dd>
+          [N. N.], <i>Kurztitel</i>. <i>Druckort</i>, <i>Jahr</i>.</dd>
+          <dd>&#x2794; <i>Für mehr Informationen siehe Kapitel: <xref href="mdUnvollstAngaben.dita">Umgang mit unvollständigen Angaben</xref>.</i></dd>
+      </dlentry>
+      <dlentry>
+        <dt>Mehrere Erscheinungsorte:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. <i>Druckort</i> u. a., <i>Jahr</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Unbekannter Erscheinungsort:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. [s. l.], <i>Jahr</i>.</dd>
+          <dd>&#x2794; <i>Für mehr Informationen siehe Kapitel: <xref href="mdUnvollstAngaben.dita">Umgang mit unvollständigen Angaben</xref>.</i></dd>
+      </dlentry>
+      <dlentry>
+        <dt>Herausgeber, statt Autor:</dt>
+        <dd>
+          <i>Herausgebername</i>, <i>Herausgebervorname</i> (Hrsg.): <i>Kurztitel</i>. <i>Druckort</i>, <i>Jahr</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Herausgeber, abweichend vom Autor:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. Hrsg. v. <i>Herausgebervorname Herausgebername</i>. <i>Druckort</i>, <i>Jahr</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Übersetzer:</dt>
+        <dd>
+          <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. Übers. v. <i>Übersetzervorname Übersetzername</i>. <i>Druckort</i>, <i>Jahr</i>.</dd>
+      </dlentry>
+    </dl>
+   </section>
+  </body>
+</topic>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_55">
+<title>Formen und Kodierung von Anhängen</title>
+    <titlealts><navtitle>Anhänge Grundstruktur</navtitle></titlealts>
+         <body>
+                        <p>Alle Abschnitte des Buches, die auf das Textende
+            folgen (Anhänge, Register, sonstige Zusätze), werden mit dem
+            <codeph>&lt;back&gt;</codeph>-Element umschlossen, das sich im
+            Anschluss an das <codeph>&lt;body&gt;</codeph>-Element in
+            <codeph>&lt;text&gt;</codeph> befindet. Die Grobstrukturierung
+            innerhalb des <codeph>&lt;back&gt;</codeph>-Elements erfolgt mittels
+            <codeph>&lt;div&gt;</codeph>-Elementen, deren
+            <codeph>@type</codeph>-Attribute die Textbestandteile näher
+            spezifizieren.</p>
+        <p>Folgende Werte von <codeph>@type</codeph> innerhalb des
+            <codeph>&lt;back&gt;</codeph>-Bereichs sind möglich:</p>
+            <table>
+               <tgroup cols="2">
+                  <colspec colname="col1"/>
+                  <colspec colname="col2"/>
+                  <thead>
+                     <row>
+    
+                        <entry morerows="0" namest="col1" nameend="col1">
+                           <codeph>@type</codeph>-Wert</entry>
+    
+                        <entry morerows="0" namest="col2" nameend="col2">Bedeutung</entry>
+  
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+    
+                        <entry morerows="0" namest="col1" nameend="col1">
+                           <codeph>postface</codeph>
+                        </entry>
+    
+                        <entry morerows="0" namest="col2" nameend="col2">Nachwort, Schlusswort, Epilog</entry>
+  
+                     </row>
+                     <row>
+    
+                        <entry morerows="0" namest="col1" nameend="col1">
+                           <codeph>contents</codeph>
+                        </entry>
+    
+                        <entry morerows="0" namest="col2" nameend="col2">Inhaltsverzeichnis</entry>
+  
+                     </row>
+                     <row>
+    
+                        <entry morerows="0" namest="col1" nameend="col1">
+                           <codeph>imprint</codeph>
+                        </entry>
+    
+                        <entry morerows="0" namest="col2" nameend="col2">Angaben zur Druckausgabe</entry>
+  
+                     </row>
+                     <row>
+    
+                        <entry morerows="0" namest="col1" nameend="col1">
+                           <codeph>imprimatur</codeph>
+                        </entry>
+    
+                        <entry morerows="0" namest="col2" nameend="col2">Druckerlaubnis</entry>
+  
+                     </row>
+                     <row>
+    
+                        <entry morerows="0" namest="col1" nameend="col1">
+                           <codeph>index</codeph>
+                        </entry>
+    
+                        <entry morerows="0" namest="col2" nameend="col2">Register</entry>
+  
+                     </row>
+                     <row>
+    
+                        <entry morerows="0" namest="col1" nameend="col1">
+                           <codeph>corrigenda</codeph>
+                        </entry>
+    
+                        <entry morerows="0" namest="col2" nameend="col2">Druckfehlerverzeichnis</entry>
+  
+                     </row>
+                     <row>
+    
+                        <entry morerows="0" namest="col1" nameend="col1">
+                           <codeph>appendix</codeph>
+                        </entry>
+    
+                        <entry morerows="0" namest="col2" nameend="col2">Anhang (z.B. mit erläuternden Abbildungen oder Tabellen)</entry>
+  
+                     </row>
+                     <row>
+    
+                        <entry morerows="0" namest="col1" nameend="col1">
+                           <codeph>bibliography</codeph>
+                        </entry>
+    
+                        <entry morerows="0" namest="col2" nameend="col2">Literaturverzeichnis</entry>
+  
+                     </row>
+                     <row>
+    
+                        <entry morerows="0" namest="col1" nameend="col1">
+                           <codeph>advertisement</codeph>
+                        </entry>
+    
+                        <entry morerows="0" namest="col2" nameend="col2">Anzeige</entry>
+  
+                     </row>
+                  </tbody>
+               </tgroup>
+            </table>
+            <p>Das öffnende <codeph>&lt;back&gt;</codeph>-Tag folgt direkt auf das schließende
+  <codeph>&lt;/body&gt;</codeph>-Tag, steht also noch <b>vor</b> jedem
+  neuen Seitenumbruch. Das hintere Vorsatzblatt (Spiegel und fliegendes Blatt)
+  sowie der hintere Einband sind immer Teil des
+  <codeph>&lt;back&gt;</codeph>-Bereichs.
+</p>
+            <codeblock outputclass="language-xml">&lt;back&gt;
+  &lt;div type="corrigenda"&gt;
+    &lt;head&gt;Verbesserungen:&lt;/head&gt;
+    &lt;p&gt;Druckfehler ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div type="advertisement"&gt;
+    &lt;head&gt;[Verlagsname]&lt;/head&gt;
+    &lt;list&gt;
+      &lt;item&gt;[Werbestück1]&lt;/item&gt;
+      &lt;item&gt;[Werbestück2]&lt;/item&gt;
+    &lt;/list&gt;
+  &lt;/div&gt;
+  &lt;div type="imprint"&gt;
+    &lt;p&gt;[Impressum]&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/back&gt;</codeblock>
+         </body>
+      </topic>

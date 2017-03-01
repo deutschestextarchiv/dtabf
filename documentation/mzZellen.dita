@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ept_sdc_bv">
+  <title>Mehrzeilige Zellen</title>
+  <body>
+    <p>Erstreckt sich eine Zelle (<codeph>&lt;cell&gt;</codeph>) über mehrere Zeilen und/oder
+      Spalten kann sie mit den Attributen <codeph>@cols</codeph> (für Spalten) und
+        <codeph>@rows</codeph> (für Zeilen) versehen werden. Der jeweilige Wert ist die Menge an
+      Zeilen/Spalten, über die sich die Zelle erstreckt: </p>
+    <codeblock outputclass="language-xml">&lt;cell cols="[Spaltenanzahl]" rows="[Zeilenanzahl]"&gt;...&lt;/cell&gt;</codeblock>
+  </body>
+</topic>

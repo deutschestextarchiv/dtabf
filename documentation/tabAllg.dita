@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_t4h_ldc_bv">
+  <title>Grundstruktur der Kodierung von Tabellen</title>
+  <titlealts><navtitle>Tabellen Grundstruktur</navtitle></titlealts>
+  <body>
+    
+    <p>Tabellen werden mittels des Elements <codeph>&lt;table&gt;</codeph> ausgezeichnet. Der
+      Tabelleninhalt wird zeilenweise wiedergegeben (<codeph>&lt;row&gt;</codeph>). Jede Zeile ist
+      wiederum in Zellen unterteilt (<codeph>&lt;cell&gt;</codeph>). Trägt die Tabelle einen Titel,
+      so wird dieser mit einem <codeph>&lt;head&gt;</codeph>-Element umschlossen. </p>
+    <codeblock outputclass="language-xml">&lt;table&gt;
+  &lt;head&gt;[ggf. Titel der Tabelle]&lt;/head&gt;&lt;!-- sofern vorhanden --&gt;
+  &lt;row&gt;
+    &lt;cell&gt;[Text einer Tabellen-Zelle]&lt;/cell&gt;
+    &lt;cell&gt;[Text einer Tabellen-Zelle]&lt;/cell&gt;
+  &lt;/row&gt;
+  ...
+&lt;/table&gt;</codeblock>
+       <p>Übersichten in Tabellenform, die keinen oder nur wenig reinen Text enthalten (z.B.
+      vornehmlich aus Zahlen und Sonderzeichen bestehen), werden nicht erfasst. Statt dessen wird
+      durch eine leere Tabelle auf die jeweilige Übersicht hingewiesen: </p>
+    <codeblock outputclass="language-xml">&lt;table&gt;&lt;row&gt;&lt;cell/&gt;&lt;/row&gt;&lt;/table&gt;</codeblock>
+          <example>
+      <title>Kodierung von Tabellen (1)</title><fig>
+        <image href="img/99U3cgDN24.png"/>
+        <codeblock outputclass="language-xml">&lt;table&gt;
+  &lt;row&gt;
+    &lt;cell/&gt;
+    &lt;cell&gt;Perſonen&lt;/cell&gt;
+    &lt;cell&gt;Prozent der Be-&lt;lb/&gt;völkerung&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+  &lt;row&gt;
+    &lt;cell&gt;in London&lt;/cell&gt;
+    &lt;cell&gt;2401955&lt;/cell&gt;
+    &lt;cell&gt;62,9&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+  &lt;row&gt;
+    &lt;cell&gt;in der nächſten Umgebung&lt;/cell&gt;
+    &lt;cell&gt;384871&lt;/cell&gt;
+    &lt;cell&gt;10,1&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+  &lt;row&gt;
+    &lt;cell&gt;in andern Teilen von Eng-&lt;lb/&gt;land und Wales&lt;/cell&gt;
+    &lt;cell&gt;787699&lt;/cell&gt;
+    &lt;cell&gt;20,6&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+  &lt;row&gt;
+    &lt;cell&gt;in Schottland&lt;/cell&gt;
+    &lt;cell&gt;49554&lt;/cell&gt;
+    &lt;cell&gt;1,3&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+  &lt;row&gt;
+    &lt;cell&gt;in Irland&lt;/cell&gt;
+    &lt;cell&gt;80778&lt;/cell&gt;
+    &lt;cell&gt;2,1&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+  &lt;row&gt;
+    &lt;cell&gt;in andern Ländern&lt;/cell&gt;
+    &lt;cell&gt;111626&lt;/cell&gt;
+    &lt;cell&gt;2,9&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+&lt;/table&gt;</codeblock>
+        <p><i>Quelle: <xref
+              href="http://www.deutschestextarchiv.de/buecher_volkswirtschaft_1893/299"
+              format="html" scope="external">Bücher, Karl: Die Entstehung der Volkswirtschaft. Sechs
+              Vorträge. Tübingen, 1893. [Faksimile 299]</xref>
+          </i></p>
+      </fig></example>
+      
+    <example>
+      <title>Kodierung von Tabellen (2)</title><fig>
+        <image href="img/C1lxLceKRU.png"/>
+        <codeblock outputclass="language-xml">&lt;table&gt;
+  &lt;row&gt;
+    &lt;cell/&gt;
+    &lt;cell&gt;Dauer der&lt;lb/&gt;ganzen&lt;lb/&gt;Periode&lt;/cell&gt;
+    &lt;cell&gt;Ausweichung&lt;lb/&gt;von der&lt;lb/&gt;Sonne beim&lt;lb/&gt;Stillſtand&lt;/cell&gt;
+    &lt;cell&gt;Bogen des&lt;lb/&gt;Rückgangs&lt;/cell&gt;
+    &lt;cell&gt;Dauer des&lt;lb/&gt;Rückgangs&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+  &lt;row&gt;
+    &lt;cell&gt;Mars&lt;/cell&gt;
+    &lt;cell&gt;780,&lt;hi rendition="#sub"&gt;4&lt;/hi&gt; Tage&lt;/cell&gt;
+    &lt;cell&gt;137 Grade&lt;/cell&gt;
+    &lt;cell&gt;14 Grade&lt;/cell&gt;
+    &lt;cell&gt;70 Tage&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+  &lt;row&gt;
+    &lt;cell&gt;Jupiter&lt;/cell&gt;
+    &lt;cell&gt;398,&lt;hi rendition="#sub"&gt;8&lt;/hi&gt;&lt;/cell&gt;
+    &lt;cell&gt;117&lt;/cell&gt;
+    &lt;cell&gt;10&lt;/cell&gt;
+    &lt;cell&gt;119&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+  &lt;row&gt;
+    &lt;cell&gt;Saturn&lt;/cell&gt;
+    &lt;cell&gt;378,&lt;hi rendition="#sub"&gt;0&lt;/hi&gt;&lt;/cell&gt;
+    &lt;cell&gt;108&lt;/cell&gt;
+    &lt;cell&gt;7&lt;/cell&gt;
+    &lt;cell&gt;136&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+  &lt;row&gt;
+    &lt;cell&gt;Uranus&lt;/cell&gt;
+    &lt;cell&gt;369,&lt;hi rendition="#sub"&gt;7&lt;/hi&gt;&lt;/cell&gt;
+    &lt;cell&gt;102&lt;/cell&gt;
+    &lt;cell&gt;4&lt;/cell&gt;
+    &lt;cell&gt;150&lt;/cell&gt;
+  &lt;/row&gt;&lt;lb/&gt;
+&lt;/table&gt;</codeblock>
+        <p><i>Quelle: <xref
+              href="http://www.deutschestextarchiv.de/littrow_weltsystem01_1834/228"
+              format="html" scope="external">Littrow, Joseph Johann von: Die Wunder des Himmels,
+              oder gemeinfaßliche Darstellung des Weltsystems. Bd. 1. Stuttgart, 1834. [Faksimile
+              228]</xref>
+          </i></p>
+      </fig></example>
+    <note type="notice">Mittels eines <codeph>@facs</codeph>-Attributs im <codeph>table</codeph>-Element 
+    kann auf die originale Abbildung der Tabelle verwiesen werden. Dies kann nützlich sein, wenn 
+    komplexe Tabellen aus Effizienzgründen nicht erfasst oder nicht vollständig nachgebildet 
+    werden können.</note>
+  </body>
+</topic>

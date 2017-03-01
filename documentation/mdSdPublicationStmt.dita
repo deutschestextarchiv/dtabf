@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ogp_qk2_qs">
+  <title>Die Umstände der Textausgabe des zugrundeliegenden Bandes <codeph>(//fileDesc/sourceDesc/biblFull/publicationStmt)</codeph></title>
+    <titlealts><navtitle>Publication Statement (Source)</navtitle></titlealts>
+  <body>
+    <p>Die näheren Angaben zu den Umständen der Textausgabe, welche als Vorlage für den DTA-Volltext diente, werden im
+      <i>Publication Statement</i> (<codeph>&lt;publicationStmt&gt;</codeph>) innerhalb des <codeph>&lt;biblFull&gt;</codeph>-Elements 
+      der <i>Source Description</i> wiedergegeben.
+    </p>
+    <p>Dabei werden der Verlag bzw. die Druckerei, welche für die zugrundeliegende Textausgabe
+      verantwortlich zeichnen, im <codeph>&lt;publisher&gt;</codeph>-Element des 
+      <codeph>&lt;publicationStmt&gt;</codeph>s angegeben. Das <codeph>&lt;publisher&gt;</codeph>-Element 
+      bzw. die <codeph>&lt;publisher&gt;</codeph>-Elemente stehen immer an erster Stelle im 
+      <codeph>&lt;publicationStmt&gt;</codeph>-Element, d.h. vor den Angaben zu Erscheinungsort 
+      und Erscheinungsdatum der Quelle. Falls mehrere Angaben zu Verlag bzw. Druckerei notwendig 
+      sind, so steht jede Angabe in einem separaten <codeph>&lt;publisher&gt;</codeph>-Element.
+    </p>
+    <p>Der Erscheinungsort wird im <codeph>&lt;pubPlace&gt;</codeph>-Element des <codeph>&lt;publicationStmt&gt;</codeph>s
+      angegeben. Im Falle mehrerer Erscheinungsorte steht jeder einzelne Erscheinungsort ebenfalls in einem separaten 
+      <codeph>&lt;pubPlace&gt;</codeph>-Element.
+    </p>
+    <p>Die Datierung steht jeweils in einem Unterelement <codeph>&lt;date&gt;</codeph>. Über ein <codeph>@type</codeph>-Attribut 
+      wird die Art der Datierung spezifiziert. Folgende Werte kann <codeph>@type</codeph> dabei annehmen: 
+    </p>
+    <table>
+      <tgroup cols="2">
+        <colspec colname="col1"/>
+        <colspec colname="col2"/>
+        <thead>
+          <row>
+            
+            <entry morerows="0" namest="col1" nameend="col1">
+              <codeph>@type</codeph>-Wert</entry>
+            
+            <entry morerows="0" namest="col2" nameend="col2">Bedeutung</entry>
+            
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            
+            <entry morerows="0" namest="col1" nameend="col1">
+              <codeph>publication</codeph>
+            </entry>
+            
+            <entry morerows="0" namest="col2" nameend="col2">Erscheinungsjahr der vorliegenden Quelle (obligatorisch)</entry>
+            
+          </row>
+          <row>
+            
+            <entry morerows="0" namest="col1" nameend="col1">
+              <codeph>firstPublication</codeph>
+            </entry>
+            
+            <entry morerows="0" namest="col2" nameend="col2">Erscheinungsjahr der Erstausgabe, falls abweichend vom Erscheinungsjahr der Quelle</entry>
+            
+          </row>
+          <row>
+            
+            <entry morerows="0" namest="col1" nameend="col1">
+              <codeph>creation</codeph>
+            </entry>
+            
+            <entry morerows="0" namest="col2" nameend="col2">Entstehungsjahr, falls abweichend vom Erscheinungsjahr der Quelle und vom Erscheinungsjahr der Erstausgabe</entry>
+            
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+      
+    <codeblock outputclass="language-xml">&lt;publicationStmt&gt;
+  &lt;publisher&gt; &lt;!-- an erster Stelle; ggf. mehrfach zu verwenden --&gt;
+    &lt;name&gt;[Verlag/Druckerei]&lt;/name&gt;
+  &lt;/publisher&gt;
+  &lt;pubPlace&gt;[Erscheinungsort]&lt;/pubPlace&gt; &lt;!-- ggf. mehrfach zu verwenden --&gt;  
+  &lt;date type="publication"&gt;[Erscheinungsjahr]&lt;/date&gt;
+  &lt;date type="firstPublication"&gt;[Erscheinungsjahr der Erstausgabe]&lt;/date&gt; &lt;!-- gegebenenfalls --&gt;
+  &lt;date type="creation"&gt;[Entstehungsjahr des Textes]&lt;/date&gt; &lt;!-- gegebenenfalls --&gt;
+&lt;/publicationStmt&gt;</codeblock>
+  </body>
+</topic>

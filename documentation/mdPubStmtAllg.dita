@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="man_pubStmt_01_2016-04-28">
+  <title>Die Grundstruktur des <i>Publication Statements</i> <codeph>(//fileDesc/publicationStmt)</codeph></title>
+  <titlealts><navtitle>Publication Statement Grundstruktur</navtitle></titlealts>
+    <body>
+    <p>Das <i>Publication Statement</i> (<codeph>&lt;publicationStmt&gt;</codeph>) der <i>File Description</i> enthält
+      publikationsspezifische Angaben zur jeweiligen DTA-Ausgabe:
+    </p>
+    <ul>
+      
+      <li>publizierende Institution (i.d.R. <codeph>"Berlin-Brandenburgische Akademie der Wissenschaften"</codeph>);</li>
+      
+      <li>herausgebendes Projekt (i.d.R. <codeph>"Deutsches Textarchiv"</codeph>);</li>
+      
+      <li>Erscheinungsdatum;</li>
+      
+      <li>Erscheinungsort;</li>
+      
+      <li>Lizenz, welche für die DTA-Ausgabe gilt (s. dazu Kap. <xref href="mdLicense.dita">Lizenzangaben</xref>);</li>
+      
+      <li>Daten zur eindeutigen Identifikation des DTA-Volltextes: eindeutige ID-Nummer des DTA (<codeph>"DTAID"</codeph>), DTA-Verzeichnisname (<codeph>"DTADirName"</codeph>);</li>
+      
+      <li>Adressen der möglichen Zugänge zum Dokument, gruppiert in einem übergeordneten <codeph>&lt;idno&gt;</codeph>-Element:
+        <ul>
+          
+          <li>Web-Präsentation (<codeph>"URLWeb"</codeph>, <codeph>"URN"</codeph>)</li>
+          
+          <li>Download der XML/TEI-Fassung (<codeph>"URLXML"</codeph>)</li>
+          
+          <li>Download der Text-Fassung (<codeph>"URLText"</codeph>)</li>
+          
+          <li>Download der HTML-Fassung (<codeph>"URLHTML"</codeph>)</li>
+          
+          <li>Download des durch die Ergebnisse der orthographischen Normalisierung mittels CAB angereicherten XML/TEI-Textes (<codeph>"URLCAB"</codeph>)</li>
+          
+          <li>Download der TCF-Fassung (<codeph>"URLTCF"</codeph>)</li>
+          
+          <li>Handle-PID des CMDI-Metadatensatzes (<codeph>"PIDCMDI"</codeph>)</li>
+          
+        </ul>
+        
+      </li>
+      
+    </ul>
+    <p>Dabei steht das <b>
+        <codeph>&lt;publisher&gt;</codeph>-Element</b> als Unterelement im <codeph>&lt;publicationStmt&gt;</codeph>
+      
+      <b>grundsätzlich an erster Stelle</b>.
+    </p>
+    <note type="attention">Bei den Adressen der möglichen Zugänge zum Dokument sollten Persistente Identifier (PIDs) verwendet werden, 
+      um zu gewährleisten, dass die Quelle langfristig über die angegebene Adresse erreichbar ist.
+    </note>
+    <codeblock outputclass="language-xml">&lt;publicationStmt&gt;
+  &lt;publisher xml:id="[ID, d.i. DTACorpusPublisher]"&gt; &lt;!-- grundsätzlich an erster Stelle --&gt;
+    &lt;orgName role="hostingInstitution"&gt;[Publizierende Institution, d.i. Berlin-Brandenburgische Akademie der Wissenschaften]&lt;/orgName&gt;
+    &lt;orgName role="project"&gt;[Herausgebendes Projekt, d.i. Deutsches Textarchiv]&lt;/orgName&gt;
+    &lt;email&gt;[E-Mail-Adresse der publizierenden Institution]&lt;/email&gt;
+    &lt;address&gt;
+      &lt;addrLine&gt;[Adresse der publizierenden Institution]&lt;/addrLine&gt;
+    &lt;/address&gt;
+  &lt;/publisher&gt;
+  &lt;pubPlace&gt;[Publikationsort]&lt;/pubPlace&gt;
+  &lt;date type="publication"&gt;[Publikationsdatum]&lt;/date&gt;
+  &lt;availability xml:id="[ID]" corresp="[ID der zugehörigen Text-/Bildvorlage]"&gt; &lt;!-- ggf. mehrfach zu verwenden --&gt;
+    &lt;licence target="[URL]"&gt;
+      &lt;p&gt;[Hinweis zur Lizenz der Publikation]&lt;/p&gt;
+    &lt;/licence&gt;
+  &lt;/availability&gt;
+  &lt;idno&gt;
+    &lt;idno type="DTAID"&gt;[ID innerhalb des DTA-Korpus]&lt;/idno&gt;
+    &lt;idno type="DTADirName"&gt;[Verzeichnisname innerhalb des DTA-Korpus]&lt;/idno&gt;
+    &lt;idno type="URN"&gt;[URN der DTA-Onlinepublikation des Werkes]&lt;/idno&gt;
+    &lt;idno type="URLWeb"&gt;[URL der DTA-Onlinepublikation des Werkes]&lt;/idno&gt;
+    &lt;idno type="URLXML"&gt;[URL zum XML/TEI-Download der DTA-Publikation]&lt;/idno&gt;
+    &lt;idno type="URLHTML"&gt;[URL zum HTML-Download der DTA-Publikation]&lt;/idno&gt;
+    &lt;idno type="URLText"&gt;[URL zum Text-Download der DTA-Publikation]&lt;/idno&gt;
+    &lt;idno type="URLCAB"&gt;[URL zum Download der CAB-Fassung der DTA-Publikation]&lt;/idno&gt;
+    &lt;idno type="URLTCF"&gt;[URL zum TCF-Download der DTA-Publikation]&lt;/idno&gt;
+    &lt;idno type="PIDCMDI"&gt;[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]&lt;/idno&gt;
+  &lt;/idno&gt;
+&lt;/publicationStmt&gt;</codeblock>
+  </body>
+  
+</topic>

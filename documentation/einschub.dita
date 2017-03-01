@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_15">
+  <title>Einschübe und diskontinuierliche Textpassagen</title>
+    <titlealts><navtitle>Einschub</navtitle></titlealts>
+  <body>
+  <p>Die Verknüpfung der separierten Textbestandteile
+    erfolgt durch die Attribute
+      <codeph>@prev</codeph> und
+      <codeph>@next</codeph> unter
+    Zuhilfenahme von
+    <codeph>@xml:id</codeph>'s.</p>
+  <p>Wird die Textpassage mehrfach unterbrochen, so werden
+    jeweils die aufeinanderfolgenden Teile
+    miteinander verknüpft, wobei der erste Teil
+    der Kette kein <codeph>@prev</codeph> und
+    der letzte Teil kein <codeph>@next</codeph>
+    enthält.</p>
+  
+<p>Beispiel: Paralleldruck zweier Texte auf den einander
+    gegenüberliegenden Buchseiten</p>
+  <codeblock outputclass="language-xml">&lt;div xml:id="[ID text1_teil1]" next="#[ID text1_teil2]"&gt;...&lt;/div&gt;
+&lt;pb/&gt;
+&lt;div xml:id="[ID text2_teil1]" next="#[ID text2_teil2]"&gt;...&lt;/div&gt;
+&lt;pb/&gt;
+&lt;div xml:id="[ID text1_teil2]" prev="#[ID text1_teil1]"&gt;...&lt;/div&gt;
+&lt;pb/&gt;
+&lt;div xml:id="[ID text2_teil2]" prev="#[ID text2_teil1]"&gt;...&lt;/div&gt;</codeblock>
+
+  <note type="attention">Zu den Konventionen für die <codeph>@xml:id</codeph>-Werte beachten
+    Sie bitte die <xref href="http://www.w3.org/TR/REC-xml/#id" scope="external" format="html">XML-Richtlinie des W3C</xref>.</note>
+
+  <example>
+    <title>Nebeneinander geordnete selbständige Texte</title>
+    <fig>
+      <image href="img/WV66RAboye.png"/>
+      <image href="img/rRcqzO3Trc.png"/>
+      <codeblock outputclass="language-xml">&lt;row&gt;
+  &lt;cell xml:id="text1_teil1" next="#text1_teil2"&gt;
+    Die Martingale um die Kummete der&lt;lb/&gt;
+  &lt;/cell&gt;
+  &lt;cell xml:id="text2_teil1" next="#text2_teil2"&gt;
+    Die Martingale um die Kummete der&lt;lb/&gt;
+  &lt;/cell&gt;
+&lt;/row&gt;
+&lt;pb n="61" facs="#f0075"/&gt;
+&lt;fw type="header" place="top"&gt;Vierspännige Luxus-Equipagen.&lt;/fw&gt;&lt;lb/&gt;
+&lt;row&gt;
+  &lt;cell xml:id="text1_teil2" prev="#text1_teil1"&gt;
+    Hinterpferde herum und nicht nur durch die&lt;lb/&gt;
+    Kummetschliessergelenke durchgezogen.&lt;lb/&gt;
+  &lt;/cell&gt;
+  &lt;cell xml:id="text2_teil2" prev="#text2_teil1"&gt;
+    Hinterpferde herum und nicht nur durch die&lt;lb/&gt;
+    Kummetschliessergelenke durchgezogen-&lt;lb/&gt;
+  &lt;/cell&gt;
+&lt;/row&gt;</codeblock>
+    <p><i>Quelle: <xref href="http://www.deutschestextarchiv.de/wrangel_luxusfuhrwerk_1898/75"
+                format="html" scope="external">Wrangel, Carl Gustav: Das Luxus-Fuhrwerk. Stuttgart, 1898. [Faksimile 74/75]</xref></i></p>
+    </fig>
+  </example>
+     <note type="tip">Typische Beispiele für diskontinuierliche Textpassagen sind etwa 
+    <xref href="fnFortlaufend.dita">Fortlaufende Fußnoten</xref>, 
+    <xref href="endnote.dita">Endnoten</xref>, 
+    <xref href="geDiskontVerse.dita">Diskontinuierliche Vers-Teile in Gedichten</xref>.</note>
+  
+  <note type="notice"><i><b>Abweichende Regelung Phase 1:</b> Fortlaufende Fußnoten sowie
+    Endnoten stellen einen Spezialfall für die
+    Unterbrechnung zusammengehöriger
+    Textpassagen dar, der mittels des
+      <codeph>&lt;seg&gt;</codeph>-Elements
+    behandelt wird (s. dazu Kap. <xref href="fnFortlaufend.dita">Fortlaufende Fußnoten</xref> und <xref href="endnote.dita"
+      >Endnoten</xref>). </i></note>
+     
+  </body>
+</topic>

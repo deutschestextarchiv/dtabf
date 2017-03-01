@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="mdSourceDescAllg">
+  <title>Grundstruktur der <i>Source Description</i> <codeph>(//fileDesc/sourceDesc)</codeph></title>
+    <titlealts><navtitle>Source Description Grundstruktur</navtitle></titlealts>
+  <body>
+    <p>Hinweise zur Vorlage des DTA-Volltextes (zugrundeliegende Buchfassung und Bilddateien) werden 
+      in der <i>Source Description</i> (<codeph>&lt;sourceDesc&gt;</codeph>) zusammengefasst. 
+    </p>
+    <p>Die Elemente <codeph>&lt;bibl&gt;</codeph> (<i>Bibliographic Citation</i>) und <codeph>&lt;biblFull&gt;</codeph> 
+      (<i>Fully-structured Bibliographic Citation</i>) der <i>Source Description</i> enthalten die vollständigen 
+      bibliographischen Angaben zu dem jeweils im DTA publizierten Band. Innerhalb von <codeph>&lt;biblFull&gt;</codeph> 
+      werden außerdem der Umfang der Quelle (<codeph>&lt;extent&gt;</codeph>) sowie die Rahmenbedingungen der Ausgabe 
+      (<codeph>&lt;publicationStmt&gt;</codeph>) angegeben. Für Angaben zum Aufbewahrungsort der Quelle steht das 
+      Element <codeph>&lt;msDesc&gt;</codeph> (<i>Manuscript Description</i>) zur Verfügung. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;sourceDesc&gt;
+  &lt;bibl type="[M | MM | DM | DS | JA | J | MMS | MS]"&gt;[Kurztitelangabe]&lt;/bibl&gt;
+  &lt;biblFull&gt;[bibliographische Angaben zur Quelle]&lt;/biblFull&gt;
+  &lt;msDesc&gt;[Angaben zum Aufbewahrungsort der Quelle]&lt;/msDesc&gt;
+&lt;/sourceDesc&gt;</codeblock>
+  </body>
+</topic>

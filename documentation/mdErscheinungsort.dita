@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ujf_w32_qs">
+  <title>Erscheinungsort</title>
+  <body>
+    <p>Erscheinungsorte, deren Name und Status unverändert geblieben sind, werden entsprechend 
+      der heute gängigen Schreibung wiedergegeben. Eine Orientierung bilden dabei die Ansetzungsformen 
+      im folgenden Verzeichnis: 
+      <cite>Druckorte des 16. bis 19. Jahrhunderts. Ansetzungs- und Verweisungsformen. Erarbeitet von der 
+      Bayerischen Staatsbibliothek. Wiesbaden: Reichert, 1991.</cite>
+    </p>
+    <p>Namenszusätze stehen jedoch grundsätzlich in runden Klammern im Anschluss an den Ortsnamen.
+    </p>
+    <example><title>Namenszusätze in Erscheinungsorten</title>
+      <p>Frankfurth a. Mayn → Frankfurt (Main)</p>
+      <p>Freiburg i. Br. → Freiburg (Breisgau)</p>
+    </example>
+    
+    <p>Latinisierte Ortsnamen werden entsprechend der heutigen Form wiedergegeben.
+    </p>
+    <example><title>Latinisierte Ortsnamen</title>
+      <p>Argentoratum → Straßburg</p>
+    </example>
+    
+    <p>Historische Ortsnamen, die heutzutage keine äquivalente Entsprechung haben, weil (a) der Ort 
+      in der historischen Form nicht mehr existiert, oder (b) der Name des Orts sich verändert hat, 
+      werden entsprechend der historischen Schreibung der Quelle wiedergegeben. Namenszusätze stehen 
+      in runden Klammern im Anschluss an den Ortsnamen.
+    </p>
+    <example><title>Historische Ortsnamen</title>
+      <p>Cölln (Spree)</p>
+    </example>
+  </body>
+</topic>

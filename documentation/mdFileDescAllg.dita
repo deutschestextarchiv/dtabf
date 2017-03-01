@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="mdFileDescriptionAllg">
+  <title>Grundstruktur der <i>File Description</i> <codeph>(//fileDesc)</codeph></title>
+    <titlealts><navtitle>File Description Grundstruktur</navtitle></titlealts>
+  <body>
+    <p>Die bibliographischen Angaben zum DTA-Volltext und der jeweils zugrunde liegenden Quelle werden in 
+      der <i>File Description</i> (<codeph>&lt;fileDesc&gt;</codeph>) zusammengefasst.
+    </p>
+    <codeblock outputclass="language-xml">&lt;fileDesc&gt;
+  &lt;titleStmt&gt;[Titelangaben zur DTA-Ausgabe]&lt;/titleStmt&gt;
+  &lt;editionStmt&gt;[Art der DTA-Ausgabe]&lt;/editionStmt&gt;
+  &lt;extent&gt;[Umfangsangabe]&lt;/extent&gt;
+  &lt;publicationStmt&gt;[Spezifika der DTA-Ausgabe]&lt;/publicationStmt&gt;
+  &lt;sourceDesc&gt;[Angaben zur Vorlage des DTA-Volltextes]&lt;/sourceDesc&gt;
+&lt;/fileDesc&gt;</codeblock>
+  </body>
+</topic>

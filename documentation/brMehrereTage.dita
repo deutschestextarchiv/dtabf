@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_kyw_1ff_q5">
+  <title>Mehrtägige Briefe</title>
+  <body>
+    <p>Einen Spezialfall bilden Briefe, die über mehrere Tage verfasst
+            wurden, somit mehrere Daten auch innerhalb des Brieftextes
+            beinhalten. In diesem Fall kann das Element
+            <codeph>&lt;dateline&gt;</codeph> außerhalb von
+            <codeph>&lt;opener&gt;</codeph> oder <codeph>&lt;closer&gt;</codeph>
+            gesetzt und auch innerhalb des Brieftextes verwendet werden: </p>
+        <codeblock outputclass="language-xml">&lt;div n="[Ebene]"&gt;
+  &lt;head&gt;[Brieftitel]&lt;/head&gt;&lt;!-- sofern vorhanden --&gt;
+  &lt;opener&gt;
+    &lt;salute&gt;[Anrede]&lt;/salute&gt;
+  &lt;/opener&gt;
+  &lt;dateline&gt;[Datum]&lt;/dateline&gt;
+  &lt;p&gt;[Brieftext]&lt;/p&gt;
+  &lt;dateline&gt;[Datum]&lt;/dateline&gt;
+  &lt;p&gt;[Brieftext]&lt;/p&gt;
+  &lt;closer&gt;
+    &lt;salute&gt;[abschließende Grußformel]&lt;/salute&gt;
+  &lt;/closer&gt;
+&lt;/div&gt;</codeblock>
+  </body>
+</topic>

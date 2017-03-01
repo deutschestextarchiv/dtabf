@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="trUmlaute">
+  <title>Umlaute</title>
+<body>
+<p>
+  Umlaute werden entsprechend der Vorlage transkribiert, d.&#x202f;h. die Umlaute in
+  den heute gebräuchlichen Formen <tt>Ä</tt>, <tt>Ö</tt>, <tt>Ü</tt>, <tt>ä</tt>,
+  <tt>ö</tt>, <tt>ü</tt> werden von solchen, die durch ein hochgestelltes <tt>e</tt>
+  (<tt>U+0364, COMBINING LATIN SMALL LETTER E</tt>) über Vokal gekennzeichnet sind, 
+  unterschieden (z.&#x202f;B. <codeph>u&amp;#x0364;</codeph>).
+</p>
+</body>
+</topic>

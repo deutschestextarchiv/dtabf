@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jIntroMaterial">
+  <title>Einführende Informationen</title>
+  <body>
+    <p>
+  Einführende Informationen zur jeweiligen Zeitungs-/Zeitschriftenausgabe, die außerhalb des Titelkopfs 
+  erscheinen, werden ebenfalls im <codeph>&lt;front&gt;</codeph>-Element in entsprechend 
+  typisierten <codeph>&lt;div&gt;</codeph>-Elementen wiedergeben. Folgende Werte kann 
+  <tt>@type</tt> in <codeph>&lt;div&gt;</codeph> dabei annehmen:
+</p>
+      <table>
+          <tgroup cols="2">
+              <thead>
+                  <row>
+                      <entry><codeph>@type</codeph>-Wert</entry>
+                      <entry>Bedeutung</entry>
+                  </row>
+              </thead>
+              <tbody>
+                  <row>
+                      <entry><tt>contents</tt></entry>
+                      <entry>Inhaltsverzeichnis</entry>
+                  </row>
+                  <row>
+                      <entry><tt>jExpedition</tt></entry>
+                      <entry>Angaben zu Versand und Preis (Expedition)</entry>
+                  </row>
+                  <row>
+                      <entry><tt>jEditorialStaff</tt></entry>
+                      <entry>Zusammenstellung der Redaktion</entry>
+                  </row>
+                  <row>
+                      <entry><tt>imprimatur</tt></entry>
+                      <entry>Druckerlaubnis</entry>
+                  </row>
+              </tbody>
+          </tgroup>
+      </table>
+
+<codeblock outputclass="language-xml">&lt;front&gt;
+  &lt;titlePage&gt;[Titelei]&lt;/titlePage&gt;
+  &lt;div type="contents"&gt;[Inhaltsverzeichnis]&lt;/div&gt;
+  &lt;div type="jEditorialStaff"&gt;[Zusammenstellung der Redaktion]&lt;/div&gt;
+  &lt;div type="jExpedition"&gt;[Hinweise zu Versand und Preis]&lt;/div&gt;
+  &lt;div type="imprimatur"&gt;[Druckerlaubnis]&lt;/div&gt;
+&lt;/front&gt;
+</codeblock>
+  </body>
+</topic>

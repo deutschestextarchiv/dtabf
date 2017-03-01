@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_fw">
+   <title>Frakturwechsel</title>
+   <body>
+      <example>
+         <title>Kodierung des Wechsels der Frakturschrift</title><fig>
+            <image href="img/TOe1MVF1Vd.png"/>
+            <codeblock outputclass="language-xml">&lt;p>
+  &lt;hi rendition="#fr">Eine Madonna mit dem Kinde.&lt;/hi> Sie&lt;lb/>
+  ha&#x0364;lt ein Buch. [...]
+&lt;/p>&lt;lb/></codeblock>
+            <p><i>Quelle: <xref
+               href="http://www.deutschestextarchiv.de/ramdohr_mahlerei02_1787/86"
+               format="html" scope="external">Ramdohr, Friedrich Wilhelm Basilius von: Über
+               Mahlerei und Bildhauerarbeit in Rom für Liebhaber des Schönen in der Kunst. T.
+               2. Leipzig, 1787. [Faksimile 86]</xref>
+            </i></p>
+         </fig></example>
+       <p>Der Wechsel zwischen zwei Frakturschriften wird nur im Fließtext beachtet. Auf
+      Titelblättern, in Überschriften o. ä. wird der Frakturwechsel nicht vermerkt.</p>
+   </body>
+</topic>

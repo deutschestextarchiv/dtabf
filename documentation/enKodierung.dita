@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_23">
+    <title>Wiedergabe der Endnoten</title>
+    <body>
+        <p>Die Endnotentexte werden jeweils an der Stelle wiedergegeben, an der
+            sie tatsächlich stehen. Sie werden mit dem
+            <codeph>&lt;note&gt;</codeph>-Element ausgezeichnet, das die
+            Attribute <codeph>@place</codeph> (Wert: <codeph>end</codeph>) und
+            <codeph>@n</codeph> (Wert: die Endnotenreferenz im Text) sowie eine
+            <codeph>@xml:id</codeph> und einen Verweis auf das zugehörige
+            Endnotenzeichen mittels <codeph>@prev</codeph> enthält: </p>
+        <codeblock outputclass="language-xml">&lt;note place="end" n="[Endnotenreferenz]" xml:id="[ID 02]" prev="#[ID 01]"&gt;[Endnotentext]&lt;/note&gt;</codeblock>
+        <p>Formatierungen, Spalten- und Zeilenumbrüche im Endnotentext werden
+            wie im Haupttext gehandhabt. </p>
+        <p>Enthält eine Endnote wiederum eine Fußnote, so wird diese gemäß den
+            Richtlinien für Fußnoten ausgezeichnet. </p>
+        <example> <title>Endnotenreferenz im Text</title> <fig>
+            <image href="img/buZKg5fBGd.png"/>
+<codeblock outputclass="language-xml">&lt;note place="end" n="78)" xml:id="a02" prev="#a01"&gt;
+  Vergl. Autenrieth über das Gift der Fische, Tübingen 1833, wo die früheren&lt;lb/&gt;
+  Nachrichten zusammengestellt und beurtheilt sind.
+&lt;/note&gt;&lt;lb/&gt;</codeblock>
+             <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/berg_ostasienzoologie01_1876/377"
+                format="html" scope="external">Martens, Eduard von: Die  preussische Expedition nach Ost-Asien. Nach amtlichen Quellen.
+                Zoologischer Teil. Erster Band. Berlin, 1876. [Faksimile 377]</xref></i></p>
+            </fig> </example>
+        <note type="notice"><i><b>Abweichende Regelung Phase 1:</b> Die
+            Endnotentexte werden jeweils an der Stelle wiedergegeben, an der sie
+            tatsächlich stehen. Sie werden mit dem
+            <codeph>&lt;note&gt;</codeph>-Element ausgezeichnet, das die
+            Attribute <codeph>@place</codeph> (Wert: <codeph>end</codeph>) und
+            <codeph>@n</codeph> (Wert: die Endnotenreferenz im Text)
+            enthält:</i>
+            <codeblock outputclass="language-xml">&lt;note place="end" n="[Endnotenreferenz]"&gt;[Endnotentext]&lt;/note&gt;</codeblock></note>
+    </body>
+</topic>

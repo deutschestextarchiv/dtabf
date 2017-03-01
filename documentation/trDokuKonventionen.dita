@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="trDokuKonv">
+  <title>Definitionen und Konventionen für diese Richtlinien</title>
+  <titlealts><navtitle>Über diese Richtlinien</navtitle></titlealts>
+<body>
+<p>
+  Unter der <b>Vorlage</b> sind, so nicht anders vermerkt, die digitalen
+  Faksimiles einer Buchausgabe zu verstehen, auf welchen der DTA-Volltext
+  basiert.
+</p>
+
+<p>
+  <tt>Nichtproportionalschrift</tt> wird verwendet für:
+</p>
+
+<ul>
+  <li>die Angabe von Textbeispielen</li>
+  <li>die Angabe von Tags bzw. Codebeispielen</li>
+</ul>
+
+<p>
+  Die Notation <codeph>U+NNNN</codeph> verweist auf ein entsprechendes Unicode-Zeichen.
+  Desweiteren wird in den Transkriptionsbeispielen bei höherbittigen Unicode-Zeichen
+  die von XML abgeleitete Notationsform <codeph>&amp;#xNNNN;</codeph> benutzt.
+</p></body>
+</topic>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_60">
+<title>Mehrere Register am Buchende</title>
+    <titlealts><navtitle>Mehrere Register</navtitle></titlealts>
+         <body>
+             <p>Stehen mehrere Register am Schluss eines Bandes, so wird jedes 
+                 Register in einem eigenen Element <codeph>&lt;div type="index"&gt;</codeph> verzeichnet.</p>
+                        <codeblock outputclass="language-xml">&lt;back&gt;
+  &lt;div n="1" type="index"&gt;
+    &lt;head&gt;[Titel Register 1]&lt;/head&gt;
+    &lt;list&gt;
+      &lt;item&gt;[Stichwort 1]
+        &lt;ref&gt;[Seitenzahl]&lt;/ref&gt;
+      &lt;/item&gt;
+    &lt;/list&gt;
+  &lt;/div&gt;
+  &lt;div n="1" type="index"&gt;
+    &lt;head&gt;[Titel Register 2]&lt;/head&gt;
+    &lt;list&gt;
+      &lt;item&gt;[Stichwort 1]
+        &lt;ref&gt;[Seitenzahl]&lt;/ref&gt;
+      &lt;/item&gt;
+    &lt;/list&gt;
+  &lt;/div&gt;
+&lt;/back&gt;</codeblock>
+         </body>
+      </topic>

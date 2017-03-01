@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_22">
+  <title>Verweise auf Endnoten im Text</title>
+  <body>
+    <p>Der Verweis auf eine Endnote im Text wird mit
+      dem <codeph>&lt;note&gt;</codeph>-Element ausgezeichnet, das eine
+      <codeph>@xml:id</codeph> und einen Verweis auf das zugehörige
+      Endnotenzeichen mittels <codeph>@next</codeph> enthält: </p>
+    <codeblock>&lt;note place="end" n="[Endnotenreferenz]" xml:id="[ID 01]" next="#[ID 02]"/&gt;</codeblock>
+    <p>Das referenzierende Zeichen wird textgetreu
+      wiedergegeben; besondere Formatierungen des Endnotenzeichens
+      (Hoch-/Tiefstellung, gesperrter Druck …) bleiben dabei
+      unberücksichtigt. </p>
+    <example> <title>Wiedergabe der Endnotenreferenz im Text</title> <fig>
+            <image href="img/UwY7n5VZAN.png"/>
+<codeblock outputclass="language-xml">&lt;p&gt;[...] wegen gewarnt; wir gebrauchten die Vorsicht, die rauhe Haut zu&lt;lb/&gt;
+  entfernen, assen aber das weisse Fleisch 
+  ohne allen Nachtheil.&lt;note place="end" n="78)" xml:id="a01" next="#a02"/&gt;
+&lt;/p&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Quelle: <xref
+                href="http://www.deutschestextarchiv.de/berg_ostasienzoologie01_1876/342"
+                format="html" scope="external">Martens, Eduard von: Die
+                preussische Expedition nach Ost-Asien. Nach amtlichen Quellen.
+                Zoologischer Teil. Erster Band. Berlin, 1876. [Faksimile
+                342]</xref></i></p>
+            </fig> </example>
+    <note type="notice"><i><b>Abweichende Regelung Phase 1:</b> Der Verweis auf eine
+      Endnote im Text wird nicht gesondert als solcher ausgezeichnet.
+      Typographische Besonderheiten des Endnotenzeichens werden jedoch wie
+      gewohnt berücksichtigt.</i> </note>
+  </body>
+</topic>

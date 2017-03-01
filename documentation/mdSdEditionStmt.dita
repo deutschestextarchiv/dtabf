@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_m3y_nk2_qs">
+  <title>Die Angabe zur Art der zugrundeliegenden Textausgabe <codeph>(//fileDesc/sourceDesc/biblFull/editionStmt)</codeph></title>
+    <titlealts><navtitle>Edition Statement (Source)</navtitle></titlealts>
+  <body>
+    <p>Die Hinweise zur Nummer und Art der Auflage, welche der DTA-Ausgabe zugrunde liegt 
+      (z.B. Erstausgabe, zweite verbesserte Neuauflage u.ä.) werden im 
+      <codeph>&lt;editionStmt&gt;</codeph> innerhalb des <codeph>&lt;biblFull&gt;</codeph>-Elements der 
+      <i>Source Description</i> angegeben. Das <codeph>&lt;editionStmt&gt;</codeph> erhält hierfür 
+      das Unterelement <codeph>&lt;edition&gt;</codeph>.
+    </p>
+    <p>
+      Im <codeph>@n</codeph>-Attribut des <codeph>&lt;edition&gt;</codeph>-Elements steht die 
+      normalisierte Auflagennummer, z.B. <codeph>"2"</codeph> für <codeph>"zweite, vermehrte Auflage"</codeph>. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;editionStmt&gt;
+  &lt;edition n="[Auflagennummer]"&gt;[Art der zugrundeliegenden Textausgabe]&lt;/edition&gt;
+&lt;/editionStmt&gt;</codeblock>
+    <p>
+      Das <codeph>&lt;edition&gt;</codeph>-Element bleibt leer, wenn die Vorlage keine expliziten 
+      Hinweise zur Auflage enthält. Im <codeph>@n</codeph>-Attribut steht dann die rekonstruierte Auflagennummer. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;editionStmt&gt;
+      &lt;edition n="[Auflagennummer]"/&gt;
+&lt;/editionStmt&gt;</codeblock>
+    <p>
+      Das <codeph>@n</codeph>-Attribut des <codeph>&lt;edition&gt;</codeph>-Element ist obligatorisch. Kann die Auflagennummer 
+      weder der Vorlage entnommen noch rekonstruiert werden, steht <codeph>"k.A."</codeph> (keine Angabe) im 
+      <codeph>@n</codeph>-Attribut.
+    </p>
+  </body>
+</topic>

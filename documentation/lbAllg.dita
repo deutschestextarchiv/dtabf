@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_12">
+<title>Grundstruktur der Kodierung von Zeilenumbrüchen</title>
+  <titlealts><navtitle>Zeilenumbrüche Grundstruktur</navtitle></titlealts>
+         <body>
+                        <p>Der Zeilenfall wird aus der Vorlage übernommen. Auch Zeilenumbrüche innerhalb von
+                Überschriften, Fußnoten, Endnoten, Marginalien etc. werden berücksichtigt.
+              </p>
+            <p>Jeder Zeilenschluß wird durch das leere Element <codeph>&lt;lb/&gt;</codeph>
+                gekennzeichnet. Dieses ist grundsätzlich in keinem Element implizit, sondern wird immer
+                explizit gesetzt. Allein die Elemente <codeph>&lt;pb&gt;</codeph>, <codeph>&lt;cb&gt;</codeph>, 
+                und <codeph>&lt;space&gt;</codeph> stehen ohne folgendes <codeph>&lt;lb&gt;</codeph>-Element.
+              </p>
+            <p>Zeilenumbrüche an Elementenden stehen hinter dem äußersten schließenden Element, jedoch vor 
+                <codeph>&lt;/front&gt;</codeph>, <codeph>&lt;/body&gt;</codeph> (und somit <codeph>&lt;/floatingText&gt;</codeph>), 
+                <codeph>&lt;/back&gt;</codeph> und <codeph>&lt;/titlePage&gt;</codeph>.
+              </p>
+            <codeblock outputclass="language-xml">&lt;lg type="poem"&gt;
+  &lt;l&gt;[Text Vers a]&lt;/l&gt;&lt;lb/&gt;
+  &lt;l&gt;[Text Vers b]&lt;/l&gt;
+&lt;/lg&gt;&lt;lb/&gt;</codeblock>
+            <codeblock outputclass="language-xml">&lt;body>
+  &lt;div n="1">
+    &lt;p>[Text Paragraph a]&lt;/p>&lt;lb/>
+    &lt;p>[Text Paragraph b]&lt;/p>
+  &lt;/div>&lt;lb/>
+&lt;/body></codeblock>
+         </body>
+      </topic>

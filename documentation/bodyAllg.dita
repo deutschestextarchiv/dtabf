@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_tka">
+<title>Grundstruktur des Textkörpers</title>
+    <titlealts><navtitle>Textkörper Grundstruktur</navtitle></titlealts>
+         <body>
+                        <p>Den eigentlichen Text des Werkes umschließt ein <codeph>&lt;body&gt;</codeph>-Element.</p>
+            <p>Das öffnende <codeph>&lt;body&gt;</codeph>-Tag folgt dabei direkt auf das
+  schließende <codeph>&lt;/front&gt;</codeph>-Tag, steht also noch
+  vor jedem neuen Seitenumbruch. Das schließende
+  <codeph>&lt;/body&gt;</codeph>-Tag steht direkt vor dem öffnenden
+  <codeph>&lt;back&gt;</codeph>-Tag, welches wiederum noch vor jedem neuen Seitenumbruch folgt. 
+</p>
+         </body>
+      </topic>

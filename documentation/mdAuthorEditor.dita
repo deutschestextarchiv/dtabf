@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_qjt_4j2_qs">
+  <title>Die Unterstrukturierung der Elemente <codeph>//author</codeph> und <codeph>//editor</codeph></title>
+    <titlealts><navtitle>Author und Editor</navtitle></titlealts>
+  <body>
+    <p>Die Angabe des Autors/der Autoren eines Textes erfolgt im Element <codeph>&lt;author&gt;</codeph> des 
+      <i>Title Statements</i>, welches sowohl in der <xref href="mdTitleStmt.dita">
+        <i>File Description</i>
+      </xref> als 
+      auch im <xref href="mdSdTitleStmt.dita">
+        <codeph>&lt;biblFull&gt;</codeph>-Element der <i>Source Description</i>
+      </xref> 
+      stehen kann. Im Falle mehrerer Autoren wird das <codeph>&lt;author&gt;</codeph>-Element mehrfach verwendet. 
+      Gleiches gilt für das Element <codeph>&lt;editor&gt;</codeph> zur Angabe des Herausgebers eines Textes.
+    </p>
+    <p>Der Name des Autors/Herausgebers/Übersetzers steht jeweils im Unterelement <codeph>&lt;persName&gt;</codeph> des 
+      <codeph>&lt;author&gt;</codeph>- bzw. <codeph>&lt;editor&gt;</codeph>-Elements (zur weiteren Strukturierung des 
+      Elements <codeph>&lt;persName&gt;</codeph> siehe Kap. <xref href="mdPersName.dita">Die Unterstrukturierung des 
+        Elements <codeph>&lt;persName&gt;</codeph>
+      </xref>).
+    </p>
+    <p><i>Strukturierung des &lt;author&gt;-Elements:</i>
+    </p>
+    <codeblock outputclass="language-xml">&lt;author&gt;
+  &lt;persName&gt;[Name des Autors]&lt;/persName&gt;
+&lt;/author&gt;</codeblock>
+    <p><i>Strukturierung des &lt;editor&gt;-Elements der File Description</i>
+    </p>
+    <codeblock outputclass="language-xml">&lt;editor corresp="#[XML-ID des Publication Statements]"&gt;
+  &lt;persName&gt;[Name des Herausgebers der DTA-Ausgabe in der File Description]&lt;/persName&gt;
+&lt;/editor&gt;</codeblock>
+    <p><i>Strukturierung des &lt;editor&gt;-Elements der Source Description</i>
+    </p>
+    <codeblock outputclass="language-xml">&lt;editor&gt;
+  &lt;persName&gt;[Name des Herausgebers der Quelle]&lt;/persName&gt;
+&lt;/editor&gt;
+&lt;editor role="translator"&gt;
+  &lt;persName&gt;[Name des Übersetzers der Vorlage zur Quelle]&lt;/persName&gt;
+&lt;/editor&gt;</codeblock>
+  </body>
+</topic>
