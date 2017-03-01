@@ -17,8 +17,8 @@ http://www.deutschestextarchiv.de/doku/basisformat/schema.html
 ---
 # Publishers and Responsibilities
 
-PUBLISHER: Deutsches Textarchiv, Berlin-Brandenburgische Akademie 
-der Wissenschaften, Jägerstr. 22/23, 10117 Berlin, Germany
+PUBLISHER: Deutsches Textarchiv, Berlin-Brandenburg Academy of 
+Sciences and Humanities, Jaegerstr. 22/23, 10117 Berlin, Germany
 (http://www.deutschestextarchiv.de)
 
 * 	FORMAT: Matthias Boenig, Alexander Geyken, Susanne Haaf, 
