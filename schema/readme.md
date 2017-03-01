@@ -1,6 +1,6 @@
-DTA 'Base Format' (DTABf): Schema (including Schematron constraint set)
-Version 1.0
-2017-01-03
+DTA 'Base Format' (DTABf): Schema (including Schematron constraint set)  
+Version 1.0  
+2017-03-01
 
 ---
 # Introduction
@@ -53,7 +53,7 @@ https://creativecommons.org/licenses/by-sa/3.0/de/legalcode.
 The DTABf is based on the P5 guidelines of the Text Encoding 
 Initiative (TEI) [2]. The TEI P5 guidelines were only reduced or 
 tightened, never extended. Thus, the DTABf is fully compliant to 
-TEI P5.  
+TEI P5. 
 
 The TEI P5 guidelines and adjacent software are distributed under 
 the Creative Commons Attribution 3.0 Unported License 
