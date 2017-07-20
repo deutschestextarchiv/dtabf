@@ -16,7 +16,7 @@
 
     <pattern id="pipeCharacter">
         <rule context="tei:*">
-            <report test="text()[contains(., '|')]" role="ERROR">
+            <report test="text()[contains(., '|')]" role="WARNING">
                 [W0007] The uncommon character '|' has been used within the text area.
             </report>
         </rule>

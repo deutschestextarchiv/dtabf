@@ -56,13 +56,14 @@
         <body>
             <p>This is the TEI Customization for the DTA 'base format', used by the DFG Project
                 Deutsches Textarchiv (The German Text Archive).</p>
-            <schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="file:///C:/Users/Haaf/Documents/DTABf/ChainingODDs/out/basisformat_all.xml">
+            <schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="/path/to/file/basisformat_all.xml">
                 <!-- required modules -->
                 <moduleRef key="core" except="sp speaker stage"/>
                 <moduleRef key="header"/>
                 <moduleRef key="tei"/>
                 <moduleRef key="textstructure" except="docImprint docEdition imprimatur"/>
                 <!-- optional modules -->
+                <moduleRef key="corpus"/>
                 <moduleRef key="figures"/>
                 <moduleRef key="linking"/>
                 <moduleRef key="msdescription" except="typeDesc"/>
