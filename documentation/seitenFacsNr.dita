@@ -14,7 +14,7 @@
     <p>Ist eine Seitenzahl falsch gedruckt, wird die falsche Seitenzahl abgetippt. Die korrigierte
       Seitenzahl steht mit im @n-Attribut in eckigen Klammern. Die korrekte Ordnung der Seiten im
       Band wird durch die Bildnummern vermittelt, die fehlerfrei fortlaufend angegeben werden.</p>
-    <codeblock outputclass="language-xml">&lt;pb facs="#f[Bildnummer]" n="[fehlerhafte Seitenzahl [korrigierte Seitenzahl]]"/&gt;</codeblock>
+    <codeblock outputclass="language-xml">&lt;pb facs="#f[Bildnummer]" n="[fehlerhafte Seitenzahl] [[korrigierte Seitenzahl]]"/&gt;</codeblock>
     <p>Besonderheiten bei Seitenzahlen wie etwa Verzierungen oder Einklammerungen werden nicht
       wiedergegeben.</p>
     <example>
