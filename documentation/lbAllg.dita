@@ -24,5 +24,8 @@
     &lt;p>[Text Paragraph b]&lt;/p>
   &lt;/div>&lt;lb/>
 &lt;/body></codeblock>
+           <note type="notice">
+             <i><b>Abweichung von TEI P5 core:</b>Anders als in den <xref href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CORS5" format="html" scope="external">TEI-Richtlinien</xref> bezeichnet das <codeph>&lt;lb&gt;</codeph>-Element nicht den Beginn einer Zeile, sondern deren Ende.</i>
+           </note>
          </body>
       </topic>
