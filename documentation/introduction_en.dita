@@ -8,7 +8,7 @@
         
 <p>
   The structural annotation of all DTA texts is done according to the DTA ›base format‹ (DTABf).
-  The DTABf was developed in accordance with which is based on the P5-Guidelines of the 
+  The DTABf was developed in accordance with the P5-Guidelines of the 
   <xref href="http://www.tei-c.org/" format="html">Text Encoding Initiative (TEI)</xref>. Since the TEI Guidelines 
   are offering solutions for a huge amount of tagging requirements and are thus rather extensive 
   and flexible, they are meant to be adjusted to the individual necessities of projects working 
