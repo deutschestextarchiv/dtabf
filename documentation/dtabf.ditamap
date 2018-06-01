@@ -341,5 +341,7 @@
         <topicref href="legende.dita"/>
         
     </part>
-  <part href="impressum.dita"/>
+  <part href="impressum.dita">
+  	<topicref href="datenschutz.dita"/>
+  </part>
 </bookmap>
