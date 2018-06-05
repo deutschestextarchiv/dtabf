@@ -323,8 +323,8 @@
                                <valItem ident="intralinear"><desc>Manuskripte: Einfügung innerhalb der Textzeile, jedoch ohne bestehenden Text zu überschreiben.</desc></valItem>
                                <valItem ident="superlinear"><desc>Manuskripte: Einfügung über der Zeile.</desc></valItem>
                                <valItem ident="sublinear"><desc>Manuskripte: Einfügung unter der Zeile.</desc></valItem>
-                               <valItem ident="left"><desc>Manuskripte: Einfügung am rechten Rand.</desc></valItem>
-                               <valItem ident="right"><desc>Manuskripte: Einfügung am linken Rand.</desc></valItem>
+                               <valItem ident="left"><desc>Manuskripte: Einfügung am linken Rand.</desc></valItem>
+                               <valItem ident="right"><desc>Manuskripte: Einfügung am rechten Rand.</desc></valItem>
                            </valList>
                        </attDef>
                        <attDef ident="sameAs" mode="delete"/>
