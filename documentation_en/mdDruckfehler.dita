@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_l31_hh2_qs">
+  <title>Dealing with Typographical Errors and Unusual Spellings</title>
+  <body>
+    <p>All distinct printing errors in the title information of the original are tacitly corrected.
+    </p>
+    <p>Unusual but historically possible spellings, on the other hand, are taken from the original unaltered. They are not tagged separately (e. g. by a (sic!) note after the word in question).
+    </p>
+  </body>
+</topic>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_50">
+   <title>Difficult or Non-Decipherable Characters and Omissions</title>
+   <titlealts><navtitle>Difficult to Read and Illegible Information</navtitle></titlealts>
+   <body>
+      <p><b>Difficult to read characters or strings</b> (e. g. due to physical deficiencies of the original, weak pressure) are enclosed with the tag <codeph>&lt;supplied&gt;</codeph>:</p>
+      <codeblock outputclass="language-xml">&lt;supplied&gt;[character or string]&lt;/supplied&gt;</codeblock>
+      <p>If the reading is uncertain for the supplemented string, a <codeph>@cert</codeph> attribute in the supplied element can be used to display the degree of certainty for the supplement. The level of certainty is displayed as follows: </p>
+      <table>
+         <tgroup cols="2">
+            <colspec colname="col1"/>
+            <colspec colname="col2"/>
+            <thead>
+               <row>
+                  <entry namest="col1" nameend="col1">Expression</entry>
+                  <entry namest="col2" nameend="col2">Meaning</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>&lt;supplied&gt;</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">Certainty/safe reading (for example, the character/string is still weakly printed, thus ensuring that the reading is assured)</entry>
+               </row>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>&lt;supplied cert="high"&gt;</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">high certainty of the addition (e. g. the character/string is no longer recognizable, but the reading results from the context and is thus secured)</entry>
+               </row>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>&lt;supplied cert="low"&gt;</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">low certainty of supplementation/uncertain reading (e. g. the character/string is no longer recognizable and has been reconstructed; other reconstructions are possible)</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+      <p><b>If the characters are not recognizable and cannot be reconstructed</b>, the tag <codeph>&lt;gap/&gt;</codeph> is set to indicate the gap. Within the <codeph>&lt;gap&gt;</codeph> tag, the attributes <codeph>@unit</codeph>, <codeph>@quantity</codeph> and <codeph>@reason</codeph> can be used to display how many characters the gap contains, as well as the reason for the missing part:</p>
+      <codeblock outputclass="language-xml">&lt;gap unit="chars" quantity="[number of characters missing]" reason="[reason for the defect]"/&gt;</codeblock>
+      <p>The <codeph>@unit</codeph> attribute can have the following values:</p>
+      <table>
+         <tgroup cols="2">
+            <colspec colname="col1"/>
+            <colspec colname="col2"/>
+            <tbody>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>chars</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">characters</entry>
+               </row>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>lines</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">lines</entry>
+               </row>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>pages</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">pages</entry>
+               </row>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>words</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">words</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+      <p>The <codeph>@reason</codeph> attribute can have the following values: </p>
+      <table>
+         <tgroup cols="2">
+            <colspec colname="col1"/>
+            <colspec colname="col2"/>
+            <tbody>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>lost</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">damage</entry>
+               </row>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>illegible</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">illegible</entry>
+               </row>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>fm</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">foreign language material</entry>
+               </row>
+               <row>
+                  <entry namest="col1" nameend="col1">
+                     <codeph>insignificant</codeph>
+                  </entry>
+                  <entry namest="col2" nameend="col2">as unimportant for the corpus classified text</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+      <example>
+         <title>Handling Omissions/Gaps</title><fig>
+            <image href="img/BttIlQRtWe.png"/>
+            <codeblock  outputclass="language-xml">He&lt;gap reason="lost" unit="chars" quantity="1"/&gt;rde</codeblock>
+            <p><i>Source: 
+               <xref href="http://www.deutschestextarchiv.de/anthus_esskunst_1838/53" format="html"  scope="external">Antonius Anthus [i. e. Blumröder, Gustav]: Vorlesungen über Esskunst. Leipzig, 1838. [Facsimile 53]</xref>
+            </i></p>
+         </fig></example>
+   </body>
+</topic>

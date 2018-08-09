@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_qjt_4j2_qs">
+  <title>The Substructuring of the Elements <codeph>//author</codeph> und <codeph>//editor</codeph></title>
+    <titlealts><navtitle>Author and Editor</navtitle></titlealts>
+  <body>
+    <p>The information on the author (s) of a text is given in the <codeph>&lt;author&gt;</codeph> element of the <i>Title Statements</i>, which can be found both in the <xref href="mdTitleStmt.dita"><i>File Description</i></xref> and in the <xref href="mdSdTitleStmt.dita"><codeph>&lt;biblFull&gt;</codeph> element of the <i>Source Description</i></xref>. In the case of several authors, the <codeph>&lt;author&gt;</codeph> element is used more than once. The same applies to the <codeph>&lt;editor&gt;</codeph> element for specifying the publisher of a text.
+    </p>
+    <p>The name of the author/publisher/translator can be found in the <codeph>&lt;persName&gt;</codeph> subelement of the <codeph>&lt;author&gt;</codeph> or <codeph>&lt;editor&gt;</codeph> element (for further structuring of the <codeph>&lt;persName&gt;</codeph> element, see chap. <xref href="mdPersName.dita">Substructuring of the <codeph>&lt;persName&gt;</codeph> Element</xref>).
+    </p>
+    <p><i>Structuring of the <codeph>&lt;author&gt;</codeph> Element</i>
+    </p>
+    <codeblock outputclass="language-xml">&lt;author&gt;
+      &lt;persName&gt;[name of the author]&lt;/persName&gt;
+&lt;/author&gt;</codeblock>
+    <p><i>Structuring of the <codeph>&lt;editor&gt;</codeph> element of the File Description</i>
+    </p>
+    <codeblock outputclass="language-xml">&lt;editor corresp="#[XML-ID of the Publication Statement]"&gt;
+      &lt;persName&gt;[name of the publisher of the DTA edition in the File Description]&lt;/persName&gt;
+&lt;/editor&gt;</codeblock>
+    <p><i>Structuring of the <codeph>&lt;editor&gt;</codeph> element of the Source Description</i>
+    </p>
+    <codeblock outputclass="language-xml">&lt;editor&gt;
+      &lt;persName&gt;[name of the publisher of the source]&lt;/persName&gt;
+&lt;/editor&gt;
+&lt;editor role="translator"&gt;
+&lt;persName&gt;[name of the translator of the original to the source]&lt;/persName&gt;
+&lt;/editor&gt;</codeblock>
+  </body>
+</topic>

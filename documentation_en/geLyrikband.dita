@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_37">
+  <title>Poems in Volumes of Poetry</title>
+    <body>
+      <p>In volumes of poetry, in addition to the title of the poem and the individual stanzas, additional text components may appear within poems, e. g. datelines, speakers or additional information on the origin of the poem. In volumes of poetry with such poems as well as in literary collections of different types of texts, the basic structuring is carried out by means of <codeph>&lt;div&gt;</codeph> elements. A poem is enclosed by an <codeph>&lt;div&gt;</codeph> element; the poem title is given in <codeph>&lt;head&gt;</codeph> of the surrounding <codeph>&lt;div&gt;</codeph> element. Datelines, speakers, additional information in simple prose are tagged as usual. The tagging of a poem with <codeph>&lt;lg&gt;</codeph>s begins at the stanza level. </p>
+      <p>Tagging of Poems in Volumes of Poetry (exemplary):</p>
+        <codeblock outputclass="language-xml">&lt;div type="poem"&gt;
+          &lt;head&gt;[title]&lt;/head&gt;&lt;!-- where applicable --&gt;
+          &lt;dateline&gt;[date specification]&lt;/dateline&gt;
+  &lt;lg type="poem"&gt;
+  &lt;lg n="[stanza number]"&gt;&lt;!-- unless it is a one-strophic poem --&gt;
+      &lt;l&gt;[verse]&lt;/l&gt;
+      &lt;l&gt;[verse]&lt;/l&gt;
+    &lt;/lg&gt;
+  &lt;/lg&gt;
+&lt;/div&gt;</codeblock>
+
+      <example> <title>Encoding of Poems in Volumes of Poetry</title> <fig>
+            <image href="img/9ZqgQkldRA.png"/>
+            <codeblock outputclass="language-xml">&lt;div type="poem">
+  &lt;head rendition="#g">An&lt;lb/>&lt;hi rendition="#b">den Apoll,&lt;lb/>
+    daß er die Leyer zuru&#x0364;cknehmen mo&#x0364;chte.&lt;/hi>
+  &lt;/head>&lt;lb/>
+  &lt;p rendition="#c">
+    [Als ſie zu Berlin wegen Mangel an Quartieren einige&lt;lb/>Zeitlang in einer Dachſtube wohnen mußte.]
+  &lt;/p>&lt;lb/>
+  &lt;milestone rendition="#hr" unit="section"/>&lt;lb/>
+  &lt;dateline rendition="#c">1763.&lt;/dateline>&lt;lb/>
+  &lt;lg type="poem">
+    &lt;lg n="1">
+      &lt;l>&lt;hi rendition="#in">A&lt;/hi>poll! nimm deine Leyer wieder,&lt;/l>&lt;lb/>
+      &lt;l>Des Flakkus To&#x0364;ne fehlen ihr,&lt;/l>&lt;lb/>
+      &lt;l>Er ſang im dunklen Walde Lieder&lt;/l>&lt;lb/>
+      &lt;l>Und vor ihm ſtaunete das Thier.&lt;/l>
+    &lt;/lg>
+    [...]
+  &lt;/lg>&lt;lb/>
+  [...]
+&lt;/div>&lt;lb/></codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/karsch_gedichte_1792/188"
+                format="html" scope="external">Karsch, Anna Luise: Gedichte.
+                Berlin, 1792. [Facsimile 188]</xref></i></p>
+            </fig> </example>
+    </body>
+</topic>

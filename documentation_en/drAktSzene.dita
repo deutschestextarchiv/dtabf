@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_41">
+  <title>Structuring in Acts and Scenes</title>
+  <titlealts><navtitle>Acts and Scenes</navtitle></titlealts>
+         <body>
+                        <p>Acts are enclosed in <codeph>&lt;div&gt;</codeph> elements that contain a <codeph>@type</codeph> attribute with the value <codeph>"act"</codeph>. The individual scenes/entries are in a subordinate <codeph>&lt;div&gt;</codeph> element, which contains the attribute value pair <codeph>@type="scene"</codeph>. 
+</p>
+            <codeblock outputclass="language-xml">&lt;div n="[level]" type="act"&gt;
+  &lt;head&gt;[title act]&lt;/head&gt;
+  &lt;div n="[subordinate level]" type="scene"&gt;
+    &lt;head&gt;[title entry 1]&lt;/head&gt;
+    &lt;!-- all elements and text components of the 1st entry --&gt;
+  &lt;/div&gt;
+  &lt;div n="[subordinate level]" type="scene"&gt;
+  &lt;head&gt;[title entry 2]&lt;/head&gt;
+  &lt;!-- all elements and text components of the 2nd entry --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</codeblock>
+         </body>
+      </topic>

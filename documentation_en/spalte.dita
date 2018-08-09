@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_d23_ntj_qs">
+  <title>Columns</title>
+  <body>
+    <p>Column breaks are tagged with <codeph>&lt;cb/&gt;</codeph>. The <codeph>&lt;cb&gt;</codeph> element tags the beginning of a new column. Column count is represented by an <codeph>@n</codeph> attribute within <codeph>&lt;cb&gt;</codeph>. </p>
+    <p>Different types of columns are possible:</p>
+    <p>a) The text of a volume is completely organized in columns: In these cases, the page numbering in the original is usually replaced by column numbering. The respective column number is indicated in the transcription within the <codeph>&lt;cb&gt;</codeph> element as a value of the <codeph>@n</codeph> attribute. The page count is also reconstructed in the <codeph>@n</codeph> attribute within the <codeph>&lt;pb&gt;</codeph> element. If counted and uncounted columns alternate in the volume, the missing column numbers are not reconstructed. However, a reconstructed page count is continuously maintained.</p>
+    <codeblock outputclass="language-xml">&lt;pb facs="#f[image number]" n="[[reconstructed page number]]"/&gt;&lt;cb n="[column number]"/&gt;</codeblock>
+    <p>oder:</p>
+    <codeblock outputclass="language-xml">&lt;pb facs="#f[image number]" n="[[reconstructed page number]]"/&gt;&lt;cb/&gt;</codeblock>
+    <p outputclass="phase2">b) The text of a volume is organized page by page, but is occasionally interrupted by column printing. In this case, the beginning of the column set is indicated by <codeph>&lt;cb type="start"/&gt;</codeph>, the end of the column set by <codeph>&lt;cb type="end"/&gt;</codeph>. Column breaks within the column set are displayed using the empty <codeph>&lt;cb&gt;</codeph> element.</p>
+    <note type="notice"><i><b>Alternative regulation phase 1:</b> b) The text of a volume is organized page by page, but is occasionally interrupted by column printing. In this case, there is an empty <codeph>&lt;cb&gt;</codeph> element at the beginning of each column.</i></note>
+    <p outputclass="phase2">c) Footnote or endnote text, registers and directories are set in columns. Here, too, the beginning of the column set is indicated by <codeph>&lt;cb type="start"/&gt;</codeph>, the end of the column set is indicated by <codeph>&lt;cb type="end"/&gt;</codeph>. Column breaks within the column set are represented by the empty <codeph>&lt;cb&gt;</codeph> element.</p>
+    <note type="notice"><i><b>Alternative regulation phase 1:</b> c) Footnote or endnote text, registers and indexes are set in columns. In this case, an empty <codeph>&lt;cb&gt;</codeph> element also tags the beginning of the respective column.</i></note>
+  </body>
+</topic>

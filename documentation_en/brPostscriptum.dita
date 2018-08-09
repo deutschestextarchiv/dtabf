@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_53">
+    <title>Postscript</title>
+    <body>
+        
+
+        
+        <p>The data of the <codeph>&lt;closer&gt;</codeph> element can be followed in letters by a postscript, which is tagged with a <codeph>&lt;postscript&gt;</codeph> element. If a letter contains several postscripts, the <codeph>&lt;postscript&gt;</codeph> element can be used several times in succession. The text of the postscript is reproduced in <codeph>&lt;p&gt;</codeph> elements. The possible tagging of the postscriptum in the text, e. g. by the abbreviation 'PS', is not tagged separately: </p>
+        <codeblock outputclass="language-xml">&lt;postscript&gt;
+            &lt;p&gt;[text of the postscript]&lt;/p&gt;
+            &lt;p&gt;[if applicable further text of the postscript]&lt;/p&gt;
+&lt;/postscript&gt;
+&lt;postscript&gt; &lt;!-- if applicable further postscript --&gt;  
+&lt;p&gt;[text of the postscript]&lt;/p&gt;
+&lt;p&gt;[if applicable further text of the postscript]&lt;/p&gt;
+&lt;/postscript&gt;</codeblock>
+
+        <example> <title>Postscript</title> <fig>
+            <image href="img/x_ionEd6bu.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;[...]&lt;lb/&gt;
+  bald durch ihr Spiel darthun. Ich grüße herzlich Woltmann!&lt;lb/&gt;
+  Varnhagen Sie beide! Ihre alte wie Sie mich kennen
+&lt;/p&gt;&lt;lb/&gt;
+&lt;closer&gt;
+  &lt;salute&gt;Rahel.&lt;/salute&gt;
+&lt;/closer&gt;&lt;lb/&gt;
+&lt;postscript&gt;
+  &lt;p&gt;Bald kommt Frühling und Veilchen! Ich pflücke Ih-&lt;lb/&gt;nen eins!&lt;/p&gt;
+&lt;/postscript&gt;&lt;lb/&gt;
+&lt;postscript&gt;
+  &lt;p&gt;Mein Prager Bruder Ludwig iſt geſtern nach Stuttgart&lt;lb/&gt;
+  gereiſt, kommt in einem Monat wieder zu mir. Ich habe&lt;lb/&gt;
+  &lt;hi rendition="#g"&gt;viele&lt;/hi&gt; Leute kennen lernen. Wangenheim, Rückert. Franzo-&lt;lb/&gt;
+  ſen. Alles!&lt;/p&gt;
+&lt;/postscript&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/varnhagen_rahel02_1834/442"
+                format="html" scope="external">Varnhagen von Ense, Rahel: Rahel.
+                Ein Buch des Andenkens für ihre Freunde. Bd. 2. Berlin, 1834.
+                [Facsimile 442]</xref></i></p>
+            </fig> </example>
+    </body>
+</topic>

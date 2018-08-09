@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="trGedankenstrich">
+  <title>Dash</title>
+<body>
+<p>
+  Dashes can occur in different lengths. As far as they are recognized in this diversity, they are expressed as the following hexadecimal Unicode entities:
+</p>
+
+<table>
+  <tgroup cols="3"><thead><row>
+    <entry>Character</entry>
+    <entry>Entity</entry>
+    <entry>Description</entry>
+  </row></thead>
+  <tbody><row>
+    <entry><codeph>-</codeph></entry>
+    <entry><codeph>U+002D</codeph></entry>
+    <entry>hyphen/minus sign (<codeph>HYPHEN-MINUS</codeph>)</entry>
+  </row>
+  <row>
+    <entry><codeph>‒</codeph></entry>
+    <entry><codeph>U+2012</codeph></entry>
+    <entry>figure dash (<codeph>FIGURE DASH</codeph>)</entry>
+  </row>
+  <row>
+    <entry><codeph>–</codeph></entry>
+    <entry><codeph>U+2013</codeph></entry>
+    <entry>en dash (<codeph>EN DASH</codeph>)</entry>
+  </row>
+  <row>
+    <entry><codeph>—</codeph></entry>
+    <entry><codeph>U+2014</codeph></entry>
+    <entry>em dash (<codeph>EM DASH</codeph>)</entry>
+  </row></tbody></tgroup>
+</table>
+
+<p>
+  If it is not possible to distinguish the length of the dash, it is transribed as an en dash. 
+</p>
+</body>
+</topic>

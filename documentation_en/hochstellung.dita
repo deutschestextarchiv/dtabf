@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_hs">
+   <title>Superscript</title>
+   <body>
+      <example>
+         <title>Encoding of Superscript Characters (1)</title><fig>
+            <image href="img/IXTaTDURQx.png"/>
+            <codeblock outputclass="language-xml">das Ventil &lt;hi rendition="#i"&gt;R&lt;/hi&gt;&lt;hi rendition="#sup"&gt;2&lt;/hi&gt;</codeblock>
+            <p><i>Source: <xref
+               href="http://www.deutschestextarchiv.de/beck_eisen02_1895/955"
+               format="html" scope="external">Beck, Ludwig: Die Geschichte des Eisens. Bd. 2:
+               Das XVI. und XVII. Jahrhundert. Braunschweig, 1895. [Facsimile 955]</xref>
+            </i></p>
+         </fig>
+      </example>
+      <example>
+         <title>Encoding of Superscript Characters (2)</title><fig>
+            <image href="img/7eRz9lHCLn.png"/>
+            <codeblock outputclass="language-xml">in dem Gefäſs &lt;hi rendition="#i"&gt;P&lt;/hi&gt;&lt;hi rendition="#sup"&gt;1&lt;/hi&gt;</codeblock>
+            <p><i>Source: <xref
+               href="http://www.deutschestextarchiv.de/beck_eisen02_1895/955"
+               format="html" scope="external">Beck, Ludwig: Die Geschichte des Eisens. Bd. 2:
+               Das XVI. und XVII. Jahrhundert. Braunschweig, 1895. [Facsimile 955]</xref>
+            </i></p>
+         </fig>
+      </example>
+   </body>
+</topic>

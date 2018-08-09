@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="transkription">
+  <title>Transcription Guidelines</title>
+  <titlealts><navtitle>Transcription</navtitle></titlealts>
+  <abstract><shortdesc>Guidelines for Capturing Full Texts</shortdesc></abstract>
+  <body>
+    <p>The aim of the German Text Archive (Deutsches Textarchiv, DTA) is to create a multidisciplinary full text corpus of German-language texts. Digital facsimiles of historical printed works form the basis for this work (development time of the prints between approx. 1650 and 1900). The body contains works of various types of texts, literary genres and scientific disciplines. The aim of the project is to provide and - due to the large volume of text, largely automatic - to prepare a wide range of texts on this heterogeneous basis. </p>
+
+<p>Texts are recorded in the DTA according to the principle of preserving the historical language level of the texts. Due to this objective, attention is paid to keeping the number of (unavoidable) interpretations of typographical circumstances to a minimum during the text capture process. In order to avoid unconscious modernizations or corrections, the texts are entered by non-native speakers (see also <xref href="http://www.deutschestextarchiv.de/doku/workflow#Die_Volltextdigitalisierung" scope="external" format="html">full text digitization in the German Text Archive</xref>). Therefore, printing error correction does not take place during the recording process, but can be limited in the indexing and correction process. </p>
+
+    <p>The following guidelines are based on the principle of preserving the original text as far as possible while at the same time concentrating on the lexical conditions. </p>
+  </body>
+</topic>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_tmf_vk2_qs">
+  <title>Editorial Comment on the Underlying Source <codeph>(//fileDesc/sourceDesc/biblFull/notesStmt)</codeph></title>
+    <titlealts><navtitle>Notes Statement (Source)</navtitle></titlealts>
+  <body>
+    <p>Editorial notes on the underlying source are given within the <codeph>&lt;biblFull&gt;</codeph> specification of the <i>Source Description</i> in the <codeph>&lt;notesStmt&gt;</codeph> element. The respective text of the comment can be found in the Notes statement in the sub-element <codeph>&lt;note type="remarkSource"&gt;</codeph>. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;notesStmt&gt;
+      &lt;note type="remarkSource"&gt;[comment on the underlying edition]&lt;/note&gt;
+&lt;/notesStmt&gt;</codeblock>
+    <p>The notes in <codeph>&lt;notesStmt&gt;</codeph> include, for example, the reasons for the choice of the edition if it does not correspond to the first edition of the work. Furthermore, faulty or incomplete information of the title page which has been replaced by the correct or normalized information in the metadata of the TEI header is documented here.
+    </p><!-- 
+    <h1>Rekonstruierte Angaben</h1>
+    <p>Sind Angaben wie beispielweise das Publikationsdatum, der Publikationsort oder -verlag, Autorendaten oder Angaben zur übergeordneten Publikation nicht zweifelsfrei der Primärquelle zu entnehmen (das trifft auch auf Falschangaben zu), dann sind die entsprechenden Angaben in ihrer korrekten Form innerhalb eines <code>&lt;supplied&gt;</code>-Elements zu setzen. Beispiel (Publikationsort fehlt in der Quelle, ist aber nachweislich „Leipzig“):</p>
+    
+    <pre>&lt;publicationStmt&gt;
+  &lt;pubPlace&gt;&lt;supplied&gt;Leipzig&lt;/supplied&gt;&lt;/pubPlace&gt;
+  [weitere Angaben ...]
+&lt;/publicationStmt&gt;</pre>
+  -->
+  </body>
+</topic>

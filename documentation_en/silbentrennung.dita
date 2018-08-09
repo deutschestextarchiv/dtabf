@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_13">
+  <title>Hyphenation at the Line Break</title>
+  <titlealts><navtitle>Hyphenation</navtitle></titlealts>
+         <body>
+                        <p>Hyphenations at the line break are kept. Regardless of the appearance of the text, the hyphen (<codeph>&amp;#x002D;</codeph>) is used in this context. </p>
+           <note type="notice"><i><b>Alternative regulation phase 1:</b> An exception to this rule are the texts captured by OCR, in which a distinction is made between the soft hyphen (<codeph>&amp;#x00AC;</codeph>) and the hyphen (<codeph>&amp;#x002D;</codeph>). </i></note>
+         </body>
+      </topic>

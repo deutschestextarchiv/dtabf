@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_19">
+  <title>Continuous Footnotes</title>
+  <body>
+    <p>If a footnote extends over a page break, the <codeph>&lt;note&gt;</codeph> element is closed before the page break. The continuation of the footnote is carried out where it actually stands (usually at the end of the next page). The connection between the parts of the footnote is made using the attributes <codeph>@xml:id</codeph>,
+      <codeph>@next</codeph> and <codeph>@prev</codeph>: </p>
+    <codeblock outputclass="language-xml">&lt;note place="foot" n="[footnote reference]" xml:id="[ID 01]" next="#[ID 02]">[footnote text]&lt;/note>&lt;lb/>
+      &lt;pb facs="[image number]" n="[page number]">
+      [text next page to end]
+      &lt;note place="foot" n="[footnote_reference_as_above]" xml:id="[ID 02]" prev="#[ID 01]">
+      [continuation of footnote text]
+&lt;/note>&lt;lb/></codeblock>
+    <example>
+      <title>Encoding of Continuous Footnotes</title>
+      <fig>
+        <image href="img/ffn01.png" scale="50"/>
+        <codeblock outputclass="language-xml">&lt;p>
+  [...] zu Entdeckungen &#x017F;olcher Art zu ge-&lt;lb/>langen 
+  &lt;note place="foot"n="*)" xml:id="seg2pn_2_1 "next="#seg2pn_2_2">
+    Huygens, der &#x017F;elb&#x017F;t zur Vollendung die&#x017F;er Entdeckung &#x017F;ehr we-&lt;lb/>
+    &#x017F;entlich beigetragen hat, erklärt &#x017F;ich darüber in &#x017F;einer Dioptrik&lt;lb/>
+    [...]
+  &lt;/note>. Nach Borelli's Erzählung [...]
+&lt;/p>&lt;lb/></codeblock>
+          <image href="img/ffn02.png" scale="50"/>
+          <codeblock outputclass="language-xml">&lt;p>
+[...] können, daß Zeit und Glück auch er&#x017F;t einen &#x017F;päten Enkel begün-&lt;lb/>
+  &lt;note xml:id="seg2pn_2_2"prev="#seg2pn_2_1"place="foot"n="*)">
+    ein höheres, über alle Sterblichen weit erhabenes We&#x017F;en zu&lt;lb/>
+    halten. Aber davon &#x017F;ind wir &#x017F;o weit entfernt, daß &#x017F;elb&#x017F;t noch&lt;lb/>
+    [...]
+    richtig zu erklären.
+  &lt;/note>&lt;lb/>
+  [...]
+&lt;/p></codeblock>
+        <p><i>Source: <xref
+          href="http://www.deutschestextarchiv.de/dtaq/16789/27"
+          format="html" scope="external">Littrow, Joseph Johann von: Die Wunder des Himmels, oder gemeinfaßliche Darstellung des Weltsystems. Bd. 3. Stuttgart, 1836. [Facsimile 270/271].</xref></i></p>
+      </fig>
+    </example>
+      <note type="tip">For linking discontinuous text segments by using the <codeph>@xml:id</codeph>, <codeph>@next</codeph> and <codeph>@prev</codeph> attributes s. chap. <xref
+            href="diskontTextpassagen.dita">Interruptions of Related Text Components</xref>.</note>
+    <note type="notice"><i><b>Alternative regulation phase 1:</b> Footnotes that extend over a page break are tagged with the <codeph>&lt;seg&gt;</codeph> element. The <codeph>&lt;note&gt;</codeph> element is closed before the page break. The continuation of the footnote is carried out where it actually stands (usually at the end of the next page). The connection between the parts of the footnote is expressed by the <codeph>&lt;seg&gt;</codeph> element. The position in relation to each other of the related <codeph>&lt;seg&gt;</codeph> elements is expressed by the <codeph>@part</codeph> attribute, which can have the values <codeph>I</codeph> (initial), <codeph>M</codeph> (medial) and <codeph>F</codeph> (final).</i></note>
+  </body>
+  <related-links><link href="diskontTextpassagen.dita"></link></related-links>
+</topic>

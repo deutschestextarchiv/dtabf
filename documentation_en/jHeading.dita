@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jHeading">
+  <title>The Rubric Heading</title>
+  <titlealts><navtitle>Rubric Heading</navtitle></titlealts>
+  <body>
+    <p>
+      The rubric heading of the respective issue is located in the <codeph>&lt;front&gt;</codeph> area of the TEI document. It is enclosed with the <codeph>&lt;titlePage&gt;</codeph> element, which gets the attribute value pair <codeph>@type="heading"</codeph> to indicate that the rubric heading or nameplate does not comprise an entire title page as usual. 
+</p>
+<p>  
+  The title of the newspaper or magazine issue is enclosed within <codeph>von &lt;titlePage&gt;</codeph> with the <codeph>&lt;docTitle&gt;</codeph> element. The individual parts of the title can be found within <codeph>&lt;docTitle&gt;</codeph> in single <codeph>&lt;titlePart&gt;</codeph> elements. In doing so <codeph>&lt;titlePart&gt;</codeph> gets the attribute <codeph>@type</codeph> with the possible values <codeph>"main"</codeph> (main title) and <codeph>"sub"</codeph> (subtitle).
+</p>
+<p>
+  An imprimatur at the beginning of the front matter is reproduced within the <codeph>&lt;docTitle&gt;</codeph> element in the <codeph>&lt;titlePart&gt;</codeph> element, which gets the attribute value pair <codeph>@type="jImprimatur"</codeph> specific for newspapers/magazines. If the imprimatur is at the end of the front matter or at the end of the issue, it is enclosed with the <codeph>&lt;div type="imprimatur"&gt;</codeph> element.
+</p>
+<p>
+  Notes on the print are given in the <codeph>&lt;docImprint&gt;</codeph> element. The date of the issue is in the subelement <codeph>&lt;docDate&gt;</codeph>, the place of publication in the subelement <codeph>&lt;pubPlace&gt;</codeph> and the possible specification of the print shop (flag) in the subelement <codeph>&lt;publisher&gt;</codeph>. (Cf. <xref href="titelblatt.dita">chapter: Title page</xref>.)
+</p>
+<note type="attention">
+  If the imprint is not at the beginning, but at the end of the issue, it is encoded at the place of its occurrence with the element <codeph>&lt;div type="imprint"&gt;</codeph>. (Cf. <xref href="anhAllg.dita">chapter: Appendix</xref>.) 
+</note>
+<codeblock outputclass="language-xml">&lt;front&gt;
+  &lt;titlePage type="heading"&gt;
+    &lt;docTitle&gt;
+    &lt;titlePart type="jImprimatur"&gt;[imprimatur]&lt;/titlePart&gt; &lt;!-- where applicable --&gt;
+    &lt;titlePart type="main"&gt;[main title of the issue]&lt;/titlePart&gt;
+    &lt;titlePart type="sub"&gt;[subtitle of the issue]&lt;/titlePart&gt;
+    &lt;/docTitle&gt;
+    &lt;docImprint&gt;
+    &lt;docDate&gt;[date of the issue]&lt;/docDate&gt;
+    &lt;pubPlace&gt;[place of publication]&lt;/pubPlace&gt;
+    &lt;publisher&gt;[information on the print shop/publisher]&lt;/publisher&gt;
+    &lt;/docImprint&gt;
+  &lt;/titlePage&gt;
+&lt;/front&gt;
+</codeblock>
+  </body>
+</topic>

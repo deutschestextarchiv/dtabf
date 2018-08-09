@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_mcx_clj_qs">
+  <title>Document Classifications <codeph>(//profileDesc)</codeph></title>
+    <titlealts><navtitle>Profile Description</navtitle></titlealts>
+  <body>
+    <p>The Profile Description contains information on the languages in which the text is mainly written (<codeph>&lt;langUsage&gt;/&lt;language ident="[code according to ISO 639-3]"&gt;</codeph>, <xref href="http://www-01.sil.org/iso639-3/codes.asp" scope="external" format="html">→ ISO 639-3</xref>), as well as classifications of the texts according to text type, subject and origin of the DTA full text (<codeph>&lt;textClass&gt;</codeph>). 
+    </p>
+    <p>Multiple classifications are possible for classifying texts and topics. The descriptors used in each case are displayed in the <codeph>&lt;classCode&gt;</codeph> element. The attribute <codeph>@scheme</codeph> in <codeph>&lt;classCode&gt;</codeph> contains a reference to the underlying classification scheme, e. g. the <xref href="http://www.deutschestextarchiv.de/doku/klassifikation" scope="external" format="html">Classification Scheme of the DTA Core Corpus Texts</xref>. 
+    </p>
+    <p>In order to group the digitized full-text editions published in the DTA into sub-corpora according to their origin, the metadata contains information on the context in which the full-text was created and, as a result of this, on the recording method (e. g. <codeph>china</codeph>, <codeph>ocr</codeph>, <codeph>mts</codeph>, 
+      <codeph>aedit</codeph>, <codeph>gutenberg</codeph>, <codeph>wikisource</codeph>). The corresponding specification is made in a <codeph>&lt;classCode&gt;</codeph> element, again with a reference to the underlying classification scheme (here: the <xref href="http://www.deutschestextarchiv.de/doku/klassifikation" scope="external" format="html">Classification Scheme of the DTA Core Corpus Texts</xref>) in the <codeph>@scheme</codeph> attribute. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;profileDesc&gt;
+  &lt;langUsage&gt;
+  &lt;language ident="[code according to ISO 639-3, e. g. deu]"&gt;[language, e. g. German]&lt;/language&gt;
+  &lt;/langUsage&gt;
+  &lt;textClass&gt;
+  &lt;classCode scheme="[URL DTA main classification]"&gt;[text type acc. to DTA main classification]&lt;/classCode&gt;
+  &lt;classCode scheme="[URL DTA subclassification]"&gt;[text type acc. to DTA subclassification]&lt;/classCode&gt;
+  &lt;classCode scheme="[URL DWDS main classification01]"&gt;[text type acc. to DWDS main classification 1]&lt;/classCode&gt;
+  &lt;classCode scheme="[URL DWDS subclassification01]"&gt;[text type acc. to DWDS subclassification 1]&lt;/classCode&gt;
+  &lt;classCode scheme="[URL DWDS main classification02]"&gt;[text type acc. to DWDS main classification 2]&lt;/classCode&gt;
+  &lt;classCode scheme="[URL DWDS-subclassification02]"&gt;[text type acc. to DWDS subclassification 2]&lt;/classCode&gt;
+  &lt;classCode scheme="[URL classification text origin]"&gt;[origin of the DTA full text]&lt;/classCode&gt;
+  &lt;/textClass&gt;
+&lt;/profileDesc&gt;</codeblock>
+  </body>
+</topic>

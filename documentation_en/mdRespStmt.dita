@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_hf4_rj2_qs">
+  <title>Dealing with External Sources for the DTA Text Basis <codeph>(//respStmt)</codeph></title>
+    <titlealts><navtitle>Responsibility Statement</navtitle></titlealts>
+  <body>
+    <p>External text resources that are integrated into the DTA corpora within the framework of <xref href="http://www.deutschestextarchiv.de/dtae" scope="external" format="html">DTAE</xref>receive a <i>Responsibility Statement</i> in which their authors and, if applicable, editors are named and their participation in the text production or processing is described.
+    </p>
+    <p>Depending on whether individuals or institutions/organizations/project groups are responsible for the text resource, these are displayed in the <codeph>&lt;persName&gt;</codeph> or <codeph>&lt;orgName&gt;</codeph> element.
+    </p>
+    <p>The <codeph>&lt;orgName&gt;</codeph> element can get a <codeph>@ref</codeph> attribute for specifying a resource (using URL), which refers to additional information about the mentioned organization, such as the corresponding dataset in the <xref href="http://www.dnb.de/DE/Standardisierung/GND/gnd_node.html" scope="external" format="html">Gemeinsame Normdatei (Integrated Authority File, GND)</xref>.
+    </p>
+    <p>For further substructuring of the <codeph>&lt;persName&gt;</codeph> element, see <xref href="mdPersName.dita">the corresponding chapter</xref>. 
+    </p>
+    <p>Further information on responsibility is provided in the <codeph>&lt;resp&gt;</codeph> element of the <i>Responsibility Statements</i>. This can have different subelements:
+    </p>
+    <ul>
+      
+      <li>
+        <codeph>&lt;note type="remarkResponsibility"&gt;</codeph>: Information on the type of responsibility.</li> 
+      
+      <li>
+        <codeph>&lt;note type="remarkRevisionDTA"&gt;</codeph>: Indicates that, as part of the integration into the DTA and DTA quality assurance, external text resources are further processed and edited (e. g. by converting the annotation to the DTA basic format, by correcting transcription errors and misprints or by further linguistic editing); this is only indicated if the <codeph>&lt;respStmt&gt;</codeph> addresses a full text underlying the DTA edition.</li>
+      
+      <li>
+        <codeph>&lt;date type="importDTA"&gt;</codeph>: The point in time at which the external resource was integrated into the DTA in its given editing status. The date should have the following format: yyyy-mm-dd"T"hh:mm:ss"Z", e. g.: 2014-04-08T13:09:00Z.</li>
+      
+      <li>
+        <codeph>&lt;ref target="[URL]"/&gt;</codeph>: Reference to the place of origin of the integrated resource (as URL). This element remains empty.</li>
+      
+    </ul>
+    <p>If a transcription of the work on which the DTA publication is based is described in more detail in a <i>Responsibility Statement</i>, the <codeph>&lt;respStmt&gt;</codeph> element receives a unique <codeph>@xml:id</codeph>. Via a <codeph>@corresp</codeph> attribute, it is linked with an <codeph>&lt;availability&gt;</codeph> element within the <i>Publication Statements</i> of the <i>File Description</i>, which specifies the license of the underlying transcription. If no license is known, this will be noted accordingly in the <codeph>&lt;licence&gt;</codeph>-element of the <codeph>&lt;availability&gt;</codeph>-element (see chap. <xref href="mdLicense.dita">License Details</xref>). Nevertheless, a link to the corresponding <codeph>&lt;respStmt&gt;</codeph> is established.
+    </p>
+    <codeblock outputclass="language-xml">&lt;respStmt&gt; &lt;!-- if applicable with @xml:id="[ID]" and @corresp="[ID of the corresponding license specification]" --&gt;
+      &lt;persName ref="[URL, e. g. link to the GND dataset]"&gt;[author of the underlying full text (person)]&lt;/persName&gt; &lt;!-- use multiple times if necessary; for further substructuring, see <xref href="mdPersName.dita">above</xref> --&gt;
+      &lt;orgName ref="[URL, e. g. link to the GND dataset]"&gt;[provider of the underlying full text (organization/institution/project group)]&lt;/orgName&gt; 
+      &lt;!-- specification of @ref optional--&gt;
+  &lt;resp&gt;
+  &lt;note type="remarkResponsibility"&gt;[type of responsibility]&lt;/note&gt;
+  &lt;note type="remarkRevisionDTA"&gt;[information on possible changes to the full text in the DTA]&lt;/note&gt;
+  &lt;ref target="[URL of an external source]"/&gt; &lt;!-- use multiple times if necessary --&gt;
+  &lt;date type="importDTA"&gt;[date of integration of the underlying source into the DTA]&lt;/date&gt;
+  &lt;/resp&gt;
+&lt;/respStmt&gt;</codeblock>
+    <p>If the work in question is archived at the CLARIN-D-Zentrum Berlin-Brandenburgische Akademie der Wissenschaften and thus made available in the framework of the joint project CLARIN-D in the long term, this will be documented in a separate <codeph>&lt;respStmt&gt;</codeph> element, which contains the following information: 
+    </p>
+    <codeblock outputclass="language-xml">&lt;respStmt&gt;
+  &lt;orgName&gt;CLARIN-D&lt;/orgName&gt; 
+  &lt;resp&gt;
+  &lt;note type="remarkResponsibility"&gt;Langfristige Bereitstellung der DTA-Ausgabe [long-term provision of the DTA edition]&lt;/note&gt;
+    &lt;ref target="http://fedora.dwds.de"/&gt;
+  &lt;/resp&gt;
+&lt;/respStmt&gt;</codeblock>
+  </body>
+</topic>

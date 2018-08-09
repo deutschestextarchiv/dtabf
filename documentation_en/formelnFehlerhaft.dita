@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ffor">
+  <title>Dealing with Incorrect Formulas</title>
+  <titlealts><navtitle>Incorrect Formulas</navtitle></titlealts>
+  <body>
+    <p>Print errors in formulas are represented by the <codeph>&lt;choice&gt;</codeph> element. The formula is always completely in the <codeph>&lt;sic&gt;</codeph> element (erroneous original) respectively in the <codeph>&lt;corr&gt;</codeph> element (corrected transcription). </p>
+    <codeblock outputclass="language-xml">&lt;choice>
+      &lt;sic>&lt;formula notation="[notation]">[incorrect formula according to the original]&lt;/formula>&lt;/sic>
+      &lt;corr>&lt;formula notation="[notation]">[corrected transcription of the formula]&lt;/formula>&lt;/corr>
+&lt;/choice></codeblock>
+    <example>
+      <title>Dealing with Incorrect Formulas</title><fig>
+        <image href="img/Aj_3_pYrix.png"/>
+        <codeblock outputclass="language-xml">&lt;choice&gt;
+  &lt;sic&gt;
+    &lt;formula notation="TeX"&gt;\frac{3 \cdot 015}{3 - 0{,}15}&lt;/formula&gt;
+  &lt;/sic&gt;
+  &lt;corr&gt;
+    &lt;formula notation="TeX"&gt;\frac{3 \cdot 0{,}15}{3 - 0{,}15}&lt;/formula&gt;
+  &lt;/corr&gt;
+&lt;/choice&gt;</codeblock>
+        <p><i>Source: <xref
+          href="http://www.deutschestextarchiv.de/siemens_abhandlungen_1881/208"
+          format="html" scope="external">Siemens, Werner von: Gesammelte Abhandlungen und
+          Vorträge. Berlin, 1881. [Facsimile 208]</xref>
+        </i></p>
+      </fig></example>
+
+  </body>
+</topic>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_62">
+    <title>Foreign Language Material</title>
+    <body>
+        <p>Foreign-language passages are generally captured, but do not have to be tagged as such (DTABf – level 2). </p>
+        <p>If foreign language material is to be tagged as such (DTABf – Level 3), this is possible in the <codeph>&lt;foreign&gt;</codeph> element. The specification of the language in question is mandatory and is done in the <codeph>@xml:lang</codeph> attribute as a three-letter code in accordance with <xref href="http://www-01.sil.org/iso639-3/codes.asp"
+            scope="external" format="html">ISO standard 639-3</xref>. </p>
+        <codeblock outputclass="language-xml">&lt;foreign xml:lang="[ISO 639-3 code]"&gt;[foreign language text passage]&lt;/foreign&gt;</codeblock>
+        <p>If the language of a foreign-language text passage cannot be defined, <codeph>@xml:lang</codeph> contains the value <codeph>"und"</codeph> (i. e. "undetermined"). </p>
+        <p>In <codeph>@xml:lang</codeph>, exactly one language is generally specified. The nesting of <codeph>&lt;foreign&gt;</codeph> elements to tag several languages for a foreign language passage must be avoided. If several languages are valid for a foreign language passage, this is expressed with the value <codeph>"mul"</codeph>. The languages are not specified in <codeph>@xml:lang</codeph>. (However, the space for this specification is provided by the editorial commentary; see chap. <xref
+            href="editorEingriff.dita"
+            >Editorial Commentary</xref>.) </p>
+        <example> <title>Encoding of Foreign Language Material</title> <fig>
+            <image href="img/laLcGRzsUZ.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;[...] sanskr. iran. griech. umbr. osk. 
+                &lt;hi rendition="#i"&gt;&lt;foreign xml:lang="mul"&gt;an&lt;/foreign&gt;&lt;/hi&gt; , aber lat. 
+                &lt;hi rendition="#i"&gt;&lt;foreign xml:lang="lat"&gt;in&lt;/foreign&gt;&lt;/hi&gt; , deutsch 
+                &lt;hi rendition="#i"&gt;un&lt;/hi&gt; .&lt;lb/&gt;[...]
+                &lt;/p&gt;</codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/curtius_sprachforschung_1885/101"
+                format="html" scope="external">Curtius, Georg: Zur Kritik der
+                neuesten Sprachforschung. Leipzig, 1885. [Facsimile
+                101]</xref></i></p>
+        </fig> </example>
+        <p>If the entire content of a structuring element consists of foreign language material, this can be displayed within the respective structuring element by the attribute <codeph>@xml:lang</codeph>. </p>
+        <example> <title>Handling Completely Foreign Language Element Content</title> <fig>
+            <image href="img/zJwO_722Nd.png"/>
+            <codeblock outputclass="language-xml">&lt;titlePage>
+                [...] 
+                &lt;epigraph>
+                &lt;cit>
+                &lt;quote xml:lang="fra">
+                &lt;hi rendition="#aq">Tel eſt l'effet de la vérité: on la repouſſe; mais&lt;lb/>
+                en la repouſſant on la voit, &amp; elle pénètre.&lt;/hi>
+                &lt;/quote>&lt;lb/>
+                &lt;bibl>
+                &lt;hi rendition="#et #aq">&lt;hi rendition="#i">Garat le jeune&lt;/hi>.&lt;/hi>
+                &lt;/bibl>
+                &lt;/cit>
+                &lt;/epigraph>[...]
+                &lt;/titlePage>&lt;lb/></codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/jacobi_allwill_1792/9"
+                format="html" scope="external">Jacobi, Friedrich Heinrich:
+                Eduard Allwills Briefsammlung. Mit einer Zugabe von eigenen
+                Briefen. Königsberg, 1792. [Facsimile 9]</xref></i></p>
+        </fig> </example>
+        <p>Foreign-language text material that cannot be deciphered or is not (initially) transcribed for other reasons is indicated by the <codeph>&lt;foreign&gt;</codeph> element described above. The missing transcription is indicated by a <codeph>&lt;gap/&gt;</codeph> element with the note <codeph>@reason="fm"</codeph> (see also chap. <xref
+                    href="gapSupplied.dita">Illegible or Hardly Decipherable Characters</xref>). </p>
+        <codeblock outputclass="language-xml">&lt;foreign xml:lang="[ISO 639-3 code]"&gt;
+            &lt;gap reason="fm"/&gt;
+            &lt;/foreign&gt;</codeblock>
+        <example> <title>Handling of Non-Cecipherable Foreign Language Material</title> <fig>
+            <image href="img/GgVFes0JvV.png"/>
+            <codeblock outputclass="language-xml">&lt;p> [...] Plagen/ 
+                &lt;foreign xml:lang="ell">&lt;gap reason="fm"/>&lt;/foreign> 
+                Gesetzt aber/ [...]
+                &lt;/p>&lt;lb/></codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/breymann_vertreibung_1727/11"
+                format="html" scope="external">Breymann, Conrad Andreas: Die
+                Vertreibung der Bitterkeit des Todes/ Welche bey dem
+                Hochansehnlichen Leich-Begängniß/ So auf Hohe Verordnung Sr.
+                Hoch-Fürstl. Durchl. ... Dem ... Herrn Eberhard Finen/ ... Als
+                Derselbe Den 12ten Apr. des 1726ten Jahrs ... entschlafen/ ...
+                vorgestellet ... Blanckenburg, 1727. [Facsimile
+                11]</xref></i></p>
+        </fig> </example>
+    </body>
+</topic>

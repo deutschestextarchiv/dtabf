@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_nb">
+  <title>Sheet Music Examples</title>
+  <body>
+    <p>Sheet music examples are handled as a special form of the figure and tagged with <codeph>&lt;figure&gt;</codeph>. For unambiguous identification, the <codeph>&lt;figure&gt;</codeph> element can be specified by the <codeph>@type</codeph> attribute with the value <codeph>"notatedMusic"</codeph>.</p>
+    <codeblock outputclass="language-xml">&lt;figure type="notatedMusic"/&gt;</codeblock>
+    <example>
+      <title>Encoding of Sheet Music Examples</title><fig>
+        <image href="img/hlml01CtE1.png"/>
+        <codeblock outputclass="language-xml">&lt;p&gt;
+  Wann drey &lt;hi rendition="#aq"&gt;Breves&lt;/hi&gt; aneinander gehengt&lt;lb/&gt;
+  werden/ vnd die erſte jhre &lt;hi rendition="#aq"&gt;Liniam&lt;/hi&gt; auffwarts&lt;lb/&gt;
+  kehret/ gilt die letzte &lt;hi rendition="#i"&gt;2.&lt;/hi&gt; ſchla&amp;#x0364;ge.
+&lt;/p&gt;&lt;lb/&gt;
+&lt;figure type="notatedMusic"&gt;
+  &lt;head&gt;&lt;hi rendition="#aq"&gt;Exemplum.&lt;/hi&gt;&lt;/head&gt;
+&lt;/figure&gt;&lt;lb/&gt;</codeblock>
+        <p><i>Source: <xref
+          href="http://www.deutschestextarchiv.de/friderici_musica_1619/17"
+          format="html" scope="external">Friderici, Daniel: Musica Figuralis, Oder Newe
+          Klärliche Richtige/ vnd vorstentliche vnterweisung/ Der SingeKunst. Rostock, 1619.
+          [Facsimile 17]</xref>
+        </i></p>
+      </fig></example>
+  </body>
+</topic>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_a43_4dq_yw">
+  <title>Page and Sheet Numbering</title>
+  <body>
+    
+      <p>
+        Page breaks are captured in accordance with the <xref href="seitenFacsNr.dita">DTABf guidelines for tagging page numbers</xref> as follows: 
+      </p>
+      <codeblock outputclass="language-xml">&lt;pb facs="#f[image number]" n="[page number]"/&gt;</codeblock>
+      <p>
+        Even if the manuscript is not paginated itself, the <codeph>&lt;pb&gt;</codeph> element that contains the facsimile number in the <codeph>@facs</codeph> attribute is always present.
+      </p>
+      <p>
+        If the manuscript is also foliated, the folio number is reproduced in the <codeph>&lt;fw&gt;</codeph> element, which contains the <codeph>@type="folNum"</codeph> attribute value pair.
+      </p>
+      <codeblock outputclass="language-xml">&lt;fw type="folNum"&gt;[sheet number]&lt;/fw&gt;</codeblock>
+ 
+  </body>
+</topic>

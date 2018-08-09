@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_65">
+    <title>Basic Structure of Encoding of Editorial Changes</title>
+    <titlealts><navtitle>Editorial Changes Basic Structure</navtitle></titlealts>
+         <body>
+                        <p>Editorial changes, in which text variants for specific spellings of the original are specified, are listed in the <codeph>&lt;choice&gt;</codeph> element. The <codeph>&lt;choice&gt;</codeph> element can contain various subelements that specify the type of the change. These are explained in the following chapters. </p>
+            <p>The <codeph>&lt;choice&gt;</codeph> element is basically available for the annotation of spellings of the original and related alternative spellings given by the editor. This means that <codeph>&lt;choice&gt;</codeph> must always contain at least two subelements. 
+      </p>
+             <section><title>Width of the <codeph>&lt;choice&gt;</codeph> Element</title>
+            <p>In general, editorial changes are carried out at the word level, i. e. the annotation using the <codeph>&lt;choice&gt;</codeph> element always refers to a complete word. The <codeph>&lt;choice&gt;</codeph> element can also extend beyond the margin of the line.</p>
+             <p>Except for the <codeph>&lt;lb&gt;</codeph> element, there is no additional material in the <codeph>&lt;lb&gt;</codeph> element, i. e. it does <b>not</b> extend beyond the margin, over annotations, illustrations, etc.</p>
+             <p>If a correction refers to words that are interrupted by "uninvolved" material on the page, only the part of the word affected by the editorial change is dealt with in <codeph>&lt;choice&gt;</codeph>.</p>
+             <p>The other way round, the <codeph>&lt;choice&gt;</codeph> element can enclose several words at the same time if the editorial change refers to separate or compound spelling. In this case, all the words involved are included in the <codeph>&lt;choice&gt;</codeph> element. </p>
+         </section></body>
+      </topic>

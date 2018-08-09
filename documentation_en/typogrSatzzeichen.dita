@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_sz">
+    <title>Typographical Appearance of Punctuation Marks</title>
+    <titlealts><navtitle>Typographie Satzzeichen</navtitle></titlealts>
+         <body>
+                        <p>If possible, punctuation marks are reproduced true to the original in terms of their typographic appearance (bold, spaced letters, etc.). If the formatting of a punctuation mark is not certain from the original, it will be set outside the <codeph>@rendition</codeph> attribute's sphere of influence. </p><!-- mit Absatz zu Gesperrtdruck abgleichen -->
+         </body>
+      </topic>

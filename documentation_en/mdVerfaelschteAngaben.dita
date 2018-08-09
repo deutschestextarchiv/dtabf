@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_wmp_ch2_qs">
+  <title>Dealing with Falsified/Concealed Information</title>
+  <body>
+    <p>Information on the publication falsified in the source (e. g. the work was published under a pseudonym or place of publication/publisher etc. are fictitious) is reproduced in its original form from the source in the short title. In the case of a pseudonym, the full name is given as far as known without specific subdivision (e. g. correct: <codeph>first name title of nobility surname</codeph>; wrong: <codeph>surname, first name title of nobility</codeph>). The correct information is researched and, following the original form, is given in square brackets, introduced by <codeph>i. e.</codeph> in the short title.
+    </p>
+    <example>
+      <title>Reconstruction of the Author Name in the Short Title</title>
+      <p>German Schleifheim von Sulsfort [i. e. Grimmelshausen, Hans Jakob Christoffel von]: 
+        Der Abentheurliche Simplicissimus Teutsch. Monpelgart [i. e. Nürnberg], 1669.</p>
+    </example>
+    <p>In the case of a pseudonym, first the real name is given in the detailed title information, split into <codeph>&lt;surname&gt;</codeph> and <codeph>&lt;forename&gt;</codeph> without any further reference to their reconstruction. Then follows the pseudonym in the <codeph>&lt;addName&gt;</codeph> element, where the full name is also given without any specific subdivision (e. g. correct: <codeph>first name title of nobility surname</codeph>; wrong: <codeph>surname, first name title of nobility</codeph>).
+    </p>
+    <note type="attention">The pseudonym is only given if a work has been published under this pseudonym. If a work has been published under the real name of an author, only the real name is given, even if there is a pseudonym for the author. The fact that a work has been published under a pseudonym can thus be seen in accordance with this guideline from the fact that a <codeph>&lt;addName&gt;</codeph> element exists in the metadata set and is filled.</note>
+    
+    <p>In the case of a fictitious place of publication or publisher, the reconstructed information is given in the detailed title information, initially without any further reference to its reconstruction. For the place of publication it is made clear in the short title that this is a reconstructed information (see above). With the publisher's name, which does not appear in the short title, a natural language reference to the reconstruction is given in <codeph>&lt;notesStmt&gt;</codeph> of <codeph>&lt;sourceDesc&gt;</codeph>. 
+    </p>
+    <example><title>Correction of Falsified Information Regarding Publisher, Place and Author in the Metadata:</title>
+      <p><i>See: </i><xref href="http://www.deutschestextarchiv.de/api/tei_header/grimmelshausen_simplicissimus_1669" scope="external" format="html">http://www.deutschestextarchiv.de/api/tei_header/grimmelshausen_simplicissimus_1669</xref></p>
+    </example>
+  </body>
+</topic>

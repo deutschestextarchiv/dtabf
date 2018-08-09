@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="trNasalstrich">
+  <title>Cut Strokes</title>
+<body>
+<p>
+  Cut Strokes (bar or curled line above letters as substituents for omitted characters, nasal stroke) are transcribed using the sign <tt>U+0303, COMBINING TILDE</tt>.
+</p>
+
+<table>
+  <tgroup cols="2">
+    <thead>
+      <row>
+    <entry>Original</entry>
+    <entry>Transcription</entry>
+  </row>
+    </thead>
+    <tbody>
+      <row>
+    <entry><image href="img/frommen.jpg"/></entry>
+    <entry><codeph>from&amp;#x0303;en</codeph></entry>
+  </row>
+  <row>
+    <entry><image href="img/und_macht.jpg"/></entry>
+    <entry><codeph>Un&amp;#x0303; macht</codeph></entry>
+  </row>
+    </tbody>
+  </tgroup>
+</table>
+</body>
+</topic>

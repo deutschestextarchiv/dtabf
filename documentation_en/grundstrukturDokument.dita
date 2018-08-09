@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_zsv_kxd_qs">
+  <title>Basic Structure of Each TEI Document</title>
+  <body>
+    <p>The root element of each TEI document in the DTA is the <codeph>&lt;TEI&gt;</codeph> element whose <codeph>@xmlns</codeph> attribute specifies the TEI namespace that applies to the document:
+    </p>
+    <codeblock outputclass="language-xml">&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;...&lt;/TEI&gt;</codeblock>
+    <p>Each TEI document in the DTA consists of a header containing metadata for the published text and a text area containing all transcriptions with the corresponding annotations. This full text does not only include the actual book text, but also all parts of the text, including the title page and preface as well as, as a rule, the registers, additions and appendices.
+    </p>
+    <p>The following structure is adhered to in every TEI document:
+    </p>
+    <codeblock outputclass="language-xml">&lt;teiHeader&gt;[metadata]&lt;/teiHeader&gt;
+&lt;text&gt;
+&lt;front&gt;[elements before the beginning of the book text]&lt;/front&gt;
+&lt;body&gt;[text body]&lt;/body&gt;
+&lt;back&gt;[elements after completion of the book text]&lt;/back&gt;
+&lt;/text&gt;</codeblock>
+  </body>
+</topic>

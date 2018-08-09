@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_et">
+   <title>Indented Text</title>
+   <body>
+      <p outputclass="phase2">Indented text is also marked with the <codeph>@rendition</codeph> attribute, which is embedded in the <codeph>&lt;hi&gt;</codeph> element or a block element of the DTA element selection. The position of the text is transmitted as a value of the <codeph>@rendition</codeph> attribute: </p>
+      <table>
+         <tgroup cols="2">
+            <colspec colname="col1"/>
+            <colspec colname="col2"/>
+            <thead>
+               <row>
+                  <entry morerows="0" namest="col1" nameend="col1">Attribute Value Pair</entry>
+                  <entry morerows="0" namest="col2" nameend="col2">Meaning</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry morerows="0" namest="col1" nameend="col1">
+                     <codeph>rendition="#et"</codeph>
+                  </entry>
+                  <entry morerows="0" namest="col2" nameend="col2">indented text</entry>
+               </row>
+               <row>
+                  <entry morerows="0" namest="col1" nameend="col1">
+                     <codeph>rendition="#c"</codeph>
+                  </entry>
+                  <entry morerows="0" namest="col2" nameend="col2">centered</entry>
+               </row>
+               <row>
+                  <entry morerows="0" namest="col1" nameend="col1">
+                     <codeph>rendition="#right"</codeph>
+                  </entry>
+                  <entry morerows="0" namest="col2" nameend="col2">right-aligned</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+      <note type="notice"><i><b>Alternative regulation phase 1:</b> Indented text is tagged with the <codeph>&lt;hi&gt;</codeph> element. The position of the text is transmitted in the <codeph>@rendition</codeph> attribute as one of the above-mentioned values.</i></note>
+      <p>Indentations and centerings in headings, lists and tables are generally not tagged separately in the DTA corpus. Texts captured using OCR are an exception. </p>
+      <note type="attention">In the following example, in addition to indented text, there are various other formattings (i. e. spaced letters, bold, right-aligned).</note>
+      <example>
+         <title>Indentation</title><fig>
+            <image href="img/LsJVxtnwNz.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;
+   &lt;hi rendition="#et #g"&gt;Heidelberg,&lt;/hi&gt; den 15. Juli 1892.&lt;/hi&gt;
+&lt;/p&gt;&lt;lb/&gt;
+&lt;p&gt;
+   &lt;hi rendition="#right #b"&gt;E. Kraepelin.&lt;/hi&gt;&lt;/hi&gt;
+&lt;/p&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Source: <xref
+               href="http://www.deutschestextarchiv.de/kraepelin_arzneimittel_1892/14"
+               format="html" scope="external">Kraepelin, Emil: Ueber die Beeinflussung
+               einfacher psychischer Vorgänge durch einige Arzneimittel. Jena, 1892.
+               [Facsimile 14]</xref>
+            </i></p>
+         </fig></example>
+   </body>
+</topic>

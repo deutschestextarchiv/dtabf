@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_d3w_j5d_qs">
+    <title>Useful Tools and Applications</title>
+    <body>
+        <p>The DTA provides special applications to support DTABf-compliant capture of metadata and text data.</p>
+        <section> 
+            <title>Webform for Metadata Entry</title> 
+            <p>The DTA provides a web form, which facilitates the creation of DTABf conformant TEI Headers. This way, users do not have to write the quite complex TEI-Headers by themselves but can fill out the form and automatically generate a DTABf conformant TEI Header.</p> 
+            <p>&#x2794; <xref href="http://www.deutschestextarchiv.de/dtae/submit/clarin"
+                scope="external" format="html">Webform for Metadata Entry</xref></p>
+            <fig>
+                <xref href="http://www.deutschestextarchiv.de/dtae/submit/clarin" scope="external" format="html">
+                    <image href="img/webformular.png" scale="50"/>
+                </xref>
+                <p>Screenshot of the web form for metadata collection</p>
+            </fig> </section>
+        
+        <section> 
+            <title>oXygen-Framework for Text Entry</title> 
+            <p>For text transcription and DTABf conformant annotation, the DTA offers a framework for the author mode of the oXygen XML-Editor. This DTA-oXygen-Framework DTAoX enables users to obtain an immediate visualization of their annotated texts as well as to transcribe and annotate texts from scratch in a WYSIWYG-like environment. DTAoX is available under the GNU Lesser General Public License (LGPL). The current version has been optimized for the <xref
+                href="http://www.oxygenxml.com/" scope="external" format="html">oXygen</xref> versions 14.2 and 15.</p> 
+            <p>&#x2794; Download: <i>Version 1.1.1 (November 29th, 2013):</i>
+            <xref href="http://www.deutschestextarchiv.de/files/DTAoX-1.1.1.zip"
+            scope="external" format="html">Framework</xref> (.zip) </p> 
+        <fig>
+            <image href="img/dtaox.png" scale="50"/>
+            <p>Screenshot of the DTA-oXygen-Framework</p>
+            </fig></section>
+    </body>
+</topic>

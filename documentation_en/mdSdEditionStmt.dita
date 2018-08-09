@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_m3y_nk2_qs">
+  <title>Specifying the Type of the Underlying Text Edition  <codeph>(//fileDesc/sourceDesc/biblFull/editionStmt)</codeph></title>
+    <titlealts><navtitle>Edition Statement (Source)</navtitle></titlealts>
+  <body>
+    <p>The notes on the number and type of run on which the DTA edition is based (e. g. first edition, second revised edition, etc.) are given in <codeph>&lt;editionStmt&gt;</codeph> within the <codeph>&lt;biblFull&gt;</codeph> element of the <i>Source Description</i>. <codeph>&lt;editionStmt&gt;</codeph> gets the sub-element <codeph>&lt;edition&gt;</codeph> for this.
+    </p>
+    <p>
+      In the <codeph>@n</codeph> attribute of the <codeph>&lt;edition&gt;</codeph> element, the normalized run number, e. g. <codeph>"2"</codeph> stands for "second, extended run". 
+    </p>
+    <codeblock outputclass="language-xml">&lt;editionStmt&gt;
+      &lt;edition n="[run number]"&gt;[type of the underlying text edition]&lt;/edition&gt;
+&lt;/editionStmt&gt;</codeblock>
+    <p>
+      The <codeph>&lt;edition&gt;</codeph> element remains empty if the original does not contain any explicit references to the edition. The reconstructed run number then appears in the <codeph>@n</codeph> attribute. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;editionStmt&gt;
+      &lt;edition n="[run number]"/&gt;
+&lt;/editionStmt&gt;</codeblock>
+    <p>
+      The <codeph>@n</codeph> attribute of the <codeph>&lt;edition&gt;</codeph> element is mandatory. If the run number can't be taken from the original or reconstructed, <codeph>"n. s."</codeph> (no specification) is given in the <codeph>@n</codeph> attribute.
+    </p>
+  </body>
+</topic>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_qrw_sk2_qs">
+  <title>Information on the Superordinate Journal/Series of the Source <codeph>(//fileDesc/sourceDesc/biblFull/seriesStmt)</codeph></title>
+    <titlealts><navtitle>Series Statement (Source)</navtitle></titlealts>
+  <body>
+    <p>If the original is published as a volume of a series or as an article within a volume, the details of the series are recorded in a <i>Series Statement</i> (<codeph>&lt;seriesStmt&gt;</codeph>) within the <i>Source Description</i>.
+    </p>
+    <p>The title of the superordinate series/journal is reproduced in one or more <codeph>&lt;title&gt;</codeph> element(s). The <codeph>@level</codeph> attribute specifies the type of the superordinate publication. It can take the values <codeph>'s'</codeph> (series) and <codeph>'j'</codeph> (journal). The <codeph>@type</codeph> attribute specifies the type of the given title. It can have the values <codeph>'main'</codeph> (main title) and <codeph>'sub'</codeph> (subtitle).
+    </p>
+    <p>The place of publication within the named journal/series is reproduced in the <codeph>&lt;biblScope&gt;</codeph> element. It can be used several times for this purpose, in which the <codeph>@unit</codeph> attribute specifies the type of the respective statement. The <codeph>@unit</codeph> attribute can have the following values: 
+    </p>
+    <ul>
+      
+      <li>
+        <codeph>volume</codeph>: volume in case of journals/volume in case of series</li>
+      
+      <li>
+        <codeph>issue</codeph>: issue in case of magazines</li>
+      
+      <li>
+        <codeph>pages</codeph>: in the case of journals, which pages the article contains</li>
+      
+    </ul>
+    <p>The <i>Series Statement</i> is thus structured differently, depending on whether the work in question is a monograph or a dependent publication within a series or an article within a journal.
+    </p>
+    <p>In the case of a monograph within a series, <codeph>&lt;seriesStmt&gt;</codeph> is structured as follows:
+    </p>
+    <codeblock outputclass="language-xml">&lt;seriesStmt&gt;
+      &lt;title level="s" type="main"&gt;[main title of the series]&lt;/title&gt;
+      &lt;title level="s" type="sub"&gt;[subtitle of the series, if applicable]&lt;/title&gt;
+      &lt;biblScope unit="volume"&gt;[volume name for the monograph within the series]&lt;/biblScope&gt;
+&lt;/seriesStmt&gt;</codeblock>
+    <p>In the case of a <i>dependent publication</i> within a miscellany in a series, <codeph>&lt;seriesStmt&gt;</codeph> is structured as follows:
+    </p>
+    <codeblock outputclass="language-xml">&lt;seriesStmt&gt;
+      &lt;title level="s" type="main"&gt;[main title of the series]&lt;/title&gt;
+      &lt;title level="s" type="sub"&gt;[subtitle of the series, if applicable]&lt;/title&gt;
+      &lt;biblScope unit="volume"&gt;[volume name for the miscellany within the series]&lt;/biblScope&gt;
+      &lt;biblScope unit="pages"&gt;[page reference]&lt;/biblScope&gt;
+&lt;/seriesStmt&gt;</codeblock>
+    <p>In the case of a <i>dependent publication</i> within a journal, <codeph>&lt;seriesStmt&gt;</codeph> is structured as follows:
+    </p>
+    <codeblock outputclass="language-xml">&lt;seriesStmt&gt;
+      &lt;title level="j" type="main"&gt;[main title of the journal]&lt;/title&gt;
+      &lt;title level="j" type="sub"&gt;[subtitle of the journal, if applicable]&lt;/title&gt;
+      &lt;biblScope unit="volume"&gt;[volume]&lt;/biblScope&gt;
+      &lt;biblScope unit="issue"&gt;[issue]&lt;/biblScope&gt;
+      &lt;biblScope unit="pages"&gt;[page reference]&lt;/biblScope&gt;
+&lt;/seriesStmt&gt;</codeblock>
+  </body>
+</topic>

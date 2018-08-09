@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="unbenannt3">
+  <title>Date Specifications</title>
+  <body>
+    <p>Date specifications of the text can be tagged with the elements <codeph>&lt;date&gt;</codeph> and <codeph>&lt;dateline&gt;</codeph> (level 3).</p>
+    <p><codeph>&lt;date&gt;</codeph> represents a date. With <codeph>&lt;dateline&gt;</codeph> a date line can be tagged, which can also contain a statement of place, for example.</p>
+      <example>
+          <title><codeph>&lt;date&gt;</codeph></title>
+          <fig>
+              <image href="img/roseggerDate.png" scale="60"/>
+              <codeblock outputclass="language-xml">&lt;div&gt;[...]
+  &lt;p&gt;
+    &lt;date&gt; &lt;hi rendition="#et"&gt;Am Jakobitag 1817.&lt;/hi&gt; &lt;/date&gt;
+  &lt;/p&gt;&lt;lb/&gt;
+  &lt;p&gt;Heute bin ich wieder im Hinterwinkel, im&lt;lb/&gt;
+    Hau&#x017F;e des Mathes gewe&#x017F;en. [...]
+  &lt;/p&gt;&lt;lb/&gt;
+[...]&lt;/div&gt;</codeblock>
+              <p><i>Source: <xref href="http://www.deutschestextarchiv.de/rosegger_waldschulmeister_1875/212" format="html" scope="external">Rosegger, Peter: Die Schriften des Waldschulmeisters. Pest, 1875. [Facsimile 212]</xref></i></p>
+          </fig>
+      </example>
+      <example>
+          <title><codeph>&lt;dateline&gt; (1)</codeph></title>
+          <fig>
+              <image href="img/386597dateline.png" scale="60"/>
+              <codeblock outputclass="language-xml">&lt;div&gt;[...]
+  &lt;p&gt;Es werden al&#x017F;o hierdurch [...]&lt;/p&gt;&lt;lb/&gt;
+  &lt;dateline&gt;&lt;hi rendition="#c"&gt;Dreßden den 20. April 1740.&lt;/hi&gt;&lt;/dateline&gt;
+&lt;/div&gt;</codeblock>
+              <p><i>Source: <xref href="http://www.deutschestextarchiv.de/386597/12" format="html" scope="external">Schöttgen, Christian: Lebens-Beschreibung Herrn Wolffgang Eulenbecks. Dresden, 1740. [Facsimile 12]</xref></i></p>
+          </fig>
+      </example>
+      <example>
+          <title><codeph>&lt;dateline&gt; (2)</codeph></title>
+          <fig>
+              <image href="img/arnimbDate.png" scale="60"></image>
+              <codeblock outputclass="language-xml">&lt;milestone rendition="#hr" unit="section"/&gt;
+&lt;div n="2"&gt;
+  &lt;dateline&gt;
+    &lt;hi rendition="#et"&gt;Am früh&#x017F;ten Morgen auf dem Johannisberg.&lt;/hi&gt;
+  &lt;/dateline&gt;&lt;lb/&gt;
+  &lt;p&gt;Das Sonnenlicht &#x017F;tiehlt &#x017F;ich durch die&#x017F;e Bü&#x017F;che in&lt;lb/&gt;
+  [...]&lt;/p&gt;&lt;lb/&gt;
+[...]&lt;/div&gt;</codeblock>
+              <p><i>Source: <xref href="http://www.deutschestextarchiv.de/arnimb_goethe03_1835/21" format="html" scope="external">[Arnim, Bettina von]: Tagebuch. Berlin, 1835. [Facsimile 21]</xref></i></p>
+          </fig>
+      </example>
+      <note type="attention">The elements <codeph>&lt;date&gt;</codeph> and <codeph>&lt;dateline&gt;</codeph> are partly allowed in different element contexts, i. e. <codeph>&lt;date&gt;</codeph> is not necessarily valid everywhere, where <codeph>&lt;dateline&gt;</codeph> is also valid. For the element contexts in which these elements can be used, see the TEI documentation for <codeph>&lt;dateline&gt;</codeph> and <codeph>&lt;date&gt;</codeph>.</note>
+    <p>The <codeph>&lt;date&gt;</codeph> element can also be located within <codeph>&lt;dateline&gt;</codeph> to tag the actual date in the date line separately.</p>
+      <example>
+          <title><codeph>&lt;date&gt;</codeph> in <codeph>&lt;dateline&gt;</codeph> (1)</title>
+          <fig>
+              <image href="img/wissmannDate.png"></image>
+              <codeblock outputclass="language-xml">&lt;div&gt;[...]
+  &lt;p&gt;Die beiden Schlusskapitel [...]&lt;/p&gt;&lt;lb/&gt;
+  &lt;closer&gt;
+    &lt;cb type="start"/&gt;
+    &lt;dateline&gt;
+      &lt;placeName&gt;Gut Weissenbach&lt;lb/&gt;
+      bei Liezen in Steiermark.&lt;/placeName&gt;&lt;lb/&gt;
+      &lt;date&gt;Herbst 1900.&lt;/date&gt;
+    &lt;/dateline&gt;
+    &lt;cb/&gt;
+    &lt;signed&gt;Dr. v. Wissmann.&lt;/signed&gt;&lt;lb/&gt;
+    &lt;cb type="end"/&gt;
+  &lt;/closer&gt;
+&lt;/div&gt;</codeblock>
+              <p><i>Source: <xref href="http://www.deutschestextarchiv.de/wissmann_afrika_1901/6" format="html" scope="external"></xref></i></p>
+          </fig>
+      </example>
+      <example>
+          <title><codeph>&lt;date&gt;</codeph> in <codeph>&lt;dateline&gt;</codeph> (2)</title>
+          <fig>
+              <image href="img/siemensDateDateline.png" scale="60"/>
+              <codeblock outputclass="language-xml">&lt;div&gt;[...]&lt;p&gt;Der Verfasser hat seine Zustimmung und seine Mithülfe nicht&lt;lb/&gt;
+versagt.&lt;/p&gt;&lt;lb/&gt;
+  &lt;closer&gt;
+    &lt;dateline&gt;&lt;placeName&gt;Berlin&lt;/placeName&gt;,  
+      &lt;date&gt;im August 1881&lt;/date&gt;.
+    &lt;/dateline&gt;&lt;lb/&gt; 
+    &lt;hi rendition="#b #right"&gt;Die Verlagshandlung.&lt;/hi&gt; 
+  &lt;/closer&gt;
+&lt;/div&gt;</codeblock>
+              <p><i>Source: <xref href="http://www.deutschestextarchiv.de/siemens_abhandlungen_1881/15" format="html" scope="external">Siemens, Werner von: Gesammelte Abhandlungen und Vorträge. Berlin, 1881. [Facsimile 15].</xref></i></p>
+          </fig>
+      </example>
+    <note type="tip">For further examples of use, see also the documentation on <xref href="brAllg.dita">letters</xref>.</note>
+  </body>
+</topic>

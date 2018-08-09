@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ksc_htj_qs">
+  <title>Basic Structure of the Encoding of Orientation Aids in the Book Block</title>
+  <titlealts><navtitle>Orientation Aids Basic Structure</navtitle></titlealts>
+  <body>
+    <p>Orientation aids such as running titles, signature mark and catchwords are tagged with the <codeph>&lt;fw&gt;</codeph> element. This contains the attributes <codeph>@type</codeph> for specifying the type of orientation help and <codeph>@place</codeph> for specifying the position on the page.</p>
+  </body>
+</topic>

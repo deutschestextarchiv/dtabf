@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_12">
+  <title>Basic Structure of Encoding Line Breaks</title>
+  <titlealts><navtitle>Line Breaks Basic Structure</navtitle></titlealts>
+         <body>
+           <p>The alignment is taken over from the original. Line breaks within headings, footnotes, endnotes, marginalia etc. are also taken into account.
+              </p>
+           <p>Each line end is tagged by the empty element <codeph>&lt;lb/&gt;</codeph>. This is not implicit in any element, but is always set explicitly. Only the elements <codeph>&lt;pb&gt;</codeph>, <codeph>&lt;cb&gt;</codeph>, and <codeph>&lt;space&gt;</codeph> are without the following <codeph>&lt;lb&gt;</codeph> element.
+              </p>
+            <p>Line breaks at element ends are placed behind the outermost closing element, but before <codeph>&lt;/front&gt;</codeph>, <codeph>&lt;/body&gt;</codeph> (and thus <codeph>&lt;/floatingText&gt;</codeph>), 
+              <codeph>&lt;/back&gt;</codeph> and <codeph>&lt;/titlePage&gt;</codeph>. 
+              </p>
+            <codeblock outputclass="language-xml">&lt;lg type="poem"&gt;
+  &lt;l&gt;[text verse a]&lt;/l&gt;&lt;lb/&gt;
+  &lt;l&gt;[text verse b]&lt;/l&gt;
+&lt;/lg&gt;&lt;lb/&gt;</codeblock>
+            <codeblock outputclass="language-xml">&lt;body>
+  &lt;div n="1">
+    &lt;p>[text paragraph a]&lt;/p>&lt;lb/>
+    &lt;p>[text paragraph b]&lt;/p>
+  &lt;/div>&lt;lb/>
+&lt;/body></codeblock>
+         </body>
+      </topic>

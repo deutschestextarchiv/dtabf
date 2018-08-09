@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_xjx_kj2_qs">
+  <title>Notes on the Type of the Present Text Edition <codeph>(//fileDesc/editionStmt)</codeph></title>
+    <titlealts><navtitle>Edition Statement</navtitle></titlealts>
+  <body>
+    <p>The <i>Edition Statement</i> contains in the subelement <codeph>&lt;edition&gt;</codeph> information on the type of the present DTA publication of the respective work.</p><!-- neu 16.08. -->
+    <codeblock outputclass="language-xml">&lt;editionStmt&gt;
+      &lt;edition&gt;[Type of DTA edition, i. e. "Vollständige digitalisierte Ausgabe" ("Complete digitized edition").]&lt;/edition&gt;<!-- neu 16.08. -->
+&lt;/editionStmt&gt;</codeblock>
+  </body>
+</topic>

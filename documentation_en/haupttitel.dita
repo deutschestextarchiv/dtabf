@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_7">
+  <title>Main Title Page</title>
+  <body>
+    <example>
+      <title>Encoding of Title Pages for Monographs – Main Title Page</title>
+      <fig>
+        <image href="img/XyxkvQl3Zk.png"/>
+        <codeblock outputclass="language-xml">&lt;titlePage type="main"&gt;
+  &lt;docTitle&gt;
+    &lt;titlePart type="main"&gt;
+      &lt;hi rendition="#g"&gt;&lt;hi rendition="#b"&gt;Vorleſungen&lt;/hi&gt;&lt;lb/&gt;
+      u&amp;#x0364;ber&lt;lb/&gt;&lt;hi rendition="#b"&gt;Esskunst&lt;/hi&gt;&lt;/hi&gt;
+    &lt;/titlePart&gt;
+  &lt;/docTitle&gt;&lt;lb/&gt;
+  &lt;byline&gt;
+    &lt;hi rendition="#g"&gt;von&lt;/hi&gt;&lt;lb/&gt;
+    &lt;docAuthor&gt;&lt;hi rendition="#g #b"&gt;Antonius Anthus.&lt;/hi&gt;&lt;/docAuthor&gt;
+  &lt;/byline&gt;&lt;lb/&gt;
+  &lt;epigraph&gt;
+    &lt;cit&gt;
+      &lt;quote&gt;„Ernſt iſt das Leben, heiter iſt die Kunſt.“&lt;/quote&gt;
+    &lt;/cit&gt;
+  &lt;/epigraph&gt;&lt;lb/&gt;
+  &lt;figure/&gt;&lt;lb/&gt;
+  &lt;milestone rendition="#hr" unit="section"/&gt;&lt;lb/&gt;
+  &lt;docImprint&gt;
+    &lt;pubPlace&gt;&lt;hi rendition="#g #b"&gt;Leipzig,&lt;/hi&gt;&lt;/pubPlace&gt;&lt;lb/&gt;
+    &lt;publisher&gt;
+      &lt;hi rendition="#g"&gt;Verlag von Otto Wigand.&lt;/hi&gt;
+    &lt;/publisher&gt;&lt;lb/&gt;
+    &lt;milestone rendition="#hr" unit="section"/&gt;&lt;lb/&gt;
+    &lt;docDate&gt;
+      &lt;hi rendition="#b"&gt;&lt;hi rendition="#g"&gt;1838&lt;/hi&gt;.&lt;/hi&gt;
+    &lt;/docDate&gt;
+  &lt;/docImprint&gt;&lt;lb/&gt;
+&lt;/titlePage&gt;</codeblock>
+      <p><i>Source: <xref
+            href="http://www.deutschestextarchiv.de/anthus_esskunst_1838/7"
+            format="html" scope="external"> Antonius
+            Anthus [i. e. Blumröder, Gustav]:
+            Vorlesungen über Esskunst. Leipzig,
+            1838. [Facsimile 7]</xref></i></p>
+      </fig>
+    </example>
+  </body>
+</topic>

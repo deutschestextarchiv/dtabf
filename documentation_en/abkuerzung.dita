@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_67">
+    <title>Expansion of Abbreviations</title>
+    <titlealts><navtitle>Abbreviations</navtitle></titlealts>
+         <body>
+                        <p>Abbreviations are taken over according to the original, i. e. they are not expanded tacitly. For the expansion of abbreviations the <codeph>&lt;choice&gt;</codeph> element with the sub-elements <codeph>&lt;abbr&gt;</codeph> and <codeph>&lt;expan&gt;</codeph> is available. The abbreviation as taken from the original is written in <codeph>&lt;abbr&gt;</codeph>. In <codeph>&lt;expan&gt;</codeph> stands the expanded form of the abbreviation.</p>
+            <codeblock outputclass="language-xml">&lt;choice&gt;
+                &lt;abbr&gt;[abbreviation according to the original]&lt;/abbr&gt;
+                &lt;expan&gt;[expansion of the abbreviation]&lt;/expan&gt;
+&lt;/choice&gt;</codeblock>
+            <p>If an abbreviation is only to be tagged as such without specifying the corresponding expansion, the element <codeph>&lt;abbr&gt;</codeph> is used. The <codeph>&lt;choice&gt;</codeph> and <codeph>&lt;expan&gt;</codeph> elements are omitted in this case. 
+      </p>
+             <codeblock outputclass="language-xml">&lt;abbr&gt;[abbreviation according to the original]&lt;/abbr&gt;</codeblock>
+            <note type="caution">An expansion can never occur without the corresponding abbreviation taken from the original (tacit expansions of abbreviations are not permitted). Thus, the <codeph>&lt;expan&gt;</codeph> element can never stand without <codeph>&lt;choice&gt;</codeph> and <codeph>&lt;abbr&gt;</codeph>. 
+      </note>
+            <p>Abbreviations are generally represented with the character available in the Unicode standard. If there is no equivalent in the Unicode standard for an abbreviation, the alternate Unicode entity <codeph>&amp;#xFFFC;</codeph> (OBJECT REPLACEMENT CHARACTER) can be set. In this case, the correct expansion of the corresponding abbreviation should be given in the <codeph>&lt;expan&gt;</codeph> element.
+      </p>
+            <p>For the encoding of expansions that cannot be deciphered or not interpreted, see chap. <xref href="gapSupplied.dita">Difficult or Non-Decipherable Characters and Omissions</xref>.
+      
+            </p>
+         </body>
+      </topic>

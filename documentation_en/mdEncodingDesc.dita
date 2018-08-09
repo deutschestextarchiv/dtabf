@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_k15_1lj_qs">
+  <title>Editorial Guidelines <codeph>(//encodingDesc)</codeph></title>
+    <titlealts><navtitle>Encoding Description</navtitle></titlealts>
+  <body>
+    <p>Notes on the editorial guidelines underlying the DTA text edition are contained in the <i>Encoding Description</i> (<codeph>&lt;encodingDesc&gt;</codeph>).</p>
+    <p>The subelement <i>Editorial Description</i> contains information on the entry type for the respective text as well as on the degree of conformity of the text with the DTA guidelines (<xref href="http://www.deutschestextarchiv.de/doku/richtlinien" format="html">DTA Transcription Guidelines</xref> and <xref href="http://www.deutschestextarchiv.de/doku/basisformat" format="html">DTA Basic Format</xref>).
+    </p>
+    <p>
+      The <i>Tags Declaration</i> subelement contains several <codeph>&lt;rendition&gt;</codeph> elements that specify how the <codeph>@rendition</codeph> values of the TEI text should be resolved in CSS during rendering. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;encodingDesc&gt;
+  &lt;editorialDecl&gt;
+  &lt;p&gt;[Information on the Transcription and Annotation Guidelines]&lt;/p&gt;
+  &lt;p&gt;[further information on the Transcription and Annotation Guidelines]&lt;/p&gt;
+  &lt;/editorialDecl&gt;
+  &lt;rendition scheme="css" xml:id="rendition-[@rendition-Wert]"&gt;[CSS equivalent]&lt;/rendition&gt;
+&lt;/encodingDesc&gt;</codeblock>
+    <note type="attention">The CSS equivalents used in the DTA for the respective <codeph>@rendition</codeph> values are documented in the chapter <xref href="typogrAllg.dita">Typographical Features - Guidelines for Coding</xref>.</note>
+  </body>
+</topic>

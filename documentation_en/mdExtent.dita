@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_g5q_5j2_qs">
+  <title>The Extent Specification within the <i>File Description</i> <codeph>(//fileDesc/extent)</codeph></title>
+    <titlealts><navtitle>Extent</navtitle></titlealts>
+  <body>
+    <p>An <codeph>&lt;extent&gt;</codeph> element within the <i>File Description</i> is used to specify the extent of the DTA full text. The extent is given in several <codeph>&lt;measure&gt;</codeph> elements in different units (facsimile files, tokens, types, characters). 
+    </p>
+    <codeblock outputclass="language-xml">&lt;extent&gt;
+      &lt;measure type="images"&gt;[extent: number of facsimile files]&lt;/measure&gt;
+      &lt;measure type="tokens"&gt;[extent: number of tokens]&lt;/measure&gt;
+      &lt;measure type="types"&gt;[extent: number of types]&lt;/measure&gt;
+      &lt;measure type="characters"&gt;[extent: number of characters]&lt;/measure&gt;
+&lt;/extent&gt;</codeblock>
+  </body>
+</topic>

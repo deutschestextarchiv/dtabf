@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_lrh_y32_qs">
+  <title>Volume</title>
+  <body>
+    <p>The volume specification of a work on its title pages is reproduced in the detailed title data according to the original.
+    </p>
+    <p>In the short title the abbreviated form "<codeph>Bd. [number]</codeph>" (Bd. = Vol.) is used. Basically, "<codeph>Bd.</codeph>" is written regardless of the description of the volume (e. g. as "booklet" or "part") in the original.
+    </p>
+    <example>
+      <title>Volume Specification in the Short Title</title>
+      <p><i>See: </i><xref href="http://www.deutschestextarchiv.de/euler_algebra02_1770" scope="external" format="html">http://www.deutschestextarchiv.de/euler_algebra02_1770</xref></p>
+
+    </example>
+  </body>
+</topic>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="schema">
+  <title>Scheme and Documentation</title>
+  
+  <body>
+    <section>
+      <p>The schema and the documentation can be accessed via the links listed below. 
+        For an introduction to working with the DTA basic format, see the chapter <xref href="howto.dita" format="dita">HowTo</xref>.</p>
+    </section>
+    <section><title>The DTABf Scheme</title>
+      <ul>
+        <li><xref href="http://www.deutschestextarchiv.de/basisformat.rng" scope="external" format="html" outputclass="nu">DTABf for prints: RNG schema &#x21D7;</xref></li>
+        <li><xref href="http://www.deutschestextarchiv.de/basisformat.odd" scope="external" format="html" outputclass="nu">DTABf for prints: ODD &#x21D7;</xref></li>
+        <li><xref href="http://www.deutschestextarchiv.de/basisformat_ms.rng" scope="external" format="html" outputclass="nu">DTABf for manuscripts: RNG schema &#x21D7;</xref></li>
+        <li><xref href="http://www.deutschestextarchiv.de/basisformat_ms.odd" scope="external" format="html" outputclass="nu">DTABf for manuscripts: ODD &#x21D7;</xref></li>
+        <li><xref href="http://www.deutschestextarchiv.de/basisformat.sch" scope="external" format="html" outputclass="nu">DTABf Schematron constraints set &#x21D7;</xref></li>
+        <li><xref href="benutzungDTABfSchema.dita" outputclass="nu">Notes on using the schema &#x21D7;</xref></li>
+    </ul>
+    
+      <p>The versions of the DTABf schema were created using the chaining ODDs mechanism provided by the Text Encoding Initiative. 
+        The underlying ODD can be accessed via the following link: 
+        <xref href="http://www.deutschestextarchiv.de/basisformat_all.odd" scope="external" format="html" outputclass="nu">DTABf_all-ODD &#x21D7;</xref></p>
+      </section>
+    <section><title>Components of the DTABf documentation</title>
+          <ul>
+            <li>Introduction and first steps [<xref href="ziel.dita" outputclass="nu">next Chapter &#x21D7;</xref>]</li>
+            <li><xref href="metadaten.dita" outputclass="nu">Structuring of Metadata &#x21D7;</xref></li>
+            <li><xref href="transkription.dita" outputclass="nu">Transcription Guidelines &#x21D7;</xref></li>
+            <li><xref href="texterschliessung_formal.dita" outputclass="nu">Structuring of Formal (Typographic) Phenomena &#x21D7; </xref></li>
+            <li><xref href="texterschliessung_inhaltlich.dita" outputclass="nu">Structuring of Semantic (Meaningful) Phenomena &#x21D7;</xref></li>
+            <li>Special text types <ul outputclass="embedded">
+              <li outputclass="embedded"><xref href="manuskript.dita" outputclass="nu">Structuring of Manuscripts &#x21D7;</xref></li>
+              <li outputclass="embedded"><xref href="zeitung.dita" outputclass="nu">Structuring of Newspapers and Journals &#x21D7;</xref></li>
+                    </ul></li>
+    <li>Overviews
+        <ul outputclass="embedded">
+          <li outputclass="embedded"><xref href="uebersichtHeader.dita" outputclass="nu">Overview of all DTABf-Elements within the <codeph>&lt;teiHeader></codeph> area &#x21D7;</xref></li>
+          <li outputclass="embedded"><xref href="uebersichtText.dita" outputclass="nu">Overview of all DTABf-Elements within the <codeph>&lt;text></codeph> area &#x21D7;</xref></li></ul></li>
+            <li><xref href="http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml" scope="external" format="html" outputclass="nu">Boilerplate DTABf document &#x21D7;</xref></li>
+          </ul>
+      </section>
+  </body>
+</topic>

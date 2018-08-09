@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_farb">
+   <title>Coloring</title>
+   <body>
+      <example>
+         <title>Colorings</title><fig>
+            <image href="img/JQw2LBhAI6.png"/>
+            <codeblock outputclass="language-xml">&lt;l&gt;&lt;hi rendition="#in #red"&gt;I&lt;/hi&gt;ch schrieb es auf: 
+   nicht länger sei verhehlt&lt;/l&gt;&lt;lb/&gt;
+&lt;l&gt;&lt;hi rendition="#blue"&gt;W&lt;/hi&gt;as als gedanken ich nicht mehr verbanne&lt;/l&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Source: <xref
+               href="http://www.deutschestextarchiv.de/george_seele_1897/15"
+               format="html" scope="external">George, Stefan: Das Jahr der Seele. Berlin,
+               1897. [Facsimile 15]</xref>
+            </i></p>
+         </fig></example>
+   </body>
+</topic>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="trR">
+  <title>r-Graphemes</title>
+<body>
+<p>
+  The so-called <tt>r rotunda</tt> is represented by the Unicode entity <tt>&#xa75b; (U+A75B, LATIN SMALL LETTER R ROTUNDA)</tt>. It is often found in connection with the nowadays common <tt>r</tt> or as an substituent for <tt>et</tt> in abbreviations for <tt>et cetera</tt>.
+</p>
+
+  <p>Example (r rotunda as contemporary <tt>r</tt> and <tt>et</tt>):</p>
+
+<table>
+  <tgroup cols="2">
+    <thead>
+      <row>
+        <entry>Original</entry>
+      <entry>Transcription</entry>
+      </row>
+    </thead>
+    <tbody>
+      <row>
+        <entry><image href="img/herr.jpg"><alt>Herr (with r rotunda)</alt></image></entry>
+        <entry><codeph>Her&amp;#xA75B;</codeph></entry>
+      </row>
+      <row>
+        <entry><image href="img/etc.jpg"><alt>etc. (with r rotunda)</alt></image></entry>
+        <entry><codeph>&amp;#xA75B;c.</codeph></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table></body>
+</topic>

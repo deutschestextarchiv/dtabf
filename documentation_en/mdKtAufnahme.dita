@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_fgv_y32_qs">
+  <title>Short Title Recording</title>
+  <body>
+    <p>The title specification within the short title recording is based on the original. However, it should be limited in its length as far as possible in order to enable a quick recording of the bibliographic information. Irrespective of the original, the title entry is always introduced with a capital letter.
+    </p>
+      <section>
+        <title>Overview of Short Title Recordings by Document Type</title>
+    <dl>
+      
+      <dlentry>
+        <dt>Monographs:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. <i>Print location</i>, <i>year</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Volume of a Multi-Volume Edition:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. Bd. <i>Volume number</i>: <i>Volume title (if applicable)</i>. <i>Print location</i>, <i>year</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Volume of a Series:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. <i>Print location</i>, <i>year</i> (= <i>Series title</i>, Bd. <i>Volume number</i>).
+        </dd>
+      </dlentry>
+      <dlentry>
+        <dt>Dependent Writing in a Journal/Newspaper:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. In: <i>Short title of the journal/newspaper number</i> (<i>year</i>), S. <i>page reference</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Dependent Writing in a Miscellany:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. In: <i>Short title of the miscellany</i>. <i>Print location</i>, <i>year</i>, S. <i>page reference</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Chapter of a Monograph:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. In: <i>Short title of the monograph</i>. <i>Place of printing</i>, <i>year</i>, S. <i>reference</i>.</dd>
+      </dlentry>
+    </dl>
+      </section>
+      <section>
+        <title>Special Cases</title>
+    <dl>
+      <dlentry>
+        <dt>Later Edition::</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. <i>Number of the edition</i>. Aufl. <i>Print location</i>, <i>year</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Several Authors:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>; <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. <i>Print location</i>, <i>year</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Author with Title of Nobility:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i> 
+          <i>title of nobility</i>: <i>Short title</i>. <i>Print location</i>, <i>year</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Unknown Author:</dt>
+        <dd>
+          [N. N.], <i>Short title</i>. <i>Print location</i>, <i>year</i>.</dd>
+        <dd>&#x2794; <i>For more information, see chapter: <xref href="mdUnvollstAngaben.dita">Dealing with Incomplete Information</xref>.</i></dd>
+      </dlentry>
+      <dlentry>
+        <dt>Several Places of Publication:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. <i>Print location</i> u. a., <i>year</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Unknown Place of Publication:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. [s. l.], <i>year</i>.</dd>
+        <dd>&#x2794; <i>For more information, see chapter: <xref href="mdUnvollstAngaben.dita">Dealing with Incomplete Information</xref>.</i></dd>
+      </dlentry>
+      <dlentry>
+        <dt>Publisher instead of Author:</dt>
+        <dd>
+          <i>Publisher's name</i>, <i>first name of publisher</i> (Hrsg.): <i>Short title</i>. <i>Print location</i>, <i>year</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Publisher, Deviating from the Author:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. Hrsg. v. <i>first name of publisher last name of publisher</i>. <i>Print location</i>, <i>year</i>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Translator:</dt>
+        <dd>
+          <i>Author name</i>, <i>first name of author</i>: <i>Short title</i>. Übers. v. <i>first name of translator last name of translator</i>. <i>Print location</i>, <i>year</i>.</dd>
+      </dlentry>
+    </dl>
+   </section>
+  </body>
+</topic>

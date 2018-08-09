@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_a3v_jcq_yw">
+    <title>Responsibilities</title>
+  <body>
+    
+      <p>Editorial decisions can be assigned to an publisher using an <codeph>@resp</codeph> attribute. The value of the <codeph>@resp</codeph> attribute is an identifier as a reference, which is resolved in the <codeph>&lt;teiHeader&gt;</codeph>. </p>
+      <p>The attribute <codeph>@resp</codeph> can be used in the elements
+            <codeph>&lt;persName&gt;</codeph>,
+            <codeph>&lt;placeName&gt;</codeph>,
+            <codeph>&lt;orgName&gt;</codeph>, <codeph>&lt;name&gt;</codeph>,
+            <codeph>&lt;unclear&gt;</codeph>, <codeph>&lt;supplied&gt;</codeph>,
+            <codeph>&lt;reg&gt;</codeph>, <codeph>&lt;corr&gt;</codeph>,
+          <codeph>&lt;expan&gt;</codeph>. </p>
+      <p><b>Examples:</b></p>
+      <codeblock outputclass="language-xml">&lt;choice&gt;
+          &lt;sic&gt;[original, incorrect notation]&lt;/sic&gt;
+          &lt;corr resp="#[ID publisher]"&gt;[corrected notation]&lt;/corr&gt;
+&lt;/choice&gt;</codeblock>
+      <codeblock outputclass="language-xml">&lt;supplied resp="#[ID publisher]"&gt;[character string supplemented compared to the original]&lt;/supplied&gt;</codeblock>
+ 
+    
+  </body>
+</topic>

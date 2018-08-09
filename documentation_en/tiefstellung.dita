@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ts">
+   <title>Subscript</title>
+   <body>
+      <example>
+         <title>Encoding of Subscripts</title><fig>
+            <image href="img/wHRmLS8BOp.png"/>
+            <codeblock outputclass="language-xml">[...] auf &lt;hi rendition="#i"&gt;b&lt;/hi&gt; sitzt ein&lt;lb/&gt; eben solches Rad, 
+welches &lt;hi rendition="#i"&gt;z&lt;/hi&gt;&lt;hi rendition="#sub"&gt;4&lt;/hi&gt; Zähne hat.</codeblock>
+            <p><i>Source: <xref
+               href="http://www.deutschestextarchiv.de/fischer_werkzeugmaschinen01_1900/181"
+               format="html" scope="external">Fischer, Hermann: Die Werkzeugmaschinen. Bd. 1:
+               Die Metallbearbeitungs-Maschinen. [Textband]. Berlin, 1900. [Facsimile
+               181]</xref>
+            </i></p>
+         </fig></example>
+   </body>
+</topic>

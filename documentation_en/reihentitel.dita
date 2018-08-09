@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_8">
+  <title>Title Page of a Series and Corresponding Main Title Page</title>
+  <titlealts><navtitle>Series Title</navtitle></titlealts>
+  <body>
+    <example>
+      <title>Encoding of Title Pages in Series – Series Title</title>
+      <fig>
+        <image href="img/OmeADwUbxh.png"/>
+        <codeblock outputclass="language-xml">&lt;titlePage type="series">
+  &lt;docTitle>
+    &lt;titlePart type="main">
+      &lt;hi rendition="#g">Die&lt;lb/>&lt;hi rendition="#b">Wunder des Himmels,&lt;/hi>&lt;lb/>
+      oder&lt;/hi>&lt;lb/>
+      &lt;hi rendition="#b">gemeinfaßliche Darſtellung&lt;/hi>&lt;lb/>
+      &lt;hi rendition="#g">des&lt;lb/>&lt;hi rendition="#b">Weltſyſtems.&lt;/hi>&lt;/hi>
+    &lt;/titlePart>
+  &lt;/docTitle>&lt;lb/>
+  &lt;byline>
+    &lt;hi rendition="#g">Von&lt;/hi>&lt;lb/>
+    &lt;docAuthor>&lt;hi rendition="#g">J. J. Littrow&lt;/hi>&lt;/docAuthor>,&lt;lb/>
+    Director der k. k. Sternwarte in Wien.
+  &lt;/byline>&lt;lb/>
+  &lt;milestone rendition="#hr" unit="section"/>&lt;lb/>
+  &lt;imprimatur>
+    &lt;hi rendition="#g">Mit Königl. Würtembergiſchem Privilegium.&lt;/hi>
+  &lt;/imprimatur>&lt;lb/>
+  &lt;milestone rendition="#hr" unit="section"/>&lt;lb/>
+  &lt;titlePart type="desc">
+    &lt;hi rendition="#g">Drei Bände&lt;/hi>.&lt;lb/>
+    Mit dem Bildniſſe des Verfaſſers und aſtronomiſchen Tafeln.
+  &lt;/titlePart>&lt;lb/>
+  &lt;milestone rendition="#hr" unit="section"/>&lt;lb/>
+  &lt;titlePart type="volume">
+    &lt;hi rendition="#g">Erſter Theil: Theoriſche Aſtronomie&lt;/hi>.
+  &lt;/titlePart>&lt;lb/>
+  &lt;milestone rendition="#hr" unit="section"/>&lt;lb/>
+  &lt;docImprint>&lt;hi rendition="#g">Stuttgart&lt;/hi>,&lt;lb/>
+    &lt;publisher>&lt;hi rendition="#g">Carl Hoffmann&lt;/hi>.&lt;/publisher>&lt;lb/>
+    &lt;docDate>&lt;hi rendition="#g">1834&lt;/hi>.&lt;/docDate>
+  &lt;/docImprint>&lt;lb/>
+&lt;/titlePage></codeblock>
+        <p>Source: <xref
+            href="http://www.deutschestextarchiv.de/littrow_weltsystem01_1834/10"
+            format="html" scope="external">Littrow, Joseph Johann von: Die Wunder des Himmels, oder gemeinfaßliche Darstellung des Weltsystems. Bd. 1. Stuttgart, 1834. [Facsimile 10]</xref></p>
+      </fig>
+    </example>
+    <example>
+      <title>Encoding of Title Pages in Series – Main Title Page</title>
+      <fig>
+        <image href="img/xVE55djoI1.png"/>
+        <codeblock outputclass="language-xml">&lt;titlePage type="main">
+  &lt;docTitle>
+    &lt;titlePart type="main">
+      &lt;hi rendition="#b">Theoriſche Aſtronomie&lt;/hi>&lt;lb/>
+      &lt;hi rendition="#g">oder&lt;lb/>
+      &lt;hi rendition="#b">allgemeine Erſcheinungen&lt;/hi>&lt;lb/>
+      des&lt;lb/>&lt;hi rendition="#b">Himmels.&lt;/hi>&lt;/hi>
+    &lt;/titlePart>
+  &lt;/docTitle>&lt;lb/>
+  &lt;byline>
+    Von&lt;lb/>
+    &lt;docAuthor>&lt;hi rendition="#g #b">J. J. Littrow,&lt;/hi>&lt;/docAuthor>&lt;lb/>
+    Director der k. k. Sternwarte in Wien.
+  &lt;/byline>&lt;lb/>
+  &lt;milestone rendition="#hr" unit="section"/>&lt;lb/>
+  &lt;titlePart type="desc">
+    Mit dem Bildniſſe des Verfaſſers und aſtronomiſchen Tafeln.
+  &lt;/titlePart>&lt;lb/>
+  &lt;milestone rendition="#hr" unit="section"/>&lt;lb/>
+  &lt;docImprint>
+    &lt;pubPlace>&lt;hi rendition="#g">Stuttgart&lt;/hi>,&lt;/pubPlace>&lt;lb/>
+    &lt;publisher>&lt;hi rendition="#g">Carl Hoffmann&lt;/hi>.&lt;/publisher>&lt;lb/>
+    &lt;docDate>&lt;hi rendition="#g">1834&lt;/hi>.&lt;/docDate>&lt;lb/>
+  &lt;/docImprint>&lt;lb/>
+&lt;/titlePage></codeblock>
+        <p><i>Source: <xref
+            href="http://www.deutschestextarchiv.de/littrow_weltsystem01_1834/11"
+            format="html" scope="external">Littrow,
+            Joseph Johann von: Die Wunder des
+            Himmels, oder gemeinfaßliche Darstellung
+            des Weltsystems. Bd. 1. Stuttgart, 1834.
+            [Facsimile 11]</xref></i></p>
+      </fig>
+    </example>
+  </body>
+</topic>

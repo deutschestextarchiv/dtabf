@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ry3_ptj_qs">
+  <title>Paragraphs</title>
+  <body>
+    <p>The paragraph structure follows the original. The respective paragraphs are tagged with <codeph>&lt;p&gt;</codeph> elements.</p>
+    <example>
+      <title>Paragraph</title>
+      <fig>
+        <image href="img/XHqxBBsaJ4.png"/>
+        <codeblock outputclass="language-xml">&lt;p&gt;„Das wird ja ordentlich intereſſant,“ bemerkte Max&lt;lb/&gt;
+  Werner und ſtand auf, „da könnte ich am Ende noch hier&lt;lb/&gt;
+  für Fenia gegen irgend einen ſibiriſchen Drachen zu Felde&lt;lb/&gt;
+  ziehen?“
+&lt;/p&gt;&lt;lb/&gt;
+&lt;p&gt;Aber der Onkel teilte die heitere Stimmung nicht;&lt;lb/&gt;
+  ſeine Miene blieb ſo feierlich und beſorgt wie zuvor.
+&lt;/p&gt;&lt;lb/&gt;
+        </codeblock>
+        <p><i>Source: 
+          <xref href="http://www.deutschestextarchiv.de/andreas_fenitschka_1898/48" format="html"  scope="external">Andreas-Salome, Lou: Fenitschka. Eine Ausschweifung. Stuttgart, 1898. [Facsimile 48]</xref>
+        </i></p>
+      </fig></example>
+    <p outputclass="phase2">Indentations of the first line of a paragraph are not taken into account. </p>
+    <p outputclass="phase2">Larger gaps between paragraphs are only tagged if a variance is found within a book. In this case, the significant distance is indicated in the relevant line by using <codeph>&lt;space dim="vertical"/&gt;</codeph>. </p>
+    <note type="notice"><i><b>Alternative regulation phase 1:</b> Indentations of the first line of a paragraph and larger distances between paragraphs are not taken into account. </i></note>
+<example>
+  <title>(Meaningful) Distance Between Paragraphs</title><fig>
+    <image href="img/dvhEgTfOad.png"/>
+    <codeblock outputclass="language-xml">&lt;p&gt;[...]&lt;lb/&gt;
+  Mu&amp;#x0364;nzpreis, und demnach ein vollkommneres Pfund Ster-&lt;lb/&gt;
+  ling hervor gebracht.
+&lt;/p&gt;&lt;lb/&gt;
+&lt;p&gt;
+  Wo alſo u&amp;#x0364;berhaupt gemu&amp;#x0364;nzt wird, da muß es einen feſten&lt;lb/&gt;
+  [...]&lt;lb/&gt;
+  und iſt die unumga&amp;#x0364;ngliche Bedingung der Mo&amp;#x0364;glichkeit einer&lt;lb/&gt;
+  Mu&amp;#x0364;nze.
+&lt;/p&gt;&lt;lb/&gt;
+&lt;p&gt;
+  Mu&amp;#x0364;nzen heißt den ſchwankenden Werth der edeln Metalle&lt;lb/&gt;
+  befeſtigen; was ko&amp;#x0364;nnte ihn befeſtigen als eine Sache von&lt;lb/&gt;
+  [...]
+&lt;/p&gt;</codeblock>
+      <p><i>Source: 
+      <xref href="http://www.deutschestextarchiv.de/mueller_geld_1816/233" format="html"  scope="external">Müller,
+        Adam Heinrich: Versuche einer neuen Theorie des Geldes mit besonderer 
+        Rücksicht auf Großbritannien. Leipzig u. a., 1816. [Facsimile 233]</xref>
+    </i></p>
+  </fig></example>
+  </body>
+</topic>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ze">
+    <title>Quotations</title>
+    <body>
+
+        <p>Quotations are systematically tagged when they appear clearly detached from the continuous text. </p>
+        <note type="notice"><i><b>Alternative regulation phase 1:</b> Quotations are systematically tagged if both the quote and the specification of the author appear clearly detached from the continuous text.</i></note>
+        <p>Inline quotations are initially not tagged. In a second processing step, it can entered that the quotation is a quote. However, there is no systematic tagging of inline quotations in the DTA corpus. 
+        </p>
+    </body>
+</topic>

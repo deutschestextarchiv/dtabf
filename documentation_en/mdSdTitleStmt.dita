@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_sx1_nk2_qs">
+  <title>The Detailed Title Statement of the <i>Source Description</i> <codeph>(//fileDesc/sourceDesc/biblFull/titleStmt)</codeph></title>
+    <titlealts><navtitle>Title Statement (Source)</navtitle></titlealts>
+  <body>
+    <p>The <codeph>&lt;title&gt;</codeph> element in the <i>Title Statement</i> of the <i>Source Description</i> contains the attributes <codeph>@level</codeph> and <codeph>@type</codeph>.<!--A BR tag was used here in the original source.-->
+      Possible values of the <codeph>@level</codeph> attribute are: 
+    </p>
+    <ul>
+      
+      <li>
+        <codeph>m</codeph>: monographic title (title of an independent publication/monograph)</li>
+      
+      <li>
+        <codeph>a</codeph>: analytic title (title of a dependent publication)</li>
+      
+    </ul>
+    <p>Possible values of the <codeph>@type</codeph> attribute within <codeph>&lt;title&gt;</codeph> are:
+    </p>
+    <ul>
+      
+      <li>
+        <codeph>main</codeph>: main title</li>
+      
+      <li>
+        <codeph>sub</codeph>: subtitle</li>
+      
+      <li>
+        <codeph>volume</codeph>: volume specification/volume title</li>
+      
+      <li>
+        <codeph>part</codeph>: title of the part for multi-part dependent publications</li>
+      
+    </ul>
+    <p>In the case of a volume specification, the <codeph>&lt;title&gt;</codeph> element also receives a <codeph>@n</codeph> attribute, which specifies the number of the volume: 
+    </p>
+    <codeblock outputclass="language-xml">&lt;title level="m" type="volume" n="[volume number]"&gt;[volume title]&lt;/title&gt;</codeblock>
+    <p>The <codeph>&lt;author&gt;</codeph> element specifies the author of the work. A possible publisher of the underlying text source is reproduced in the <codeph>&lt;editor&gt;</codeph> element. If the text edition in question is a translation, reference is made to the translator by means of <codeph>&lt;editor role="translator"&gt;</codeph> element.<!--A BR tag was used here in the original source.-->
+      For a deeper structuring of the <codeph>&lt;author&gt;</codeph> and <codeph>&lt;editor&gt;</codeph> element see chap. <xref href="mdAuthorEditor.dita">Substructuring of the Elements <codeph>&lt;author&gt;</codeph> and <codeph>&lt;editor&gt;</codeph></xref>.
+    </p>
+  </body>
+</topic>

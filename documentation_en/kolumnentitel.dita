@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_sld_3tj_qs">
+  <title>Running Titles</title>
+  <body>
+    <p>Running titles are found in the originals at the beginning of each page in the header. They are tagged as follows:</p>
+    <codeblock outputclass="language-xml">&lt;fw type="header" place="top"&gt;[running title]&lt;/fw&gt;</codeblock>
+    <p>In the transcription, the running title basically follows the <codeph>&lt;pb&gt;</codeph> element, and thus the page number. The actual position of the page number in relation to the running title is not taken into account. In addition, the page number is not part of the column title, but of the <codeph>&lt;pb&gt;</codeph> element.</p>
+    <example>
+      <title>Running Title</title>
+      <fig>
+        <image href="img/z0b3P_yoMC.png"/>
+        <codeblock outputclass="language-xml">&lt;pb facs="#f0208" n="184"/&gt;
+&lt;fw place="top" type="header"&gt;Sechsundzwanzigſtes Kapitel: Intrigen.&lt;lb/&gt;&lt;/fw&gt;</codeblock>
+        <p><i>Source: <xref
+          href="http://www.deutschestextarchiv.de/bismarck_erinnerungen02_1898/208"
+          format="html" scope="external">Bismarck, Otto von: Gedanken und Erinnerungen. Bd. 2. Stuttgart, 1898. [Facsimile 208]</xref></i></p>
+      </fig>
+    </example>
+    <p>Centering, right or left alignment of the running titles and Fraktur changes are not indicated. Other typographical features (e. g. bold text, italics, and spaced writing) are taken over from the original. </p>
+  </body>
+</topic>

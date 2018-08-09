@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jAllgemeines">
+  <title>Basic Rules for Tagging Newspapers</title>
+  <titlealts><navtitle>Newspapers Basic Rules</navtitle></titlealts>
+  <body>
+    
+<p>
+  Newspapers and periodicals are generally tagged in accordance with the DTA basic format. The present specification only refers to the special features of newspaper texts that are not considered in the DTA basic format. 
+</p>
+<p>
+  In principle, newspaper and magazine issues are regarded as self-contained documents and recorded in their entirety. This procedure should be pursued. In exceptional cases, it is also possible to include single articles of an issue as separate documents. If this leads to textual omissions on a page, they are tagged with <codeph>&lt;gap reason="insignificant"/&gt;</codeph> (cf. chapter: <xref href="gapSupplied.dita">Difficult or Non-Decipherable Characters and Omissions</xref>).  
+</p>
+  </body>
+</topic>

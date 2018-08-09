@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_60">
+  <title>Several Registers at the End of the Book</title>
+  <titlealts><navtitle>Several Registers</navtitle></titlealts>
+         <body>
+             <p>If there are several registers at the end of a volume, each register is listed in a separate element <codeph>&lt;div type="index"&gt;</codeph>.</p>
+                        <codeblock outputclass="language-xml">&lt;back&gt;
+  &lt;div n="1" type="index"&gt;
+  &lt;head&gt;[register title 1]&lt;/head&gt;
+    &lt;list&gt;
+      &lt;item&gt;[keyword 1]
+        &lt;ref&gt;[page number]&lt;/ref&gt;
+      &lt;/item&gt;
+    &lt;/list&gt;
+  &lt;/div&gt;
+  &lt;div n="1" type="index"&gt;
+  &lt;head&gt;[register title 2]&lt;/head&gt;
+    &lt;list&gt;
+      &lt;item&gt;[keyword 1]
+        &lt;ref&gt;[page number]&lt;/ref&gt;
+      &lt;/item&gt;
+    &lt;/list&gt;
+  &lt;/div&gt;
+&lt;/back&gt;</codeblock>
+         </body>
+      </topic>

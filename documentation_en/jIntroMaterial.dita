@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jIntroMaterial">
+    <title>Introductory Information</title>
+  <body>
+    <p>
+  Introductory information on the respective newspaper/magazine issue that appears outside of the rubric heading will also be reproduced in the <codeph>&lt;front&gt;</codeph> element in appropriately typed <codeph>&lt;div&gt;</codeph> elements. The following values can <codeph>@type</codeph> take in <codeph>&lt;div&gt;</codeph>:
+</p>
+      <table>
+          <tgroup cols="2">
+              <thead>
+                  <row>
+                      <entry><codeph>@type</codeph> Value</entry>
+                      <entry>Meaning</entry>
+                  </row>
+              </thead>
+              <tbody>
+                  <row>
+                      <entry><tt>contents</tt></entry>
+                      <entry>table of contents</entry>
+                  </row>
+                  <row>
+                      <entry><tt>jExpedition</tt></entry>
+                      <entry>information on distribution and price (expedition)</entry>
+                  </row>
+                  <row>
+                      <entry><tt>jEditorialStaff</tt></entry>
+                      <entry>composition of the editorial staff</entry>
+                  </row>
+                  <row>
+                      <entry><tt>imprimatur</tt></entry>
+                      <entry>imprimatur</entry>
+                  </row>
+              </tbody>
+          </tgroup>
+      </table>
+
+<codeblock outputclass="language-xml">&lt;front&gt;
+    &lt;titlePage&gt;[front matter]&lt;/titlePage&gt;
+    &lt;div type="contents"&gt;[table of contents]&lt;/div&gt;
+    &lt;div type="jEditorialStaff"&gt;[composition of the editorial staff]&lt;/div&gt;
+    &lt;div type="jExpedition"&gt;[information on distribution and price]&lt;/div&gt;
+    &lt;div type="imprimatur"&gt;[imprimatur]&lt;/div&gt;
+&lt;/front&gt;
+</codeblock>
+  </body>
+</topic>

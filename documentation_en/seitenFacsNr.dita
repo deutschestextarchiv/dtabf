@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_azs_v4j_qs">
+  <title>Page Numbers and Image Numbers</title>
+  <body>
+    <p>The page numbers of the original and the continuous numbers of the associated digitized copies are reproduced as follows:</p>
+    <codeblock outputclass="language-xml">&lt;pb facs="#f[image number]" n="[page number]"/&gt;</codeblock>
+    <p>The page numbers are inserted at the beginning of each page, even if the page number is below the text. If the page number is missing in the original (e. g. unpaginated illustration pages or before new chapters), the page number is supplemented in square brackets in accordance with the count in the book:</p>
+    <codeblock outputclass="language-xml">&lt;pb facs="#f[image number]" n="[[page number]]"/&gt;</codeblock>
+    <p>If a page number is printed incorrectly, the wrong number of pages is typed. The corrected page number is in brackets included in the @n attribute. The correct order of the pages in the volume is conveyed by the numbers of the images, which are given consecutively without errors.</p>
+    <codeblock outputclass="language-xml">&lt;pb facs="#f[image number]" n="[incorrect page number [corrected page number]]"/&gt;</codeblock>
+    <p>Special features of page numbers such as adornments or brackets are not reproduced.</p>
+    <example>
+      <title>Page Number</title>
+      <fig>
+        <image href="img/atgLm3hoFa.png"/>
+        <codeblock outputclass="language-xml">&lt;pb facs="#f0188" n="180"/&gt;</codeblock>
+        <p><i>Source: <xref
+              href="http://www.deutschestextarchiv.de/humboldt_aequinoktial04_1859/188"
+              format="html" scope="external">Humboldt, Alexander von: Reise in die
+              Aequinoktial-Gegenden des neuen Kontinents. Bd. 4. Übers. v. Hermann Hauff. Stuttgart,
+              1860, facs. 188.</xref></i></p>
+      </fig>
+    </example>
+    <example>
+      <title>Page Number with Decoration</title>
+      <fig>
+        <image href="img/bNimbug0NC.png"/>
+        <codeblock outputclass="language-xml">&lt;pb facs="#f0014" n="8"/&gt;</codeblock>
+        <p><i>Source: <xref
+              href="http://www.deutschestextarchiv.de/campe_robinson02_1780/14"
+              format="html" scope="external">Campe, Joachim Heinrich: Robinson der Jüngere. Bd. 2.
+              Hamburg, 1780, facs. 14.</xref></i></p>
+      </fig>
+    </example>
+
+    <p>To link a text page published in the DTA to an external equivalent (e. g. the corresponding page of the source in another digital edition), the <codeph>@corresp</codeph> attribute within the <codeph>&lt;pb&gt;</codeph> element is used. The value in <codeph>@corresp</codeph> is a unique URI that leads to the linked document. </p>
+    <example>
+      <title>External Page Number</title>
+      <fig>
+        <image href="img/cn4pfRfHOR.png" />
+        <codeblock outputclass="language-xml">&lt;front&gt;
+  &lt;pb corresp="http://brema.suub.uni-bremen.de/grenzboten/periodical/pageview/179388" facs="#f0005"/&gt;
+  &lt;titlePage type="main"&gt; 
+    &lt;titlePart type="main"&gt; 
+      &lt;hi rendition="#b"&gt;&lt;hi rendition="#g"&gt;Die&lt;lb/&gt;Grenzboten&lt;/hi&gt;.&lt;/hi&gt; 
+    &lt;/titlePart&gt;
+  &lt;/titlePage&gt;
+&lt;/front&gt;</codeblock>
+        <p><i>Source: <xref
+              href="http://www.deutschestextarchiv.de/grenzboten_179382_282158/5"
+              format="html" scope="external">Die Grenzboten. Erster Jahrgang. Leipzig, 1841.
+              [Faksimile 5]</xref></i></p>
+      </fig>
+    </example>
+    <p>The place where the page number is located on the page, as well as the type of decoration of the page number is usually not documented. However, if this information is to be included in the transcription (level 3), the following expression is used: </p>
+    <codeblock outputclass="language-xml">&lt;fw type="pageNum" place="top">[page number top]&lt;/fw>
+      &lt;fw type="pageNum" place="bottom">[page number bottom]&lt;/fw></codeblock>
+  </body>
+</topic>

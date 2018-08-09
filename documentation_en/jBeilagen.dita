@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jBeilagen">
+  <title>Inserts</title>
+  <body>
+    <p>
+      Newspaper inserts are reproduced in the <codeph>&lt;floatingText&gt;</codeph> element, which follows the parent newspaper issue in the <codeph>&lt;body&gt;</codeph> area (in exceptional cases in the <codeph>&lt;back&gt;</codeph> area). The <codeph>&lt;floatingText&gt;</codeph> element is always located within a parent <codeph>&lt;div&gt;</codeph> element of the first level.
+</p>
+<p>
+  Within the <codeph>&lt;floatingText&gt;</codeph> element, the basic structure elements of TEI documents <codeph>&lt;front&gt;</codeph>, <codeph>&lt;body&gt;</codeph> and <codeph>&lt;back&gt;</codeph> can again be used. For the structuring of the insert, the inventory for structuring newspaper issues and periodicals in general is available. 
+  
+</p>
+<codeblock outputclass="language-xml">&lt;body&gt; &lt;!-- text of the main issue --&gt;
+  &lt;div type="jPoliticalNews"&gt; &lt;!-- political news of the main issue --&gt;
+  &lt;div type="jArticle"&gt;[political news]&lt;/div&gt;
+  &lt;div type="jArticle"&gt;[more political news]&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div type="jFinancialNews"&gt; &lt;!-- economic news of the main issue --&gt;
+  &lt;div type="jArticle"&gt;[economic news]&lt;/div&gt;
+  &lt;div type="jArticle"&gt;[more economic news]&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div type="jSupplement"&gt; &lt;!-- insert --&gt;
+    &lt;floatingText&gt;
+    &lt;front&gt;[headline of the insert]&lt;/front&gt;
+    &lt;body&gt; &lt;!-- text of the insert --&gt;
+    &lt;div type="jPoliticalNews"&gt; &lt;!-- political news of the insert --&gt;
+    &lt;div type="jArticle"&gt;[political news]&lt;/div&gt;
+    &lt;div type="jArticle"&gt;[more political news]&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div type="jFinancialNews"&gt; &lt;!-- economic news of the insert --&gt;
+        &lt;div type="jArticle"&gt;[economic news]&lt;/div&gt;
+        &lt;div type="jArticle"&gt;[more economic news]&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/body&gt;
+      &lt;back&gt;[closing text of the insert]&lt;/back&gt;
+    &lt;/floatingText&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</codeblock>
+  </body>
+</topic>

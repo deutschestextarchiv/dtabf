@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_16">
+    <title>Autonomous Text Passages Correspond to Each Other in Terms of Content</title>
+    <titlealts><navtitle>Corresponding Text Passages</navtitle></titlealts>
+         <body>
+                        <p>In the case of autonomous text passages that correspond to each other in terms of content but are not arranged in linear order (e. g. foreign-language texts and their translation), the link is made using the <codeph>@corresp</codeph> attribute with the help of <codeph>@xml:id</codeph>'s.</p>
+             <codeblock outputclass="language-xml">&lt;div xml:id="[ID text01_part01]" corresp="#[ID text01_part02]"&gt;[...]&lt;/div&gt;
+                 &lt;pb facs="#f[facsimile number]"/&gt;
+&lt;div xml:id="[ID text01_part02]" corresp="#[ID text01_part01]"&gt;[...]&lt;/div&gt;</codeblock>
+         </body>
+      </topic>

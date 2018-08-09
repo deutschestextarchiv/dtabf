@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_v1h_sll_qs">
+  <title>Basic Structure of Formula Encoding</title>
+  <titlealts><navtitle>Formulas Basic Structure</navtitle></titlealts>
+  <body>
+    <p>Formulas are first tagged with an empty <codeph>&lt;formula/&gt;</codeph> element. In a second capturing step, the formulas can be transcribed according to the TeX notation and enclosed using <codeph>&lt;formula&gt;[...]&lt;/formula&gt;</codeph>. The <codeph>&lt;formula&gt;</codeph> element gets an attribute <codeph>@notation</codeph>, in which the notation (<codeph>"TeX"</codeph> or <codeph>"MathML"</codeph>) is specified. In another attribute <codeph>@facs</codeph>, a graphical representation of the corresponding formula can be referenced. </p>
+    <p>The formulas include: 
+      <ul>
+        <li>mathematical and physical formulas and equations,</li>
+        <li>fractions (with fraction line; if not available as Unicode entity),</li>
+        <li>chemical compounds,</li>
+        <li>expressions of logic.</li>
+      </ul> 
+      Pure variables are not encoded as <codeph>&lt;formula&gt;</codeph>.</p>
+    <p>Formulas can be either within a line (inline) or separated from the continuous text. In the latter case, the line break is specified before and after the formula using <codeph>&lt;lb/&gt;</codeph>. If there is a punctuation mark immediately after a formula, it is included. Layout information (e. g. centering) is not taken into account. </p>
+    <example>
+      <title>Encoding of Formulas (1)</title><fig>
+        <image href="img/S_y8v_2j1c.png"/>
+        <codeblock outputclass="language-xml">&lt;formula notation="TeX">
+  \lambda_T = \frac{1}{\pi ns^2}\int\limits_0^\infty\frac{4x^2e^{-x^2}dx}{\psi(x)+\frac{n_1\sigma^2}{ns^2}\psi\left(x\sqrt\frac{m_1}{m}\right)}
+&lt;/formula></codeblock>
+        <p><i>Source: <xref
+          href="http://www.deutschestextarchiv.de/boltzmann_gastheorie01_1896/87"
+          format="html" scope="external">Boltzmann, Ludwig: Vorlesungen über Gastheorie. Bd. 1.
+          Leipzig, 1896. [Facsimile 87]</xref>
+        </i></p>
+      </fig></example>
+    <example>
+      <title>Encoding of Formulas (2)</title><fig>
+        <image href="img/x6hBcfT91w.png"/>
+        <codeblock outputclass="language-xml">&lt;formula notation="TeX">
+  U=u_1 \, \left ( \frac{z_1}{z_2} \cdot \frac{z_3}{z_4} - 1 \right )
+&lt;/formula></codeblock>
+        <p><i>Source: <xref
+          href="http://www.deutschestextarchiv.de/fischer_werkzeugmaschinen01_1900/181"
+          format="html" scope="external">Fischer, Hermann: Die Werkzeugmaschinen. Bd. 1: Die
+          Metallbearbeitungs-Maschinen. [Textband]. Berlin, 1900. [Facsimile 181]</xref>
+        </i></p>
+      </fig></example>
+    <example>
+      <title>Encoding of Formulas (3)</title><fig>
+        <image href="img/yeiZqiWbkM.png"/>
+        <codeblock outputclass="language-xml">&lt;p>Wir setzen wieder&lt;lb/>
+  &lt;formula notation="TeX">\frac{\cos kr}{r} = f_r + \frac{1}{r}&lt;/formula>,&lt;lb/>
+  &lt;formula notation="TeX">\Psi = \Psi' + \Psi''&lt;/formula>,&lt;lb/>
+  &lt;formula notation="TeX">\Psi' = \int pf_rd\omega&lt;/formula>,&lt;lb/>
+  &lt;formula notation="TeX">\Psi'' = \int p\frac{1}{r}d\omega&lt;/formula>.
+&lt;/p>&lt;lb/></codeblock>
+        <p><i>Source: <xref
+          href="http://www.deutschestextarchiv.de/helmholtz_luftschwingungen_1860/31"
+          format="html" scope="external">Helmholtz, Hermann von: Theorie der Luftschwingungen in
+          Röhren mit offenen Enden. In: Journal für die reine und angewandte Mathematik 57
+          (1860), Heft 1, S. 1-72. [Facsimile 31]</xref>
+        </i></p>
+      </fig></example>
+  </body>
+</topic>

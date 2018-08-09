@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_vxn_lg2_qs">
+    
+  <title>Accuracy of Metadata Recording</title>
+  <titlealts><navtitle>Accuracy</navtitle></titlealts>
+  <body>
+    <p>The metadata recordings according to the DTA basic format are always based on the title data, which are located on the title pages of the respective work. The original spelling is basically retained, i. e. historical spellings are not modernized, the capitalization of the original is retained.
+    </p>
+    <p>Excluded from this rule are names of persons and places (see chapter 
+      <xref href="mdAutorHrsgUebers.dita">Author/Editor/Translator</xref> and chapter 
+      <xref href="mdErscheinungsort.dita">Place of Publication</xref>).
+    </p>
+    <p>This rule may also be derogated from if the title data recorded on the title pages:
+    </p>
+    <ul>
+      
+      <li>were typographically highlighted (e. g. by capital letters);</li>
+      
+      <li>have been provided with special characters that are not used today (e. g. aͤ, 
+        oͤ, uͤ);</li>
+      
+      <li>are incomplete (e. g. missing information on the place or year of publication);</li>
+      
+      <li>have been shortened (e. g. by using nasal strokes);</li>
+      
+      <li>deliberately falsified or disguised (e. g. by the use of pseudonyms or fictitious places);</li>
+      
+      <li>are faulty (e. g. in case of a clear printing error).</li>
+      
+    </ul>
+    <p>In such cases, in order to ensure that the works can be found, normalizations or corrections to the title data compared to the original can be made.
+    </p>
+  </body>
+</topic>

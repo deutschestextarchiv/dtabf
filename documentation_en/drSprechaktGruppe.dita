@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_47">
+  <title>Groups of Speech Acts</title>
+    <body>
+        <p>If several speech acts are grouped together in the drama (e. g. by bracketings) in order to assign the same stage direction to them, the speech acts are grouped together in the <codeph>&lt;spGrp&gt;</codeph> (speech group) element.</p>
+        <p>Within <codeph>&lt;spGrp&gt;</codeph> each speech act is placed in a separate <codeph>&lt;sp&gt;</codeph> element. The superior stage direction is directly in a <codeph>&lt;stage&gt;</codeph> element in <codeph>&lt;spGrp&gt;</codeph>. Any bracketing is reproduced in this <codeph>&lt;stage&gt;</codeph> element by the attribute value pair <codeph>@rendition="#leftBraced"</codeph> or <codeph>@rendition="#rightBraced"</codeph>.</p>
+        <codeblock outputclass="language-xml">&lt;spGrp&gt;
+          &lt;stage rendition="#rightBraced"&gt;[stage direction with bracketing around the grouped speech acts]&lt;/stage&gt;
+          &lt;sp&gt;[speech act 1]&lt;/sp&gt;
+          &lt;sp&gt;[speech act 2]&lt;/sp&gt;
+          &lt;sp&gt;[speech act n]&lt;/sp&gt;
+  &lt;/spGrp&gt;</codeblock>
+      <example> <title>Groups of Speech Acts</title> <fig>
+            <image href="img/WOFMgEWnPE.png"/>
+            <codeblock outputclass="language-xml">&lt;spGrp>
+  &lt;stage rendition="#rightBraced #v">(Sehr raſch).&lt;/stage>
+  &lt;sp who="#WEI">
+    &lt;speaker>&lt;hi rendition="#g">Weiring&lt;/hi>.&lt;/speaker>&lt;lb/>
+    &lt;p>Was willſt Du denn? —&lt;/p>
+  &lt;/sp>&lt;lb/>
+  &lt;sp who="#CHR">
+    &lt;speaker>&lt;hi rendition="#g">Chriſtine&lt;/hi>.&lt;/speaker>&lt;lb/>
+    &lt;p>Laß mich, ich will fort&lt;/p>
+  &lt;/sp>&lt;lb/>
+  &lt;sp who="#WEI">
+    &lt;speaker>&lt;hi rendition="#g">Weiring&lt;/hi>.&lt;/speaker>&lt;lb/>
+    &lt;p>Wohin willſt Du?&lt;/p>
+  &lt;/sp>&lt;lb/>
+  &lt;sp who="#CHR">
+    &lt;speaker>&lt;hi rendition="#g">Chriſtine&lt;/hi>.&lt;/speaker>&lt;lb/>
+    &lt;p>Zu ihm … zu ihm …&lt;/p>
+  &lt;/sp>&lt;lb/>
+  &lt;sp who="#WEI">
+    &lt;speaker>&lt;hi rendition="#g">Weiring&lt;/hi>.&lt;/speaker>&lt;lb/>
+    &lt;p>Aber was fällt Dir denn ein&lt;/p>
+  &lt;/sp>&lt;lb/>
+  &lt;sp who="#CHR">
+    &lt;speaker>&lt;hi rendition="#g">Chriſtine&lt;/hi>.&lt;/speaker>&lt;lb/>
+    &lt;p>Du verſchweigſt mir irgend was — laß&lt;lb/>mich hin —&lt;/p>
+  &lt;/sp>
+&lt;/spGrp>&lt;lb/></codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/schnitzler_liebelei_1896/136"
+                format="html" scope="external">Schnitzler, Arthur: Liebelei.
+                Berlin, 1896. [Facsimile 136]</xref></i></p>
+            </fig> </example>
+      <note type="tip">For the encoding of bracketings cf. chap. <xref
+        href="klammerung.dita"
+        >Bracketings</xref>.</note>
+    </body>
+</topic>

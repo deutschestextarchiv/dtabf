@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_aq">
+  <title>Change to the Antiqua Font</title>
+  <body>
+    <example>
+      <title>Encoding of the Change to the Antiqua Font</title><fig>
+        <image href="img/WZxEDkBMlE.png"/>
+        <codeblock outputclass="language-xml">die &lt;hi rendition="#aq"&gt;differentia specifica&lt;/hi&gt; der Religion.</codeblock>
+        <p><i>Source: <xref
+          href="http://www.deutschestextarchiv.de/feuerbach_christentum_1841/36"
+          format="html" scope="external">Feuerbach, Ludwig: Das Wesen des Christentums. Leipzig,
+          1841. [Facsimile 36]</xref>
+        </i></p>
+      </fig></example>
+    <p>Antiqua passages are only tagged separately if they occur within Fraktur texts. Also within a word there can be a change between Antiqua and Fraktur. </p>
+    
+  </body>
+</topic>

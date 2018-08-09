@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_dktp">
+  <title>References Between Text Parts of a Document</title>
+  <titlealts><navtitle>Internal Text References</navtitle></titlealts>
+  <body>
+    <p>Parts of the text that refer to each other and are separated by element borders are linked together. Two types of references are possible: </p>
+  </body>
+</topic>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_bgt_gff_q5">
+  <title>Letters as Insertions in the Prose Text</title>
+  <body>
+    <p>Letters and letter-like passages can appear in prose works inserted into the continuous text. In these cases, the <codeph>&lt;floatingText&gt;</codeph> element must be used, which in turn contains a <codeph>&lt;body&gt;</codeph> subelement, within which the letter tagging occurs. <b>No</b> <codeph>@n</codeph> level is assigned to the <codeph>&lt;div&gt;</codeph> element. </p>
+        <codeblock outputclass="language-xml">
+  &lt;floatingText&gt;
+  &lt;body&gt;
+  &lt;div type="letter"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/floatingText&gt;
+</codeblock>
+    <example> <title>Letter as Insertion</title> <fig>
+            <image href="img/aFjBgPCjJu.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;[...] Chlorkalkes zu erfahren. Hierauf verpflichtete mich Liebig&lt;lb/&gt;
+mit folgender Antwort:&lt;/p&gt;&lt;lb/&gt;
+&lt;floatingText&gt;
+  &lt;body&gt;
+    &lt;div type="letter"&gt;
+      &lt;opener&gt;
+        &lt;dateline&gt;München, 21. März 1859.&lt;/dateline&gt;&lt;lb/&gt;
+        &lt;salute&gt;Euer Wohlgeboren!&lt;/salute&gt;
+      &lt;/opener&gt;&lt;lb/&gt;
+      &lt;p&gt;Beehre ich mich auf Ihr Schreiben zu erwiedern, dass&lt;lb/&gt;
+die Hinweglassung Ihrer Beobachtung über das Kindbett-&lt;lb/&gt;
+fieber aus der neuen Auflage meiner chemischen Briefe nicht&lt;lb/&gt;
+den Grund hat, dass ich die Wichtigkeit Ihrer Erfahrung&lt;lb/&gt;
+nicht wie früher anerkenne, sondern weil sie jetzt so be-&lt;lb/&gt;
+kannt und verbreitet ist, dass ihre Beibehaltung in meinem&lt;lb/&gt;
+Buche zwecklos erscheint, in einem eigentlichen Zusammen-&lt;lb/&gt;
+hange damit steht sie nicht. Es ist dies mit anderen Nachträ-&lt;lb/&gt;
+gen ebenfalls geschehen.&lt;/p&gt;&lt;lb/&gt;
+      &lt;p&gt;Der Chlorkalk besitzt unzweifelhaft eine desinficirende&lt;lb/&gt;
+Eigenschaft.&lt;/p&gt;
+      &lt;closer&gt;
+        &lt;salute&gt;Ergebenst hochachtungsvoll der Ihrige&lt;/salute&gt;&lt;lb/&gt;
+        &lt;signed&gt;Gustav Liebig.&lt;/signed&gt;
+      &lt;/closer&gt;
+    &lt;/div&gt;&lt;lb/&gt;
+  &lt;/body&gt;
+&lt;/floatingText&gt;
+&lt;p&gt;&lt;hi rendition="#c"&gt;Bernard Seyfert&lt;/hi&gt;&lt;lb/&gt;
+hat ergänzende Bemerkungen zu dem früher beurtheilten Auf-&lt;lb/&gt;
+satze Scanzoni’s geliefert.&lt;/p&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/semmelweis_kindbettfieber_1861/435"
+                format="html" scope="external">Semmelweis, Ignaz Philipp: Die
+                Ätiologie, der Begriff und die Prophylaxe des Kindbettfiebers.
+                Pest u. a., 1861. [Facsimile 435]</xref></i></p>
+            </fig> </example>
+  </body>
+</topic>

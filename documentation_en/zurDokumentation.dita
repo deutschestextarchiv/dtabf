@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_dmk_mwd_qs">
+  <title>Using the DTABf Documentation</title>
+  <body>
+    <section><title>Documentation Conventions</title>
+  
+      <p>XML elements are identified as such by angle brackets:
+        <codeph>&lt;[element name]&gt;</codeph>. They are also separated from the rest of the text by 
+        <codeph>nonproportional fonts</codeph>.</p>
+      <p>Likewise, all examples are tagged by <codeph>nonproportional fonts</codeph>. They are also highlighted in yellow.</p>
+      <p>Paraphrases for potential contents of elements or values of attributes are represented by square brackets.</p>
+      <p>Attributes in the continuous text are identified by an <codeph>@</codeph> in front of them.</p>
+      <p>Indentations in examples are only for the sake of clarity in this documentation. They are not part of the XML documents of the DTA.</p></section>
+      <section>
+        <title>Notes on Documentation</title>
+
+        <p>The DTABf documentation is divided into several documents:</p>
+        <ol><li>The core documentation of the guidelines for text labelling consists of the parts <xref href="texterschliessung_formal.dita">Formal Indexing of the Full Text</xref> and <xref href="texterschliessung_inhaltlich.dita">Indexing the Content of the Full Text</xref>. A separate supplementary documentation is dedicated to the <xref href="zeitung.dita">Annotation of Newspapers</xref>.</li>
+          <li>In addition to the guidelines for text labeling, the DTABf includes guidelines for <xref href="metadaten.dita">Structuring Metadata</xref>, which are also described in a separate document.</li>
+          <li>Tabular overviews provide a quick insight into the tagset of the DTABf for <xref href="uebersichtText.dita">Text Annotation</xref> and <xref href="uebersichtHeader.dita">Metadata Structuring</xref>.</li>
+          <li>The DTABf documentation is supplemented by the <xref href="transkription.dita">DTA Guidelines for Text Entry</xref>.</li>
+    <li>A <xref href="http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml" format="html">template file for the DTA basic format</xref>, which contains the DTABf schemas and the most important elements, makes it easier to get started with DTABf-compliant text creation.</li></ol>
+        <p>The DTABf documentation contains two types of examples. On the one hand, the presented structures are presented in an exemplary manner, whereby the intended element contents are described in square brackets. On the other hand, concrete text examples from the DTA corpus are intended to serve as an illustration. They consist of a image section and the corresponding section of the corresponding structured DTA full text.</p>
+        <p>If necessary, a distinction was made within the documentation or with regard to the examples between the first DTA project phase on the one hand and the second and third DTA project phases on the other (phase 1: 2007–2010; phase 2: 2010–2014; phase 3: since June 2014). Such deviating documentation for phase 1 is identified at the relevant points by the expression: <note type="notice"><i><b>Alternative regulation phase 1</b></i></note> 
+          This juxtaposition of different approaches is the result of a fundamental revision of the DTA basic format based on the experiences of the first project phase. The agreed adjustments will be successively inserted into the existing DTA corpus. Until this revision phase is completed, the documentation of the original structuring rules will be made available.</p>
+  
+      </section>
+  </body>
+</topic>

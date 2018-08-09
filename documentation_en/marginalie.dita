@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_24">
+    <title>Marginal Notes (Marginalia)</title>
+    <titlealts><navtitle>Marginalia</navtitle></titlealts>
+    <body>
+        <p>The <codeph>&lt;note&gt;</codeph> element is used to tag marginal notes, as well as footnotes and endnotes. The <codeph>@place</codeph> attribute can take the values <codeph>right</codeph> and <codeph>left</codeph>, which specify the position of the marginal note in relation to the text area. </p>
+        <codeblock outputclass="language-xml">&lt;note place="right"&gt;[marginalia to the right of the text]&lt;/note&gt;
+            &lt;note place="left"&gt;[marginalia to the left of the text]&lt;/note&gt;</codeblock>
+        <p>Marginalia to the right of the text (<codeph>@place="right"</codeph>) are transcribed immediately after the line they are on a level with, while marginalia to the left of the text (<codeph>@place="left"</codeph>) are transcribed immediately before the line they are on a level with. </p>
+        <example> <title>Encoding of Marginalia at the Left Margin</title> <fig>
+            <image href="img/eOZw1swX4p.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;Der folgende Kaiser, 
+  &lt;hi rendition="#k"&gt;Yuṅ-tšin&lt;/hi&gt;, vertrieb bei seiner Thron-&lt;lb/&gt;
+    &lt;note place="left"&gt;
+      1723.
+    &lt;/note&gt;
+  besteigung 1723 alle Missionare als Ruhestörer. Einige hielten sich&lt;lb/&gt;
+  [...]
+&lt;/p&gt;</codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/berg_ostasien03_1873/36"
+                format="html" scope="external">[Berg, Albert]: Die preussische
+                Expedition nach Ost-Asien. Bd. 3. Berlin, 1873. [Facsimile
+                36]</xref></i></p>
+            </fig> </example>
+        <example> <title>Encoding of Marginalia at the Right Margin</title> <fig>
+            <image href="img/Io0IuZbxlS.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;[...]&lt;lb/&gt;
+  Die Todtenopfer und andere Gebräuche, welche er als bürgerliche&lt;lb/&gt;
+  duldete, wurden von den Dominicanern als götzendienerisch ver-&lt;lb/&gt;
+  dammt und allen chinesischen Christen unter Androhung der Höllen-
+    &lt;note place="right"&gt;
+      1644.
+    &lt;/note&gt;&lt;lb/&gt;
+  strafen verboten. Papst Innocenz X. bestätigte dieses Urtheil, das
+    &lt;note place="right"&gt;
+      1655.
+    &lt;/note&gt;&lt;lb/&gt;
+  Alexander VII. auf Vorstellung der Jesuiten wieder aufhob. Die&lt;lb/&gt;
+  [...]
+&lt;/p&gt;</codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/berg_ostasien03_1873/35"
+                format="html" scope="external">[Berg, Albert]: Die preussische
+                Expedition nach Ost-Asien. Bd. 3. Berlin, 1873. [Facsimile
+                35]</xref></i></p>
+            </fig> </example>
+        <p>If a marginalia is located on the left margin directly at the beginning of a new paragraph, it will be displayed within the <codeph>&lt;p&gt;</codeph>-element.</p>
+        <example> <title>Encoding of Marginalia at the Beginning of a New Paragraph</title> <fig>
+            <image href="img/DdYcYPlXK1.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;
+  &lt;note place="left"&gt;
+    Vnſer ge-&lt;lb/&gt;
+    rechtig-&lt;lb/&gt;
+    keit iſt auf&lt;lb/&gt;
+    keine Cre-&lt;lb/&gt;
+    atur ge-&lt;lb/&gt;
+    gru&amp;#x0364;ndet/&lt;lb/&gt;
+    ſondern&lt;lb/&gt;
+    auff Gott.
+  &lt;/note&gt; 5. Vnſere gerechtigkeit kan auff kei-&lt;lb/&gt;
+  nen Engel gebawet werden. Dann es iſt&lt;lb/&gt;
+  [...]
+&lt;/p&gt;</codeblock>
+           <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/arndt_christentum02_1610/64"
+                format="html" scope="external">Arndt, Johann: Vom wahren
+                Christenthumb. Bd. 2. Magdeburg, 1610. [Facsimile
+                64]</xref></i></p> </fig> </example>
+        <p>If a marginal note has been assigned to the text, it is possible (level 3) to reproduce this reference in the same way as for the <xref href="endnote.dita"
+            >tagging of end notes</xref>. The marginal note is transcribed as described above. The <codeph>&lt;note&gt;</codeph> element, which encloses the marginal, contains a <codeph>@n</codeph> attribute, which receives the reference mark of the marginal note. The corresponding reference mark in the text is enclosed with an untyped <codeph>&lt;note&gt;</codeph> element. Both <codeph>&lt;note&gt;</codeph> elements are linked with each other with <codeph>@xml:id</codeph> and <codeph>@corresp</codeph> (see chap. <xref
+                        href="parallelePassagen.dita"
+                        >4.2.2</xref>). </p>
+        <codeblock outputclass="language-xml">&lt;p>
+            [text beginning of line]
+            &lt;note n="[reference]" xml:id="[ID-reference]" corresp="#[ID-marginal note]"/>
+    [text end of line]
+    &lt;note place="right" n="[reference]" xml:id="[ID-marginal note]" corresp="#[ID-reference]">[marginal note]&lt;/note></codeblock>
+    </body>
+</topic>

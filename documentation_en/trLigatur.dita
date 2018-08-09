@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="trLigatur">
+  <title id="Ligaturen">Ligatures</title>
+<body>
+<!--
+  XXX: Was ist mit ij aka y?
+  http://kaskade.dwds.de/dtaq/book/view/16523?p=10
+  http://de.wikipedia.org/wiki/Ij
+  http://odo.dwds.de/~wiegand/uniprops.pl?in=U%2B0133
+-->
+  <p>Vocal ligatures are basically realized:</p>
+
+<table>
+  <tgroup cols="4">
+    <thead>
+      <row>
+        <entry>Original</entry>
+    <entry>Character</entry>
+    <entry>Entity</entry>
+    <entry>Description</entry>
+      </row>
+    </thead>
+    <tbody>
+      <row>
+    <entry><image href="img/ae.jpg"><alt>ae ligature</alt></image></entry>
+    <entry><codeph>æ</codeph></entry>
+    <entry><codeph>U+00E6</codeph></entry>
+    <entry><codeph>LATIN SMALL LETTER AE</codeph></entry>
+  </row>
+  <row>
+    <entry><image href="img/oe.jpg"><alt>oe ligature</alt></image></entry>
+    <entry><codeph>œ</codeph></entry>
+    <entry><codeph>U+0153</codeph></entry>
+    <entry><codeph>LATIN SMALL LIGATURE OE</codeph></entry>
+  </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<p>
+  In contrast, consonantal ligatures (<codeph>tz</codeph>, <codeph>ct</codeph>, <codeph>ts</codeph>, <codeph>ff</codeph> etc.) and the ligature <codeph>ij</codeph> are generally split.
+</p>
+</body>
+</topic>

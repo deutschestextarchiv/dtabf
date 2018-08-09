@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_vnc_jgp_yw">
+  <title>Additions and Deletions</title>
+  <body>
+    
+      
+      <p>
+        Secondary changes of the author or a later editor to the manuscript may occur in the form of deletions or additions. For this purpose, the elements <codeph>&lt;add&gt;</codeph> (addition) and <codeph>&lt;del&gt;</codeph> (deletion) are used.
+      </p>
+      <codeblock outputclass="language-xml">&lt;add&gt;[addition]&lt;/add&gt;</codeblock>
+      <codeblock outputclass="language-xml">&lt;del&gt;[deletion]&lt;/del&gt;</codeblock>
+      
+      
+      <p>
+        In the case of an addition, the <codeph>&lt;add&gt;</codeph> element can be enhanced with an <codeph>@place</codeph> attribute specifying the place of the addition. The following values of <codeph>@place</codeph> are possible: 
+      </p>
+      <table>
+        <tgroup cols="3"><thead><row>
+          <entry>Element</entry>
+          <entry><codeph>@place</codeph> Value</entry>
+          <entry>Meaning</entry>
+        </row></thead>
+        <tbody><row>
+          <entry morerows="5"><codeph>&lt;add&gt;</codeph></entry>
+          <entry><codeph>superlinear</codeph></entry>
+          <entry>entered above the line</entry>
+        </row>
+        <row>
+          <entry><codeph>sublinear</codeph></entry>
+          <entry>entered below the line</entry>
+        </row>
+        <row>
+          <entry><codeph>intralinear</codeph></entry>
+          <entry>entered within the line</entry>
+        </row>
+        <row>
+          <entry><codeph>across</codeph></entry>
+          <entry>written over the original text</entry>
+        </row>
+        <row>
+          <entry><codeph>left</codeph></entry>
+          <entry>entered at the left margin</entry>
+        </row>
+        <row>
+          <entry><codeph>right</codeph></entry>
+          <entry>entered at the right margin</entry>
+        </row></tbody></tgroup>
+      </table>
+      <p>In the case of deletion, the type of deletion is indicated with the <codeph>@rendition</codeph> attribute of the <codeph>&lt;del&gt;</codeph> element. The following values are possible for <codeph>@rendition</codeph>:</p>
+    
+      <table>
+        <tgroup cols="3">
+          <thead>
+          <row><entry>Element</entry>
+          <entry><codeph>@rendition</codeph> Value</entry>
+          <entry>Meaning</entry></row>
+        </thead>
+        <tbody><row>
+          <entry morerows="2"><codeph>&lt;del&gt;</codeph></entry>
+          <entry><codeph>#ow</codeph></entry>
+          <entry>deletion by overwriting the original text</entry>
+        </row>
+        <row>
+          <entry><codeph>#s</codeph></entry>
+          <entry>deletion by crossing out</entry>
+        </row>
+        <row>
+          <entry><codeph>#erased</codeph></entry>
+          <entry>deletion by erasing, scraping, etc.</entry>
+        </row></tbody></tgroup>
+      </table>
+  </body>
+</topic>

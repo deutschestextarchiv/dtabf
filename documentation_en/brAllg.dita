@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_100">
+  <title>Basic Structure of the Encoding of Letters</title>
+  <titlealts><navtitle>Letters Basic Structure</navtitle></titlealts>
+  <body>
+                        <p>Letters are framed with a <codeph>&lt;div&gt;</codeph> element, which contains the attribute value pair <codeph>@type="letter"</codeph> in addition to the attribute <codeph>@n</codeph>. Letters are tagged according to the rules for unspecified texts. Specifications of the text type letter are the <codeph>&lt;opener&gt;</codeph> and the <codeph>&lt;closer&gt;</codeph>.
+</p>
+            <p>The <codeph>&lt;opener&gt;</codeph> contains the data characteristic for the beginning of a letter: details of the location, date (<codeph>&lt;dateline&gt;</codeph>), salutation and recipient.
+</p>
+            <p>The <codeph>&lt;closer&gt;</codeph> contains the data characteristic for the end of a letter: the location, date (<codeph>&lt;dateline&gt;</codeph>), salutation and signature of the sender. 
+</p>
+            <p>The location and date specification in <codeph>&lt;opener&gt;</codeph> or <codeph>&lt;closer&gt;</codeph> is enclosed with the <codeph>&lt;dateline&gt;</codeph> element. The salutation and the complimentary close are each enclosed with <codeph>&lt;salute&gt;</codeph>. The signature of the recipient under a letter is located in <codeph>&lt;closer&gt;</codeph> in the <codeph>&lt;signed&gt;</codeph> element. The arrangement of the elements within the <codeph>&lt;opener&gt;</codeph> or <codeph>&lt;closer&gt;</codeph> element is variable and follows the original.
+</p>
+            <codeblock outputclass="language-xml">&lt;div type="letter"&gt;
+  &lt;head&gt;[title of the letter]&lt;/head&gt;&lt;!-- where applicable --&gt;
+  &lt;opener&gt;&lt;!-- where applicable --&gt;
+  &lt;dateline&gt;[place and date]&lt;/dateline&gt;
+  &lt;salute&gt;[salutation]&lt;/salute&gt;
+  &lt;/opener&gt;
+  &lt;p&gt;[text of the letter]&lt;/p&gt;
+  &lt;p&gt;[text of the letter]&lt;/p&gt;
+  &lt;closer&gt;&lt;!-- where applicable --&gt;
+  &lt;dateline&gt;[place and date]&lt;/dateline&gt;
+  &lt;salute&gt;[final salutation]&lt;/salute&gt;
+  &lt;signed&gt;[signature]&lt;/signed&gt;
+  &lt;/closer&gt;
+&lt;/div&gt;</codeblock>
+      
+    <example> <title>Letterhead</title> <fig>
+            <image href="img/aLa7uHh7XR.png"/>
+            <codeblock outputclass="language-xml">&lt;div n="2" type="letter"&gt;
+  &lt;head&gt;An Karoline von Woltmann, in Prag.&lt;/head&gt;&lt;lb/&gt;
+  &lt;opener&gt;
+    &lt;dateline&gt;Karlsruhe, den 7. Januar 1817. Trübes windiges,&lt;lb/&gt;warmes Wetter.&lt;/dateline&gt;
+  &lt;/opener&gt;&lt;lb/&gt;
+  &lt;p&gt;Alles Gras iſt raus: geſtern ſetzten die Leute ſchon ihre&lt;lb/&gt;
+  Ertofflen in die Erde: in Markgraf Ludwigs Garten kommen&lt;lb/&gt;[...]&lt;/p&gt;
+&lt;/div&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/varnhagen_rahel02_1834/438"
+                format="html" scope="external">Varnhagen von Ense, Rahel: Rahel.
+                Ein Buch des Andenkens für ihre Freunde. Bd. 2. Berlin, 1834.
+                [Facsimile 438]</xref></i></p>
+            </fig> </example>
+      <example> <title>Letter Ending</title> <fig>
+            <image href="img/ayqhh3uhEx.png"/>
+            <codeblock outputclass="language-xml">&lt;p&gt;[...] Lebe wohl&lt;lb/&gt;
+und laſſe bald wieder von Dir hören.&lt;/p&gt;&lt;lb/&gt;
+&lt;closer&gt;
+  &lt;dateline&gt;Weimar, den 5. Februar 1810.&lt;/dateline&gt;&lt;lb/&gt;
+  &lt;salute&gt;Goethe.&lt;/salute&gt;
+&lt;/closer&gt;&lt;lb/&gt;</codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/arnimb_goethe02_1835/166"
+                format="html" scope="external">Arnim, Bettina von: Goethe's
+                Briefwechsel mit einem Kinde. Bd. 2. Berlin, 1835. [Facsimile
+                166]</xref></i></p>
+            </fig> </example>
+        
+     
+         </body>
+</topic>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_xbx_t32_qs">
+  <title>Title Information</title>
+  <body>
+    <p>Title information is always taken over in accordance with the guidelines listed in the chapter <xref
+              href="mdVorlagentreue.dita">Accuracy of Metadata Recording</xref>. In addition to these regulations, the title information is generally introduced with a capital letter regardless of the original. </p>
+    <p>Title details that become confusing due to their length can be shortened. Omissions are indicated by the expression "<codeph>[...]</codeph>". However, shortening the title may not misrepresent its meaning.
+    </p>
+    <example> 
+      <title>Title Information</title> 
+      <p><i>Siehe: </i><xref href="http://www.deutschestextarchiv.de/pinter_pferdschatz_1688" scope="external" format="html">http://www.deutschestextarchiv.de/pinter_pferdschatz_1688</xref>
+    </p></example>
+    <p>The information of the author is usually not part of the title. However, if the meaning of the title would be misrepresented by the omission of the author's name, it will be taken over. The same applies to the specification of the volume as part of the main title.
+    </p>
+    <example>
+      <title>Dealing with Naming Authors in the Title</title> 
+      <p><i>Siehe: </i><xref href="http://www.deutschestextarchiv.de/hoffmannswaldau_gedichte02_1697" scope="external" format="html">http://www.deutschestextarchiv.de/hoffmannswaldau_gedichte02_1697</xref></p>
+    </example>
+    <p>Information on appendices and additions (e. g. "Mit zwei Abbildungen im Text und XXI Tafeln.") are not part of the title and will therefore not be included in the title entry. 
+    </p>
+  </body>
+</topic>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ktb">
+   <title>Guidelines for Encoding Typographical Features</title>
+   <titlealts><navtitle>Encoding Guidelines</navtitle></titlealts>
+   <body>
+      <p>In the originals, the semantic structure of a passage is usually illustrated by typographical highlights. The annotation of the full text primarily follows semantic criteria, so that the respective semantic category is assigned to the transcribed text.</p>
+      <p>The typographical appearance of the original is also documented as precisely as possible, especially if the semantic structure of a passage is not immediately recognizable.</p>      
+      <p>Typographical features of the original are represented by the universal attributes <codeph>@rendition</codeph> and <codeph>@rend</codeph>, which can be assigned to the following elements of the basic format:
+         <codeph outputclass="language-xml">&lt;byline&gt;, &lt;cell&gt;, &lt;dateline&gt;, &lt;div&gt;, 
+            &lt;figure&gt;, &lt;floatingText&gt;, &lt;formula&gt;, &lt;fw&gt;, &lt;head&gt;, &lt;hi&gt;, 
+            &lt;l&gt;, &lt;lg&gt;, &lt;milestone&gt;, &lt;p&gt;</codeph>
+         <note type="notice"><i><b>Alternative regulation phase 1:</b> The <codeph>&lt;hi&gt;</codeph> element, which contains the <codeph>@rendition</codeph> attribute, is used to tag typographic features.</i></note></p>
+      <p outputclass="phase2">The <codeph>&lt;hi&gt;</codeph> element is used especially for tagging typographical features on the character level. </p>
+      <p>Typographical markups can extend over a page break or a column break. </p>
+      <p>The attributes <codeph>@rendition</codeph> and <codeph>@rend</codeph> are mutually exclusive. The <codeph>@rendition</codeph> attribute contains a fixed list of possible values for tagging common typographical features (see below) and should therefore be preferred to the <codeph>@rend</codeph> attribute. Additional typographical features that cannot be displayed with the values listed below can be displayed in the <codeph>@rend</codeph> attribute. In <codeph>@rend</codeph>, natural language information is possible for the typographical realization of the respective tagged text passages. </p>
+      
+      <p>The following values can be used for <codeph>@rendition</codeph>: </p>
+      <table>
+         <tgroup cols="3">
+            <colspec colname="col1"/>
+            <colspec colname="col2"/>
+            <colspec colname="col3"/>
+            <thead>
+               <row>
+                  <entry>Attribute Value Pair</entry>
+                  <entry>Meaning</entry>
+                  <entry>CSS Implementation in the DTA</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry><codeph>rendition="#aq"</codeph> </entry>
+                  <entry>change to Antiqua font in Fraktur works</entry>
+                  <entry><codeph>font-family:sans-serif</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#b"</codeph> </entry>
+                  <entry>bold text</entry>
+                  <entry><codeph>font-weight:bold</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#blue"</codeph> </entry>
+                  <entry>blue font</entry>
+                  <entry><codeph>color:blue</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#c"</codeph> </entry>
+                  <entry>centered text</entry>
+                  <entry><codeph>display:block; text-align:center</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#et"</codeph> </entry>
+                  <entry>indented text</entry>
+                  <entry><codeph>display:block; margin-left:2em;
+              text-indent:0</codeph> </entry>
+               </row>
+              <row>
+                <entry><codeph>rendition="#f"</codeph></entry>
+                 <entry>change to Fraktur font in Antiqua works</entry>
+                <entry><codeph>border:1px dotted silver</codeph> </entry>
+              </row>
+              <row>
+                  <entry><codeph>rendition="#fr"</codeph> </entry>
+                  <entry>Fraktur change</entry>
+                  <entry><codeph>border:1px dotted silver</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#g"</codeph> </entry>
+                  <entry>spaced letters</entry>
+                  <entry><codeph>letter-spacing:0.125em</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#i"</codeph> </entry>
+                  <entry>italics</entry>
+                  <entry><codeph>font-style:italic</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#in"</codeph> </entry>
+                  <entry>initial, ornamented initial</entry>
+                  <entry><codeph>font-size:150%</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#k"</codeph> </entry>
+                  <entry>small caps</entry>
+                  <entry><codeph>font-variant:small-caps</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#red"</codeph> </entry>
+                  <entry>red font</entry>
+                  <entry><codeph>color:red</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#right"</codeph> </entry>
+                  <entry>right alignment</entry>
+                  <entry><codeph>display:block; text-align:right</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#sub"</codeph> </entry>
+                  <entry>subscript</entry>
+                  <entry><codeph>vertical-align:sub; font-size:.7em</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#sup"</codeph> </entry>
+                  <entry>superscript</entry>
+                  <entry><codeph>vertical-align:super; font-size:.7em</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#u"</codeph> </entry>
+                  <entry>printed underlining</entry>
+                  <entry><codeph>text-decoration:underline</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#uu"</codeph> </entry>
+                  <entry>double underlining</entry>
+                  <entry><codeph>border-bottom:double 3px #000</codeph> </entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#v"</codeph> </entry>
+                  <entry>vertically printed text</entry>
+                  <entry></entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#s"</codeph> </entry>
+                  <entry>crossed out text</entry>
+                  <entry><codeph>text-decoration:line-through</codeph></entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#et2"</codeph> </entry>
+                  <entry>(level 3:) double indented text</entry>
+                  <entry><codeph>display:block; margin-left:4em; text-indent:0</codeph></entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#et3"</codeph> </entry>
+                  <entry>(level 3:) triple indented text</entry>
+                  <entry><codeph>display:block; margin-left:6em; text-indent:0</codeph></entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#smaller"</codeph> </entry>
+                  <entry>(level 3:) scaled down font compared to the basic text</entry>
+                  <entry><codeph>font-size:smaller</codeph></entry>
+               </row>
+               <row>
+                  <entry><codeph>rendition="#larger"</codeph> </entry>
+                  <entry>(level 3:) enlarged font compared to the basic text</entry>
+                  <entry><codeph>font-size:larger</codeph></entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

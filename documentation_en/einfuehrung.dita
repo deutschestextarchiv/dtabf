@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_dhd_tsd_qs">
+  <title>Introduction</title>
+  <abstract><shortdesc>Objectives of the DTA Basic Format, Related Publications, Use and First Steps</shortdesc></abstract>
+  <body>
+    <p>The following pages provide the TEI/XML base format of the DTA (DTABf), which forms the basis for the annotation of all full texts of the DTA corpus. Within the framework of the DTA guidelines, which also include the general <xref href="http://www.deutschestextarchiv.de/doku/leitlinien" format="html">guidelines of the DTA</xref> and the <xref href="http://www.deutschestextarchiv.de/doku/richtlinien" format="html">transcription guidelines</xref>, it is intended to allow the most comprehensive text preparation possible, while at the same time limiting the scope for variation in the annotation in such a way as to ensure coherence between the DTA texts.</p>
+    <p>The DTA base format follows the P5 guidelines of the <xref href="http://www.tei-c.org/" scope="external" format="html">Text Encoding Initiative</xref> (TEI), which specify for the annotation of historical printed works in a corpus, but are not extended.</p>
+  </body>
+</topic>

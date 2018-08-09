@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jLinking">
+  <title>Connections of Discontinuous Article Parts</title>
+  <titlealts><navtitle>Connections</navtitle></titlealts>
+  <body>
+    <p>
+      If an article is interrupted, either because it is continued in a later issue, or because articles of another category (e. g. the feature pages) are inserted within the issue, the parts of the article in question are linked together. 
+</p>
+<p>
+  Within an issue, the connection is made by the attributes <codeph>@prev</codeph>, <codeph>@next</codeph> 
+  and <codeph>@xml:id</codeph>. For a more detailed description of this linking method, see <xref href="einschub.dita">chapter: Parentheses and Discontinuous Text Passages</xref>.
+</p>
+<p>
+  If an article is interrupted and continued in a later issue, the individual subarticles are linked via the <codeph>&lt;ref&gt;</codeph> element, which is either empty or encloses the reference to a following continuation given in the source. All parts of an article are provided with <codeph>&lt;ref&gt;</codeph> elements. These are at the end of the subarticle, if a continuation is to follow in a later issue, or at the beginning of an article, if a reference is to be made to a previous subarticle. The actual reference is made via the <codeph>@target</codeph> attribute, which contains the path to the corresponding article and the unique article ID.
+</p>
+    <p><b>Example: Connection of Three Article Parts in Different Issues</b></p>
+<codeblock outputclass="language-xml">&lt;body>&lt;!-- issue 1 -->
+  &lt;!-- [...] -->
+  &lt;div type="jArticle" xml:id="[xml:id-part-1]">&lt;!-- article part 1 -->
+  &lt;p>[start of the article]&lt;/p>
+  &lt;p>[further article text]&lt;/p>
+    &lt;p>
+    &lt;ref target="[URI-issue-2/xml:id-part-2]">[information on continuation, e. g. "To be continued"]&lt;/ref>
+    &lt;/p>
+  &lt;/div>
+  &lt;!-- [...] -->
+&lt;/body>
+&lt;body>&lt;!-- issue 2 -->
+  &lt;!-- [...] -->
+  &lt;div type="jArticle" xml:id="[xml:id-part-2]">&lt;!-- article part 2 -->
+    &lt;p>&lt;ref target="[URI-issue-1/xml:id-part-1]"/>&lt;/p>
+    &lt;p>[article text]&lt;/p>
+    &lt;p>[further article text]&lt;/p>
+    &lt;p>
+    &lt;ref target="[URI-issue-3/xml:id-part-3]">[information on continuation, e. g. "To be continued"]&lt;/ref>
+    &lt;/p>
+  &lt;/div>
+  &lt;!-- [...] -->
+&lt;/body>
+&lt;body>&lt;!-- issue 3 -->
+  &lt;!-- [...] -->
+  &lt;div type="jArticle" xml:id="[xml:id-part-3]">&lt;!-- article part 3 -->
+    &lt;p>
+      &lt;ref target="[URI-issue-2/xml:id-part-2]"/>
+    &lt;/p>
+    &lt;p>[article text]&lt;/p>
+    &lt;p>[end of the article]&lt;/p>
+  &lt;/div>
+  &lt;!-- [...] -->
+&lt;/body>
+</codeblock>
+  </body>
+</topic>

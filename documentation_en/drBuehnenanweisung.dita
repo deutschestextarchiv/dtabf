@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_42">
+    <title>Stage Directions</title>
+    <body>
+        <p>Stage directions are enclosed with a <codeph>&lt;stage&gt;</codeph> element:</p>
+        <codeblock outputclass="language-xml">&lt;stage&gt;[stage direction]&lt;/stage&gt;</codeblock>
+        <p>Different types of stage directions are possible and are treated differently: </p>
+        <p><b>1. Stage directions at the beginning of an act or entry:</b> These stage directions determine the following section. They are usually after the respective section heading. </p>
+        <codeblock outputclass="language-xml">&lt;div type="[e. g. scene]"&gt;
+            &lt;head&gt;[title of the entry]&lt;/head&gt;
+  &lt;stage&gt;[stage direction]&lt;/stage&gt;
+  &lt;sp&gt;[speech act]&lt;/sp&gt;
+  &lt;sp&gt;[another speech act]&lt;/sp&gt;
+&lt;/div&gt;</codeblock>
+        
+        <example> <title>Stage Direction I</title> <fig>
+            <image href="img/GQfzrOTco5.png"/>
+            <codeblock outputclass="language-xml">&lt;div n="2"&gt;
+  &lt;head&gt;&lt;hi rendition="#g"&gt;Erſter Akt&lt;/hi&gt;.&lt;/head&gt;&lt;lb/&gt;
+  &lt;stage&gt;&lt;hi rendition="#g"&gt;Der königliche Garten in Aranjuez&lt;/hi&gt;.&lt;/stage&gt;&lt;lb/&gt;
+  &lt;milestone rendition="#hr" unit="section"/&gt;&lt;lb/&gt;
+  &lt;div n="3"&gt;
+    &lt;head&gt;&lt;hi rendition="#g"&gt;Erſter Auftritt&lt;/hi&gt;.&lt;/head&gt;&lt;lb/&gt;
+    &lt;stage&gt;&lt;hi rendition="#g"&gt;Dom Karlos. Domingo&lt;/hi&gt;.&lt;/stage&gt;&lt;lb/&gt;
+    &lt;sp who="#DOMI"&gt;
+      &lt;speaker&gt;&lt;hi rendition="#g"&gt;Domingo&lt;/hi&gt;.&lt;/speaker&gt;&lt;lb/&gt;
+      &lt;p&gt;&lt;hi rendition="#in"&gt;D&lt;/hi&gt;ie ſchönen Tage in Aranjuez&lt;lb/&gt;
+      ſind nun zu Ende. Eure königliche Hoheit&lt;lb/&gt;[...]&lt;/p&gt;
+    &lt;/sp&gt;
+  [...]&lt;/div&gt;
+&lt;/div&gt;</codeblock>
+             <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/schiller_domkarlos_1787/13"
+                format="html" scope="external">Schiller, Friedrich: Dom Karlos,
+                Infant von Spanien. Leipzig, 1787. [Facsimile 13]</xref></i></p>
+            </fig> </example>
+        
+        <p><b>2. Stage directions before the beginning or after the end of a speech act:</b> Stage directions within an act that are not assigned to a speech act, but referring to the scene in general, are reproduced outside the contiguous <codeph>&lt;sp&gt;</codeph> elements in a <codeph>&lt;stage&gt;</codeph> element. </p>
+        
+        <codeblock outputclass="language-xml">&lt;div type="[e. g. scene]"&gt;
+            &lt;head&gt;[title of the entry]&lt;/head&gt;
+            &lt;sp&gt;[speech act]&lt;/sp&gt;
+  &lt;stage&gt;[stage direction]&lt;/stage&gt;
+  &lt;sp&gt;[another speech act]&lt;/sp&gt;
+&lt;/div&gt;</codeblock>
+        
+        <example> <title>Stage Direction II</title> <fig>
+            <image href="img/gLovGqjkrN.png"/>
+            <codeblock outputclass="language-xml">&lt;sp who="#JHERR"&gt;
+  &lt;speaker&gt;
+    &lt;hi rendition="#b"&gt;Der junge Herr.&lt;/hi&gt;
+  &lt;/speaker&gt;&lt;lb/&gt;
+  &lt;p&gt;Ah ja, Marie, ah ja, ich hab’ geläutet, ja …&lt;lb/&gt;
+    was hab’ ich nur … ja richtig, die Rouletten&lt;lb/&gt;
+    lassen S’ herunter, Marie … Es ist kühler,&lt;lb/&gt;
+    wenn die Rouletten unten sind .... ja ....&lt;/p&gt;
+&lt;/sp&gt;&lt;lb/&gt;
+&lt;stage&gt;(Das Stubenmädchen geht zum Fenster und läßt die&lt;lb/&gt;
+Rouletten herunter.)&lt;/stage&gt;&lt;lb/&gt;
+&lt;sp who="#JHERR"&gt;
+  &lt;speaker&gt;
+    &lt;hi rendition="#b"&gt;Der junge Herr&lt;/hi&gt;
+  &lt;/speaker&gt;
+  &lt;stage&gt;(liest weiter.)&lt;lb/&gt;&lt;/stage&gt;
+  &lt;p&gt;
+    Was machen S’ denn, Marie? Ah ja. Jetzt&lt;lb/&gt;
+    sieht man aber gar nichts zum Lesen.
+  &lt;/p&gt;
+&lt;/sp&gt;&lt;lb/&gt;</codeblock>
+             <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/schnitzler_reigen_1903/41"
+                format="html" scope="external">Schnitzler, Arthur: Reigen. Wien,
+                1903. [Facsimile 41]</xref></i></p>
+            </fig> </example>
+        
+        <p><b>3. Stage directions within a speech act:</b> Stage directions assigned to a speech act are reproduced within the <codeph>&lt;sp&gt;</codeph> element. If the stage direction is <b>before or after the speaker's direct speech</b>, it is given outside of <codeph>&lt;p&gt;</codeph>. If it is <b>within the direct speech</b>, the <codeph>&lt;p&gt;</codeph> element is <b>not</b> interrupted. Instead, the <codeph>&lt;stage&gt;</codeph> element is integrated into the <codeph>&lt;p&gt;</codeph> element.</p>
+        
+        <codeblock outputclass="language-xml">&lt;div type="[e. g. scene]"&gt;
+            &lt;head&gt;[title of the entry]&lt;/head&gt;
+  &lt;sp&gt;
+    &lt;speaker&gt;[speaker]&lt;/speaker&gt;
+    &lt;stage&gt;[stage direction before the speech]&lt;/stage&gt;
+    &lt;p&gt;[speech] 
+    &lt;stage&gt;[stage direction within the speech]&lt;/stage&gt; 
+    [speech]&lt;/p&gt;
+    &lt;stage&gt;[stage direction after the speech]&lt;/stage&gt;
+  &lt;/sp&gt;
+  &lt;sp&gt;[another speech act]&lt;/sp&gt;
+&lt;/div&gt;</codeblock>
+        
+        <example> <title>Stage Direction III</title> <fig>
+            <image href="img/bjk8xsoRgn.png"/>
+            <codeblock outputclass="language-xml">&lt;sp who="#ANA">
+  &lt;speaker>
+    &lt;hi rendition="#b">Anatol.&lt;/hi>
+  &lt;/speaker>
+  &lt;p>
+    Ruhig &lt;stage>(zu Cora)&lt;/stage> … Schlafen … feſt, tief ſchlafen.&lt;lb/>
+    &lt;stage>(Er ſteht eine Weile vor Cora, die ruhig athmet und ſchläft).&lt;/stage> 
+    So … nun&lt;lb/>kannſt Du fragen.
+  &lt;/p>
+&lt;/sp>&lt;lb/></codeblock>
+            <p><i>Source: <xref
+                href="http://www.deutschestextarchiv.de/schnitzler_anatol_1893/27"
+                format="html" scope="external">Schnitzler, Arthur: Anatol.
+                Berlin, 1893. [Facsimile 27]</xref></i></p>
+            </fig> </example>
+    </body>
+</topic>

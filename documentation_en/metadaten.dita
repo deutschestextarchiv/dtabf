@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_rcc_dg2_qs">
+  <title>DTA Base Format – Indexing of Metadata</title>
+  <titlealts><navtitle>Metadata</navtitle></titlealts>
+  <abstract><shortdesc>Collection (Transcription) and Labeling of Metadata</shortdesc></abstract>
+  <body>
+    <p>The DTA basic format provides detailed metadata for all documents. This metadata includes a description of the digital edition including its responsible persons and institutions, as well as detailed information on the underlying physical source.</p>
+    <p>In order to ensure the uniformity of the collected metadata, transcription guidelines for metadata are provided in addition to the guidelines for labelling metadata.</p>
+  </body>
+</topic>

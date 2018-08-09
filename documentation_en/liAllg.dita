@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_egn_4ll_qs">
+
+  <title>Basic Structure of the Encoding of Lists</title>
+  <titlealts><navtitle>Lists Basic Structure</navtitle></titlealts>
+    <body>
+      <p>Lists are tagged with the <codeph>&lt;list&gt;</codeph> element. Each list item is tagged with <codeph>&lt;item&gt;[...]&lt;/item&gt;</codeph>. If the list has a title, it is tagged as such by the <codeph>&lt;head&gt;</codeph> element. </p>
+      <codeblock outputclass="language-xml">&lt;list&gt;
+        &lt;head&gt;[title of the list]&lt;/head&gt;&lt;!-- where available --&gt;
+        &lt;item&gt;[content of a list item]&lt;/item&gt;
+        &lt;item&gt;[content of a list item]&lt;/item&gt;
+&lt;/list&gt;</codeblock>
+      <p> Numbering of list points is done within <codeph>&lt;list&gt;[...]&lt;/list&gt;</codeph> (i. e. at text level) and not tagged separately. </p>
+      <codeblock outputclass="language-xml">&lt;list&gt;
+        &lt;item&gt;1. [contents of the first list item]&lt;/item&gt;
+        &lt;item&gt;2. [contents of the second list item]&lt;/item&gt;
+  ...
+  &lt;item&gt;[n]. [contents of the nth list item]&lt;/item&gt;
+&lt;/list&gt;</codeblock>
+      <example>
+        <title>Encoding of Lists</title>
+        <fig>
+          <image href="img/UK36EOOiL3.png" scalefit="yes"/>
+          <codeblock outputclass="language-xml">&lt;list>
+  &lt;item>[...]&lt;/item>
+  &lt;item>
+    &lt;hi rendition="#aq">s)&lt;/hi>Der erſte Stein &lt;hi rendition="#aq">a&lt;/hi>, 
+    auf dem Gewölbefuß liegend, heißt: &lt;hi rendition="#g">An-&lt;lb/>
+    fänger&lt;/hi>- oder &lt;hi rendition="#g">Kämpferſtein&lt;/hi>.
+  &lt;/item>&lt;lb/>
+  &lt;item>
+    &lt;hi rendition="#aq">t)&lt;/hi>Der Stein &lt;hi rendition="#aq">t&lt;/hi> 
+    in der oberſten Spitze des Gewölbes heißt:&lt;lb/>
+    &lt;hi rendition="#g">Schlußſtein&lt;/hi>.
+  &lt;/item>&lt;lb/>
+  &lt;item>
+    &lt;hi rendition="#aq">u)&lt;/hi>Jede Hälfte eines Gewölbes, 
+    welche durch eine verticale, durch&lt;lb/>
+    die Scheitellinie gelegte Ebene gebildet wird, 
+    heißt: &lt;hi rendition="#g">Gewölbe-&lt;lb/>
+    ſchenkel&lt;/hi>; dieſelben ſind in der Regel ſich gleich, 
+    bei einhüftigen Ge-&lt;lb/>
+    wölben (Fig. 256) reſp. Bögen aber ungleich.
+  &lt;/item>&lt;lb/>
+  &lt;item>[...]&lt;/item>
+&lt;/list>&lt;lb/></codeblock>
+          <p><i>Source: 
+            <xref href="http://www.deutschestextarchiv.de/wanderley_bauconstructionslehre02_1878/267" format="html"  scope="external">Wanderley,
+              Germano: Handbuch der Bauconstruktionslehre. 2. Aufl. Bd. 2. Die 
+              Constructionen in Stein. Leipzig, 1878. [Facsimile 267]</xref>
+          </i></p>
+        </fig></example>
+      <p> If a list consists of entries with corresponding values, which are separated from each other by a spacer (e. g. an empty space or a dotted line), the distance is displayed by <codeph>&lt;space dim="horizontal"/&gt;</codeph>. </p>
+      <example>
+        <title>Dealing with Spacers in Lists</title>
+        <fig id="fig01">
+          <image href="img/hGtGNbXQ5B.png"/>
+          <codeblock outputclass="language-xml">&lt;list&gt;
+  &lt;item&gt;1ſter Schlag. Kartoffeln &lt;space dim="horizontal"/&gt; 500°&lt;/item&gt;&lt;lb/&gt;
+  &lt;item&gt;2ter Schlag. Gerſte &lt;space dim="horizontal"/&gt; 400°&lt;/item&gt;&lt;lb/&gt;
+  &lt;item&gt;3ter Schlag. Ma&amp;#x0364;hnklee &lt;space dim="horizontal"/&gt; 325°&lt;/item&gt;&lt;lb/&gt;
+  &lt;item&gt;4ter Schlag. Rocken &lt;space dim="horizontal"/&gt; 299°&lt;/item&gt;&lt;lb/&gt;
+  &lt;item&gt;5ter Schlag. Wicken zu Gru&amp;#x0364;nfutter &lt;space dim="horizontal"/&gt; 525°&lt;/item&gt;&lt;lb/&gt;
+  &lt;item&gt;6ter Schlag. Rocken &lt;space dim="horizontal"/&gt; &lt;hi rendition="#u"&gt;500°&lt;/hi&gt;&lt;/item&gt;
+&lt;/list&gt;</codeblock>
+          <p><i>Source: 
+            <xref href="http://www.deutschestextarchiv.de/thuenen_staat_1826/70" format="html"  scope="external">Thünen,
+              Johann Heinrich von: Der isolirte Staat in Beziehung auf 
+              Landwirthschaft und Nationalökonomie. Hamburg, 1826. [Facsimile 70]</xref>
+          </i></p>
+</fig></example>
+      <p>A typical use case for such lists are <xref href="inhaltsverzeichnis.dita">Tables of Contents</xref>.</p>
+      <p>Bracketings within <codeph>lists</codeph> are tagged with the attribute value pair <codeph>@rendition="#rightBraced|#leftBraced|#topBraced|#bottomBraced"</codeph> (see chap. <xref href="klammerung.dita">Bracketings</xref>).</p>
+    </body>
+  <related-links><link href="klammerung.dita"/></related-links>
+</topic>

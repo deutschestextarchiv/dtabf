@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="leerraum">
+  <title>Blank Space</title>
+  <body>
+    <p>
+      Semantically significant blank space in the original can be tagged with the <codeph>&lt;space&gt;</codeph> element. The attribute value pair <codeph>@dim="horizontal | vertical"</codeph> indicates whether the space is horizontal or vertical.
+    </p>
+    <p>
+      The use of the <codeph>&lt;space&gt;</codeph> element is optional (level 3).
+    </p>
+    <p>
+      Frequent use cases for <codeph>&lt;space&gt;</codeph> can be found in <xref href="inhaltsverzeichnis.dita">tables of contents</xref> and <xref href="liAllg.dita">lists</xref>, for example.
+    </p>
+    <example>
+      <title>Blank Space in Lists</title>
+      <fig conref="liAllg.dita#topic_egn_4ll_qs/fig01"></fig>      
+    </example>
+    <example>
+      <title>Blank Space in Tables of Contents</title>
+      <fig conref="inhaltsverzeichnis.dita#topic_11/fig02"></fig>      
+    </example>
+    <p>
+      But also in the continuous text, paragraphs can be separated from each other by significantly more space than usual in the surrounding text.
+    </p>
+    <example>
+      <title>Blank Space Between Paragraphs</title>
+      <fig>
+        <image href="img/boerneLeerr02.png" scale="60"/>
+        <codeblock outputclass="language-xml">&lt;p&gt;[...]&lt;lb/&gt;
+ge&#x017F;chminkte Preßfreiheit zu vertilgen, nun nicht län-&lt;lb/&gt;
+ger mehr zweifeln könnte.&lt;/p&gt;&lt;lb/&gt;
+&lt;space dim="vertical"/&gt;
+&lt;p&gt;Aus Spanien blüht uns wieder eine neue Hoff-&lt;lb/&gt;
+nung entgegen. Es i&#x017F;t dort in mehreren Provinzen&lt;lb/&gt;
+[...]&lt;/p&gt;</codeblock>
+        <p><i>Source: <xref href="http://www.deutschestextarchiv.de/boerne_paris06_1834/60" format="html" scope="external">Börne, Ludwig: Briefe aus Paris. Bd. 6. Paris, 1834. [Facsimile 60]</xref></i></p>
+      </fig>
+      <p><b>For comparison:</b></p>
+      <fig>
+        <image href="img/boerneLeerr01.png" scale="60"/>
+        <codeblock outputclass="language-xml">&lt;p&gt;[...]&lt;lb/&gt;
+freiheit; &#x017F;ogar einer für&#x017F;tlichen verwittweten Un&#x017F;chuld&lt;lb/&gt;
+kann &#x017F;ie einen bö&#x017F;en Leumund machen.&lt;/p&gt;&lt;lb/&gt;
+&lt;p&gt;Was das elend kranke monarchi&#x017F;che Prinzip im-&lt;lb/&gt;
+merfort an &#x017F;ich kurirt! wahrhaftig man muß Mitleid&lt;lb/&gt;
+[...]&lt;/p&gt;</codeblock>
+        <p><i>Source: <xref href="http://www.deutschestextarchiv.de/boerne_paris06_1834/59" format="html" scope="external">Börne, Ludwig: Briefe aus Paris. Bd. 6. Paris, 1834. [Facsimile 59]</xref></i></p>
+      </fig>
+    </example>
+  </body>
+</topic>

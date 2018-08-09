@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_b4h_2k2_qs">
+  <title>Additional Information about the Document (//fileDesc/notesStmt)</title>
+    <titlealts><navtitle>Notes Statement</navtitle></titlealts>
+  <body>
+    <p>Further information about the edited document, which goes beyond the metadata recording defined in the DTABf, can be added within <codeph>&lt;fileDesc&gt;</codeph> in a separate <codeph>&lt;notesStmt&gt;</codeph> element. The <codeph>&lt;notesStmt&gt;</codeph> gets a subelement <codeph>&lt;note&gt;</codeph> with the attribute value pair <codeph>@type="remarkDocument"</codeph>. 
+    </p>
+    <codeblock outputclass="language-xml">&lt;notesStmt&gt;
+      &lt;note type="remarkDocument"&gt;[additional information about the document]&lt;/note&gt;
+&lt;/notesStmt&gt;
+  </codeblock>
+  </body>
+</topic>
