@@ -2,10 +2,10 @@
 (first published 2013-06-21)
 
 ## RESPONSIBILITY
-Published by [Deutsches Textarchiv (DTA)](http://www.deutschestextarchiv.de)
-Development: Thomas Popp
-Adjustments and Design: Thomas Popp, Susanne Haaf, Matthias Boenig, Alexander Geyken, Frank Wiegand
-Documentation: Cornelia Binnyus, Susanne Haaf
+- Published by [Deutsches Textarchiv (DTA)](http://www.deutschestextarchiv.de)
+- Development: Thomas Popp
+- Adjustments and Design: Thomas Popp, Susanne Haaf, Matthias Boenig, Alexander Geyken, Frank Wiegand
+- Documentation: Cornelia Binnyus, Susanne Haaf
 
 Contact: [dta@bbaw.de](mailto:dta@bbaw.de)
 
@@ -14,8 +14,7 @@ This framework is designed for the Author mode of the [oXygen-XML-Editor](http:/
 It is optimized for oXygen versions 14.2 and 15. 
 
 ## COMPONENTS AND DOCUMENTATION
-The DTA-oXygen-Framework comes as a .zip-archive containing the following components: 
-- a "setup.exe" file for the installation of the framework on Windows systems,
+The DTA-oXygen-Framework contains the following components: 
 - a "DTAoX"-directory, which provides all framework files needed and may be integrated into the 
 "frameworks"-directory of the respective oXygen home-directory in order to install the framework 
 on Windows, Linux or MacOS systems,
