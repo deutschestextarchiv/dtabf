@@ -10,7 +10,7 @@ Documentation: Cornelia Binnyus, Susanne Haaf
 Contact: [dta@bbaw.de](mailto:dta@bbaw.de)
 
 ## DESCRIPTION
-This framework is designed for the Author mode of the oXygen-XML-Editor (http://www.oxygenxml.com). 
+This framework is designed for the Author mode of the [oXygen-XML-Editor](http://www.oxygenxml.com). 
 It is optimized for oXygen versions 14.2 and 15. 
 
 ## COMPONENTS AND DOCUMENTATION
@@ -24,11 +24,11 @@ of text,
 - a DTAoX User Guide. 
 
 ## LICENSE
-The DTA-oXygen-Framework DTAoX is published under the GNU Lesser General Public License 
-(LGPL, http://www.gnu.org/licenses/lgpl.html). 
+The DTA-oXygen-Framework DTAoX is published under the [GNU Lesser General Public License 
+(LGPL)](http://www.gnu.org/licenses/lgpl.html).
 
 ## DISCLAIMER OF WARRANTIES
-(according to the BSD license, http://www.linfo.org/bsdlicense.html)
+(according to the [BSD license](http://www.linfo.org/bsdlicense.html))
 
 "This software is provided "as is" and any express or implied warranties, including, but not
 limited to, the implied warranties of merchantability and fitness for a particular purpose are 
@@ -40,11 +40,11 @@ negligence or otherwise) arising in any way out of the use of this software, eve
 the possibility of such damage."
 
 ## THIRD PARTY LICENSES
-1. The DTA-oXygen-Framework includes and makes use of the Junicode font (http://junicode.sourceforge.net/), which is distributed under the Open Font License (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
+1. The DTA-oXygen-Framework includes and makes use of the [Junicode font](http://junicode.sourceforge.net/), which is distributed under the [Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
 
-2. The DTA-oXygen-Framework includes and makes use of the Xerces2 Java library, which is distributed unter the Apache Software License (http://www.apache.org/licenses/LICENSE-2.0). 
+2. The DTA-oXygen-Framework includes and makes use of the Xerces2 Java library, which is distributed unter the [Apache Software License](http://www.apache.org/licenses/LICENSE-2.0). 
 
-3. The DTA-oXygen-Framework makes use of the oXygen-TEI P5-Framework, which is distributed under the New BSD License (http://opensource.org/licenses/BSD-3-Clause): 
+3. The DTA-oXygen-Framework makes use of the oXygen-TEI P5-Framework, which is distributed under the [New BSD License](http://opensource.org/licenses/BSD-3-Clause): 
 
 > "Copyright 2011 Syncro Soft SRL, Romania. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 > 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
