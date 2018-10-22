@@ -27,7 +27,7 @@
                     <address><addrLine>Jägerstr. 22/23, 10117 Berlin</addrLine></address>
                 </publisher>
                 <pubPlace>Berlin</pubPlace>
-                <date type="publication">2017-06-15</date>
+                <date type="publication">2018-10-22</date>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en">
                         <p>Distributed under the Creative Commons Attribution-ShareAlike 3.0 Germany (CC BY-SA 3.0 DE) Licence.</p>
@@ -38,7 +38,7 @@
             <notesStmt>
                 <note type="remarkDocument">This is the current ODD version for the complete DTA base format tagset.</note>
             </notesStmt>
-            <sourceDesc><p>First version published: 08-2016.</p></sourceDesc>
+            <sourceDesc><p>First version published: 2016-08.</p></sourceDesc>
         </fileDesc>
         <encodingDesc>
             <p>This ODD was created according to the 
@@ -136,22 +136,22 @@
                         <attDef ident="select" mode="delete"/>
                         <attDef ident="corresp" mode="change">
                             <datatype minOccurs="1" maxOccurs="unbounded">
-                                <rng:ref name="data.pointer"/>
+                                <rng:ref name="teidata.pointer"/>
                             </datatype>
                         </attDef>
                         <attDef ident="next" mode="change">
                             <datatype minOccurs="1" maxOccurs="unbounded">
-                                <rng:ref name="data.pointer"/>
+                                <rng:ref name="teidata.pointer"/>
                             </datatype>
                         </attDef>
                         <attDef ident="prev" mode="change">
                             <datatype minOccurs="1" maxOccurs="unbounded">
-                                <rng:ref name="data.pointer"/>
+                                <rng:ref name="teidata.pointer"/>
                             </datatype>
                         </attDef>
                         <attDef ident="sameAs" mode="change">
                             <datatype minOccurs="1" maxOccurs="unbounded">
-                                <rng:ref name="data.pointer"/>
+                                <rng:ref name="teidata.pointer"/>
                             </datatype>
                         </attDef>
                     </attList>
@@ -162,7 +162,7 @@
                         <attDef ident="style" mode="delete"/>
                         <attDef ident="rendition" mode="change" usage="opt">
                             <datatype minOccurs="1" maxOccurs="unbounded">
-                                <rng:ref name="data.pointer"/>
+                                <rng:ref name="teidata.pointer"/>
                             </datatype>
                             <valList type="closed" mode="replace">
                                 <valItem ident="#topBraced"><desc>horizontale Klammerung oben</desc></valItem>
@@ -289,21 +289,6 @@
                        <attDef ident="sameAs" mode="delete"/>
                     </attList>
                </elementSpec>
-                <elementSpec ident="abstract" module="core" mode="change">
-                    <attList>
-                        <attDef ident="xml:id" mode="delete"/>
-                        <attDef ident="n" mode="delete"/>
-                        <attDef ident="rend" mode="delete"/>
-                        <attDef ident="rendition" mode="delete"/>
-                        <attDef ident="corresp" mode="delete"/>
-                        <attDef ident="sameAs" mode="delete"/>
-                        <attDef ident="prev" mode="delete"/>
-                        <attDef ident="next" mode="delete"/>
-                        <attDef ident="facs" mode="delete"/>
-                        <attDef ident="resp" mode="delete"/>
-                        <attDef ident="cert" mode="delete"/>
-                    </attList>
-                </elementSpec>
                <elementSpec ident="actor" module="drama" mode="change">
                    <attList>
                        <attDef ident="n" mode="delete"/>
@@ -466,12 +451,12 @@
                        <attDef ident="facs" mode="delete"/>
                        <attDef ident="rows" mode="change">
                            <datatype minOccurs="1" maxOccurs="1">
-                               <rng:ref name="data.count"/>
+                               <rng:ref name="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="cols" mode="change">
                            <datatype minOccurs="1" maxOccurs="1">
-                               <rng:ref name="data.count"/>
+                               <rng:ref name="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="cert" mode="delete"/>
@@ -479,27 +464,6 @@
                        <attDef ident="sameAs" mode="delete"/>
                    </attList>
                </elementSpec>
-                <elementSpec ident="channel" module="corpus" mode="change">
-                    <attList>
-                        <attDef ident="xml:id" mode="delete"/>
-                        <attDef ident="n" mode="delete"/>
-                        <attDef ident="xml:lang" mode="delete"/>
-                        <attDef ident="rend" mode="delete"/>
-                        <attDef ident="rendition" mode="delete"/>
-                        <attDef ident="corresp" mode="delete"/>
-                        <attDef ident="next" mode="delete"/>
-                        <attDef ident="prev" mode="delete"/>
-                        <attDef ident="facs" mode="delete"/>
-                        <attDef ident="cert" mode="delete"/>
-                        <attDef ident="resp" mode="delete"/>
-                        <attDef ident="sameAs" mode="delete"/>
-                        <attDef ident="mode" mode="change" usage="req">
-                            <valList type="closed" mode="replace">
-                                <valItem ident="w"/>
-                            </valList>
-                        </attDef>
-                    </attList>
-                </elementSpec>
                <elementSpec ident="choice" module="core" mode="change">
                    <attList>
                        <attDef ident="n" mode="delete"/>
@@ -681,6 +645,9 @@
                                <valItem ident="jReadersLetters"><desc>(Zeitung/Zeitschrift:) Leserbriefe</desc></valItem>
                                <valItem ident="jSupplement"><desc>(Zeitung/Zeitschrift:) Beilage</desc></valItem>
                                <valItem ident="jWeatherReports"><desc>(Zeitung/Zeitschrift:) Wetternachrichten</desc></valItem>
+                           		 <valItem ident="jVarious"><desc>(Zeitung/Zeitschrift:) Vermischtes</desc></valItem>
+                               <valItem ident="jLocal"><desc>(Zeitung/Zeitschrift:) Lokalnachrichten</desc></valItem>
+                               <valItem ident="jCulturalNews"><desc>(Zeitung/Zeitschrift:) Kulturnachrichten (Theater etc.)</desc></valItem>
                            </valList>
                        </attDef>
                        <attDef ident="sameAs" mode="delete"/>
@@ -691,7 +658,7 @@
                        <attDef ident="hand" mode="delete"/>
                        <attDef ident="n" mode="change">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="data.count"/>
+                               <rng:ref name="teidata.count"/>
                            </datatype>
                        </attDef>
                     </attList>
@@ -885,7 +852,7 @@
                        </attDef>
                        <attDef ident="quantity" mode="change" usage="opt">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="data.count"/>
+                               <rng:ref name="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="agent" mode="delete"/>
@@ -989,7 +956,7 @@
                    <attList>
                        <attDef ident="n" mode="change">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="data.count"/>
+                               <rng:ref name="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="sameAs" mode="delete"/>
@@ -1316,7 +1283,7 @@
                        <attDef ident="facs" mode="delete"/>
                        <attDef ident="target" mode="change">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="data.pointer"/>
+                               <rng:ref name="teidata.pointer"/>
                            </datatype>
                        </attDef>
                        <attDef ident="sameAs" mode="delete"/>
@@ -1436,7 +1403,7 @@
                        </attDef>
                        <attDef ident="quantity" mode="change" usage="opt">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="data.count"/>
+                               <rng:ref name="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="cert" mode="delete"/>
@@ -1570,22 +1537,6 @@
                        <attDef ident="xml:id" mode="delete"/>
                    </attList>
                </elementSpec>
-                <elementSpec ident="textDesc" module="corpus" mode="change">
-                    <attList>
-                        <attDef ident="xml:id" mode="delete"/>
-                        <attDef ident="n" mode="delete"/>
-                        <attDef ident="xml:lang" mode="delete"/>
-                        <attDef ident="rend" mode="delete"/>
-                        <attDef ident="rendition" mode="delete"/>
-                        <attDef ident="corresp" mode="delete"/>
-                        <attDef ident="sameAs" mode="delete"/>
-                        <attDef ident="prev" mode="delete"/>
-                        <attDef ident="next" mode="delete"/>
-                        <attDef ident="facs" mode="delete"/>
-                        <attDef ident="cert" mode="delete"/>
-                        <attDef ident="resp" mode="delete"/>
-                    </attList>
-                </elementSpec>
                <elementSpec ident="titlePage" module="textstructure" mode="change">
                    <attList>
                        <attDef ident="type" mode="change" usage="req">
@@ -1665,6 +1616,21 @@
                </elementSpec>
                
                <!-- Header-Elemente: -->
+            	 <elementSpec ident="abstract" module="core" mode="change">
+                    <attList>
+                        <attDef ident="xml:id" mode="delete"/>
+                        <attDef ident="n" mode="delete"/>
+                        <attDef ident="rend" mode="delete"/>
+                        <attDef ident="rendition" mode="delete"/>
+                        <attDef ident="corresp" mode="delete"/>
+                        <attDef ident="sameAs" mode="delete"/>
+                        <attDef ident="prev" mode="delete"/>
+                        <attDef ident="next" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="resp" mode="delete"/>
+                        <attDef ident="cert" mode="delete"/>
+                    </attList>
+               </elementSpec>
                <elementSpec ident="addName" module="namesdates" mode="change">
                    <attList>
                        <attDef ident="corresp" mode="delete"/>
@@ -1791,6 +1757,27 @@
                        <attDef ident="resp" mode="delete"/>
                    </attList>
                </elementSpec>
+            	 <elementSpec ident="channel" module="corpus" mode="change">
+                    <attList>
+                        <attDef ident="xml:id" mode="delete"/>
+                        <attDef ident="n" mode="delete"/>
+                        <attDef ident="xml:lang" mode="delete"/>
+                        <attDef ident="rend" mode="delete"/>
+                        <attDef ident="rendition" mode="delete"/>
+                        <attDef ident="corresp" mode="delete"/>
+                        <attDef ident="next" mode="delete"/>
+                        <attDef ident="prev" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="cert" mode="delete"/>
+                        <attDef ident="resp" mode="delete"/>
+                        <attDef ident="sameAs" mode="delete"/>
+                        <attDef ident="mode" mode="change" usage="req">
+                            <valList type="closed" mode="replace">
+                                <valItem ident="w"/>
+                            </valList>
+                        </attDef>
+                    </attList>
+               </elementSpec>
                <elementSpec ident="classCode" module="header" mode="change">
                    <attList>
                        <attDef ident="corresp" mode="delete"/>
@@ -1848,7 +1835,7 @@
                        <attDef ident="facs" mode="delete"/>
                        <attDef ident="n" mode="change" usage="opt">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="data.count"/>
+                               <rng:ref name="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="next" mode="delete"/>
@@ -1882,7 +1869,7 @@
                    <attList>
                        <attDef ident="corresp" mode="change" usage="opt">
                            <datatype minOccurs="1" maxOccurs="1">
-                               <rng:ref name="data.pointer"/>
+                               <rng:ref name="teidata.pointer"/>
                            </datatype>
                            <valList type="closed" mode="replace">
                                <valItem ident="#DTACorpusPublisher"/>
@@ -2285,6 +2272,7 @@
                        <attDef ident="resp" mode="delete"/>
                        <attDef ident="prev" mode="delete"/>
                        <attDef ident="next" mode="delete"/>
+                   		 <attDef ident="key" mode="delete"/>
                    </attList>
                </elementSpec>
                
@@ -2484,6 +2472,22 @@
                        <attDef ident="resp" mode="delete"/>
                    </attList>
                </elementSpec>
+            	 <elementSpec ident="textDesc" module="corpus" mode="change">
+                    <attList>
+                        <attDef ident="xml:id" mode="delete"/>
+                        <attDef ident="n" mode="delete"/>
+                        <attDef ident="xml:lang" mode="delete"/>
+                        <attDef ident="rend" mode="delete"/>
+                        <attDef ident="rendition" mode="delete"/>
+                        <attDef ident="corresp" mode="delete"/>
+                        <attDef ident="sameAs" mode="delete"/>
+                        <attDef ident="prev" mode="delete"/>
+                        <attDef ident="next" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="cert" mode="delete"/>
+                        <attDef ident="resp" mode="delete"/>
+                    </attList>
+                </elementSpec>
                <elementSpec ident="teiHeader" module="header" mode="change">
                    <attList>
                        <attDef ident="xml:id" mode="delete"/>
@@ -2522,7 +2526,7 @@
                        </attDef>
                        <attDef ident="n" mode="change" usage="opt">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="data.count"/>
+                               <rng:ref name="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="key" mode="delete"/>
