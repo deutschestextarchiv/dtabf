@@ -15,7 +15,7 @@
   &lt;p&gt;[Information on the Transcription and Annotation Guidelines]&lt;/p&gt;
   &lt;p&gt;[further information on the Transcription and Annotation Guidelines]&lt;/p&gt;
   &lt;/editorialDecl&gt;
-  &lt;rendition scheme="css" xml:id="rendition-[@rendition-Wert]"&gt;[CSS equivalent]&lt;/rendition&gt;
+  &lt;rendition scheme="css" xml:id="[@rendition-Wert]"&gt;[CSS equivalent]&lt;/rendition&gt;
 &lt;/encodingDesc&gt;</codeblock>
     <note type="attention">The CSS equivalents used in the DTA for the respective <codeph>@rendition</codeph> values are documented in the chapter <xref href="typogrAllg.dita">Typographical Features - Guidelines for Coding</xref>.</note>
   </body>

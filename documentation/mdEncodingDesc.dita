@@ -21,7 +21,7 @@
     &lt;p&gt;[Angaben zu den Transkriptions- und Annotationsrichtlinien]&lt;/p&gt;
     &lt;p&gt;[weitere Angaben zu den Transkriptions- und Annotationsrichtlinien]&lt;/p&gt;
   &lt;/editorialDecl&gt;
-  &lt;rendition scheme="css" xml:id="rendition-[@rendition-Wert]"&gt;[CSS-Entsprechung]&lt;/rendition&gt;
+  &lt;rendition scheme="css" xml:id="[@rendition-Wert]"&gt;[CSS-Entsprechung]&lt;/rendition&gt;
 &lt;/encodingDesc&gt;</codeblock>
     <note type="attention">Die CSS-Entsprechungen, die im DTA für die jeweiligen <codeph>@rendition</codeph>-Werte genutzt wurden,
     sind im Kapitel <xref href="typogrAllg.dita">Typographische Besonderheiten - Richtlinien der Kodierung</xref> 
