@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="entwicklung">
+    <title>Weiterentwicklung des DTA-Basisformats</title>
+    <body>
+        <p>Zunehmend wird das DTABf, das im Projektkontext des DTA entstand, auch von externen Projekten verwendet. Damit steigt der Bedarf, das Format für Kontexte außerhalb des korpuslinguistischen Fokus des DTA zusätzlich nutzbar zu machen. Um dieser Entwicklung gerecht zu werden, wurde eine Steuerungsgruppe gegründet, deren Mitglieder durch ihre Verankerung in verschiedenen Communities unterschiedliche Perspektiven und Expertisen bei der Weiterentwicklung des Formats einbringen können.</p>
+
+<p>Die DTABf-Steuerungsgruppe setzt sich aus Expertinnen und Experten für TEI-Auszeichnung und -Anpassung zusammen. Sie gehörten zum Teil bereits dem ursprünglichen Team des DTA an; zum Teil repräsentieren sie andere Projekte, die ebenfalls das DTA-Basisformat einsetzen. Mitglieder sind Matthias Boenig (BBAW, OCR-D), Daniel Burckhardt (GHI Washington DC), Stefan Dumont (BBAW, Telota), Alexander Geyken (BBAW, DWDS &amp; ZDL), Martina Goedel (textloop &amp; CCEH), Susanne Haaf (BBAW, ZDL &amp; t.evo), Axel Herold (BBAW, ZHistLex &amp; DWDS/ZDL), Christian Thomas (BBAW, CLARIN-D &amp; edition humboldt digital).</p>
+
+<p>Die DTABf-Steuerungsgruppe trifft sich regelmäßig, um Entwicklungen am DTA-Basisformat abzustimmen und über neue Vorschläge zu entscheiden. Im Fokus stehen dabei die Erweiterungs- und Änderungsvorschläge der Nutzenden, die über Tickets auf der GitHub-Präsenz des DTABf gemeldet werden. Alle Vorschläge werden vor dem Hintergrund der DTABf-Leitlinien beraten.</p>
+    </body>
+</topic>
