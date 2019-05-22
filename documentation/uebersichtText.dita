@@ -84,6 +84,18 @@
               <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref>
               </entry>
             </row>
+          	<row>
+              <entry> <codeph>add</codeph> <p outputclass="sg">Doku: <xref
+                href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-add.html"
+                format="html" scope="external">TEI</xref>, <xref
+                href="msAddDel.dita">DTABf</xref> </p> </entry>
+              <entry>Hinzufügung durch den Autor</entry>
+              <entry namest="col3" nameend="col4">nur in Manuskripten zu verwenden</entry>
+              <entry><xref href="legende.dita#legende/fk12">manuscripts</xref>, <xref
+                href="legende.dita#legende/fk07">phraseStructure</xref></entry>
+              <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref>
+              </entry>
+            </row>
             <row>
               <entry> <codeph>argument</codeph> <p outputclass="sg">Doku: <xref
                 href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-argument.html"
@@ -319,6 +331,18 @@
               <entry namest="col3" nameend="col4"/>
               <entry><xref href="legende.dita#legende/fk06">letter</xref>, <xref
                 href="legende.dita#legende/fk09">textStructure</xref></entry>
+              <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref>
+              </entry>
+            </row>
+          	<row>
+              <entry> <codeph>del</codeph> <p outputclass="sg">Doku: <xref
+                href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-del.html"
+                format="html" scope="external">TEI</xref>, <xref
+                href="msAddDel.dita">DTABf</xref> </p> </entry>
+              <entry>Tilgung durch den Autor</entry>
+              <entry namest="col3" nameend="col4">nur in Manuskripten zu verwenden</entry>
+              <entry><xref href="legende.dita#legende/fk12">manuscripts</xref>, <xref
+                href="legende.dita#legende/fk07">phraseStructure</xref></entry>
               <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref>
               </entry>
             </row>
@@ -808,6 +832,18 @@
               <entry><xref href="legende.dita#legende/l03">3 (fakultativ)</xref>
               </entry>
             </row>
+          	<row>
+              <entry> <codeph>metamark</codeph> <p outputclass="sg">Doku: <xref
+                href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-metamark.html"
+                format="html" scope="external">TEI</xref>, <xref
+                href="msEinweisung.dita">DTABf</xref> </p> </entry>
+              <entry>Einweisung durch den Autor</entry>
+              <entry namest="col3" nameend="col4">nur in Manuskripten zu verwenden</entry>
+              <entry><xref href="legende.dita#legende/fk12">manuscripts</xref>, <xref
+                href="legende.dita#legende/fk07">phraseStructure</xref></entry>
+              <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref>
+              </entry>
+            </row>
             <row>
               <entry morerows="1"><codeph>milestone</codeph> <p outputclass="sg"
                 >Doku: <xref
@@ -846,9 +882,8 @@
             </row>
             <row>
               <entry> <codeph>@ref</codeph> </entry>
-              <entry> Referenz auf eine externe Ressource, die den jeweiligen
-                Eigennamen näher spezifiziert [<codeph>"[URI]"</codeph>]
-              </entry>
+              <entry>Referenz auf eine Ressource, die den jeweiligen Eigennamen
+								näher spezifiziert [<codeph>"[URI]"</codeph>] </entry>
             </row>
             <row>
               <entry> <codeph>@type</codeph> </entry>
@@ -909,9 +944,8 @@
             </row>
             <row>
               <entry> <codeph>@ref</codeph> </entry>
-              <entry> Referenz auf eine externe Ressource, die den jeweiligen
-                Eigennamen näher spezifiziert [<codeph>"[URI]"</codeph>]
-              </entry>
+              <entry>Referenz auf eine Ressource, die den jeweiligen Eigennamen
+								näher spezifiziert [<codeph>"[URI]"</codeph>] </entry>
             </row>
             <row>
               <entry><codeph>orig</codeph> <p outputclass="sg">Doku: <xref
@@ -973,9 +1007,8 @@
             </row>
             <row>
               <entry> <codeph>@ref</codeph> </entry>
-              <entry> Referenz auf eine externe Ressource, die den jeweiligen
-                Eigennamen näher spezifiziert [<codeph>"[URI]"</codeph>]
-              </entry>
+              <entry>Referenz auf eine Ressource, die den jeweiligen Eigennamen
+								näher spezifiziert [<codeph>"[URI]"</codeph>] </entry>
             </row>
             <row>
               <entry morerows="1"><codeph>placeName</codeph> <p outputclass="sg"
@@ -993,9 +1026,8 @@
             </row>
             <row>
               <entry> <codeph>@ref</codeph> </entry>
-              <entry> Referenz auf eine externe Ressource, die den jeweiligen
-                Eigennamen näher spezifiziert [<codeph>"[URI]"</codeph>]
-              </entry>
+              <entry>Referenz auf eine Ressource, die den jeweiligen Eigennamen
+								näher spezifiziert [<codeph>"[URI]"</codeph>] </entry>
             </row>
             <row>
               <entry><codeph>postscript</codeph> <p outputclass="sg">Doku: <xref
@@ -1070,8 +1102,8 @@
                 href="sachkommentar.dita">DTABf3</xref> </p></entry>
               <entry morerows="1">Verweis</entry>
               <entry><codeph>@target</codeph> </entry>
-              <entry> Referenz auf eine externe Ressource
-                [<codeph>"[URI]"</codeph>]</entry>
+              <entry>Referenz auf eine Ressource
+								[<codeph>"[URI]"</codeph>]</entry>
               <entry morerows="1"><xref href="legende.dita#legende/fk07"
                 >phraseStructure</xref></entry>
               <entry morerows="1"><xref href="legende.dita#legende/l03">3
@@ -1263,6 +1295,18 @@
               <entry>Bühnenanweisung</entry>
               <entry namest="col3" nameend="col4"/>
               <entry><xref href="legende.dita#legende/fk03">drama</xref></entry>
+              <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref>
+              </entry>
+            </row>
+          	<row>
+              <entry> <codeph>subst</codeph> <p outputclass="sg">Doku: <xref
+                href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-subst.html"
+                format="html" scope="external">TEI</xref>, <xref
+                href="msSubst.dita">DTABf</xref> </p> </entry>
+              <entry>Ersetzung durch den Autor</entry>
+              <entry namest="col3" nameend="col4">nur in Manuskripten zu verwenden</entry>
+              <entry><xref href="legende.dita#legende/fk12">manuscripts</xref>, <xref
+                href="legende.dita#legende/fk07">phraseStructure</xref></entry>
               <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref>
               </entry>
             </row>

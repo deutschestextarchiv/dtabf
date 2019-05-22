@@ -40,7 +40,7 @@
 
     <pattern id="biblElement">
         <rule context="tei:bibl">
-            <report test="ancestor::tei:quote" role="ERROR">
+            <report test="parent::tei:quote" role="ERROR">
                 [E0003] Element "<name/>" not allowed within element "quote".
             </report>
             <assert test="child::* or child::text()[normalize-space(.)]" role="ERROR">
@@ -53,7 +53,7 @@
     </pattern>
 
     <pattern id="capitalLetterI">
-        <let name="x" value="(//tei:*[contains(@rendition,'#aq')] or //tei:*[contains(@rendition, '#fr')]) and //tei:text//text()[not(ancestor::tei:*[contains(@rendition,'#aq')])][contains(., 'I')]"/>
+        <let name="x" value="(//tei:*[contains(@rendition,'#aq')] or //tei:*[contains(@rendition, '#fr')]) and //tei:text//text()[not(ancestor::tei:*[contains(@rendition,'#aq')])][not(ancestor::tei:note[@type='editorial'])][contains(., 'I')]"/>
         <rule context="//tei:TEI">
             <report test="$x" role="WARNING">
                 [W0004] The document contains capital letter I within Fraktur text. Should be capital letter J? 

@@ -261,6 +261,7 @@
                 <classSpec ident="att.sortable" module="tei" mode="delete" type="atts"/>
                 <classSpec ident="att.source" module="tei" mode="delete" type="atts"/>
                 <classSpec ident="att.spanning" module="tei" mode="delete" type="atts"/>
+            		<classSpec ident="att.textCritical" module="tei" mode="delete" type="atts"/>
                 <classSpec ident="att.timed" module="tei" mode="delete" type="atts"/>
                 <classSpec ident="att.transcriptional" module="tei" mode="change" type="atts">
                     <!-- includes att.written, att.dimensions and other classes -->
@@ -2038,6 +2039,8 @@
                                <valItem ident="DTADirName"/>
                                <valItem ident="PIDCMDI"/>
                                <valItem ident="shelfmark"/>
+                           		 <valItem ident="PPN"/>
+                           		 <valItem ident="DOI"/>
                            </valList>
                        </attDef>
                        <attDef ident="xml:id" mode="delete"/>

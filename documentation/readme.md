@@ -1,5 +1,5 @@
 DTA 'Base Format' (DTABf): Documentation (dtabf.ditamap and referenced files)  
-Version 1.0  
+Version 1.1.0  
 2017-03-01
 
 ---

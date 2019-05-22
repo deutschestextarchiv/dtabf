@@ -156,6 +156,11 @@
                         <entry>Bandangabe bei mehrbändigen Werken</entry>
                         <entry/>
                     </row>
+                		<row>
+                        <entry><codeph>series</codeph> </entry>
+                        <entry>Titel der Reihe</entry>
+                				<entry/>
+                    </row>
                     <row>
                         <entry><codeph>desc</codeph> </entry>
                         <entry>nähere Beschreibungen zur Zusammensetzung bzw. zu den Inhalten des Werkes</entry>

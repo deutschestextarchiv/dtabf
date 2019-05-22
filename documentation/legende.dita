@@ -24,6 +24,7 @@
         <p id="fk09"><b>textStructure:</b> Elemente, die die Funktion oder das Erscheinungsbild von Textpassagen innerhalb des Gesamttextes spezifizieren.</p>
         <p id="fk10"><b>titlepage:</b> Elemente, die Textabschnitte auf der Titelseite eines Werkes beschreiben.</p>
         <p id="fk11"><b>verse:</b> Elemente, die lyrikspezifische Texteinheiten kennzeichnen.</p>
+        <p id="fk12"><b>manuscripts:</b> Elemente, die für Manuskripte spezifische Merkmale kennzeichnen.</p>
       </section>
       <section id="tb-ga">
           <title>Textbereich: Generische Attribute</title>

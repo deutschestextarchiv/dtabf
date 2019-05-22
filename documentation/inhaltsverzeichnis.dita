@@ -8,7 +8,9 @@
       Verzeichniseinträge werden in einer Liste (<codeph>&lt;list&gt;</codeph>)
       organisiert, wobei die jeweiligen Kapitelhinweise in
         <codeph>&lt;item&gt;</codeph>-Elementen, die jeweils zugehörigen
-      Seitenzahlen in <codeph>&lt;ref&gt;</codeph>-Elementen stehen: </p>
+      Seitenzahlen in <codeph>&lt;ref&gt;</codeph>-Elementen stehen. Das jeweilige
+    <codeph>&lt;ref&gt;</codeph>-Element kann mit einem <codeph>@target</codeph>-Attribut 
+    versehen werden, das über die Faksimile-Nummer auf die referenzierte Seite verweist (Level 3).</p>
     <codeblock outputclass="language-xml">&lt;div type="contents"&gt;
   &lt;head&gt;[Titel]&lt;/head&gt;&lt;!-- falls vorhanden --&gt;
   &lt;list&gt;

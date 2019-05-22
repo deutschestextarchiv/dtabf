@@ -22,13 +22,13 @@
   <codeph>&lt;closer&gt;</codeph> wird mit dem Element
   <codeph>&lt;dateline&gt;</codeph> umschlossen. Die Anrede und die Abschlussformel
   werden jeweils mit <codeph>&lt;salute&gt;</codeph> umschlossen. Die Signatur des
-  Empfängers unter einem Brief steht im <codeph>&lt;closer&gt;</codeph> im Element
+  Absenders unter einem Brief steht im <codeph>&lt;closer&gt;</codeph> im Element
   <codeph>&lt;signed&gt;</codeph>. Die Anordnung der Elemente innerhalb des
   <codeph>&lt;opener&gt;</codeph>- bzw. <codeph>&lt;closer&gt;</codeph>-Elements ist
   variabel und orientiert sich an der Vorlage.
 </p>
             <codeblock outputclass="language-xml">&lt;div type="letter"&gt;
-  &lt;head&gt;[Brieftitel]&lt;/head&gt;&lt;!-- sofern vorhanden --&gt;
+  &lt;head&gt;[Brieftitel]&lt;/head&gt; &lt;!-- sofern vorhanden --&gt;
   &lt;opener&gt;&lt;!-- sofern vorhanden --&gt;
     &lt;dateline&gt;[Ort und Datum]&lt;/dateline&gt;
     &lt;salute&gt;[Anrede]&lt;/salute&gt;

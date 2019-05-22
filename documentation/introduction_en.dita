@@ -7,7 +7,7 @@
     <section><title>Introduction</title>
         
 <p>
-  The structural annotation of all DTA texts is done according to the DTA ›base format‹ (DTABf).
+  The structural annotation of all DTA texts is done according to the DTA ›Base Format‹ (DTABf).
   The DTABf was developed in accordance with the P5-Guidelines of the 
   <xref href="http://www.tei-c.org/" format="html">Text Encoding Initiative (TEI)</xref>. Since the TEI Guidelines 
   are offering solutions for a huge amount of tagging requirements and are thus rather extensive 
@@ -56,7 +56,7 @@
         <ul outputclass="embedded">
           <li outputclass="embedded"><xref href="uebersichtHeader.dita" outputclass="nu">Overview of all DTABf-Elements within the <codeph>&lt;teiHeader></codeph> area &#x21D7;</xref></li>
     <li outputclass="embedded"><xref href="uebersichtText.dita" outputclass="nu">Overview of all DTABf-Elements within the  <codeph>&lt;text></codeph>area &#x21D7;</xref></li></ul></li>
-    <li><xref href="http://www.deutschestextarchiv.de/doku/basisformat/vorlage_basisformat.xml" scope="external" format="xml" outputclass="nu">Boilerplate DTABf document &#x21D7;</xref></li>
+    <li><xref href="http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml" scope="external" format="xml" outputclass="nu">Boilerplate DTABf document &#x21D7;</xref></li>
           </ul>
   </section>
 <section>

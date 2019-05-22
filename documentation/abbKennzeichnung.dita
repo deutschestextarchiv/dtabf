@@ -43,5 +43,29 @@
               1890. [Faksimile 49]</xref>
           </i></p>
       </fig></example>
+  	<note type="notice"></note>
+  	<p>Darüber hinaus ist es möglich, eine Abbildung mithilfe des <tt>@facs</tt>-Attributs gezielt 
+  		zu verlinken (Level 3).</p>
+  	<codeblock outputclass="language-xml">&lt;figure facs="[URI]"&gt;
+  &lt;head&gt;[ggf. Titel der Abbildung]&lt;/head&gt;
+  &lt;p&gt;[ggf. Erläuterung zur Abbildung im Text]&lt;/p&gt;
+&lt;/figure&gt;</codeblock>
+  	<example>
+  		<title></title>
+  		<image href="img/drcsjlat.png"/>
+  		<codeblock outputclass="language-xml">&lt;div n="1">
+  &lt;figure xml:id="figure-0022.1">
+    &lt;figure facs="figure-0022-1.jpg"/>
+    &lt;p rendition="#aq">DORICA.&lt;/p>
+    &lt;p rendition="#i">20 Schuchg l 6. Puncten&lt;/p>
+    &lt;p rendition="#i">3 Schu: 8 zol gl 6.&lt;/p>
+    &lt;p rendition="#i">Scala&lt;lb/>
+13 Schu: 6 zol&lt;/p>
+  &lt;/figure>
+&lt;/div>
+  		</codeblock>
+  		<p><i>Quelle: <xref href="http://www.deutschestextarchiv.de/sandrart_academie0101_1675/38" format="html" scope="external">Sandrart, Joachim von: L’Academia Todesca. della Architectura, Scultura &amp; Pittura: Oder Teutsche Academie der Edlen Bau- Bild- und Mahlerey-Künste. Bd. 1,1. Nürnberg, 1675. [Faksimile 38]</xref>
+          </i></p>
+  	</example>
   </body>
 </topic>

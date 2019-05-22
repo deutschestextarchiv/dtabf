@@ -20,10 +20,10 @@
             <codeph>&lt;l&gt;[...]&lt;/l&gt;</codeph> ausgezeichnet. Ein Vers
             kann dabei über einen Zeilenumbruch hinausreichen. </p>
         <codeblock outputclass="language-xml">&lt;lg type="poem"&gt;
-  &lt;head&gt;[Titel]&lt;/head&gt; &lt;!-- sofern vorhanden --&gt;
+  &lt;head&gt;[Titel]&lt;/head&gt;&lt;lb/&gt; &lt;!-- sofern vorhanden --&gt;
   &lt;lg n="[Strophennummer]"&gt; &lt;!-- sofern kein einstrophiges Gedicht --&gt;
-    &lt;l&gt;[Vers]&lt;/l&gt;
-    &lt;l&gt;[Vers]&lt;/l&gt;
+    &lt;l&gt;[Vers]&lt;/l&gt;&lt;lb/&gt;
+    &lt;l&gt;[Vers]&lt;/l&gt;&lt;lb/&gt;
   &lt;/lg&gt;
 &lt;/lg&gt;</codeblock>
         <example> <title>Kodierung von Gedichten in Prosawerken</title> <fig>

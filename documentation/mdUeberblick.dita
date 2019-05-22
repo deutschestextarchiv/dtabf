@@ -40,9 +40,9 @@
         &lt;orgName ref="[URL, z.B. Link zum GND-Datensatz]"&gt;[Anbieter des zugrundeliegenden Volltextes (Organisation/Institution/Projektgruppe)]&lt;/orgName&gt; &lt;!-- Angabe von @ref fakultativ--&gt;
         &lt;resp&gt;
           &lt;note type="remarkResponsibility"&gt;[Art der Verantwortlichkeit]&lt;/note&gt;
+          &lt;note type="remarkRevisionDTA"&gt;[Hinweise auf mögliche Änderungen am Volltext im DTA]&lt;/note&gt;
           &lt;ref target="[Verweis auf eine externe Quelle]"/&gt; &lt;!-- ggf. mehrfach zu verwenden --&gt;
           &lt;date type="importDTA"&gt;[Datum der Integration der zugrundeliegenden Quelle in das DTA]&lt;/date&gt;
-          &lt;note type="remarkRevisionDTA"&gt;[Hinweise auf mögliche Änderungen am Volltext im DTA]&lt;/note&gt;
         &lt;/resp&gt;
       &lt;/respStmt&gt;
     &lt;/titleStmt&gt;
@@ -125,6 +125,9 @@
           &lt;date type="firstPublication"&gt;[Erscheinungsjahr der Erstausgabe]&lt;/date&gt; &lt;!-- falls bekannt und abweichend vom Erscheinungsjahr --&gt;
           &lt;date type="creation"&gt;[Entstehungsjahr des Textes]&lt;/date&gt; &lt;!-- falls bekannt und abweichend vom Erscheinungsjahr --&gt;
         &lt;/publicationStmt&gt;
+        &lt;notesStmt&gt;
+          &lt;note type="remarkSource"&gt;[ggf. Kommentar zur zugrundeliegenden Ausgabe]&lt;/note&gt;
+        &lt;/notesStmt&gt;
         &lt;seriesStmt&gt; &lt;!-- ggf. Angabe zur übergeordneten Publikation --&gt;
           &lt;title level="j" type="main"&gt;[Titel der Zeitschrift]&lt;/title&gt;
           &lt;!-- auch level="s" für übergeordnete Reihe (series) und type="sub" für Untertitel möglich --&gt;
@@ -132,9 +135,6 @@
           &lt;biblScope unit="issue"&gt;[Heft bei Zeitschriften]&lt;/biblScope&gt;
           &lt;biblScope unit="pages"&gt;[Seitenangabe]&lt;/biblScope&gt;
         &lt;/seriesStmt&gt;
-        &lt;notesStmt&gt;
-          &lt;note type="remarkSource"&gt;[ggf. Kommentar zur zugrundeliegenden Ausgabe]&lt;/note&gt;
-        &lt;/notesStmt&gt;
       &lt;/biblFull&gt;
       &lt;msDesc xml:id="[ID]" corresp="[ID des zugehörigen availability-Elements]"&gt; &lt;!-- ggf. mehrfach zu verwenden --&gt;
         &lt;msIdentifier&gt;

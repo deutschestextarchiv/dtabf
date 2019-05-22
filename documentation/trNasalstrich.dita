@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="trNasalstrich">
-  <title>Kürzungsstriche</title>
+  <title>Abbreviaturen</title>
 <body>
-<p>
-  Kürzungsstriche (Balken oder geschlängelte Linie über Buchstaben als Substituenten für ausgelassene Zeichen, Nasalstrich) werden mittels des Zeichens <tt>U+0303, COMBINING TILDE</tt> transkribiert.
-</p>
+	<section>
+		<title>Horizontale Kürzungsstriche</title>
+		<p>Horizontale Kürzungsstriche (Balken oder geschlängelte Linie über Buchstaben als Substituenten für ausgelassene Zeichen, Nasalstrich) werden mittels des Zeichens <tt>U+0303, COMBINING TILDE</tt> transkribiert.</p>
 
 <table>
   <tgroup cols="2">
@@ -27,5 +27,32 @@
     </tbody>
   </tgroup>
 </table>
+	</section>
+	<section>
+		<title>Vertikale Kürzungsstriche</title>
+		<p>Vertikale Kürzungsstriche werden in der Regel mit dem Unicode-Zeichen <tt>U+0315, COMBINING COMMA ABOVE RIGHT</tt> wiedergegeben</p>
+		<table>
+  <tgroup cols="2">
+    <thead>
+      <row>
+    <entry>Vorlage</entry>
+    <entry>Transkription</entry>
+  </row>
+    </thead>
+    <tbody>
+      <row>
+    <entry>
+		<image href="img/vertkstr.png" height="3em"/></entry>
+		<entry><codeph>Daher d&#x315; Pre-</codeph></entry>
+      </row>
+    	<row>
+    		<entry><image href="img/drndrist.png"/></entry>
+    		<entry><codeph>darund&#x315;</codeph> i&#x017f;t</entry>
+    	</row>
+    </tbody></tgroup></table>
+		<note type="tip">Zur Expansion von Abkürzungen s. Kapitel <xref
+        href="abkuerzung.dita">Auflösung von Abkürzungen</xref>.
+    </note>
+	</section>
 </body>
 </topic>

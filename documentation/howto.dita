@@ -3,9 +3,8 @@
 <topic id="HowTo">
   <title>Hilfen zur Benutzung des DTA-Basisformats</title>
   <titlealts><navtitle>How to</navtitle></titlealts>
-    <!--<abstract>Das folgende Kapitel bietet eine Einführung in die Nutzung des DTABf-Schemas, der DTABf-Dokumentation
-    sowie hilfreicher Tools und Anwendungen.</abstract>-->
   <body>
-    <p></p>
+    <p>Das folgende Kapitel bietet eine Einführung in die Nutzung des DTABf-Schemas, der DTABf-Dokumentation
+    sowie hilfreicher Tools und Anwendungen.</p>
   </body>
 </topic>
