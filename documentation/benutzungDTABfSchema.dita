@@ -47,7 +47,7 @@
   &lt;text&gt;[Text]&lt;/text&gt;
 &lt;/TEI&gt;</codeblock><!--A BR tag was used here in the original source.-->
     <p>Eine <i>Vorlagedatei</i>, die für die Erarbeitung DTA-Basisformat-kompatibler TEI-Dateien zugrunde gelegt werden kann, findet sich unter
-      <xref href="http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml" format="html">http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml</xref>.
+      <xref href="http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml" scope="external" format="html">http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml</xref>.
     </p>
           <p>Der kommerzielle XML-Editor <b><xref href="http://www.oxygenxml.com/" scope="external" format="html">oXygen</xref></b> unterstützt die Einbindung eines Schemas in eine XML-Datei mit entsprechenden Oberflächenfunktionen:</p>
           <fig><image href="img/schemaoxygen.png" scale="60"></image><p>Einbinden des DTABf-Schemas in ein XML-Dokument im oXygen-XML-Editor</p></fig>

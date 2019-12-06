@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_1">
 <title>Auszeichnung von Zeitungen und Periodika</title>
          <body>
-                     </body>
+         	<section>
+         		<title>Themen</title>
+         		<ul>
+         			<li><xref href="jAllg.dita" scope="local">Zeitungen Grundregeln</xref></li>
+<li><xref href="jFront.dita">Einleitende Textstücke</xref></li>
+<li><xref href="jBody.dita">Textkörper</xref></li>
+<li><xref href="jBack.dita" scope="local">Abschließende Textstücke</xref></li>
+<li><xref href="jBeilagen.dita" scope="local">Beilagen</xref></li></ul>
+         	</section>
+         </body>
       </topic>

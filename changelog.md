@@ -1,6 +1,5 @@
 Changelog
 ===
-
 # Version 1.1.0
 ## Dokumentation 
 * [howto.dita](documentation/howto.dita): Erläuterung hinzugefügt
@@ -22,6 +21,10 @@ Changelog
 * [introduction_en.dita](documentation/introduction_en.dita): falsche Verlinkung Vorlagedatei korrigiert; cf. [#47](../../issues/47)
 * [abbKennzeichnung.dita](documentation/abbKennzeichnung.dita): `@facs` in `<figure>` dokumentiert; cf. [#65](../../issues/65)
 * [absatz.dita](documentation/absatz.dita): Kodierungsbeispiel korrigiert; cf. [#13](../../issues/13) 
+* [leitlinien.dita](documentation/leitlinien.dita): neu veröffentlicht
+* [steuerungsgruppe.dita](documentation/steuerungsgruppe.dita): neu veröffentlicht
+* [impressum.dita](documentation/impressum.dita): Steuerungsgruppe ergänzt
+* allgemein: Zitierempfehlung im Footer ergänzt; zugehörige Themen bei übergeordneten Topics in den Sektionen "Formal", "Inhaltlich", "Spezial" ergänzt
 
 ## Schema
 ### Update auf TEI 3.4.0
@@ -31,6 +34,7 @@ Changelog
 
 ### [DTABf_all](schema/basisformat_all.odd):
 * `<div>` erhält neue `@type`-Werte `"jVarious"` und `"jLocal"` für Zeitungen (Vermischtes und Lokalnachrichten)
+* Typo in `<div>`-Typen-Legende behoben
 
 ### [Schematron](schema/schematron):
 * Ticket [#40](../../issues/40) behoben: Regel prüft nun, ob `<quote>` "parent" von `<bibl>` ist (nicht "ancestor") (E0003)

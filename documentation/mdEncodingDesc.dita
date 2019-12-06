@@ -8,8 +8,8 @@
       <i>Encoding Description</i> (<codeph>&lt;encodingDesc&gt;</codeph>) festgehalten.</p>
     <p>Dabei beinhaltet das 
       Unterelement <i>Editorial Description</i> Angaben zur Erfassungsart für den jeweiligen Text sowie 
-      zum Grad der Konformität des Textes mit den DTA-Richtlinien (<xref href="http://www.deutschestextarchiv.de/doku/richtlinien" format="html">DTA-Transkriptionsrichtlinien</xref> und 
-      <xref href="http://www.deutschestextarchiv.de/doku/basisformat" format="html">DTA-Basisformat</xref>).
+      zum Grad der Konformität des Textes mit den DTA-Richtlinien (<xref href="http://www.deutschestextarchiv.de/doku/richtlinien" scope="external" format="html">DTA-Transkriptionsrichtlinien</xref> und 
+      <xref href="http://www.deutschestextarchiv.de/doku/basisformat" scope="external" format="html">DTA-Basisformat</xref>).
     </p>
     <p>
       Das Unterelement <i>Tags Declaration</i> enthält in mehreren <codeph>&lt;rendition&gt;</codeph>-Elementen 

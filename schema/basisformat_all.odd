@@ -615,7 +615,7 @@
                                <valItem ident="fsBibleVerse"><desc>(Leichenpredigt:) Leichtext</desc></valItem>
                                <valItem ident="fsBurial"><desc>(Leichenpredigt:) Beisetzungspredigt/~rede</desc></valItem>
                                <valItem ident="fsCalligram"><desc>(Leichenpredigt:) Figurengedicht</desc></valItem>
-                               <valItem ident="fsCondolence"><desc>v Kondolenzschreiben</desc></valItem>
+                               <valItem ident="fsCondolence"><desc>(Leichenpredigt:) Kondolenzschreiben</desc></valItem>
                                <valItem ident="fsConsolationLetter"><desc>(Leichenpredigt:) Trostbrief</desc></valItem>
                                <valItem ident="fsCurriculumVitae"><desc>(Leichenpredigt:) Lebenslauf</desc></valItem>
                                <valItem ident="fsEpicedia"><desc>(Leichenpredigt:) Epicedien (übergeordnet)</desc></valItem>

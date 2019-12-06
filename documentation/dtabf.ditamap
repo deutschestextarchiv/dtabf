@@ -38,16 +38,17 @@
     </frontmatter>
     <part href="einfuehrung.dita">
       <topicref href="ziel.dita"/>
-        <topicref href="schema.dita"/>
-    <topicref href="publikationen.dita"/>
-      <topicref href="howto.dita">
-      <topicref href="benutzungDTABfSchema.dita"/>
-        <topicref href="zurDokumentation.dita"/>
-        <topicref href="hilfreicheTools.dita"/>
-        <topicref href="grundstrukturDokument.dita"/>
-    </topicref>
+			<topicref href="steuerungsgruppe.dita"/>
+			<topicref href="leitlinien.dita"/>
+	    <topicref href="schema.dita"/>
+	    <topicref href="publikationen.dita"/>
+	      <topicref href="howto.dita">
+	      <topicref href="benutzungDTABfSchema.dita"/>
+	        <topicref href="zurDokumentation.dita"/>
+	        <topicref href="hilfreicheTools.dita"/>
+	        <topicref href="grundstrukturDokument.dita"/>
+	    </topicref>
         <topicref href="introduction_en.dita"/>
-		<topicref href="steuerungsgruppe.dita"/>
     </part>
   
     <part href="metadaten.dita">
@@ -189,9 +190,9 @@
                 <topicref href="einrueckung.dita"/>
                 <topicref href="typogrSatzzeichen.dita"/>
                 <topicref href="schriftart.dita">
+						<topicref href="schriftartAllg.dita"/>
                     <topicref href="frakturwechsel.dita"/>
                     <topicref href="wechselAntiqua.dita"/>
-                        <topicref href="schriftartAllg.dita"/>
                 </topicref>
             </topicref>
             </topicref>

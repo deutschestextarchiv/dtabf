@@ -28,7 +28,23 @@
     <section>
       <title>Bearbeiter und Verantwortliche</title>
         <ul>
-        <li>Die Weiterentwicklung des Formats obliegt der DTABf-Steuerungsgruppe: <xref href="http://www.bbaw.de/die-akademie/mitarbeiter/mschulz" format="html" scope="external">Matthias Boenig</xref>, <xref href="https://www.ghi-dc.org/ghi-staff/research-service/daniel-burckhardt.html" format="html" scope="external">Daniel Burckhardt</xref>, <xref href="http://www.bbaw.de/die-akademie/mitarbeiter/dumont" format="html" scope="external">Stefan Dumont</xref>, <xref href="http://www.bbaw.de/die-akademie/mitarbeiter/geyken" format="html" scope="external">Alexander Geyken</xref>, <xref href="http://textloop.de/werdegang/" format="html" scope="external">Martina Gödel</xref>, <xref href="http://www.bbaw.de/die-akademie/mitarbeiter/haaf" format="html" scope="external">Susanne Haaf</xref>, <xref href="http://www.bbaw.de/die-akademie/mitarbeiter/herold" format="html" scope="external">Axel Herold</xref>, <xref href="http://www.bbaw.de/die-akademie/mitarbeiter/thomas" format="html" scope="external">Christian Thomas</xref></li>
+        <li>Weiterentwicklung des Formats: <xref href="steuerungsgruppe.dita" scope="local">DTABf-Steuerungsgruppe</xref>
+					(<xref href="http://www.bbaw.de/die-akademie/mitarbeiter/mschulz"
+					format="html" scope="external">Matthias Boenig</xref>, <xref
+					href="https://www.ghi-dc.org/ghi-staff/research-service/daniel-burckhardt.html"
+					format="html" scope="external">Daniel Burckhardt</xref>, <xref
+					href="http://www.bbaw.de/die-akademie/mitarbeiter/dumont"
+					format="html" scope="external">Stefan Dumont</xref>, <xref
+					href="http://www.bbaw.de/die-akademie/mitarbeiter/geyken"
+					format="html" scope="external">Alexander Geyken</xref>, <xref
+					href="http://textloop.de/werdegang/" format="html" scope="external"
+					>Martina Gödel</xref>, <xref
+					href="http://www.bbaw.de/die-akademie/mitarbeiter/haaf" format="html"
+					scope="external">Susanne Haaf</xref>, <xref
+					href="http://www.bbaw.de/die-akademie/mitarbeiter/herold"
+					format="html" scope="external">Axel Herold</xref>, <xref
+					href="http://www.bbaw.de/die-akademie/mitarbeiter/thomas"
+					format="html" scope="external">Christian Thomas)</xref></li>
         <li>Schema, Dokumentation &amp; Pflege des Formats: Susanne Haaf</li>
         <li>Enwicklung des Formats (bis 2017): Matthias Boenig, Alexander Geyken, Susanne Haaf, Christian Thomas, Frank Wiegand</li>
         <li>Vorarbeiten (bis 2010): Oliver Duntze, Christiane Fritze, Alexander Geyken</li>

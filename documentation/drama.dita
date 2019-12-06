@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_39">
 <title>Dramen</title>
          <body>
+         	<section>
+         		<title>Themen</title>
+         		<ul>
+         			<li><xref href="drFiguren.dita" scope="local">Figurenaufstellung</xref></li>
+    <li><xref href="drAktSzene.dita" scope="local">Akte und Szenen</xref></li>
+    <li><xref href="drBuehnenanweisung.dita" scope="local">Bühnenanweisungen</xref></li>
+    <li><xref href="drSprechakt.dita">Sprechakte</xref></li>
+         		</ul>
+         	</section>
                      </body>
       </topic>

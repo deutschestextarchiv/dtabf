@@ -2,5 +2,15 @@
 <title>Einleitende Informationen zum Buch</title>
     <titlealts><navtitle>Einleitende Informationen</navtitle></titlealts>
          <body>
-                     </body>
+         	<section>
+         		<title>Themen</title>
+         		<ul>
+    <li><xref href="frontAllg.dita" scope="local">Einleitende Buchteile Grundstruktur</xref></li>
+    <li><xref href="titelblatt.dita" scope="local">Titelblatt</xref></li>
+    <li><xref href="widmung.dita" scope="local">Widmungen</xref></li>
+    <li><xref href="epigraph.dita" scope="local">Epigraphe</xref></li>
+    <li><xref href="inhaltsverzeichnis.dita" scope="local">Inhaltsverzeichnis</xref></li>
+         		</ul>
+         	</section>
+         </body>
       </topic>
