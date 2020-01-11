@@ -1,24 +1,29 @@
-DTA 'Base Format' (DTABf): Schema and Documentation  
-Version 1.1.0  
-2020-01-11 
+DTA 'Base Format' (DTABf): Documentation (dtabf.ditamap and referenced files)  
+Version 1.0  
+2020-01-11
 
 ---
-# Introduction and HowTo 
+# Introduction and HowTo
 
-These are the source files of the DTA 'Base Format' schema and documentation (version 1.1.0). The DTA 'Base Format' (DTABf) is a TEI 
-format for the annotation of digitized historical texts. It is the annotation basis for all texts published on the Deutsches Textarchiv (DTA) platform [1].
+These are the source files of the DTA 'Base Format' documentation 
+(version 1.0, English version). The DTA 'Base Format' (DTABf) is a 
+TEI format for the annotation of digitized historical texts. 
+It is the annotation basis for all texts published on the Deutsches 
+Textarchiv (DTA) platform [1].
 
-To explore the DTABf documentation see [the official website](http://www.deutschestextarchiv.de/doku/basisformat). 
-The DTABf documentation also contains information on how to access the [RNG schemas](http://www.deutschestextarchiv.de/doku/basisformat/schema.html) and how to use them.
+To explore the DTABf documentation see the official website:
+http://www.deutschestextarchiv.de/doku/basisformat
 
-For elaborate information on the purpose of the format and constraints for its further development see the [DTABf Guiding Principles](http://www.deutschestextarchiv.de/doku/basisformat/leitlinien.html).
-
-This repository also contains [instructions on the conversion](dtabf/documentation/export/webhelp_responsive/howto_oXygen.txt) of the DTABf-documentation source files in DITA to Webhelp responsive output as well as [derivatives for ODD chaining](dtabf/schema/dist).
+For instructions on the conversion of the DTABf-documentation 
+source files in DITA to Webhelp responsive output see 
+./documentation/export/webhelp_responsive/howto_oXygen.txt
 
 ---
 # Publishers and Responsibilities
 
-PUBLISHER: Deutsches Textarchiv, Berlin-Brandenburg Academy of Sciences and Humanities, Jaegerstr. 22/23, 10117 Berlin, Germany (http://www.deutschestextarchiv.de).
+PUBLISHER: Deutsches Textarchiv, Berlin-Brandenburg Academy of 
+Sciences and Humanities, Jaegerstr. 22/23, 10117 Berlin, Germany
+(http://www.deutschestextarchiv.de)
 
 *	FURTHER DEVELOPMENT OF FORMAT: DTABf Steering Committee (Matthias Boenig, Daniel Burckhardt, Stefan Dumont, Alexander Geyken, Martina Gödel, Susanne Haaf, Axel Herold, Christian Thomas)
 *	SCHEMA, DOCUMENTATION, FORMAT MAINTENANCE: Susanne Haaf
@@ -32,10 +37,11 @@ URL: http://www.deutschestextarchiv.de/doku/basisformat
 
 ## Primary Copyright Information
 
-All files of the DTABf documentation and schema are distributed 
-under a CC BY-SA 3.0 DE license (Creative Commons Namensnennung - 
+All files of the DTABf documentation are distributed under a 
+CC BY-SA 3.0 DE license (Creative Commons Namensnennung - 
 Weitergabe unter gleichen Bedingungen 3.0 Deutschland). 
-The license text is available on the [Creative Commons website](https://creativecommons.org/licenses/by-sa/3.0/de/legalcode). 
+The license text is available at 
+https://creativecommons.org/licenses/by-sa/3.0/de/legalcode.
 
 For all third party resources used by the DTABf documentation,
 license restrictions of the respective providers apply and
@@ -52,7 +58,7 @@ https://creativecommons.org/licenses/by-sa/3.0/de/legalcode.
 The DTABf is based on the P5 guidelines of the Text Encoding 
 Initiative (TEI) [2]. The TEI P5 guidelines were only reduced or 
 tightened, never extended. Thus, the DTABf is fully compliant to 
-TEI P5.  
+TEI P5. 
 
 The TEI P5 guidelines and adjacent software are distributed under 
 the Creative Commons Attribution 3.0 Unported License 

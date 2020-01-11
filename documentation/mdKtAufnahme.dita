@@ -23,7 +23,7 @@
           <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. Bd. <i>Bandnummer</i>: <i>ggf. Bandtitel</i>. <i>Druckort</i>, <i>Jahr</i>.</dd>
       </dlentry>
       <dlentry>
-        <dt>Band eines Reihe:</dt>
+        <dt>Band einer Reihe:</dt>
         <dd>
           <i>Autorname</i>, <i>Autorvorname</i>: <i>Kurztitel</i>. <i>Druckort</i>, <i>Jahr</i> (= <i>Reihentitel</i>, Bd. <i>Bandnummer</i>).
         </dd>

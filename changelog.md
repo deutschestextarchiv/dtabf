@@ -1,6 +1,6 @@
 Changelog
 ===
-# Version 1.1.0
+# Version 1.1.0 vom 10.01.2020
 ## Dokumentation 
 * [howto.dita](documentation/howto.dita): Erläuterung hinzugefügt
 * [introduction_en.dita](documentation/introduction_en.dita): Grammatikfehler verbessert
@@ -24,22 +24,49 @@ Changelog
 * [leitlinien.dita](documentation/leitlinien.dita): neu veröffentlicht
 * [steuerungsgruppe.dita](documentation/steuerungsgruppe.dita): neu veröffentlicht
 * [impressum.dita](documentation/impressum.dita): Steuerungsgruppe ergänzt
-* allgemein: Zitierempfehlung im Footer ergänzt; zugehörige Themen bei übergeordneten Topics in den Sektionen "Formal", "Inhaltlich", "Spezial" ergänzt
+* [mdPubStmtAllg.dita](documentation/mdPubStmtAllg.dita): neue `<idno>`-Werte dokumentiert
+* [mdSdMsDesc.dita](documentation/mdSdMsDesc.dita): neue `<idno>`-Werte dokumentiert
+* [mdKtAufnahme.dita](documentation/mdKtAufnahme): Typo verbessert
+* allgemein: Zitierempfehlung im Footer ergänzt; zugehörige Themen bei übergeordneten Topics in den Sektionen "Transkription", "Metadaten", "Formal", "Inhaltlich", "Spezial" ergänzt
 
 ## Schema
+
+### Update auf TEI 3.5.0
+* keine Änderungen notwendig
+
 ### Update auf TEI 3.4.0
 * `att.textCritical` entfernt
 * `att.global.source` entfernt
 * `data.count` und `data.pointer` werden `teidata.count` und `teidata.pointer`
 
+### Update auf TEI 3.2.0
+* `att.global.source` entfernt
+* `@when` in `<title>` entfernt 
+
+### Sonstige Anpassungen
+* `"data.count"` &rarr; `"teidata.count"`
+* `"data.pointer"` &rarr; `"teidata.pointer"`
+* `"tei.global.source"` eliminiert
+* `@key` in `<publisher>` eliminiert
+* `@status` in `<availability>` entfernt
+* `@sameAs` in `<channel>` entfernt
+
 ### [DTABf_all](schema/basisformat_all.odd):
-* `<div>` erhält neue `@type`-Werte `"jVarious"` und `"jLocal"` für Zeitungen (Vermischtes und Lokalnachrichten)
+* `<div>` erhält neue `@type`-Werte `"jVarious"`, `"jCulturalNews"` und `"jLocal"` für Zeitungen (Vermischtes, Kulturnachrichten und Lokalnachrichten)
 * Typo in `<div>`-Typen-Legende behoben
+* Tickets [#68](../../issues/68) und [#76](../../issues/76) gelöst: `<idno>`erhält neue `@type`-Werte `"PPN"`, `"VD"`, `"URLIIIF"`, `"DOI"`
+* Ticket [#59](../../issues/59) gelöst: Wert `DTACorpusPublisher` für `//teiHeader//editor/@corresp` und `//teiHeader//publisher/@xml:id` optional
+* Update des DTABf-teiHeader für CMDI 1.2: added `<abstract>`, `<textDesc>` in `header` module, added module `corpus` with `<channel>`, `<channel>` with `@mode="w"` (Ticket [#6](../../issues/6) )
+* Fehler behoben: `@type` in `<title> ist wieder "required"
+* Unschönheiten am ODD: Elementspezifikationen der Header-Elemente `<abstract>`, `<channel>`, `<typeDesc>` von den Body- zu den Header-Elementen sortiert; Typos behoben
 
 ### [Schematron](schema/schematron):
-* Ticket [#40](../../issues/40) behoben: Regel prüft nun, ob `<quote>` "parent" von `<bibl>` ist (nicht "ancestor") (E0003)
-* Ticket [#10](../../issues/10) behoben: Majuskel I wird in `<note type="editorial"/>` nicht mehr beanstandet (W0004)
+* Ticket [#40](../../issues/40) gelöst: Regel prüft nun, ob `<quote>` "parent" von `<bibl>` ist (nicht "ancestor") (E0003)
+* Ticket [#10](../../issues/10) gelöst: Majuskel I wird in `<note type="editorial"/>` nicht mehr beanstandet (W0004)
 
+## Repository
+* new "dist" directory for derivatives of ODD chaining
+* new "scripts" directory for scripts and software useful in the DTABf context
 
 # Version 1.0 vom 01.03.2017
 * Initial commit

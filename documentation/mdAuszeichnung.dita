@@ -2,8 +2,18 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_ahh_5rp_d5">
   <title>Auszeichnung der Metadaten</title>
-    <!--<abstract>Im folgenden Kapitel werden die Richtlinien für die Auszeichnung der Metadaten beschrieben.</abstract>-->
+    
   <body>
-    <p></p>
+  	<p>Im folgenden Kapitel werden die Richtlinien für die Auszeichnung der Metadaten beschrieben.</p>
+    <section>
+    	<title>Themen</title>
+    	<ul>
+    		<li><xref href="mdAllg.dita">Metadaten Grundstruktur</xref></li>
+    		<li><xref href="mdBiblAngaben.dita">File Description</xref></li>
+    		<li><xref href="mdEncodingDesc.dita">Encoding Description</xref></li>
+    		<li><xref href="mdProfileDesc.dita">Profile Description</xref></li>
+    		<li><xref href="mdUeberblick.dita">Überblick TEI-Header</xref></li>
+    	</ul>
+    </section>
   </body>
 </topic>

@@ -25,19 +25,14 @@
       das Attribut <codeph>@type</codeph> dabei annehmen:
     </p>
     <ul>
-      
-      <li>
-        <codeph>"shelfmark"</codeph>: Signatur der physischen Textquelle;</li>
-      
-      <li>
-        <codeph>"URLCatalogue"</codeph>:URL der Katalogaufnahme, in welchem das zugrundeliegende Exemplar verzeichnet ist;</li>
-      
-      <li>
-        <codeph>"URLImages"</codeph>: URL der der Textdigitalisierung zugrundeliegenden Bilddateien;</li>
-      
-      <li>
-        <codeph>"URN"</codeph>: URN der der Textdigitalisierung zugrundeliegenden Bilddateien.</li>
-      
+    	<li><codeph>"shelfmark"</codeph>: Signatur der physischen Textquelle;</li>
+      <li><codeph>"URLCatalogue"</codeph>:URL der Katalogaufnahme, in welchem das zugrundeliegende Exemplar verzeichnet ist;</li>
+    	<li><codeph>"URLImages"</codeph>: URL der der Textdigitalisierung zugrundeliegenden Bilddateien;</li>
+    	<li><codeph>"URN"</codeph>: URN der der Textdigitalisierung zugrundeliegenden Quelle.</li>
+    	<li><codeph>"PPN"</codeph>: PPN (Pica-Produktionsnummer) der der Textdigitalisierung zugrundeliegenden Quelle.</li>
+    	<li><codeph>"EPN"</codeph>: EPN (Exemplar-Produktionsnummer) der der Textdigitalisierung zugrundeliegenden Quelle.</li>
+    	<li><codeph>"URLIIIF"</codeph>: URL des IIIF-Manifests der der Textdigitalisierung zugrundeliegenden Bilddateien.</li>
+    	<li><codeph>"VD"</codeph>: VD-Nummer der der Textdigitalisierung zugrundeliegenden Quelle.</li>
     </ul>
     <note type="attention">Als Adressen zur Identifikation der Quelle sollten Persistente Identifier (PIDs) verwendet werden, 
       um zu gewährleisten, dass die Quelle langfristig über die angegebene Adresse erreichbar ist.

@@ -4,7 +4,14 @@
   <title>Die Titelangaben innerhalb der <i>File Description</i> <codeph>(//fileDesc/titleStmt)</codeph></title>
     <titlealts><navtitle>Title Statement</navtitle></titlealts>
   <body>
-    <p>
-    </p>
+    <section>
+    	<title>Themen</title>
+    	<ul>
+    		<li><xref href="mdTitleStmtAllg.dita">Title Statement Grundstruktur</xref></li>
+    		<li><xref href="mdAuthorEditor.dita">Author und Editor</xref></li>
+    		<li><xref href="mdPersName.dita">Personal Name</xref></li>
+    		<li><xref href="mdRespStmt.dita">Responsibility Statement</xref></li>
+    </ul>
+    	</section>
   </body>
 </topic>

@@ -5,6 +5,7 @@
         <fileDesc>
             <titleStmt>
                 <title type="main">ODD file for the DTA 'Base Format' for printed texts (DTABf)</title>
+            		<title type="sub">Version 1.1.0</title>
                 <editor corresp="#DTACorpusPublisher">
                     <persName ref="http://d-nb.info/gnd/115266127"><surname>Geyken</surname><forename>Alexander</forename></persName>
                     <persName ref="http://d-nb.info/gnd/1018099549"><surname>Haaf</surname><forename>Susanne</forename></persName>
@@ -17,6 +18,15 @@
                     <persName ref="http://d-nb.info/gnd/1018099549"><surname>Haaf</surname><forename>Susanne</forename></persName>
                     <resp>Creation of the DTABf ODD; Maintenance and updates of the DTABf components (ODD, RNG, documentation)</resp>
                 </respStmt>
+            		<respStmt>
+            			<resp>Further development of the format</resp>
+            			<orgName>DTABf Steering Committee</orgName>
+            			<persName>Matthias Boenig</persName><persName>Daniel Burckhardt</persName><persName>Stefan Dumont</persName><persName>Alexander Geyken</persName><persName>Martina Gödel</persName><persName>Susanne Haaf</persName><persName>Axel Herold</persName><persName>Christian Thomas</persName>
+            		</respStmt>
+            	<respStmt>
+            		<resp>Format development until 2017</resp>
+            		<persName>Matthias Boenig</persName><persName>Alexander Geyken</persName><persName>Susanne Haaf</persName><persName>Christian Thomas</persName><persName>Frank Wiegand</persName>
+            	</respStmt>
             </titleStmt>
             <publicationStmt>
                 <publisher xml:id="DTACorpusPublisher">
@@ -55,7 +65,7 @@
         <body>
             <p>This is the TEI Customization for the DTA 'base format', used by the DFG Project
                 Deutsches Textarchiv (The German Text Archive).</p>
-            <schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="path/to/file/basisformat_all.xml">
+        	<schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="/path/to/file/basisformat_all.xml">
                 <!-- required modules -->
                 <moduleRef key="core" except="add del unclear"/>
                 <moduleRef key="header" except="handNote"/>

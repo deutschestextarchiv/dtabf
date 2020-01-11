@@ -37,6 +37,8 @@
           <li>Download der TCF-Fassung (<codeph>"URLTCF"</codeph>)</li>
           
           <li>Handle-PID des CMDI-Metadatensatzes (<codeph>"PIDCMDI"</codeph>)</li>
+        	
+        	<li>DOI der digitalen Ausgabe (<codeph>"DOI"</codeph>)</li>
           
         </ul>
         
@@ -78,6 +80,7 @@
     &lt;idno type="URLCAB"&gt;[URL zum Download der CAB-Fassung der DTA-Publikation]&lt;/idno&gt;
     &lt;idno type="URLTCF"&gt;[URL zum TCF-Download der DTA-Publikation]&lt;/idno&gt;
     &lt;idno type="PIDCMDI"&gt;[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]&lt;/idno&gt;
+    &lt;idno type="DOI"&gt;[DOI der digitalen Ausgabe]&lt;/idno&gt;
   &lt;/idno&gt;
 &lt;/publicationStmt&gt;</codeblock>
   </body>

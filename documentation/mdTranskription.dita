@@ -3,10 +3,17 @@
 <topic id="topic_onq_jg2_qs">
   <title>Transkriptionsrichtlinien für die Aufnahme von Metadaten</title>
     <titlealts><navtitle>Transkriptionsrichtlinien Metadaten</navtitle></titlealts>
-    <!--<abstract>Um die Einheitlichkeit der erfassten Metadaten zu gewährleisten, werden im 
-          Folgenden ausführliche Richtlinien für die Erfassung (Transkription) von 
-          Metadaten entsprechend dem DTA-Basisformat bereitgestellt.</abstract>-->
   <body>
-      <p></p>
+  	<p>Um die Einheitlichkeit der erfassten Metadaten zu gewährleisten, werden im 
+  		Folgenden ausführliche Richtlinien für die Erfassung (Transkription) von 
+  		Metadaten entsprechend dem DTA-Basisformat bereitgestellt.</p>
+      <section>
+      	<title>Themen</title>
+      	<ul>
+      		<li><xref href="mdVorlagentreue.dita">Vorlagentreue</xref></li>
+      		<li><xref href="mdNormalisierungen.dita">Normalisierungen</xref></li>
+      		<li><xref href="mdBesonderheitenErfassung.dita">Besonderheiten der Metadatenerfassung</xref></li>
+      	</ul>
+      </section>
   </body>
 </topic>
