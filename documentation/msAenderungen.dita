@@ -3,6 +3,14 @@
 <topic id="topic_qqk_hgp_yw">
   <title>Sekundäre Textänderungen des Autors und späterer Bearbeiter</title>
     <titlealts><navtitle>Textänderungen Autor</navtitle></titlealts>
-  <body/>
+  <body>
+  	<section>
+  		<title>Themen</title>
+  		<ul>
+  			<li><xref href="msAddDel.dita" scope="local">Hinzufügungen und Tilgungen</xref></li>
+      <li><xref href="msSubst.dita" scope="local">Substitutionen</xref></li>
+  		</ul>
+  	</section>
+  </body>
     
 </topic>

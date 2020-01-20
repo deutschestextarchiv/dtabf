@@ -1,34 +1,28 @@
-DTA 'Base Format' (DTABf): Documentation (dtabf.ditamap and referenced files)  
-Version 1.0  
-2017-03-01
+DTA 'Base Format' (DTABf): Documentation (dtabf.ditamap and referenced files) 
+Version 1.1.0  
+2020-01-11
 
 ---
 # Introduction and HowTo
 
-These are the source files of the DTA 'Base Format' documentation 
-(version 1.0). The DTA 'Base Format' (DTABf) is a TEI format for the 
-annotation of digitized historical texts. It is the annotation 
-basis for all texts published on the Deutsches Textarchiv (DTA)
-platform [1].
+These are the source files of the DTA 'Base Format' documentation (version 1.1.0). The DTA 'Base Format' (DTABf) is a TEI format for the annotation of digitized historical texts. It is the annotation basis for all texts published on the Deutsches Textarchiv (DTA) platform [1].
 
-To explore the DTABf documentation see the official website:
-http://www.deutschestextarchiv.de/doku/basisformat
+To explore the DTABf documentation see [the official website](http://www.deutschestextarchiv.de/doku/basisformat). 
+The DTABf documentation also contains information on how to access the [RNG schemas](http://www.deutschestextarchiv.de/doku/basisformat/schema.html) and how to use them.
 
-For instructions on the conversion of the DTABf-documentation 
-source files in DITA to Webhelp responsive output see 
-./documentation/export/webhelp_responsive/howto_oXygen.txt
+For elaborate information on the purpose of the format and constraints for its further development see the [DTABf Guiding Principles](http://www.deutschestextarchiv.de/doku/basisformat/leitlinien.html).
+
+For instructions on the conversion of the DTABf-documentation source files in DITA to Webhelp responsive output see the respective [HowTo](export/webhelp_responsive/howto_oXygen.txt).
 
 ---
 # Publishers and Responsibilities
 
-PUBLISHER: Deutsches Textarchiv, Berlin-Brandenburg Academy of 
-Sciences and Humanities, Jaegerstr. 22/23, 10117 Berlin, Germany
-(http://www.deutschestextarchiv.de)
+PUBLISHER: Deutsches Textarchiv, Berlin-Brandenburg Academy of Sciences and Humanities, Jaegerstr. 22/23, 10117 Berlin, Germany (http://www.deutschestextarchiv.de).
 
-* 	FORMAT: Matthias Boenig, Alexander Geyken, Susanne Haaf, 
-	Christian Thomas, Frank Wiegand
-* 	SCHEMA, DOCUMENTATION, FORMAT MAINTENANCE: Susanne Haaf
-*	CONTACT: haaf@bbaw.de
+*	FURTHER DEVELOPMENT OF FORMAT: DTABf Steering Committee (Matthias Boenig, Daniel Burckhardt, Stefan Dumont, Alexander Geyken, Martina Gödel, Susanne Haaf, Axel Herold, Christian Thomas)
+*	SCHEMA, DOCUMENTATION, FORMAT MAINTENANCE: Susanne Haaf
+*	FORMAT DEVELOPMENT (until 2017): Matthias Boenig, Alexander Geyken, Susanne Haaf, Christian Thomas, Frank Wiegand
+*	CONTACT: redaktion@deutschestextarchiv.de
 
 URL: http://www.deutschestextarchiv.de/doku/basisformat
 

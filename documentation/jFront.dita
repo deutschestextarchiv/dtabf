@@ -3,6 +3,12 @@
 <topic id="jFront">
   <title>Einleitende Textstücke</title>
   <body>
-    <p></p>
+    <section>
+    	<title>Themen</title>
+    	<ul>
+    		<li><xref href="jHeading.dita" scope="local"></xref>Titelkopf</li>
+<li><xref href="jIntroMaterial.dita" scope="local">Einführende Informationen</xref></li>
+    	</ul>
+    	</section>
   </body>
 </topic>

@@ -3,5 +3,12 @@
 <topic id="topic_typb">
 <title>Typographische Besonderheiten</title>
          <body>
-                     </body>
+         	<section>
+         		<title>Themen</title>
+         		<ul>
+         			<li><xref href="typogrAllg.dita" scope="local">Richtlinien der Kodierung</xref></li>
+         			<li><xref href="typogrBspe.dita" scope="local">Beispiele und Spezifika der Kodierung</xref></li>
+         		</ul>
+         	</section>
+         </body>
       </topic>

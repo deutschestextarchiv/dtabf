@@ -4,6 +4,13 @@
   <title>Erfassung und Strukturierung des Textkörpers</title>
     <titlealts><navtitle>Textkörper</navtitle></titlealts>
   <body>
-    <p></p>
+    <section>
+    	<title>Themen</title>
+    	<ul>
+    		<li><xref href="jBodyAllg.dita" scope="local">Textkörper Zeitungen allgemein</xref></li>
+<li><xref href="jArticleTypes.dita">Artikeltypen</xref></li>
+<li><xref href="jArtStruct.dita" scope="local">Artikelstruktur</xref></li>
+<li><xref href="jLinking.dita" scope="local">Verknüpfungen</xref></li></ul>
+    </section>
   </body>
 </topic>

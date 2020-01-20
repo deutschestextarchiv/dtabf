@@ -3,5 +3,15 @@
 <topic id="topic_rcl_mk2_qs">
   <title>Die vollständigen bibliographischen Angaben zur Quelle <codeph>(//fileDesc/sourceDesc/biblFull)</codeph></title>
     <titlealts><navtitle>Full Bibliographic Citation</navtitle></titlealts>
-  <body><p></p></body>
+  <body>
+  	<section>
+  		<title></title>
+  		<ul>
+  			<li><xref href="mdSdBiblFullAllg.dita" scope="local">Full Bibliographic Citation Grundstruktur</xref></li>
+  			<li><xref href="mdSdTitleStmt.dita" scope="local">Title Statement (Source)</xref></li>
+  			<li><xref href="mdSdEditionStmt.dita" scope="local">Edition Statement (Source)</xref></li>
+  			<li><xref href="mdSdExtent.dita" scope="local">Extent (Source)</xref></li>
+  		</ul>
+  	</section>
+  	<p></p></body>
 </topic>

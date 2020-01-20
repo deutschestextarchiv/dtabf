@@ -3,9 +3,17 @@
 <topic id="HowTo">
   <title>Hilfen zur Benutzung des DTA-Basisformats</title>
   <titlealts><navtitle>How to</navtitle></titlealts>
-    <!--<abstract>Das folgende Kapitel bietet eine Einführung in die Nutzung des DTABf-Schemas, der DTABf-Dokumentation
-    sowie hilfreicher Tools und Anwendungen.</abstract>-->
   <body>
-    <p></p>
+    <p>Das folgende Kapitel bietet eine Einführung in die Nutzung des DTABf-Schemas, der DTABf-Dokumentation
+    sowie hilfreicher Tools und Anwendungen.</p>
+  	<section>
+  		<title>Themen</title>
+  		<ul>
+  			<li><xref href="benutzungDTABfSchema.dita">Nutzung des DTA-Basisformat-Schemas</xref></li>
+  			<li><xref href="zurDokumentation.dita">Nutzung der DTABf-Dokumentation</xref></li>
+  			<li><xref href="hilfreicheTools.dita">Hilfreiche Tools und Anwendungen</xref></li>
+  			<li><xref href="grundstrukturDokument.dita">Grundstruktur jedes TEI-Dokuments</xref></li>
+  		</ul>
+  	</section>
   </body>
 </topic>

@@ -3,5 +3,20 @@
 <title>Inhaltliche Kodierung des Textkörpers</title>
     <titlealts><navtitle>Textkörper</navtitle></titlealts>
          <body>
-                     </body>
+         	<section>
+         		<title>Themen</title>
+         		<ul><li><xref href="bodyAllg.dita" scope="local">Textkörper Grundstruktur</xref></li>
+         		<li><xref href="diskontTextpassagen.dita" scope="local">Interne Textbezüge</xref></li>
+         		<li><xref href="fussnote.dita" scope="local">Fußnoten</xref></li>
+         		<li><xref href="endnote.dita" scope="local">Endnoten</xref></li>
+         		<li><xref href="marginalie.dita" scope="local">Marginalien</xref></li>
+         		<li><xref href="teaser.dita" scope="local">Inhaltszusammenfassung</xref></li>
+         		<li><xref href="bibliographie.dita" scope="local">Bibliographie</xref></li>
+         		<li><xref href="nachsatz.dita" scope="local">Nachsatz</xref></li>
+         		<li><xref href="zitateEpigraphe.dita" scope="local">Zitate und Epigraphe</xref></li>
+         		<li><xref href="gedichte.dita" scope="local">Gedichte und gebundene Sprache</xref></li>
+         		<li><xref href="drama.dita" scope="local">Dramen</xref></li>
+         		<li><xref href="brief.dita" scope="local">Briefe</xref></li></ul>
+         	</section>
+         </body>
       </topic>

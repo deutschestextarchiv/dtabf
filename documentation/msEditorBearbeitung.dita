@@ -6,8 +6,12 @@
     <!--<abstract>Eingriffe und Anmerkungen des Editors der (gegenwärtig angefertigten) 
         digitalen Ausgabe werden mit dem folgenden Inventar ausgezeichnet.</abstract>-->
   <body>
-      <p>
-        
-      </p>
+      <section>
+      	<title>Themen</title>
+      	<ul>
+      		<li><xref href="msEditorResp.dita" scope="local">Verantwortlichkeiten</xref></li>
+      <li><xref href="msEditorCert.dita" scope="local">Unsichere Lesarten</xref></li>
+      	</ul>
+      </section>
   </body>
 </topic>

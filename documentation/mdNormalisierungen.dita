@@ -2,10 +2,20 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_ezj_ng2_qs">
   <title>Normalisierungen</title>
-    <!--<abstract>Bei der Aufnahme von Titeldaten entsprechend der Vorlage sind ausgewählte 
-      Normalisierungen möglich.</abstract>-->
+    
   <body>
-    <p>
-    </p>
+  	<p>Bei der Aufnahme von Titeldaten entsprechend der Vorlage sind ausgewählte 
+  		Normalisierungen möglich.</p>
+    <section>
+    	<title>Themen</title>
+    	<ul>
+    		<li><xref href="mdTypographHervorhebungen.dita">Umgang mit typographischen Hervorhebungen</xref></li>
+    		<li><xref href="mdDiakritika.dita">Umgang mit Diakritika</xref></li>
+    		<li><xref href="mdAbkuerzungen.dita">Umgang mit Abkürzungen</xref></li>
+    		<li><xref href="mdUnvollstAngaben.dita">Umgang mit unvollständigen Angaben</xref></li>
+    		<li><xref href="mdVerfaelschteAngaben.dita">Umgang mit verfälschten/verschleierten Angaben</xref></li>
+    		<li><xref href="mdDruckfehler.dita">Umgang mit Druckfehlern und ungewöhnlichen Schreibungen</xref></li>
+    	</ul>
+    </section>
   </body>
 </topic>

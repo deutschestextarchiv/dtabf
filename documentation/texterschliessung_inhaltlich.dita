@@ -3,5 +3,17 @@
     <titlealts><navtitle>Inhaltlich</navtitle></titlealts>
     <abstract><shortdesc>Auszeichnung von inhaltsbezogenen (logischen, konzeptuellen) Strukturen in Volltexten</shortdesc></abstract>
          <body>
-                     </body>
+         	<section>
+         		<title>Themen</title>
+         		<ul>
+         			<li><xref href="TEIStruktur.dita" scope="local">Grobstrukturierung Dokument</xref></li>
+         			<li><xref href="div.dita" scope="local">Texteinteilung Kapitel</xref></li>
+         			<li><xref href="front.dita" scope="local">Einleitende Informationen</xref></li>
+         			<li><xref href="body.dita" scope="local">Textkörper</xref></li>
+         			<li><xref href="anhang.dita" scope="local">Anhang</xref></li>
+         			<li><xref href="inlineAnnotation.dita" scope="local">Inhaltliche Inline-Auszeichnungen</xref></li>
+         			<li><xref href="editorEingriff.dita" scope="local">Editorische Eingriffe</xref></li>
+         		</ul>
+         	</section>
+         </body>
       </topic>
