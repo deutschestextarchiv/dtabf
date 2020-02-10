@@ -65,7 +65,7 @@
         <body>
             <p>This is the TEI Customization for the DTA 'base format', used by the DFG Project
                 Deutsches Textarchiv (The German Text Archive).</p>
-        	<schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="/path/to/file/basisformat_all.xml">
+        	<schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="dist/basisformat_all.xml">
                 <!-- required modules -->
                 <moduleRef key="core" except="add del unclear"/>
                 <moduleRef key="header" except="handNote"/>
