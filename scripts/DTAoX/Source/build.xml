@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?eclipse.ant.import?>
-<project basedir="." default="makejar" name="DTAoX">
+<project basedir="." default="build" name="DTAoX">
     <property environment="env"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.6"/>
@@ -8,6 +8,7 @@
     <path id="DTAoX.classpath">
         <pathelement location="bin"/>
         <pathelement location="lib/oxygen.jar"/>
+        <pathelement location="lib/oxygen-annotations.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>

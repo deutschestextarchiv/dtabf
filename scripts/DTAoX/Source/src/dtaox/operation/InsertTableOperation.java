@@ -1,4 +1,4 @@
-/* 
+/*
  * DTAoX version 1.0.1, 2013-07-10
  * Copyright 2013 Deutsches Textarchiv (DTA; http://www.deutschestextarchiv.de)
  ##########################################################################
@@ -57,7 +57,7 @@ public class InsertTableOperation implements AuthorOperation {
       throws IllegalArgumentException, AuthorOperationException {
     TableInfo tableInfo = null;
     if(authorAccess.getWorkspaceAccess().isStandalone()) {
-      tableInfo = new InsertTableCustomizer().customizeTable(authorAccess);
+      tableInfo = new InsertTableCustomizer().customizeTable(authorAccess, -1, -1);
     }
 
     if (tableInfo != null) {

@@ -1,4 +1,4 @@
-/* 
+/*
  * DTAoX version 1.0.1, 2013-07-10
  * Copyright 2013 Deutsches Textarchiv (DTA; http://www.deutschestextarchiv.de)
  ##########################################################################

@@ -58,7 +58,7 @@ public class DTAoXExtensionsBundle extends ro.sync.ecss.extensions.api.Extension
 
 	@Override
 	public String getDescription() {
-		return "A costum extension bundle extended by a context-sensitive grey-out of the lexicography menu";
+		return "A custom extension bundle extended by a context-sensitive grey-out of the lexicography menu";
 	}
 
 	@Override
@@ -66,6 +66,7 @@ public class DTAoXExtensionsBundle extends ro.sync.ecss.extensions.api.Extension
 		return "Simple.Document.Framework.document.type";
 	}
 
+	@Override
 	public AuthorExtensionStateListener createAuthorExtensionStateListener() {
 		authorExtensionStateListener = new DTAoXAuthorExtensionStateListener();
 		return authorExtensionStateListener;
@@ -73,8 +74,15 @@ public class DTAoXExtensionsBundle extends ro.sync.ecss.extensions.api.Extension
 
 	public SchemaManagerFilter createSchemaManagerFilter() {
 		DTAoXSchemaManagerFilter schemaManagerFilter = new DTAoXSchemaManagerFilter();
-		//give authorAccess from ExtensionsStateListener to SchemaManagerFilter
-		schemaManagerFilter.setAuthorActionSet(authorExtensionStateListener.getAuthorActionSet());
+
+		// DBU: added check to avoid errors in Oxygen >= 19 trying to access
+		// authorExtensionStateListener before createAuthorExtensionStateListener() has been called
+		// not sure if functionality is lost
+		if (authorExtensionStateListener != null) {
+			//give authorAccess from ExtensionsStateListener to SchemaManagerFilter
+			schemaManagerFilter.setAuthorActionSet(authorExtensionStateListener.getAuthorActionSet());
+		}
+
 		return schemaManagerFilter;
 	}
 }
