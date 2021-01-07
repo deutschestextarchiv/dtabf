@@ -6,7 +6,7 @@
   <body>
                         <p>Briefe werden mit einem <codeph>&lt;div&gt;</codeph>-Element umrahmt, welches
   zusätzlich zum Attribut <codeph>@n</codeph> das Attribut-Wert-Paar
-  <codeph>@type="letter"</codeph> enthalten. Die Auszeichnung von Briefen erfolgt nach
+  <codeph>@type="letter"</codeph> enthält. Die Auszeichnung von Briefen erfolgt nach
   den für unspezifizierte Texte geltenden Regeln. Spezifika der Textsorte Brief
   sind der <codeph>&lt;opener&gt;</codeph> und der <codeph>&lt;closer&gt;</codeph>.
 </p>

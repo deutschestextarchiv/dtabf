@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="topic_hg1_v32_qs">
-  <title>Author/Publisher/Translator</title>
-  <body>
-    <p>Information on the author, publisher or translator of a work is given in accordance with the authorized form of the GND, irrespective of the original. If the name cannot be found in the GND, it will be adopted true to original.</p>
-    <note type="notice">For the structuring of personal names see chap. <xref href="mdPersName.dita">Personal Name</xref>.</note>
-  </body>
-</topic>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"> <topic id="topic_tka">
-    <title>Basic Structure of the Text Body</title>
-    <titlealts><navtitle>Text Body Basic Structure</navtitle></titlealts>
-         <body>
-             <p>The actual text of the work is enclosed by a <codeph>&lt;body&gt;</codeph>element.</p>
-            <p>The opening <codeph>&lt;body&gt;</codeph> tag follows directly after the closing <codeph>&lt;/front&gt;</codeph> tag, so it is still before every new page break. The closing <codeph>&lt;/body&gt;</codeph> tag is just before the opening <codeph>&lt;back&gt;</codeph> tag, which in turn follows before every new page break. 
-</p>
-         </body>
-      </topic>

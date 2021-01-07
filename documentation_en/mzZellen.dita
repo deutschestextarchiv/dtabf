@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="topic_ept_sdc_bv">
-  <title>Multiline Cells</title>
-  <body>
-    <p>If a cell (<codeph>&lt;cell&gt;</codeph>) extends over several rows and/or columns, it can be provided with the attributes <codeph>@cols</codeph> (for columns) and <codeph>@rows</codeph> (for rows). The respective value is the number of rows/columns over which the cell extends: </p>
-    <codeblock outputclass="language-xml">&lt;cell cols="[number of columns]" rows="[number of rows]"&gt;...&lt;/cell&gt;</codeblock>
-  </body>
-</topic>
