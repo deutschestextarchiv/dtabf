@@ -3,7 +3,7 @@
 <topic id="kontakt">
   <title>Impressum</title>
   <titlealts><navtitle>Impressum</navtitle></titlealts>
-    <abstract><shortdesc>Impressum, Nutzungsbedingungen und Kontaktdaten</shortdesc></abstract>
+    <abstract><shortdesc>Impressum, Nutzungsbedingungen, Kontaktdaten sowie Hinweise zum Datenschutz</shortdesc></abstract>
   <body>
       <section>
           <title>Herausgeber</title>
@@ -19,31 +19,49 @@
     <section>
       <title>Nutzungsbedingungen</title>
       <p>Die Komponenten des DTA-Basisformats (Dokumentation, ODDs, Schematron-Constraint-Set, RNGs)
-      unterliegen der Lizenz <xref href="https://creativecommons.org/licenses/by-sa/3.0/de/" format="html">Creative Commons: Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Deutschland (CC BY-SA 3.0 DE)</xref>.</p>
+      unterliegen der Lizenz <xref href="https://creativecommons.org/licenses/by-sa/3.0/de/" format="html" scope="external">Creative Commons: Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Deutschland (CC BY-SA 3.0 DE)</xref>.</p>
       <p>Für die DTABf-annotierten Texte des Deutschen Textarchivs gelten eigene 
       lizenzrechtliche Bestimmungen, die in den 
-        <xref href="http://www.deutschestextarchiv.de/doku/nutzungsbedingungen" format="html">Nutzungsbedingungen des DTA</xref> 
+        <xref href="http://www.deutschestextarchiv.de/doku/nutzungsbedingungen" format="html" scope="external">Nutzungsbedingungen des DTA</xref> 
         festgelegt sind.</p>
     </section>
     <section>
       <title>Bearbeiter und Verantwortliche</title>
-        <ul><li>Format: Matthias Boenig, Alexander Geyken, Susanne Haaf, Christian Thomas, Frank Wiegand</li>
+        <ul>
+        <li>Weiterentwicklung des Formats: <xref href="steuerungsgruppe.dita" scope="local">DTABf-Steuerungsgruppe</xref>
+					(<xref href="http://www.bbaw.de/die-akademie/mitarbeiter/mschulz"
+					format="html" scope="external">Matthias Boenig</xref>, <xref
+					href="https://www.ghi-dc.org/ghi-staff/research-service/daniel-burckhardt.html"
+					format="html" scope="external">Daniel Burckhardt</xref>, <xref
+					href="http://www.bbaw.de/die-akademie/mitarbeiter/dumont"
+					format="html" scope="external">Stefan Dumont</xref>, <xref
+					href="http://www.bbaw.de/die-akademie/mitarbeiter/geyken"
+					format="html" scope="external">Alexander Geyken</xref>, <xref
+					href="http://textloop.de/werdegang/" format="html" scope="external"
+					>Martina Gödel</xref>, <xref
+					href="http://www.bbaw.de/die-akademie/mitarbeiter/haaf" format="html"
+					scope="external">Susanne Haaf</xref>, <xref
+					href="http://www.bbaw.de/die-akademie/mitarbeiter/herold"
+					format="html" scope="external">Axel Herold</xref>, <xref
+					href="http://www.bbaw.de/die-akademie/mitarbeiter/thomas"
+					format="html" scope="external">Christian Thomas)</xref></li>
         <li>Schema, Dokumentation &amp; Pflege des Formats: Susanne Haaf</li>
+        <li>Enwicklung des Formats (bis 2017): Matthias Boenig, Alexander Geyken, Susanne Haaf, Christian Thomas, Frank Wiegand</li>
         <li>Vorarbeiten (bis 2010): Oliver Duntze, Christiane Fritze, Alexander Geyken</li>
         </ul>  
         
-        <p>Kontakt: <xref href="mailto:haaf@bbaw.de" format="html">haaf@bbaw.de</xref></p>
-        <p>Das Tagset des DTA-Basisformats basiert auf den <xref href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html" format="html">P5-Richtlinien der Text Encoding Initiative (TEI)</xref>.</p>
+    	<p>Kontakt: <xref href="mailto:redaktion@deutschestextarchiv.de" format="html" scope="external">redaktion@deutschestextarchiv.de</xref></p>
+        <p>Das Tagset des DTA-Basisformats basiert auf den <xref href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html" format="html" scope="external">P5-Richtlinien der Text Encoding Initiative (TEI)</xref>.</p>
     </section>
     <section>
       <title>Technische Realisierung der Dokumentationsseiten</title>
         <p>Diese Dokumentation basiert auf dem XML-Dokumentationsformat 
-        <xref href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html" format="html">
+        <xref href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html" format="html" scope="external">
           DITA (Darwin Information Typing Architecture)
         </xref>. 
         </p>
       <p>Die mobile Webseite wurde mithilfe des 
-        <xref href="https://www.oxygenxml.com/" format="html">oXygen XML Editors</xref> erstellt und 
+        <xref href="https://www.oxygenxml.com/" format="html" scope="external">oXygen XML Editors</xref> erstellt und 
         an das Design des Deutschen Textarchivs angepasst.</p>
         <p>Technische Realisierung und Anpassungen: Susanne Haaf, unter Mitarbeit von Matthias Boenig</p>
     </section>

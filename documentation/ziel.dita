@@ -20,9 +20,9 @@
       <p>Das DTA-Basisformat soll im Rahmen der DTA-Richtlinien, die daneben
             auch die allgemeinen <xref
             href="http://www.deutschestextarchiv.de/doku/leitlinien"
-            format="html">Leitlinien des DTA</xref> sowie die <xref
+            format="html" scope="external">Leitlinien des DTA</xref> sowie die <xref
             href="http://www.deutschestextarchiv.de/doku/richtlinien"
-            format="html">Transkriptionsrichtlinien</xref> umfassen, eine
+            format="html" scope="external">Transkriptionsrichtlinien</xref> umfassen, eine
             umfassende Textaufbereitung ermöglichen und dabei gleichzeitig
             Variationsspielräume bei der Annotation so einschränken, dass die
             Kohärenz der DTA-Texte untereinander gewährleistet wird. Für dieses
@@ -31,12 +31,16 @@
             Herausforderung dar, resultiert sie doch u.a. in einer strukturellen
             Variabilität der Vorlagen, der mit dem zur Verfügung stehenden
             Tagset Genüge getan werden muss. </p>
-      <p>Mit der Ausarbeitung des DTA-Basisformats wollen wir einen Vorschlag für
-        einen Standard zur Volltext-Aufbereitung historischer Texte unterbreiten.
-        Damit sollen zum einen Texte, die mit dem Basisformat kompatibel sind, in das
-        DTA einfließen können, zum anderen aber die Verwendung von DTA-Texten in
-        anderen Volltextarchiven erleichtert werden.
-      </p>
+      <p>Mit der Ausarbeitung des DTA-Basisformats wollen wir einen Vorschlag
+			für einen Standard zur Volltext-Aufbereitung historischer Texte
+			unterbreiten. Damit soll die Analyse unterschiedlicher TEI-Texte mit
+			einheitlichen Methoden und im Vergleich miteinander ermöglicht werden. Die
+			DTABf-Annotationsrichtlinien sind ausführlich dokumentiert, um so
+			Ambiguitäten und folglich Fehlinterpretationen der
+			Auszeichnungsmöglichkeiten weiter zu minimieren. Somit sollen zum einen
+			Texte, die mit dem Basisformat kompatibel sind, in das DTA einfließen
+			können, zum anderen aber die Verwendung von DTA-Texten in anderen
+			Volltextarchiven erleichtert werden. </p>
         <p id="rec">Das DTA-Basisformat wurde von der DFG und CLARIN-D zur Nachnutzung empfohlen, namentlich in den folgenden Dokumenten:
         <ul>
             <li><xref href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf" format="pdf" scope="external">Handreichung: Empfehlungen zu datentechnischen Standards und Tools bei der Erhebung von 

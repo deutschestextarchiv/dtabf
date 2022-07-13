@@ -6,5 +6,13 @@
     <abstract><shortdesc>Das Tagset im Überblick</shortdesc></abstract>
   <body>
     <p>Die folgenden Tabellen bieten einen Überblick über alle Elemente, die das DTA-Basisformat für den <xref href="uebersichtHeader.dita">&lt;teiHeader></xref>- bzw. den <xref href="uebersichtText.dita">&lt;text></xref>-Bereich vorsieht.</p>
+  	<section>
+  		<title>Themen</title>
+  		<ul>
+  			<li><xref href="uebersichtHeader.dita" scope="local">Elemente im Header-Bereich</xref></li>
+  			<li><xref href="uebersichtText.dita" scope="local">Elemente im Text-Bereich</xref></li>
+  			<li><xref href="legende.dita" scope="local">Legende</xref></li>
+  		</ul>
+  	</section>
   </body>
 </topic>

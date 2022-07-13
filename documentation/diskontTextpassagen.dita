@@ -5,5 +5,10 @@
   <body>
     <p>Aufeinander Bezug nehmende Textteile, die durch Elementgrenzen voneinander getrennt sind, 
         werden miteinander verknüpft. Dabei sind zweierlei Bezüge möglich: </p>
+  	<section>
+  		<title>Title</title>
+  		<ul><li><xref href="einschub.dita" scope="local">Einschub</xref></li>
+                <li><xref href="parallelePassagen.dita" scope="local">Korrespondierende Textpassagen</xref></li></ul>
+  	</section>
   </body>
 </topic>

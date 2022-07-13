@@ -3,7 +3,8 @@
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
     <title>Schematron extension of the DTA ›Base Format‹ (DTABf)</title>
     <!-- This document contains the Schematron extension of the DTA ›Base Format‹ (DTABf).
-    First published on November 5th, 2014.
+    Version: 1.1.0 (January 10, 2020).
+    First published: November 5, 2014.
     Author: Susanne Haaf.
     Publisher: Deutsches Textarchiv (Matthias Boenig, Alexander Geyken, Susanne Haaf, Bryan Jurish, 
         Christian Thomas, Frank Wiegand), Berlin-Brandenburg Academy of Sciences and Humanities (BBAW), 
@@ -16,7 +17,7 @@
 
     <pattern id="pipeCharacter">
         <rule context="tei:*">
-            <report test="text()[contains(., '|')]" role="ERROR">
+            <report test="text()[contains(., '|')]" role="WARNING">
                 [W0007] The uncommon character '|' has been used within the text area.
             </report>
         </rule>
@@ -40,7 +41,7 @@
 
     <pattern id="biblElement">
         <rule context="tei:bibl">
-            <report test="ancestor::tei:quote" role="ERROR">
+            <report test="parent::tei:quote" role="ERROR">
                 [E0003] Element "<name/>" not allowed within element "quote".
             </report>
             <assert test="child::* or child::text()[normalize-space(.)]" role="ERROR">
@@ -53,7 +54,7 @@
     </pattern>
 
     <pattern id="capitalLetterI">
-        <let name="x" value="(//tei:*[contains(@rendition,'#aq')] or //tei:*[contains(@rendition, '#fr')]) and //tei:text//text()[not(ancestor::tei:*[contains(@rendition,'#aq')])][contains(., 'I')]"/>
+        <let name="x" value="(//tei:*[contains(@rendition,'#aq')] or //tei:*[contains(@rendition, '#fr')]) and //tei:text//text()[not(ancestor::tei:*[contains(@rendition,'#aq')])][not(ancestor::tei:note[@type='editorial'])][contains(., 'I')]"/>
         <rule context="//tei:TEI">
             <report test="$x" role="WARNING">
                 [W0004] The document contains capital letter I within Fraktur text. Should be capital letter J? 
@@ -269,6 +270,14 @@
             </assert>
         </rule>
     </pattern>
+	
+		<pattern id="subst">
+			<rule context="tei:subst">
+				<assert test="child::tei:add and child::tei:del">
+					[E0037] The element "subst" must contain both elements "add" and "del" as child elements.
+				</assert>
+			</rule>
+		</pattern>
 
     <pattern id="targetAttribute">
         <rule context="tei:*[@target]">

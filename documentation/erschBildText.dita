@@ -4,5 +4,22 @@
   <title>Äußeres Erscheinungsbild des Textes</title>
     <titlealts><navtitle>Erscheinungsbild Text</navtitle></titlealts>
   <body>
+  	<section>
+       	<title>Themen</title>
+       	<ul>
+       		<li><xref href="spalte.dita" scope="local">Spalten</xref></li>
+       		<li><xref href="absatz.dita" scope="local">Absätze</xref></li>
+       		<li><xref href="zeilenumbruch.dita" scope="local">Zeilenumbrüche</xref></li>
+       		<li><xref href="horizontaleLinie.dita" scope="local">Horizontale Trennlinien</xref></li>
+       		<li><xref href="liste.dita" scope="local">Listen</xref></li>
+       		<li><xref href="tabelle.dita" scope="local">Tabellen</xref></li>
+       		<li><xref href="abbildung.dita" scope="local">Abbildungen</xref></li>
+       		<li><xref href="formeln.dita" scope="local">Formeln</xref></li>
+       		<li><xref href="typographie.dita" scope="local">Typographische Besonderheiten</xref></li>
+       		<li><xref href="klammerung.dita" scope="local"></xref></li>
+       		<li><xref href="leerraum.dita" scope="local">Klammerungen</xref></li>
+       		<li><xref href="gapSupplied.dita" scope="local">Schwer- und Unleserliches</xref></li>
+       	</ul>
+       </section>
   </body>
 </topic>

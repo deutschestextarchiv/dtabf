@@ -51,10 +51,10 @@
          <title>Einrückung</title><fig>
             <image href="img/LsJVxtnwNz.png"/>
             <codeblock outputclass="language-xml">&lt;p&gt;
-   &lt;hi rendition="#et #g"&gt;Heidelberg,&lt;/hi&gt; den 15. Juli 1892.&lt;/hi&gt;
+   &lt;hi rendition="#et>&lt;hi rendition="#g"&gt;Heidelberg,&lt;/hi&gt; den 15. Juli 1892.&lt;/hi&gt;
 &lt;/p&gt;&lt;lb/&gt;
 &lt;p&gt;
-   &lt;hi rendition="#right #b"&gt;E. Kraepelin.&lt;/hi&gt;&lt;/hi&gt;
+   &lt;hi rendition="#right #b"&gt;E. Kraepelin.&lt;/hi&gt;
 &lt;/p&gt;&lt;lb/&gt;</codeblock>
             <p><i>Quelle: <xref
                href="http://www.deutschestextarchiv.de/kraepelin_arzneimittel_1892/14"

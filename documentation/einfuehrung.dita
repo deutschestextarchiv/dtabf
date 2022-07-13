@@ -7,8 +7,8 @@
     <p>Auf den folgenden Seiten wird das TEI/XML-Basisformat des DTA (DTABf) bereitgestellt, welches die 
       Grundlage für die Annotation sämtlicher Volltexte des DTA-Korpus bildet. 
       Es soll im Rahmen der DTA-Richtlinien, die daneben auch die allgemeinen 
-      <xref href="http://www.deutschestextarchiv.de/doku/leitlinien" format="html">Leitlinien des DTA</xref> sowie die 
-      <xref href="http://www.deutschestextarchiv.de/doku/richtlinien" format="html">Transkriptionsrichtlinien</xref> beinhalten, 
+      <xref href="http://www.deutschestextarchiv.de/doku/leitlinien" format="html" scope="external">Leitlinien des DTA</xref> sowie die 
+      <xref href="http://www.deutschestextarchiv.de/doku/richtlinien" format="html" scope="external">Transkriptionsrichtlinien</xref> beinhalten, 
         eine möglichst umfassende Textaufbereitung erlauben und dabei gleichzeitig Variationsspielräume bei der Annotation 
       so einschränken, dass die Kohärenz der DTA-Texte untereinander gewährleistet wird.</p>
       <p>Das DTA-Basisformat folgt den P5-Richtlinien der <xref href="http://www.tei-c.org/" scope="external" format="html">Text Encoding Initiative</xref> 

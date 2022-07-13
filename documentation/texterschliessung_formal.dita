@@ -5,5 +5,12 @@
     <titlealts><navtitle>Formal</navtitle></titlealts>
     <abstract><shortdesc>Auszeichnung von formalen Strukturen in Volltexten (Besonderheiten in Typographie und Layout)</shortdesc></abstract>
   <body>
+  	<section>
+  		<title>Themen</title>
+  		<ul>
+  			<li><xref href="erschBildBand.dita" scope="local">Erscheinungsbild Band</xref></li>
+  			<li><xref href="erschBildText.dita" scope="local">Erscheinungsbild Text</xref></li>
+  		</ul>
+  	</section>
   </body>
 </topic>
