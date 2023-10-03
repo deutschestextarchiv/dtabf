@@ -62,7 +62,7 @@
         <body>
             <p>This is the TEI Customization for the DTA 'base format', used by the DFG Project
                 Deutsches Textarchiv (The German Text Archive).</p>
-            <schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en">
+            <schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="tei:3.5.0">
                 <!-- required modules -->
                 <moduleRef key="core" include="abbr add addrLine address author bibl biblScope cb choice cit corr date del editor email expan foreign gap head hi item l lb lg list listBibl measure milestone name note orig p pb pubPlace publisher q quote ref reg resp respStmt sic sp speaker stage title unclear"/>
                 <moduleRef key="header" include="abstract availability biblFull classCode edition editionStmt editorialDecl encodingDesc extent fileDesc handNote idno langUsage language licence notesStmt profileDesc publicationStmt rendition seriesStmt sourceDesc tagsDecl teiHeader textClass titleStmt"/>
