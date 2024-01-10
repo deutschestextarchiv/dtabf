@@ -10,17 +10,17 @@
     </section>
       <section><title>Das DTABf-Schema</title>
       <ul>
-    <li><xref href="http://www.deutschestextarchiv.de/basisformat.rng" scope="external" format="html" outputclass="nu">RNG-Schema des DTABf für Drucke &#x21D7;</xref></li>
-    <li><xref href="http://www.deutschestextarchiv.de/basisformat.odd" scope="external" format="html" outputclass="nu">ODD des DTABf für Drucke &#x21D7;</xref></li>
-    <li><xref href="http://www.deutschestextarchiv.de/basisformat_ms.rng" scope="external" format="html" outputclass="nu">RNG-Schema des DTABf für Manuskripte &#x21D7;</xref></li>
-    <li><xref href="http://www.deutschestextarchiv.de/basisformat_ms.odd" scope="external" format="html" outputclass="nu">ODD des DTABf für Manuskripte &#x21D7;</xref></li>
-    <li><xref href="http://www.deutschestextarchiv.de/basisformat.sch" scope="external" format="html" outputclass="nu">Schematron Regelsatz des DTABf &#x21D7;</xref></li>
+    <li><xref href="basisformat.rng" scope="external" format="html" outputclass="nu">RNG-Schema des DTABf für Drucke &#x21D7;</xref></li>
+    <li><xref href="basisformat.odd" scope="external" format="html" outputclass="nu">ODD des DTABf für Drucke &#x21D7;</xref></li>
+    <li><xref href="basisformat_ms.rng" scope="external" format="html" outputclass="nu">RNG-Schema des DTABf für Manuskripte &#x21D7;</xref></li>
+    <li><xref href="basisformat_ms.odd" scope="external" format="html" outputclass="nu">ODD des DTABf für Manuskripte &#x21D7;</xref></li>
+    <li><xref href="basisformat.sch" scope="external" format="html" outputclass="nu">Schematron Regelsatz des DTABf &#x21D7;</xref></li>
     <li><xref href="benutzungDTABfSchema.dita" outputclass="nu">Hinweise zur Verwendung des Schemas &#x21D7;</xref></li>
     </ul>
     
     <p>Die Fassungen des DTABf-Schemas wurden mithilfe des Chaining-ODDs-Mechanismus erstellt, der durch die Text Encoding Initiative bereitgestellt wird. 
     Das zugrundeliegende ODD ist unter dem folgenden Link zugänglich: 
-        <xref href="http://www.deutschestextarchiv.de/basisformat_all.odd" scope="external" format="html" outputclass="nu">DTABf_all-ODD &#x21D7;</xref></p>
+        <xref href="basisformat_all.odd" scope="external" format="html" outputclass="nu">DTABf_all-ODD &#x21D7;</xref></p>
       </section>
     <section><title>Komponenten der DTABf-Dokumentation</title>
           <ul>
@@ -39,7 +39,7 @@
         <ul outputclass="embedded">
           <li outputclass="embedded"><xref href="uebersichtHeader.dita" outputclass="nu">Übersicht über alle Basisformat-Elemente im <codeph>&lt;teiHeader></codeph>-Bereich &#x21D7;</xref></li>
     <li outputclass="embedded"><xref href="uebersichtText.dita" outputclass="nu">Übersicht über alle Basisformat-Elemente im <codeph>&lt;text></codeph>-Bereich &#x21D7;</xref></li></ul></li>
-    <li><xref href="http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml" scope="external" format="html" outputclass="nu">Vorlagedatei zum DTA-Basisformat &#x21D7;</xref></li>
+    <li><xref href="basisformat_template.xml" scope="external" format="html" outputclass="nu">Vorlagedatei zum DTA-Basisformat &#x21D7;</xref></li>
           </ul>
       </section>
   </body>
