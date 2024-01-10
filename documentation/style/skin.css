@@ -1,0 +1,276 @@
+/*
+ * ==============================================
+ * Skin for oXygen generated WebHelp.
+ * ==============================================
+ */
+
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Fonts.
+ *  
+ */
+ /* 
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300");
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ */
+
+.wh_header{
+    background: rgb(107, 99, 90);
+    color: #ffffff;
+    
+}
+.wh_publication_title > a {
+     color:#fff;
+}
+.wh_top_menu {
+    text-transform: uppercase;
+}
+
+.wh_top_menu a{
+    color: #fff;
+}
+.wh_logo {
+    padding-top: 0.5em;
+}
+.wh_top_menu ul ul {
+    background-color: rgb(101,92,84);
+}
+.wh_top_menu ul li:hover {
+    background-color: rgb(101,92,84);
+}
+.wh_top_menu ul ul li a:hover {
+    background: rgb(101,92,84);
+}
+.wh_top_menu ul ul li {
+    border-top-color: rgb(136,126,115);
+    text-transform: none;
+}
+.wh_breadcrumb ol {
+    color: #878787;
+}
+.wh_breadcrumb ol a {
+    color:inherit;
+}
+.wh_breadcrumb ol .active {
+    color: #5185cb;
+}
+
+
+.wh_tools{
+    background-color: #f2f2f2;
+}
+.wh_print_link a,
+.wh_navigation_links a,
+.wh_navigation_links a:hover,
+.wh_navigation_links a:active,
+.wh_navigation_links a:visited,
+.wh_print_link a:before,
+.wh_navigation_links a:before,
+.wh_navigation_links a:hover:before,
+.wh_navigation_links a:active:before,
+.wh_navigation_links a:visited:before{
+    color: #347bb7;
+    text-decoration: none;
+}
+.wh_tile {
+    background-color: #f9f5eb;
+    font-weight: 300;
+}
+.wh_tile_shortdesc{
+    text-align: center;
+    color: #827B66;
+}
+.wh_tile_title{
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+}
+.wh_tile_title a{
+    color: #474438;
+}
+.wh_search_input {
+    background-color: rgb(225,203,157);
+    margin: 0;
+    padding: 2em 0;
+}
+
+.wh_welcome:not(:empty) {
+    color: #827B66;
+}
+
+.wh_search_input a {
+   color: #827B66;
+}
+.wh_search_button{
+    color:#fff;
+    background-color: rgb(205,150,75);
+}
+
+.wh_content_area {
+    padding: 2em 0;
+}
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Side TOC
+ * 
+ */
+.wh_side_toc{
+    background-color: #f8f8f8;
+}
+.wh_side_toc a, .wh_side_toc a:visited, .wh_side_toc a:hover {
+    color: #878787;
+}
+.wh_side_toc a:hover {
+    text-decoration: none;
+    background-color: #E6E6E6;
+}
+/*
+ * ------------------------------------------------------------------
+ *
+ * Footer
+ * 
+ */
+.wh_footer{
+    text-align: center;
+    padding-top: 2em;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    color: #71675A;
+    background: #F5EFE5;
+}
+
+.wh_footer a {
+    color: #CCE2F1;
+    padding: 0em;
+}
+.footer-container {
+    text-align: left;
+    color: #827B66;
+}
+.footer-container a {
+    color: inherit;
+    text-decoration: underline;
+    
+}
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Topic content
+ * 
+ */
+.wh_topic_content .title.topictitle1 {
+    color: #827B66;
+}
+.wh_topic_content .related-links{
+    background-color: #F8F8F8;
+}
+.wh_topic_content .related-links a,
+.wh_topic_content .related-links a:visited {
+    color: #878787;
+}
+.wh_topic_content .related-links li{
+    color: #757575;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Search results.
+ * 
+ */
+.searchresult li a, 
+.wh_search_expression{
+    color:#827B66;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Index terms.
+ * 
+ */
+.wh_index_terms span.wh_first_letter {
+    color: #827B66;
+}
+.wh_indexterms_link a:before{
+    color:#fff;
+}
+
+
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Tree TOC for the main page.
+ * 
+ */
+.wh_main_page_toc .expanded, .wh_main_page_toc .wh_main_page_toc_accordion_header:hover, .wh_main_page_toc>.wh_main_page_toc_entry:hover, .wh_main_page_toc_accordion_entries{
+    background-color: #F2F8FF;
+}
+.codeph {
+    color: #827B66;
+    background-color: inherit;
+}
+li.active > .topicref {
+    color: #877767;
+}
+.wh_side_toc li.active > .topicref {
+    background-color: #e6e6e6;
+}
+.wh_search_input > p {
+  color: rgb(107, 99, 90);
+}
+.mainbooktitle {
+  display: none;
+}
+
+.example>.title {
+    color: #827B66;
+}
+.example {
+  border: 1px solid silver;
+  padding: 1em;
+  margin: 1em 0;
+}
+/*ab hier*/
+li.li {
+color: rgb(50, 50, 50);
+}
+.caution {
+color: rgb(50, 50, 50);
+background-color: rgb(245,230,229);
+}
+.cautiontitle {
+    color: rgba(159, 8, 2, 0.8);
+    background-color: rgb(245,230,229);
+}
+h2.sectiontitle {
+    color: #827B66;
+}
+.relinfo {
+    background-color: #e7e4e4;
+}
+p.sg {
+    color: grey;
+}
+p.sg > a {
+    color: grey;
+}
+p.sg > a.xref:visited {
+    color: grey;
+}
+
+.body a{
+  color: #827B66;
+}
+
+.body a:hover{
+  background-color: #E6E6E6;
+}
