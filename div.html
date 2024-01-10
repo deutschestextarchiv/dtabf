@@ -1,0 +1,429 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-de" lang="de-de" data-whc_version="26.0">
+    <head><link rel="shortcut icon" href="dtabf.ico"/><link rel="icon" href="dtabf.ico"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="Die Texteinteilung (z.B. Kapitel, Abschnitte, Teile ...) eines Buches wird mittels verschachtelter &lt;div&gt; -Elemente dargestellt. Diese enthalten in der Regel ein Attribut @n , welches die Strukturebene ..."/><meta name="DC.rights.owner" content="(C) Copyright 2024"/><meta name="copyright" content="(C) Copyright 2024"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.relation" content="texterschliessung_inhaltlich.html"/><meta name="DC.creator" content="Susanne Haaf Deutsches Textarchiv, Zentrum Sprache, Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)"/><meta name="DC.date.created" content="January 31st, 2017"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="topic_3"/><title>Texteinteilung auf Kapitelebene</title><!--  Generated with Oxygen version 26.0, build number 2023100622.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="topic_3-d1669e5865"/><meta name="wh-source-relpath" content="div.dita"/><meta name="wh-out-relpath" content="div.html"/>
+
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/commons.css?buildId=2023100622"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic.css?buildId=2023100622"/>
+
+    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20240110213853"></script>
+    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2023100622"></script>
+    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20240110213853"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/commons.js?buildId=2023100622"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/topic.js?buildId=2023100622"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/light.css?buildId=2023100622"/><link rel="stylesheet" type="text/css" href="style//skin.css"/></head>
+
+    <body id="topic_3" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Springe zum Hauptinhalt
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="dtabf_logo.svg" alt="   Das DTA-Basisformat   DTABf  "/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle"> Das DTA-Basisformat </span>  <span class="ph booktitlealt">DTABf</span>  </span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Menü umschalten" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_dhd_tsd_qs-d1669e61-mi" data-tocid="topic_dhd_tsd_qs-d1669e61" data-state="not-ready" class=" topicref " data-id="topic_dhd_tsd_qs"><span class="title"><a href="einfuehrung.html">Einführung</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_rcc_dg2_qs-d1669e557-mi" data-tocid="topic_rcc_dg2_qs-d1669e557" data-state="not-ready" class=" topicref " data-id="topic_rcc_dg2_qs"><span class="title"><a href="metadaten.html">Metadaten</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="transkription-d1669e2530-mi" data-tocid="transkription-d1669e2530" data-state="not-ready" class=" topicref " data-id="transkription"><span class="title"><a href="transkription.html">Transkription</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_jkk_k4j_qs-d1669e3396-mi" data-tocid="topic_jkk_k4j_qs-d1669e3396" data-state="not-ready" class=" topicref " data-id="topic_jkk_k4j_qs"><span class="title"><a href="texterschliessung_formal.html">Formal</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_ie-d1669e5780-mi" data-tocid="topic_ie-d1669e5780" data-state="not-ready" class=" topicref " data-id="topic_ie"><span class="title"><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_bts-d1669e8778-mi" data-tocid="topic_bts-d1669e8778" data-state="not-ready" class=" topicref " data-id="topic_bts"><span class="title"><a href="besondereTextsorten.html">Spezial</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="Unbenannt12-d1669e10135-mi" data-tocid="Unbenannt12-d1669e10135" data-state="not-ready" class=" topicref " data-id="Unbenannt12"><span class="title"><a href="uebersichten.html">Übersichten</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="kontakt-d1669e10303-mi" data-tocid="kontakt-d1669e10303" data-state="not-ready" class=" topicref " data-id="kontakt"><span class="title"><a href="impressum.html">Impressum</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Suche " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Suchabfrage" required="required"/><button type="submit" class="wh_search_button" aria-label="Suche"><span class="search_input_text">Suche</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Startseite</span></a></span></li><li><div class="topicref" data-id="topic_ie"><div class="title"><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><div class="wh-tooltip"><p class="shortdesc">Auszeichnung von inhaltsbezogenen (logischen, konzeptuellen) Strukturen in Volltexten</p></div></div></div></li><li class="active"><div class="topicref" data-id="topic_3"><div class="title"><a href="div.html">Texteinteilung Kapitel</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Hervorhebungen der Suche umschalten" title="Hervorhebungen der Suche umschalten"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Sections einklappen" title="Sections einklappen"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Diese Seite drucken" aria-label="Diese Seite drucken"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true"><div data-tocid="topic_ie-d1669e5780" class="topicref" data-id="topic_ie" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action topic_ie-d1669e5780-link" class="wh-expand-btn"></span><div class="title"><a href="texterschliessung_inhaltlich.html" id="topic_ie-d1669e5780-link">Inhaltlich</a><div class="wh-tooltip"><p class="shortdesc">Auszeichnung von inhaltsbezogenen (logischen, konzeptuellen) Strukturen in Volltexten</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="topic_rxh_wkl_qs-d1669e5824" class="topicref" data-id="topic_rxh_wkl_qs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="TEIStruktur.html" id="topic_rxh_wkl_qs-d1669e5824-link">Grobstrukturierung Dokument</a></div></div></li><li role="treeitem" class="active"><div data-tocid="topic_3-d1669e5865" class="topicref" data-id="topic_3" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="div.html" id="topic_3-d1669e5865-link">Texteinteilung Kapitel</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="topic_4-d1669e5906" class="topicref" data-id="topic_4" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action topic_4-d1669e5906-link" class="wh-expand-btn"></span><div class="title"><a href="front.html" id="topic_4-d1669e5906-link">Einleitende Informationen</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="topic_tk-d1669e6275" class="topicref" data-id="topic_tk" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action topic_tk-d1669e6275-link" class="wh-expand-btn"></span><div class="title"><a href="body.html" id="topic_tk-d1669e6275-link">Textkörper</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="topic_54-d1669e8080" class="topicref" data-id="topic_54" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action topic_54-d1669e8080-link" class="wh-expand-btn"></span><div class="title"><a href="anhang.html" id="topic_54-d1669e8080-link">Anhang</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="topic_61-d1669e8367" class="topicref" data-id="topic_61" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action topic_61-d1669e8367-link" class="wh-expand-btn"></span><div class="title"><a href="inlineAnnotation.html" id="topic_61-d1669e8367-link">Inhaltliche Inline-Auszeichnungen</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="topic_64-d1669e8531" class="topicref" data-id="topic_64" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action topic_64-d1669e8531-link" class="wh-expand-btn"></span><div class="title"><a href="editorEingriff.html" id="topic_64-d1669e8531-link">Editorische Eingriffe</a></div></div></li></ul></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic topic" role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Texteinteilung auf Kapitelebene</h1>
+    
+   <div class="- topic/body body">
+      <p class="- topic/p p">Die Texteinteilung (z.B. Kapitel, Abschnitte, Teile ...) eines Buches
+         wird mittels verschachtelter <code class="+ topic/ph pr-d/codeph ph codeph">&lt;div&gt;</code>-Elemente
+         dargestellt. Diese enthalten in der Regel ein Attribut
+            <code class="+ topic/ph pr-d/codeph ph codeph">@n</code>, welches die Strukturebene angibt. </p>
+      <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml"><strong class="hl-tag">&lt;div</strong> <span class="hl-attribute">n</span>=<span class="hl-value">"1"</span><strong class="hl-tag">&gt;</strong>
+<strong class="hl-tag">&lt;head&gt;</strong>[Titel Kapitel 1]<strong class="hl-tag">&lt;/head&gt;</strong><em class="hl-comment">&lt;!-- sofern vorhanden --&gt;</em>
+<strong class="hl-tag">&lt;div</strong> <span class="hl-attribute">n</span>=<span class="hl-value">"2"</span><strong class="hl-tag">&gt;</strong>
+<strong class="hl-tag">&lt;head&gt;</strong>[Titel Unterkapitel 1.1]<strong class="hl-tag">&lt;/head&gt;</strong><em class="hl-comment">&lt;!-- sofern vorhanden --&gt;</em>
+<strong class="hl-tag">&lt;p&gt;</strong>[Text]<strong class="hl-tag">&lt;/p&gt;</strong>
+<strong class="hl-tag">&lt;p&gt;</strong>[Text]<strong class="hl-tag">&lt;/p&gt;</strong>
+    ...
+<strong class="hl-tag">&lt;/div&gt;</strong>
+<strong class="hl-tag">&lt;/div&gt;</strong></pre>
+      <p class="- topic/p p">Darüber hinaus kann für Textabschnitte mit besonderer Struktur das
+         Attribut <code class="+ topic/ph pr-d/codeph ph codeph">@type</code> eingesetzt werden, welches diese näher
+         spezifiziert. </p>
+      <p class="- topic/p p">Folgende Werte kann das <code class="+ topic/ph pr-d/codeph ph codeph">@type</code>-Attribut dabei
+         annehmen: </p>
+      <div class="table-container"><table class="- topic/table table" data-cols="2"><caption></caption><colgroup><col/><col/></colgroup><tbody class="- topic/tbody tbody">
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">abbreviations</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Abkürzungsverzeichnis</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">act</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Akt im Drama</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">advertisement</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Anzeige</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">appendix</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Anhang</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">bibliography</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Bibliographie</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">chapter</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Kapitel (Level 3)</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">contents</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Inhaltsverzeichnis</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">copyright</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Hinweise zum Copyright</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">corrigenda</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Druckfehlerverzeichnis</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">dedication</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Widmung</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">diaryEntry</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Tagebucheintrag (Level 3)</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">edition</code>
+                 </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Abdruck einer externen Textquelle (Level 3)</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">figures</code>
+                 </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Verzeichnis der Abbildungen</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">frontispiece</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Frontispiz</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">imprint</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Impressum</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">imprimatur</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Druckerlaubnis</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">index</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Register</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">letter</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Brief (Level 3)</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">poem</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Gedicht</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">postface</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Schlusswort, Nachwort, Epilog (Level 3)</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">preface</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Geleitwort, Vorwort, Einleitung (Level 3)</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">recipe</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Rezept (Level 3)</td>
+               </tr>
+               <tr class="- topic/row">
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">
+                     <code class="+ topic/ph pr-d/codeph ph codeph">scene</code>
+                  </td>
+                  <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="1" colspan="1">Szene im Drama</td>
+               </tr>
+            </tbody></table></div>
+      <p class="- topic/p p">In der Regel sind Dokumente durch <code class="+ topic/ph pr-d/codeph ph codeph">&lt;div&gt;</code>-Elemente strukturiert. Ausnahmen sind 
+         jedoch möglich. Zum Beispiel können Gedichtbände gänzlich mit <code class="+ topic/ph pr-d/codeph ph codeph">&lt;lg&gt;</code>s strukturiert 
+         werden (s. Kapitel <a class="- topic/xref xref" href="gedichte.html">Gedichte</a>).</p>
+      <p class="- topic/p p">Die Titel der (Unter-)Kapitel werden mit dem <code class="+ topic/ph pr-d/codeph ph codeph">&lt;head&gt;</code>-Element umschlossen. 
+         Dabei ist es unerheblich, ob der jeweilige Titel als Überschrift auf einer eigenen Zeile steht, 
+         oder am Beginn der ersten Kapitelzeile erscheint. Die Abstände zwischen Überschriften verschiedener 
+         Ebenen, die Ausrichtung der Überschriften (z.B. zentriert) sowie eventueller Frakturwechsel
+         werden nicht gesondert ausgezeichnet. Hingegen werden Zeilenumbrüche, alle typographischen 
+         Besonderheiten (fett, kursiv, gesperrt etc.) sowie ein Wechsel zur Antiqua-Schrift ausgezeichnet.</p>
+      <div class="- topic/example example"><h2 class="- topic/title title sectiontitle">Kapitelstrukturierung</h2>
+         
+         <figure class="- topic/fig fig fignone">
+            <img class="- topic/image image" src="img/FTcrVmt7dM.png"/>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml"><strong class="hl-tag">&lt;div</strong> <span class="hl-attribute">n</span>=<span class="hl-value">"1"</span><strong class="hl-tag">&gt;</strong>
+   <strong class="hl-tag">&lt;head&gt;</strong>IV.<strong class="hl-tag">&lt;lb/&gt;</strong>Die Brauchbarkeit der Durchschnittszahlen.<strong class="hl-tag">&lt;/head&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong>
+   <strong class="hl-tag">&lt;milestone</strong> <span class="hl-attribute">rendition</span>=<span class="hl-value">"#hr"</span> <span class="hl-attribute">unit</span>=<span class="hl-value">"section"</span><strong class="hl-tag">/&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong>
+   <strong class="hl-tag">&lt;div</strong> <span class="hl-attribute">n</span>=<span class="hl-value">"2"</span><strong class="hl-tag">&gt;</strong>
+      <strong class="hl-tag">&lt;head&gt;</strong>§ 17.<strong class="hl-tag">&lt;lb/&gt;</strong><strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rendition</span>=<span class="hl-value">"#b"</span><strong class="hl-tag">&gt;</strong>Gruppierung der Versuchsresultate.<strong class="hl-tag">&lt;/hi&gt;</strong><strong class="hl-tag">&lt;/head&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong>
+      <strong class="hl-tag">&lt;p&gt;</strong>Die erste Frage, welche aus den in der beschriebenen<strong class="hl-tag">&lt;lb/&gt;</strong>
+      Weise angestellten Untersuchungen eine Antwort erwartet,<strong class="hl-tag">&lt;lb/&gt;</strong>
+      ist nach den Erörterungen von §§ 7 und 8 die nach der<strong class="hl-tag">&lt;lb/&gt;</strong>
+      Natur der gewonnenen Durchschnittszahlen. Sind die immer-<strong class="hl-tag">&lt;lb/&gt;</strong>
+      hin schwankenden Zeiten, welche erforderlich waren, um<strong class="hl-tag">&lt;lb/&gt;</strong>
+      Reihen von bestimmter Länge <strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rendition</span>=<span class="hl-value">"#g"</span><strong class="hl-tag">&gt;</strong>unter möglichst gleichen<strong class="hl-tag">&lt;lb/&gt;</strong>
+      Umständen<strong class="hl-tag">&lt;/hi&gt;</strong> gerade auswendig zu lernen, so gruppiert, daſs<strong class="hl-tag">&lt;lb/&gt;</strong>
+      man ihre Mittelwerte mit Wahrscheinlichkeit als Maſszahlen<strong class="hl-tag">&lt;lb/&gt;</strong>
+      im physikalischen Sinne ansehen darf oder nicht?<strong class="hl-tag">&lt;/p&gt;</strong>
+   <strong class="hl-tag">&lt;/div&gt;</strong>
+<strong class="hl-tag">&lt;/div&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong></pre>
+            <p class="- topic/p p"><em class="+ topic/ph hi-d/i ph i">Quelle: <a class="- topic/xref xref" href="http://www.deutschestextarchiv.de/ebbinghaus_gedaechtnis_1885/63" target="_blank" rel="external noopener">Ebbinghaus, Hermann: Über das Gedächtnis. Leipzig, 1885. [Faksimile 63]</a></em></p>
+         </figure>
+      </div>
+      <p class="- topic/p p">Grundsätzlich erfolgt die <code class="+ topic/ph pr-d/codeph ph codeph">&lt;div&gt;</code>-Strukturierung
+         als Kapiteleinteilung. Werden in der Vorlage zusätzlich weitere
+         Strukturierungsansätze verfolgt, so werden diese der Kapiteleinteilung
+         untergeordnet, jedoch nach Möglichkeit mit abgebildet. </p>
+      <div class="- topic/example example"><h2 class="- topic/title title sectiontitle">Verschiedene Strukturierungsansätze auf Kapitelebene</h2>
+         
+         <figure class="- topic/fig fig fignone">
+            <img class="- topic/image image" src="img/YE7waC5HwX.png"/>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml"><strong class="hl-tag">&lt;div</strong> <span class="hl-attribute">n</span>=<span class="hl-value">"2"</span><strong class="hl-tag">&gt;</strong>
+   <strong class="hl-tag">&lt;head&gt;</strong>
+      <strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rendition</span>=<span class="hl-value">"#b"</span><strong class="hl-tag">&gt;</strong><strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rendition</span>=<span class="hl-value">"#aq"</span><strong class="hl-tag">&gt;</strong>IV.<strong class="hl-tag">&lt;/hi&gt;</strong> Milch- und Waſſerſuppen.<strong class="hl-tag">&lt;/hi&gt;</strong>
+   <strong class="hl-tag">&lt;/head&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong>
+   <strong class="hl-tag">&lt;div</strong> <span class="hl-attribute">n</span>=<span class="hl-value">"3"</span><strong class="hl-tag">&gt;</strong>
+      <strong class="hl-tag">&lt;head&gt;</strong>45. Milchſuppe.<strong class="hl-tag">&lt;/head&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong>
+      <strong class="hl-tag">&lt;p&gt;</strong>Ein Maß Milch, einen Eßlöffel voll Stärke oder Kartoffel-<strong class="hl-tag">&lt;lb/&gt;</strong>
+      mehl, Zitronenſchale oder auch ein Paar friſche Pfirſichblätter,<strong class="hl-tag">&lt;lb/&gt;</strong>[...]<strong class="hl-tag">&lt;/p&gt;</strong>
+   <strong class="hl-tag">&lt;/div&gt;</strong>
+<strong class="hl-tag">&lt;/div&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong></pre>
+             <p class="- topic/p p"><em class="+ topic/ph hi-d/i ph i">Quelle: <a class="- topic/xref xref" href="http://www.deutschestextarchiv.de/davidis_kochbuch_1849/82" target="_blank" rel="external noopener">Davidis, Henriette:
+                     Praktisches Kochbuch für die gewöhnliche und feinere Küche.
+                     4. Aufl. Bielefeld, 1849. [Faksimile 82]</a></em></p>
+         </figure>
+      </div>
+      <p class="- topic/p p">Untergeordnete <code class="+ topic/ph pr-d/codeph ph codeph">&lt;div&gt;</code>-Container enden entweder
+         mit dem Beginn einer neuen <em class="+ topic/ph hi-d/i ph i">division</em> gleicher Ebene
+         oder mit dem Ende der übergeordneten <em class="+ topic/ph hi-d/i ph i">division</em>.
+         Eingeschobene <code class="+ topic/ph pr-d/codeph ph codeph">&lt;div&gt;</code>-Container, nach deren
+         Abschluss die übergeordnete <em class="+ topic/ph hi-d/i ph i">division</em> weitergeführt
+         wird, sind nicht möglich. Es gibt jedoch Fälle, in welchen die
+         Möglichkeit, den Textfluss durch eine <em class="+ topic/ph hi-d/i ph i">division</em> zu
+         unterbrechen und am Schluss der eingeschobenen
+            <em class="+ topic/ph hi-d/i ph i">division</em> wieder aufzunehmen, notwendig ist. In
+         diesen Fällen wird das Element <code class="+ topic/ph pr-d/codeph ph codeph">&lt;floatingText&gt;</code>
+         eingesetzt, innerhalb dessen die eingeschobende
+            <em class="+ topic/ph hi-d/i ph i">division</em> realisiert wird. </p>
+      <div class="- topic/example example"><h2 class="- topic/title title sectiontitle">Einschub</h2>
+         
+         <figure class="- topic/fig fig fignone">
+            <img class="- topic/image image" src="img/9i_izyOAE4.png"/>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml"><strong class="hl-tag">&lt;div</strong> <span class="hl-attribute">n</span>=<span class="hl-value">"1"</span><strong class="hl-tag">&gt;</strong>
+   <strong class="hl-tag">&lt;p&gt;</strong>[...]<strong class="hl-tag">&lt;pb</strong> <span class="hl-attribute">facs</span>=<span class="hl-value">"#f0173"</span> <span class="hl-attribute">n</span>=<span class="hl-value">"163"</span><strong class="hl-tag">/&gt;</strong>
+   ebenfalls in das Dintenfaß zu ſchauen, um den Grund<strong class="hl-tag">&lt;lb/&gt;</strong>
+   der Zögerung zu erfahren. Endlich aber iſt Eliſe mit<strong class="hl-tag">&lt;lb/&gt;</strong>
+   ihren Vorbereitungen fertig und ſchreibt:<strong class="hl-tag">&lt;/p&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong>
+   <strong class="hl-tag">&lt;floatingText&gt;</strong>
+      <strong class="hl-tag">&lt;body&gt;</strong>
+         <strong class="hl-tag">&lt;div</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"letter"</span><strong class="hl-tag">&gt;</strong>
+            <strong class="hl-tag">&lt;opener&gt;</strong>
+               <strong class="hl-tag">&lt;salute&gt;</strong><strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rendition</span>=<span class="hl-value">"#et"</span><strong class="hl-tag">&gt;</strong>Lieber Guſtav!<strong class="hl-tag">&lt;/hi&gt;</strong><strong class="hl-tag">&lt;/salute&gt;</strong>
+            <strong class="hl-tag">&lt;/opener&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong>
+            <strong class="hl-tag">&lt;p&gt;</strong>„Dein Brief iſt glücklich angekommen. Flämm-<strong class="hl-tag">&lt;lb/&gt;</strong>
+            „chen hat ihn gebracht. Die alte Martha hat einen<strong class="hl-tag">&lt;lb/&gt;</strong>
+            „naſſen Waſchlappen im Fenſter liegen; ſie will Dich<strong class="hl-tag">&lt;lb/&gt;</strong>
+            „tüchtig waſchen, wenn Du kommſt. Den Onkel<strong class="hl-tag">&lt;lb/&gt;</strong>
+            „kann ich nicht feſtbinden, er rennt heute immer in<strong class="hl-tag">&lt;lb/&gt;</strong>
+            „der Stube auf und ab und ſitzt keinen Augenblick<strong class="hl-tag">&lt;lb/&gt;</strong>
+            „ſtill. Du ſollſt erſt Dein Exercitium fertig machen<strong class="hl-tag">&lt;lb/&gt;</strong>
+            „und es mit bringen, eher ſoll ich nicht kommen!<strong class="hl-tag">&lt;lb/&gt;</strong>
+            „Mach’ ſchnell!!! Meine Taſche bringe ich mit!“ —<strong class="hl-tag">&lt;/p&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong>
+            <strong class="hl-tag">&lt;closer&gt;</strong>
+               <strong class="hl-tag">&lt;salute&gt;</strong><strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rendition</span>=<span class="hl-value">"#et"</span><strong class="hl-tag">&gt;</strong>Eliſe.<strong class="hl-tag">&lt;/hi&gt;</strong><strong class="hl-tag">&lt;/salute&gt;</strong>
+            <strong class="hl-tag">&lt;/closer&gt;</strong>
+         <strong class="hl-tag">&lt;/div&gt;</strong>
+      <strong class="hl-tag">&lt;/body&gt;</strong>
+   <strong class="hl-tag">&lt;/floatingText&gt;</strong><strong class="hl-tag">&lt;lb/&gt;</strong>
+   <strong class="hl-tag">&lt;p&gt;</strong>Auch dieſe Botſchaft wird dem Flämmchen umge-<strong class="hl-tag">&lt;lb/&gt;</strong>
+   hängt — die Praxis hat es gelehrig gemacht; zwitſchernd<strong class="hl-tag">&lt;lb/&gt;</strong>
+   ſchüttelt es das Köpfchen, als wolle es ſagen, nuniſt’s<strong class="hl-tag">&lt;lb/&gt;</strong>[...]<strong class="hl-tag">&lt;/p&gt;</strong>
+<strong class="hl-tag">&lt;/div&gt;</strong></pre>
+             <p class="- topic/p p"><em class="+ topic/ph hi-d/i ph i">Quelle: <a class="- topic/xref xref" href="http://www.deutschestextarchiv.de/raabe_sperlingsgasse_1857/173" target="_blank" rel="external noopener">Raabe, Wilhelm: Die Chronik
+                     der Sperlingsgasse. Berlin, 1857. [Faksimile
+                  173]</a></em></p>
+         </figure>
+      </div>
+   </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="container-fluid">
+	<div class="row align-items-center">
+		<div class="col">
+			<p>Alle Inhalte dieser Seite unterstehen, soweit nicht anders gekennzeichnet,
+				der Lizenz <a href="https://creativecommons.org/licenses/by-sa/3.0/de/">CC BY-SA 3.0 DE</a>.<br/>Weitere Informationen finden Sie
+				im <a href="impressum.html">Impressum</a> sowie in unseren <a href="datenschutz.html">Hinweisen zum Datenschutz</a>.</p>
+			<p>Zitierempfehlung: "DTABf. Deutsches Textarchiv – Basisformat (2011–2020),
+				hrsg. v. d. Berlin-Brandenburgischen Akademie der Wissenschaften."<br/>Bitte beachten Sie
+				auch die <a href="publikationen.html">Publikationen zum DTABf.</a></p>
+			<p>2011–2020 Deutsches Textarchiv, Zentrum Sprache der Berlin-Brandenburgischen
+				Akademie der Wissenschaften<br/>Kontakt: haaf@bbaw.de</p>			
+		</div>
+		<div class="col-auto">
+			<a href="https://www.bbaw.de/"><img src="logos/bbaw.png" height="90" alt="Logo of the Berlin-Brandenburg Academy of Sciences and Humanities"/></a>
+		</div>
+	</div>
+</div>
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>

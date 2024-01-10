@@ -1,0 +1,299 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-de" lang="de-de" data-whc_version="26.0">
+    <head><link rel="shortcut icon" href="dtabf.ico"/><link rel="icon" href="dtabf.ico"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="Herausgegeben von der DTABf-Steuerungsgruppe Das DTA-Basisformat (DTABf) stellt ein Format für die TEI-konforme Textauszeichnung digitaler Volltexte von historischen Drucken mit einer Erweiterung für ..."/><meta name="DC.rights.owner" content="(C) Copyright 2024"/><meta name="copyright" content="(C) Copyright 2024"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.relation" content="einfuehrung.html"/><meta name="DC.creator" content="Susanne Haaf Deutsches Textarchiv, Zentrum Sprache, Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)"/><meta name="DC.date.created" content="January 31st, 2017"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="unbenannt1"/><title>Leitlinien für die Weiterentwicklung des DTABf</title><!--  Generated with Oxygen version 26.0, build number 2023100622.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="unbenannt1-d1669e187"/><meta name="wh-source-relpath" content="leitlinien.dita"/><meta name="wh-out-relpath" content="leitlinien.html"/>
+
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/commons.css?buildId=2023100622"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic.css?buildId=2023100622"/>
+
+    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20240110213853"></script>
+    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2023100622"></script>
+    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20240110213853"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/commons.js?buildId=2023100622"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/topic.js?buildId=2023100622"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/light.css?buildId=2023100622"/><link rel="stylesheet" type="text/css" href="style//skin.css"/></head>
+
+    <body id="unbenannt1" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Springe zum Hauptinhalt
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="dtabf_logo.svg" alt="   Das DTA-Basisformat   DTABf  "/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle"> Das DTA-Basisformat </span>  <span class="ph booktitlealt">DTABf</span>  </span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Menü umschalten" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_dhd_tsd_qs-d1669e61-mi" data-tocid="topic_dhd_tsd_qs-d1669e61" data-state="not-ready" class=" topicref " data-id="topic_dhd_tsd_qs"><span class="title"><a href="einfuehrung.html">Einführung</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_rcc_dg2_qs-d1669e557-mi" data-tocid="topic_rcc_dg2_qs-d1669e557" data-state="not-ready" class=" topicref " data-id="topic_rcc_dg2_qs"><span class="title"><a href="metadaten.html">Metadaten</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="transkription-d1669e2530-mi" data-tocid="transkription-d1669e2530" data-state="not-ready" class=" topicref " data-id="transkription"><span class="title"><a href="transkription.html">Transkription</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_jkk_k4j_qs-d1669e3396-mi" data-tocid="topic_jkk_k4j_qs-d1669e3396" data-state="not-ready" class=" topicref " data-id="topic_jkk_k4j_qs"><span class="title"><a href="texterschliessung_formal.html">Formal</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_ie-d1669e5780-mi" data-tocid="topic_ie-d1669e5780" data-state="not-ready" class=" topicref " data-id="topic_ie"><span class="title"><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_bts-d1669e8778-mi" data-tocid="topic_bts-d1669e8778" data-state="not-ready" class=" topicref " data-id="topic_bts"><span class="title"><a href="besondereTextsorten.html">Spezial</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="Unbenannt12-d1669e10135-mi" data-tocid="Unbenannt12-d1669e10135" data-state="not-ready" class=" topicref " data-id="Unbenannt12"><span class="title"><a href="uebersichten.html">Übersichten</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="kontakt-d1669e10303-mi" data-tocid="kontakt-d1669e10303" data-state="not-ready" class=" topicref " data-id="kontakt"><span class="title"><a href="impressum.html">Impressum</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Suche " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Suchabfrage" required="required"/><button type="submit" class="wh_search_button" aria-label="Suche"><span class="search_input_text">Suche</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Startseite</span></a></span></li><li><div class="topicref" data-id="topic_dhd_tsd_qs"><div class="title"><a href="einfuehrung.html">Einführung</a><div class="wh-tooltip"><p class="shortdesc">Zielsetzung des DTA-Basisformats, zugehörige Publikationen, Nutzung und erste Schritte</p></div></div></div></li><li class="active"><div class="topicref" data-id="unbenannt1"><div class="title"><a href="leitlinien.html">Leitlinien</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Hervorhebungen der Suche umschalten" title="Hervorhebungen der Suche umschalten"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Sections einklappen" title="Sections einklappen"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Diese Seite drucken" aria-label="Diese Seite drucken"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true"><div data-tocid="topic_dhd_tsd_qs-d1669e61" class="topicref" data-id="topic_dhd_tsd_qs" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action topic_dhd_tsd_qs-d1669e61-link" class="wh-expand-btn"></span><div class="title"><a href="einfuehrung.html" id="topic_dhd_tsd_qs-d1669e61-link">Einführung</a><div class="wh-tooltip"><p class="shortdesc">Zielsetzung des DTA-Basisformats, zugehörige Publikationen, Nutzung und erste Schritte</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="topic_ntb_5sd_qs-d1669e105" class="topicref" data-id="topic_ntb_5sd_qs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="ziel.html" id="topic_ntb_5sd_qs-d1669e105-link">Zielsetzung</a></div></div></li><li role="treeitem"><div data-tocid="entwicklung-d1669e146" class="topicref" data-id="entwicklung" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="steuerungsgruppe.html" id="entwicklung-d1669e146-link">Weiterentwicklung des Formats</a></div></div></li><li role="treeitem" class="active"><div data-tocid="unbenannt1-d1669e187" class="topicref" data-id="unbenannt1" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="leitlinien.html" id="unbenannt1-d1669e187-link">Leitlinien</a></div></div></li><li role="treeitem"><div data-tocid="schema-d1669e228" class="topicref" data-id="schema" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="schema.html" id="schema-d1669e228-link">Schema und Dokumentation</a></div></div></li><li role="treeitem"><div data-tocid="topic_man_01_2016-04-27-d1669e269" class="topicref" data-id="topic_man_01_2016-04-27" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="publikationen.html" id="topic_man_01_2016-04-27-d1669e269-link">Publikationen</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="HowTo-d1669e310" class="topicref" data-id="HowTo" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action HowTo-d1669e310-link" class="wh-expand-btn"></span><div class="title"><a href="howto.html" id="HowTo-d1669e310-link">How to</a></div></div></li><li role="treeitem"><div data-tocid="topic_g2d_jxc_5y-d1669e515" class="topicref" data-id="topic_g2d_jxc_5y" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="introduction_en.html" id="topic_g2d_jxc_5y-d1669e515-link">Introduction (English)</a></div></div></li></ul></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic topic" role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Leitlinien für die Weiterentwicklung des DTABf</h1>
+	
+    <div class="- topic/body body">
+    	<p class="- topic/p p"><em class="+ topic/ph hi-d/i ph i">Herausgegeben von der <a class="- topic/xref xref" href="steuerungsgruppe.html">DTABf-Steuerungsgruppe</a></em></p>
+			<section class="- topic/section section">
+				<p class="- topic/p p">Das DTA-Basisformat (DTABf) stellt ein Format für die TEI-konforme
+				Textauszeichnung digitaler Volltexte von historischen Drucken mit einer
+				Erweiterung für Handschriften dar. Mit dem DTABf wollen wir einen
+				Vorschlag für einen Standard zur Volltext-Aufbereitung im Bereich
+				(historischer) Textdaten unterbreiten, der die Grundbedürfnisse der
+				Annotation für verschiedene Disziplinen adressiert. Damit können Texte,
+				die mit dem Basisformat kompatibel sind, sowohl in das Deutsche
+				Textarchiv (DTA) einfließen, als auch in anderen Volltextarchiven und
+				Editionsprojekten leichter nachgenutzt werden.</p><p class="- topic/p p">Das DTABf folgt den
+				P5-Richtlinien der Text Encoding Initiative (TEI). Da diese Richtlinien
+				jedoch Lösungen für sämtliche Bedürfnisse bei der Textaufbereitung
+				anbieten sollen und daher entsprechend vielfältig und umfangreich sind,
+				bedürfen sie im konkreten Einzelfall einer näheren Spezifizierung. Daher
+				haben wir aus den P5-Richtlinien für die Textstrukturierung im
+				DTA-Korpus eine Auswahl an Elementen getroffen (Tagset), die das DTABf
+				bildet. Dieses Tagset ist mit den P5-Richtlinien der TEI vollständig
+				konform; auf Erweiterungen durch davon abweichende Elemente wurde
+				verzichtet.</p><p class="- topic/p p">Ziel des DTABf ist es, eine umfassende
+				Textaufbereitung zu ermöglichen und dabei gleichzeitig
+				Variationsspielräume bei der Annotation so einzuschränken, dass die
+				Interoperabilität aller DTABf-Texte untereinander gewährleistet wird.
+				Für dieses Ziel stellt die weite zeitliche Erstreckung des DTA-Korpus
+				einerseits und seine Textsortenvielfalt andererseits eine gute Grundlage
+				dar, resultiert sie doch u. a. in einer strukturellen Variabilität der
+				Vorlagen, der mit dem zur Verfügung stehenden Tagset Genüge getan werden
+				muss. Dennoch werden immer wieder Vorschläge für Weiterentwicklungen des
+				Formats eingebracht, die z. B. in Textsorten und Überlieferungsmedien
+				beobachtet wurden, die bislang nicht im Fokus des DTABf
+				standen.</p><p class="- topic/p p">Die Weiterentwicklung des DTABf und Ergänzung um fehlende
+				Auszeichnungsmöglichkeiten ist also notwendig. Sie soll allerdings vor
+				dem geschilderten Hintergrund unter Beachtung einiger Leitlinien
+				erfolgen:</p>
+				<ol class="- topic/ol ol">
+					<li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Für Erweiterungen gilt:</strong> So viel wie nötig, so wenig wie möglich.
+						Bei der Erweiterung des Formats um neue Auszeichnungslösungen wird
+						darauf geachtet, dass das Format insgesamt möglichst kompakt und
+						übersichtlich bleibt. Vor diesem Hintergrund wird jeweils geprüft,
+						ob Ergänzungen auf Attributwert-Ebene bereits Abhilfe schaffen. Ist
+						dies nicht der Fall, werden entsprechend die Möglichkeiten auf
+						Attribut-Ebene und schließlich auf Element-Ebene eruiert.</li>
+					<li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Ambiguitäten vermeiden:</strong> Auch weiterhin soll bei Ergänzungen zum
+						DTABf das Ziel verfolgt werden, die Interoperabilität der
+						DTABf-Daten nicht zu gefährden. Dafür wird kritisch untersucht, ob
+						ein ‚neues‛ Phänomen möglicherweise durch das vorhandene Tagset mit
+						abgedeckt werden kann. Werden Ergänzungen notwendig, wird
+						sichergestellt, dass diese nicht zu Unsicherheiten durch alternative
+						Annotationsmöglichkeiten führen. Die Vermeidung von Ambiguitäten
+						betrifft dabei zweierlei Aspekte: Zum einen sollte es für dasselbe
+						Phänomen nur eine mögliche Auszeichnung geben, zum anderen sollte
+						dasselbe Tagging nicht gleichzeitig verschiedene Phänomene
+						repräsentieren können.</li>
+					<li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Bestandsübergreifende Relevanz:</strong> Phänomene, für die neue
+						Auszeichnungsmöglichkeiten notwendig werden, werden auf verbreitetes
+						Vorkommen bzw. projekt- und bestandübergreifende Anwendbarkeit hin
+						geprüft. Anwendungsfälle, Auszeichnungslösungen oder Vokabulare, die
+						sehr spezifisch für ein Projekt oder eine Fragestellung sind, jedoch
+						darüber hinaus voraussichtlich nicht (in der vorgeschlagenen Form)
+						genutzt werden, können nicht unterstützt werden.</li>
+					<li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Allgemeingültigkeit:</strong> Es ist vorgesehen und wird aktiv unterstützt,
+						dass das DTABf auch außerhalb des engeren Kontextes des DTA der
+						Datenannotation zugrunde gelegt und dabei gegebenenfalls auch um
+						projektspezifische bzw. stark fachlich spezialisierte
+						Auszeichnungsmöglichkeiten (z. B. historische Maßangaben, Waren und
+						Preise, Redewiedergabe) erweitert wird. Solche Erweiterungen sollen
+						jedoch nicht in das DTABf zurückfließen. Das DTABf soll hier als
+						Startpunkt gelten mit dem Ziel, die Schnittmenge der
+						Annotationsbedürfnisse für ganz verschiedene Anwendungsszenarien
+						abzubilden.</li>
+					<li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Dokumentation:</strong> Für das DTABf wird eine umfassende Dokumentation
+						angeboten und gepflegt, die unter einer freien Lizenz im DITA-Format
+						zur Nachnutzung bereitgestellt wird. Es ist erwünscht, dass diese
+						Dokumentation eventuellen weiteren Projektdokumentationen in
+						externen Kontexten zugrunde gelegt wird. Darüber hinaus wird
+						nachdrücklich empfohlen, Abweichungen vom DTABf, die sich
+						möglicherweise aus den Notwendigkeiten des jeweiligen Projekts
+						ergeben haben, zu dokumentieren und diese Dokumentation ebenfalls
+						öffentlich zugänglich zu machen.</li>
+					<li class="- topic/li li">
+					<strong class="+ topic/ph hi-d/b ph b">Begrenzung:</strong> Im Fokus des Formats liegen neuzeitliche Drucke und
+						Handschriften aus der Zeit vor der Digitalisierung (ca. 1600 bis
+						1980). Dabei erweitert das DTABf sein Spektrum gegenüber dem
+						ursprünglichen Projektkontext des DTA und DWDS um handschriftliche
+						Textsorten sowie um weitere Verwendungsszenarien, z.B. in
+						editorischen Kontexten. Das Format unterstützt aktuell primär
+						europäische Sprachen- und Schriftsysteme. Eine über diesen
+						abgesteckten Rahmen hinausgehende Nutzung ist möglich und kann sich
+						anbieten, wird allerdings aktuell nicht aktiv unterstützt.
+				</li>
+					<li class="- topic/li li">
+					<strong class="+ topic/ph hi-d/b ph b">Pragmatische Edition:</strong> Mit dem DTABf soll es möglich sein, nicht nur
+						logische (die Semantik betreffende), sondern auch physische (das
+						Layout betreffende) Textstrukturen abzubilden. Dabei wird allerdings
+						die Textedition in Form eines diplomatischen Abdrucks nicht
+						unterstützt, insofern dieser mimetisch die Vorlage wiederzugeben
+						intendiert. So wird z. B. die Auszeichnung von Einrückungen oder
+						vertikal gedruckten Textpassagen unterstützt, nicht jedoch die
+						Angabe der genauen Tiefe der Einrückung oder des Neigungswinkels
+						eines Teiltexts.
+				</li>
+				<li class="- topic/li li">
+					<strong class="+ topic/ph hi-d/b ph b">Verarbeitung:</strong> Bei Ergänzungen am DTABf wird die Verarbeitbarkeit
+						der annotierten Texte besonders berücksichtigt. Eine besondere Rolle
+						spielen dabei allgemein z. B. die Vermeidung von Ambiguitäten (Punkt
+						2), die Beschränkung des Formats gegenüber neuen
+						Auszeichnungsmöglichkeiten (Punkt 3), die Dokumentation und
+						technische Spezifikation aller Facetten des Formats (Punkt 5) sowie
+						bei konkreten Erweiterungen die Vermeidung von Textinhalt aus der
+						Quelle (ausgenommen Nummerierungen) in Attributwerten, entsprechende
+						Auszeichnung editorischer Paratexte, Vermeidung offener Wertelisten,
+						Unterstützung kanonischer Referenzierungen, Bevorzugung von
+						Container- vor Milestone-Elementen etc. Es werden außerdem zusammen
+						mit dem Format Verarbeitungsroutinen und Tools zur Unterstützung der
+						Auszeichnung angeboten.
+				</li>
+				</ol>
+				
+			</section>
+    	<section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Procedere von Änderungen am
+				DTA-Basisformat</h2>
+    		
+    		<p class="- topic/p p">Die Weiterentwicklung des DTABf wird von einer Steuerungsgruppe aus 
+    			derzeit 8 Mitgliedern begleitet (s. <a class="- topic/xref xref" href="http://deutschestextarchiv.de/news/71" target="_blank" rel="external noopener">http://deutschestextarchiv.de/news/71</a>).
+				Anlaufpunkt für Änderungs- und Ergänzungsvorschläge ist das Ticketsystem
+				der DTABf-Instanz (s. <a class="- topic/xref xref" href="https://github.com/deutschestextarchiv/dtabf/issues" target="_blank" rel="external noopener">auf Github</a>). Über
+				Vorschläge wird durch die Steuerungsgruppe beraten und schließlich
+				abgestimmt. Die Annahme eines Änderungsvorschlags
+				erfordert eine einfache Mehrheit in der Steuerungsgruppe. An der
+				Abstimmung müssen mindestens 5 Mitglieder der Gruppe beteiligt sein, um
+				das Quorum zu erreichen. Abgestimmt werden kann mit “Annahme der
+				Änderung”, “Ablehnung der Änderung” oder Enthaltung.</p>
+    	</section>
+    	
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="container-fluid">
+	<div class="row align-items-center">
+		<div class="col">
+			<p>Alle Inhalte dieser Seite unterstehen, soweit nicht anders gekennzeichnet,
+				der Lizenz <a href="https://creativecommons.org/licenses/by-sa/3.0/de/">CC BY-SA 3.0 DE</a>.<br/>Weitere Informationen finden Sie
+				im <a href="impressum.html">Impressum</a> sowie in unseren <a href="datenschutz.html">Hinweisen zum Datenschutz</a>.</p>
+			<p>Zitierempfehlung: "DTABf. Deutsches Textarchiv – Basisformat (2011–2020),
+				hrsg. v. d. Berlin-Brandenburgischen Akademie der Wissenschaften."<br/>Bitte beachten Sie
+				auch die <a href="publikationen.html">Publikationen zum DTABf.</a></p>
+			<p>2011–2020 Deutsches Textarchiv, Zentrum Sprache der Berlin-Brandenburgischen
+				Akademie der Wissenschaften<br/>Kontakt: haaf@bbaw.de</p>			
+		</div>
+		<div class="col-auto">
+			<a href="https://www.bbaw.de/"><img src="logos/bbaw.png" height="90" alt="Logo of the Berlin-Brandenburg Academy of Sciences and Humanities"/></a>
+		</div>
+	</div>
+</div>
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>
