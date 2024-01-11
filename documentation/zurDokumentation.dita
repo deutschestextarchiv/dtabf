@@ -34,7 +34,7 @@
       <xref href="uebersichtHeader.dita">Metadaten-Strukturierung</xref>.</li>
     <li>Ergänzt wird die DTABf-Dokumentation durch die 
       <xref href="transkription.dita">DTA-Richtlinien zur Texterfassung</xref>.</li>
-    <li>Eine <xref href="http://www.deutschestextarchiv.de/files/vorlage_basisformat.xml" scope="external" format="html">Vorlagedatei zum DTA-Basisformat</xref>, welche die
+    <li>Eine <xref href="basisformat_template.xml" scope="external" format="html">Vorlagedatei zum DTA-Basisformat</xref>, welche die
       DTABf-Schemas sowie die wichtigsten Elemente enthält, erleichtert den Einstieg in die DTABf-konforme 
       Texterstellung.</li></ol>
     <p>Die DTABf-Dokumentation enthält zwei Formen von Beispielen. Zum einen werden die

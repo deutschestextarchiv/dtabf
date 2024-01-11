@@ -11,7 +11,7 @@
                 sich lediglich auf Besonderheiten von Manuskripten, die im
                 Kern-DTABf nicht berücksichtigt sind. </p>
             <p>Für die Validierung von Manuskripten steht ein eigenes RNG-Schema zur Verfügung: 
-                <xref href="http://www.deutschestextarchiv.de/basisformat_ms.rng" scope="external" format="html" outputclass="nu">DTABf-Schema für Manuskripte &#x21D7;</xref>. 
+                <xref href="basisformat_ms.rng" scope="external" format="html" outputclass="nu">DTABf-Schema für Manuskripte &#x21D7;</xref>. 
                 Für Informationen zur Nutzung des Schemas vgl. Kapitel <xref href="benutzungDTABfSchema.dita">Verfügbarkeit des Schemas</xref>.</p>
         </section>
       
