@@ -11,7 +11,48 @@
  * Fonts.
  *  
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300");
+/*@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300");*/
+
+/* roboto-300 - latin-ext_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-300.woff') format('woff'), /* Modern Browsers */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin-ext_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-700.woff') format('woff'), /* Modern Browsers */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.dwds.de/dwds_static/fonts/roboto/roboto-v30-latin-ext_latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
 
 html, body {
     min-width:100%;
@@ -20,7 +61,6 @@ html, body {
 body{
     font-family: 'Roboto', sans-serif;
 }
-
 
     /*
      * ------------------------------------------------------------------
@@ -35,14 +75,22 @@ body{
     border:none;
     border-radius:0;
     margin:0;
-    padding-bottom:0;
 }
 .wh_header{
-    /*background: #A0522D;*/
     background: rgb(107, 99, 90);
     color: #ffffff;
-    
 }
+
+/*  nicht in der alten skin */
+a,
+a:hover,
+a:visited{
+    color: #337ab7;
+}
+a:hover{
+    text-decoration: none;
+}
+
 
 /*
  * ------------------------------------------------------------------
@@ -52,6 +100,7 @@ body{
  */
  .wh_publication_title > a{
      color:#fff;
+     font-size: 1.4em;
 }
 
 
@@ -64,34 +113,36 @@ body{
  */
 .wh_top_menu {
     text-transform: uppercase;
-    /*margin: .9em 0;*/
+    margin: .4em 0; /*  nicht in der alten skin */
     font-size: 0.9em;
-    /*padding-top: 1.7em;*/
 }
-
 .wh_top_menu a{
     color: #fff;
     line-height: 2em;
 }
 
-.wh_logo {
+/*  aus der alten skin */
+/*.wh_logo {
     padding-top: 0.3em;
-}
-.wh_logo_and_publication_title {
-    padding-bottom: 2px;
+}*/
+/*  aus der alten skin */
+/*.wh_logo_and_publication_title {
+    padding-bottom: 0.8em;
+}*/
+
+.wh_logo > img {
+    width: 200px;
 }
 
 /* The submenus */
 .wh_top_menu ul ul {
-    /*background-color: #333;*/
     background-color: rgb(101,92,84);
 }
-.wh_top_menu ul li:hover {
-    /*background-color: #333;*/
+.wh_top_menu ul li:hover,
+.wh_top_menu.activated-on-click ul li.active {
     background-color: rgb(101,92,84);
 }
 .wh_top_menu ul ul li a:hover {
-    /*background: #000;*/
     background: rgb(101,92,84);
 }
 .wh_top_menu ul ul li {
@@ -126,13 +177,14 @@ body{
 .wh_breadcrumb ol {
     color: #878787;
     font-family: "Trebuchet MS","Lucida Grande",Verdana,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",Meiryo,sans-serif;
-    font-size: 15px;
+    font-size: 13px;
 }
 .wh_breadcrumb ol a {
     color:inherit;
 }
 .wh_breadcrumb ol .active {
-    color: #5185cb;
+    /*color: #5185cb;*/
+    font-weight: bold;
 }
 
 
@@ -143,9 +195,8 @@ body{
  * 
  */
 .wh_tools{
-    /*background-color: #ECF2F9;*/
-    margin: 1em 0 2em;
     background-color: #f2f2f2;
+    margin: 1em 0 2em;
 }
 
 .wh_print_link,
@@ -154,8 +205,10 @@ body{
 .wh_navigation_links .navprev{
 }
 
-
-.wh_print_link a,
+.wh_print_link button,
+.webhelp_expand_collapse_sections,
+.wh_hide_highlight,
+.oxy-icon-pdf-link,
 .wh_navigation_links a,
 .wh_navigation_links a:hover,
 .wh_navigation_links a:active,
@@ -176,19 +229,16 @@ body{
  * Tiles
  * 
  */
-.wh_tile > div{
+.wh_tile {
     margin: 1em;
     padding: 1em;
-    /*background-color: #EFEFEF;*/
-     /*background-color: #f3ead8;*/
-     background-color: #f9f5eb;
+    background-color: #f9f5eb;
     height:190px;
     font-weight: 300;
 }
 .wh_tile_shortdesc{
     margin-top:1em;
     text-align: center;
-    /*color: #0D1A2B;*/
     color: #827B66;
     font-size:1.1em;
 }
@@ -201,16 +251,12 @@ body{
     text-decoration: none;
 }
 .wh_tile_title a{
-    /*color: #3077be;*/
-    /*color: #827B66;*/
     color: #474438;
     line-height:1.3em
 }
 @media only screen and (max-width: 767px) {
     .wh_tile > div {
         height: auto;
-        
-        
     }
 }
 
@@ -233,29 +279,27 @@ Example:
     display:block;
     margin:0;
     position:relative;
+    background-color: rgb(225,203,157);
     padding: 40px 0;
-    background-color: rgb(225,203,157)
 }
 
 .wh_welcome:not(:empty){
     font-size: 3em;
     margin: 0 auto;
-    font-family: 'Roboto Thin', sans-serif;
     padding: 0 0 0.5em 0;
     text-shadow: none;
     color: #827B66;
-    font-variant: small-caps;
 }
 
 .wh_main_page .wh_search_input{
-    padding: 50px 0;
+    padding: 100px 0;
     background-color: rgb(225,203,157);
 }
 
 .wh_search_input a {
-   /*color: #7d7368;*/
    color: #827B66;
 }
+
 .wh_search_textfield{
     border: solid 1px #d5b776;
     border-radius: 5px;
@@ -272,66 +316,134 @@ Example:
     height: 2.8em;
 }
 
+/*  ab hier unverändert */
+
+/* Search autocomplete icons */
+.search-autocomplete-proposal-type-history a,
+.search-autocomplete-proposal-type-history a:hover,
+.search-autocomplete-proposal-type-history a:visited,
+.search-autocomplete-proposal-type-history a:active{
+    text-decoration: none;
+    color:inherit;
+    font-size: 0.8em;
+}
+
+.ui-state-active .search-autocomplete-proposal-type-history a,
+.ui-state-active .search-autocomplete-proposal-type-history a:hover,
+.ui-state-active .search-autocomplete-proposal-type-history a:visited,
+.ui-state-active .search-autocomplete-proposal-type-history a:active{
+    color: #fff;
+}
+
+.ui-state-active{
+    background-color: #999; 
+}
+
+/* Active search page */
+#wh-search-pagination > ul > li.active > a {
+    background-color: #346ec5;
+}
+
+/* Selected autocomplete item */
+.ui-menu-item .ui-state-active {
+    background-color: #333333;
+    border: none;
+    margin: 0;
+}
+
+
 /*@media only screen and (max-width: 999px) {*/
     /*.wh_search_input:after{*/
         /*display:none;*/
     /*}*/
 
 /*}*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .wh_main_page .wh_search_input,
     .wh_search_input {
         padding: 3em 0;
     }
 }
 
-
+/*  bis hier unverändert */
 /*
  * ------------------------------------------------------------------
  *  
- * Side TOC
+ * Publication TOC
  * 
  */
-.wh_side_toc{
+.wh_publication_toc{
     border-radius: 3px;
     padding: 1em;
-    background-color: #f8f8f8;
-    font-family: "Trebuchet MS","Lucida Grande",Verdana,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",Meiryo,sans-serif;
+    background-color: #f8f8f8
 }
-/*.wh_side_toc .active {
-    color: #5185cb;
-}*/
-.wh_side_toc a, .wh_side_toc a:visited, .wh_side_toc a:hover {
+.wh_publication_toc .active > .topicref a {
+    /*color: #5185cb;*/
+    font-weight: normal;
+    background-color: #e6e6e6;
+}
+.wh_publication_toc div, .wh_publication_toc a, .wh_publication_toc a:visited, .wh_publication_toc a:hover {
     color: #878787;
 }
-.wh_side_toc a:hover {
-    text-decoration: none;
-    background-color: #E6E6E6;
+.wh_publication_toc a:hover {
+    text-decoration: underline;
 }
 
-.wh_side_toc  ul  li{
-    margin: .7em 0;
-}
-.wh_side_toc > ul > li > span{
-    font-size: 1.2em;
+.wh_publication_toc  ul  li{
+    margin-top: .7em;
 }
 
 @media only screen and (max-width: 767px) {
-    .wh_side_toc {
+    .wh_publication_toc {
         border-radius: 0;
         padding: 1em 0.5em;
         margin-top: 10px;
-        border: 1px solid #e0e0e0; 
-        }
+        border: 1px solid #e0e0e0;
     }
-    
-    .related-links {
-        /*border: 1px solid #e0e0e0;*/
-        margin-right: 0.5em;
+
+    .wh_related_links,
+    .wh_child_links,
+    .wh_topic_content .related-links{
+        border: 1px solid #e0e0e0;
     }
-.wh_side_toc > ul > li > ul > li > span {
-    font-size: 1.1em;
 }
+
+/* Publication TOC tooltip */
+.wh_breadcrumb .topicref .wh-tooltip,
+.wh-toc-tooltip {
+    background-color: #A6402B;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.wh_breadcrumb .topicref .wh-tooltip a,
+.wh-toc-tooltip a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Tooltip arrow. */
+
+[data-tooltip-position="left"] .topicref .wh-tooltip::before,
+[data-tooltip-position="left"] .wh-toc-tooltip::before {
+    border-left-color: #A6402B;
+}
+
+[data-tooltip-position="right"] .topicref .wh-tooltip::before,
+[data-tooltip-position="right"] .wh-toc-tooltip::before {
+    border-right-color: #A6402B;
+}
+
+[data-tooltip-position="bottom"] .topicref .wh-tooltip::before,
+[data-tooltip-position="bottom"] .wh-toc-tooltip::before {
+    border-bottom-color: #A6402B;
+}
+
+[data-tooltip-position="top"] .topicref .wh-tooltip::before,
+[data-tooltip-position="top"] .wh-toc-tooltip::before {
+    border-top-color: #A6402B;
+}
+
 /*
  * ------------------------------------------------------------------
  *
@@ -339,94 +451,71 @@ Example:
  * 
  */
 .wh_footer{
-    text-align: center;
-    padding-top: 0.5em;
+    padding: 0.5em;
     position:relative;
     bottom: 0;
     width: 100%;
     color: #71675A;
-    /*background: rgb(225,222,215);*/
-    /*background: rgb(225,218,205);*/
     background: #F5EFE5;
     margin-top: 2em;
 }
 
 .wh_footer a{
-    color: #CCE2F1;
-    padding: 0em;
-}
-.footer-container {
-    text-align: left;
-    color: #827B66;
-}
-.footer-container a {
     color: inherit;
     text-decoration: underline;
-    
 }
+
 /*
  * ------------------------------------------------------------------
  *  
  * Topic content
  * 
  */
-@media only screen and (min-width: 768px) {
-    .wh_topic_content, .wh_content_area{
-        min-height:530px;
-    }
-}
- 
 .wh_topic_content,.wh_content_area {
     color: #000000;
+    line-height: 1.7em;
+    margin-bottom: 80px;
 }
 .wh_main_page .wh_content_area {
-    margin: 40px auto;
+    margin: 40px 0;
 }
 .wh_topic_content .title.topictitle1 {
-    color: #827B66;
     font-size: 2em;
     margin-bottom: 1em;
-}
-.wh_topic_content .related-links{
-    background-color: #F8F8F8;
-    padding: 1.5em;
-}
-.wh_topic_content .related-links strong{
-    font-weight: 500;
-}
-.wh_topic_content .related-links .olchildlinks,
-.wh_topic_content .related-links .ullinks,
-.wh_topic_content .related-links .relinfo{
-    list-style: none;
-    padding: 0;
-    margin:0;
-}
-.wh_topic_content .related-links a,
-.wh_topic_content .related-links a:visited {
-    /*color: #5185cb;*/
-    padding-bottom: .3em;
-    display:inline-block;
-    color: #878787;
-  font-weight: 400;
-  /*font-family: "Trebuchet MS","Lucida Grande",Verdana,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",Meiryo,sans-serif;*/
-  font-style: normal;
-  font-size: 15px;
-  text-align: left;
-  /*text-decoration: underline;*/
-  line-height: 18px;
-  text-shadow: none;
-  font-variant: normal;
-}
-.wh_topic_content .related-links li{
-    color: #757575;
-}
-.related-links:before{
-    content: 'Unterkapitel';
-    font-size: 15px;
+    line-height: 1.1em;
     color: #827B66;
-    text-decoration: underline;
+}
+.wh_related_links,
+.wh_child_links,
+.wh_topic_content .related-links{
+    border-top: 1px solid #ccc;
+    padding-top: 7px;
+    margin-top: 0;
 }
 
+.wh_related_links,
+.wh_topic_content .related-links{
+    padding: .5em 1.5em ;
+}
+
+.wh_child_links {
+    padding: 1.5em ;
+}
+.related-links strong{
+    font-weight: 500;
+}
+
+.related-links a,
+.related-links a:visited {
+    color: #5185cb;
+    padding-bottom: .3em;
+}
+
+.topictitle3{font-weight:400}
+
+.filepath {
+    color: #c7254e !important;
+}
 
 /*
  * ------------------------------------------------------------------
@@ -435,28 +524,39 @@ Example:
  * 
  */
 .searchresult {
-    list-style-type: circle;
+    list-style: none;
 }
-.searchresult li{
-    padding: .5em;
-}
-.searchresult li a, 
-.wh_search_expression{
-    color:#827B66;
+
+.searchresult li a {
+    color:#346ec5;
 }
 .searchresult .shortdesclink {
-    margin: .3em .5em 0;
+    margin: .3em .5em 0 0;
 }
 .wh_search_expression{
     font-weight:bold;
 }
-.wh_search_results {
-    padding-top: 1em;
-}
-.wh_search_results p {
-    font-size: 16px;
+
+/* Search relative path */
+.searchresult li .relativePath a {
+    color: #666;
 }
 
+/*--------- Search results breadcrumb ----------*/
+.search-breadcrumb li a {
+    background: #ECF2F9;
+}
+.search-breadcrumb li .title:before,
+.search-breadcrumb li .title:after {
+    border-color: #ECF2F9;
+}
+.search-breadcrumb li .title:before {
+    border-left-color: transparent;
+}
+.search-breadcrumb li .title:after {
+    border-color: transparent;
+    border-left-color: #ECF2F9;
+}
 
 /*
  * ------------------------------------------------------------------
@@ -465,7 +565,7 @@ Example:
  * 
  */
 .wh_index_terms span.wh_first_letter {
-    color: #827B66;
+    color: #346ec5;
 }
 .wh_index_terms #indexList{
     padding:0;
@@ -486,48 +586,30 @@ Example:
 .wh_main_page_toc .expanded, .wh_main_page_toc .wh_main_page_toc_accordion_header:hover, .wh_main_page_toc>.wh_main_page_toc_entry:hover, .wh_main_page_toc_accordion_entries{
     background-color: #F2F8FF;
 }
-.codeph {
-    color: #827B66;
-    background-color: inherit;
-    font-size: inherit;
-}
-li.active > .topicref {
-    color: #877767;
-    font-family: "Trebuchet MS","Lucida Grande",Verdana,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",Meiryo,sans-serif;
-}
-.wh_side_toc li.active > .topicref {
-    background-color: #e6e6e6;
-}
-.wh_main_page #searchForm {
-  margin-bottom: 3em; 
-}
-.wh_search_input > p {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
-  width: 60%;
-  color: rgb(107, 99, 90);
-  font-size: 18px;
-}
-.mainbooktitle {
-  display: none;
+
+/**
+ *
+ * Styles used for RTL pages
+ *
+ */
+ 
+  
+.booktitle {
+    display: none;
 }
 
-.example>.title {
+ .example>.title {
     color: #827B66;
     font-weight: normal;
     padding-bottom: 5px;
 }
-.example>.title:before {
-  content: "Example: ";
-}
-.fig p {
+
+/*.fig p {
   font-size: 12px;
 }
 .fig a {
   font-size: 12px;
-}
+}*/
 div.example {
   box-shadow: 3px 3px 3px grey;
   padding-bottom: 10px;
@@ -667,6 +749,11 @@ td.entry, th.entry {
   background-color: #E6E6E6;
   text-decoration: none;
 }
+
+.note a {
+    color: #8b6d27;
+}
+
 .example a {
     font-size: inherit;
 }
@@ -686,9 +773,23 @@ pre.codeblock {
     display: none;
 }
 
+.tt {
+    font-family: monospace;
+    color:#827B66;
+}
+
 /*a:visited {
   color: rgb(109, 109, 109);
 }*/
+
+code.codeph {
+    color: #827B66;
+    background-color:inherit;
+    font-size:inherit;
+}
+
+
+
 /**
  *
  * Styles used for RTL pages
@@ -697,15 +798,7 @@ pre.codeblock {
 html[dir='rtl'] .wh_top_menu ul li:hover > ul {
     max-width: 270px;
 }
-
-iframe.wh_content_area {
-	color:grey;
-}
-
-.tablenoborder {
-	overflow-x: visible;
-}
-
-a.foundResult {
-	font-size: inherit;
+html[dir='rtl'] .wh_top_menu:not(.activated-on-click) ul li:hover > ul,
+html[dir='rtl'] .wh_top_menu.activated-on-click ul li:active > ul {
+    max-width: 270px;
 }
