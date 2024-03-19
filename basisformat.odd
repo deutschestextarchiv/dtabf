@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">ODD file for the DTA 'Base Format' for printed texts (DTABf)</title>
+            		<title type="sub">Version 1.1.0</title>
+                <editor corresp="#DTACorpusPublisher">
+                    <persName ref="http://d-nb.info/gnd/115266127"><surname>Geyken</surname><forename>Alexander</forename></persName>
+                    <persName ref="http://d-nb.info/gnd/1018099549"><surname>Haaf</surname><forename>Susanne</forename></persName>
+                    <persName ref="http://d-nb.info/gnd/1019062681"><surname>Jurish</surname><forename>Bryan</forename></persName>
+                    <persName><surname>Boenig</surname><forename>Matthias</forename></persName>
+                    <persName><surname>Thomas</surname><forename>Christian</forename></persName>
+                    <persName><surname>Wiegand</surname><forename>Frank</forename></persName>
+                </editor>
+                <respStmt>
+                    <persName ref="http://d-nb.info/gnd/1018099549"><surname>Haaf</surname><forename>Susanne</forename></persName>
+                    <resp>Creation of the DTABf ODD; Maintenance and updates of the DTABf components (ODD, RNG, documentation)</resp>
+                </respStmt>
+            		<respStmt>
+            			<resp>Further development of the format</resp>
+            			<orgName>DTABf Steering Committee</orgName>
+            			<persName>Matthias Boenig</persName><persName>Daniel Burckhardt</persName><persName>Stefan Dumont</persName><persName>Alexander Geyken</persName><persName>Martina Gödel</persName><persName>Susanne Haaf</persName><persName>Axel Herold</persName><persName>Christian Thomas</persName>
+            		</respStmt>
+            	<respStmt>
+            		<resp>Format development until 2017</resp>
+            		<persName>Matthias Boenig</persName><persName>Alexander Geyken</persName><persName>Susanne Haaf</persName><persName>Christian Thomas</persName><persName>Frank Wiegand</persName>
+            	</respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName type="project" xml:lang="de">Deutsches Textarchiv</orgName>
+                    <orgName type="project" xml:lang="en">German Text Archive</orgName>
+                    <email>dta@bbaw.de</email>
+                    <address><addrLine>Jägerstr. 22/23, 10117 Berlin</addrLine></address>
+                </publisher>
+                <pubPlace>Berlin</pubPlace>
+                <date type="publication">2017-01-31</date>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en">
+                        <p>Distributed under the Creative Commons Attribution-ShareAlike 3.0 Germany (CC BY-SA 3.0 DE) Licence.</p>
+                    </licence>
+                </availability>
+                <idno type="URLWeb">http://www.deutschestextarchiv.de/basisformat.odd</idno>
+            </publicationStmt>
+            <notesStmt>
+                <note type="remarkDocument">This is the current ODD version for the <ref
+                        target="http://www.deutschestextarchiv.de/basisformat.rng">DTA 'Base Format' for printed texts (DTABf)</ref>.</note>
+            </notesStmt>
+            <sourceDesc>
+                <p>First version of the prior DTABf-ODD published: 04-2013.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>This ODD was created according to the 
+                <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html">XML/TEI P5
+                    guidelines for the TEI schema personalization and customization</ref>.</p>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <divGen type="toc"/>
+        </front>
+        <body>
+            <p>This is the TEI Customization for the DTA 'base format', used by the DFG Project
+                Deutsches Textarchiv (The German Text Archive).</p>
+        	<schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="file:///C:/Users/Susanne/Documents/BBAW/Ablage/out/basisformat_all.xml">
+                <!-- required modules -->
+                <moduleRef key="core" except="add del unclear"/>
+                <moduleRef key="header" except="handNote"/>
+                <moduleRef key="tei"/>
+                <moduleRef key="textstructure"/>
+                <!-- optional modules -->
+                <moduleRef key="corpus"/>
+                <moduleRef key="drama"/>
+                <moduleRef key="figures"/>
+                <moduleRef key="linking"/>
+                <moduleRef key="msdescription" except="handDesc"/>
+                <moduleRef key="namesdates"/>
+                <moduleRef key="textcrit"/>
+                <moduleRef key="transcr" except="metamark subst"/>
+                
+                <classSpec ident="att.handFeatures" module="tei" mode="delete" type="atts"/>
+                <classSpec ident="att.written" module="tei" mode="delete" type="atts"/>
+                <classSpec ident="att.global.rendition" module="tei" mode="change" type="atts">
+                    <attList>
+                        <attDef ident="rendition" mode="change" usage="opt">
+                            <valList type="closed" mode="change">
+                                <valItem ident="#mRetrace" mode="delete"/>
+                                <valItem ident="#mPrint" mode="delete"/>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </classSpec>
+                <elementSpec ident="bibl" module="core" mode="change">
+                    <attList>
+                        <attDef ident="default" mode="delete"/>
+                        <attDef ident="type" mode="change">
+                            <valList type="closed" mode="replace">
+                                <valItem ident="M"><desc>Monographie</desc></valItem>
+                                <valItem ident="MM"><desc>Teil einer mehrbändigen Monographie</desc></valItem>
+                                <valItem ident="DM"><desc>unselbständiger Teil einer Monographie</desc></valItem>
+                                <valItem ident="DS"><desc>unselbständige Schrift in einem Band, der Teil einer Reihe ist</desc></valItem>
+                                <valItem ident="JA"><desc>Artikel einer Zeitschrift/Zeitung</desc></valItem>
+                                <valItem ident="J"><desc>Zeitschrift/Zeitung</desc></valItem>
+                                <valItem ident="MMS"><desc>Teil einer mehrbändigen Monographie, die ihrerseits Teil einer Reihe ist</desc></valItem>
+                                <valItem ident="MS"><desc>selbständiger Band einer Reihe</desc></valItem>
+                            </valList>
+                        </attDef>
+                     </attList>
+                </elementSpec>
+                <elementSpec ident="corr" module="core" mode="change">
+                   <attList>
+                       <attDef ident="resp" mode="delete"/>
+                   </attList>
+               </elementSpec>
+                <elementSpec ident="expan" module="core" mode="change">
+                   <attList>
+                       <attDef ident="resp" mode="delete"/>
+                    </attList>
+               </elementSpec>
+                <elementSpec ident="figure" module="figures" mode="change">
+                    <attList>
+                        <attDef ident="type" mode="change">
+                            <valList type="closed" mode="replace">
+                                <valItem ident="notatedMusic"><desc>Notensatz</desc></valItem>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="head" module="core" mode="change">
+                    <attList>
+                        <attDef ident="type" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="name" module="core" mode="change">
+                    <attList>
+                        <attDef ident="type" mode="change" usage="opt">
+                            <valList type="closed" mode="replace">
+                                <valItem ident="artificialWork"><desc>von Menschenhand geschaffenes Werk</desc></valItem>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="note" module="core" mode="change">
+                    <attList>
+                        <attDef ident="place" mode="change" usage="opt">
+                            <valList type="closed" mode="replace">
+                                <valItem ident="left"><desc>Marginalie links</desc></valItem>
+                                <valItem ident="right"><desc>Marginalie rechts</desc></valItem>
+                                <valItem ident="foot"><desc>Fußnote</desc></valItem>
+                                <valItem ident="end"><desc>Endnote</desc></valItem>
+                            </valList>
+                        </attDef>
+                        <attDef ident="hand" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="name" module="core" mode="change">
+                   <attList>
+                       <attDef ident="resp" mode="delete"/>
+                    </attList>
+               </elementSpec>
+                <elementSpec ident="orgName" module="namesdates" mode="change">
+                   <attList>
+                       <attDef ident="resp" mode="delete"/>
+                    </attList>
+               </elementSpec>
+                <elementSpec ident="persName" module="namesdates" mode="change">
+                   <attList>
+                       <attDef ident="resp" mode="delete"/>
+                    </attList>
+               </elementSpec>
+                <elementSpec ident="placeName" module="namesdates" mode="change">
+                   <attList>
+                       <attDef ident="resp" mode="delete"/>
+                    </attList>
+               </elementSpec>
+                <elementSpec ident="reg" module="core" mode="change">
+                   <attList>
+                       <attDef ident="resp" mode="delete"/>
+                   </attList>
+               </elementSpec>
+                <elementSpec ident="supplied" module="transcr" mode="change">
+                    <attList>
+                        <attDef ident="resp" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="space" module="transcr" mode="change">
+                    <attList>
+                        <attDef ident="quantity" mode="delete"/>
+                        <attDef ident="unit" mode="delete"/>
+                    </attList>
+                </elementSpec>
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>
