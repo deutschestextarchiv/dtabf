@@ -1,0 +1,247 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-de" lang="de-de" data-whc_version="24.1">
+    <head><link rel="shortcut icon" href="dtabf_icon.png"/><link rel="icon" href="dtabf_icon.png"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="Das Publication Statement ( &lt;publicationStmt&gt; ) der File Description enthält publikationsspezifische Angaben zur jeweiligen DTA-Ausgabe: publizierende Institution (i.d.R. &#34;Berlin-Brandenburgische ..."/><meta name="DC.rights.owner" content="(C) Copyright 2022"/><meta name="copyright" content="(C) Copyright 2022"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.relation" content="mdPublicationStmt.html"/><meta name="DC.creator" content="Susanne Haaf Deutsches Textarchiv, Zentrum Sprache, Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)"/><meta name="DC.date.created" content="January 31st, 2017"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="man_pubStmt_01_2016-04-28"/><title>Die Grundstruktur des Publication Statements (//fileDesc/publicationStmt)</title><!--  Generated with Oxygen version 24.1, build number 2022061800.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="man_pubStmt_01_2016-04-28-d1825e1790"/><meta name="wh-source-relpath" content="mdPubStmtAllg.dita"/><meta name="wh-out-relpath" content="mdPubStmtAllg.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2022061800"/>
+    
+    
+    <script src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen-red.css?buildId=2022061800"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2022061800"/></head>
+
+    <body id="man_pubStmt_01_2016-04-28" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Springe zum Hauptinhalt
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="https://www.deutschestextarchiv.de/doku/basisformat" class=" wh_logo d-none d-sm-block "><img src="dtabf.png" alt="DTA-Basisformat"/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle"> Das DTA-Basisformat </span>  <span class="ph booktitlealt">DTABf</span>  </span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Menü umschalten" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_dhd_tsd_qs-d1825e61-mi" data-tocid="topic_dhd_tsd_qs-d1825e61" data-state="not-ready" class=" topicref " data-id="topic_dhd_tsd_qs"><span class="title"><a href="einfuehrung.html">Einführung</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_rcc_dg2_qs-d1825e557-mi" data-tocid="topic_rcc_dg2_qs-d1825e557" data-state="not-ready" class=" topicref " data-id="topic_rcc_dg2_qs"><span class="title"><a href="metadaten.html">Metadaten</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="transkription-d1825e2530-mi" data-tocid="transkription-d1825e2530" data-state="not-ready" class=" topicref " data-id="transkription"><span class="title"><a href="transkription.html">Transkription</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_jkk_k4j_qs-d1825e3396-mi" data-tocid="topic_jkk_k4j_qs-d1825e3396" data-state="not-ready" class=" topicref " data-id="topic_jkk_k4j_qs"><span class="title"><a href="texterschliessung_formal.html">Formal</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_ie-d1825e5780-mi" data-tocid="topic_ie-d1825e5780" data-state="not-ready" class=" topicref " data-id="topic_ie"><span class="title"><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="topic_bts-d1825e8778-mi" data-tocid="topic_bts-d1825e8778" data-state="not-ready" class=" topicref " data-id="topic_bts"><span class="title"><a href="besondereTextsorten.html">Spezial</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="Unbenannt12-d1825e10135-mi" data-tocid="Unbenannt12-d1825e10135" data-state="not-ready" class=" topicref " data-id="Unbenannt12"><span class="title"><a href="uebersichten.html">Übersichten</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="kontakt-d1825e10303-mi" data-tocid="kontakt-d1825e10303" data-state="not-ready" class=" topicref " data-id="kontakt"><span class="title"><a href="impressum.html">Impressum</a></span></span></li></ul></nav>
+                
+                <a href="https://www.deutschestextarchiv.de" style="color:white">➝ DTA</a>
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Suche " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Suchabfrage" required="required"/><button type="submit" class="wh_search_button" aria-label="Suche"><span class="search_input_text">Suche</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Startseite</span></a></span></li><li><div class="topicref" data-id="topic_rcc_dg2_qs"><div class="title"><a href="metadaten.html">Metadaten</a><div class="wh-tooltip"><p class="shortdesc">Erfassung (Transkription) und Auszeichnung von Metadaten</p></div></div></div></li><li><div class="topicref" data-id="topic_ahh_5rp_d5"><div class="title"><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a></div></div></li><li><div class="topicref" data-id="topic_zmn_d32_qs"><div class="title"><a href="mdBiblAngaben.html">File Description</a></div></div></li><li><div class="topicref" data-id="topic_yyc_vj2_qs"><div class="title"><a href="mdPublicationStmt.html">Publication Statement</a></div></div></li><li class="active"><div class="topicref" data-id="man_pubStmt_01_2016-04-28"><div class="title"><a href="mdPubStmtAllg.html">Publication Statement Grundstruktur</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Hervorhebungen der Suche umschalten" title="Hervorhebungen der Suche umschalten"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Sections einklappen" title="Sections einklappen"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Diese Seite drucken" aria-label="Diese Seite drucken"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true"><div data-tocid="topic_rcc_dg2_qs-d1825e557" class="topicref" data-id="topic_rcc_dg2_qs" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action topic_rcc_dg2_qs-d1825e557-link" class="wh-expand-btn"></span><div class="title"><a href="metadaten.html" id="topic_rcc_dg2_qs-d1825e557-link">Metadaten</a><div class="wh-tooltip"><p class="shortdesc">Erfassung (Transkription) und Auszeichnung von Metadaten</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><div data-tocid="topic_onq_jg2_qs-d1825e601" class="topicref" data-id="topic_onq_jg2_qs" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action topic_onq_jg2_qs-d1825e601-link" class="wh-expand-btn"></span><div class="title"><a href="mdTranskription.html" id="topic_onq_jg2_qs-d1825e601-link">Transkriptionsrichtlinien Metadaten</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="topic_ahh_5rp_d5-d1825e1298" class="topicref" data-id="topic_ahh_5rp_d5" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action topic_ahh_5rp_d5-d1825e1298-link" class="wh-expand-btn"></span><div class="title"><a href="mdAuszeichnung.html" id="topic_ahh_5rp_d5-d1825e1298-link">Auszeichnung der Metadaten</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="topic_ifv_gg2_qs-d1825e1339" class="topicref" data-id="topic_ifv_gg2_qs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="mdAllg.html" id="topic_ifv_gg2_qs-d1825e1339-link">Metadaten Grundstruktur</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="topic_zmn_d32_qs-d1825e1380" class="topicref" data-id="topic_zmn_d32_qs" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action topic_zmn_d32_qs-d1825e1380-link" class="wh-expand-btn"></span><div class="title"><a href="mdBiblAngaben.html" id="topic_zmn_d32_qs-d1825e1380-link">File Description</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="mdFileDescriptionAllg-d1825e1421" class="topicref" data-id="mdFileDescriptionAllg" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="mdFileDescAllg.html" id="mdFileDescriptionAllg-d1825e1421-link">File Description Grundstruktur</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="topic_k2x_jj2_qs-d1825e1462" class="topicref" data-id="topic_k2x_jj2_qs" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action topic_k2x_jj2_qs-d1825e1462-link" class="wh-expand-btn"></span><div class="title"><a href="mdTitleStmt.html" id="topic_k2x_jj2_qs-d1825e1462-link">Title Statement</a></div></div></li><li role="treeitem"><div data-tocid="topic_xjx_kj2_qs-d1825e1667" class="topicref" data-id="topic_xjx_kj2_qs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="mdEditionStmt.html" id="topic_xjx_kj2_qs-d1825e1667-link">Edition Statement</a></div></div></li><li role="treeitem"><div data-tocid="topic_g5q_5j2_qs-d1825e1708" class="topicref" data-id="topic_g5q_5j2_qs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="mdExtent.html" id="topic_g5q_5j2_qs-d1825e1708-link">Extent</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="topic_yyc_vj2_qs-d1825e1749" class="topicref" data-id="topic_yyc_vj2_qs" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action topic_yyc_vj2_qs-d1825e1749-link" class="wh-expand-btn"></span><div class="title"><a href="mdPublicationStmt.html" id="topic_yyc_vj2_qs-d1825e1749-link">Publication Statement</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" class="active"><div data-tocid="man_pubStmt_01_2016-04-28-d1825e1790" class="topicref" data-id="man_pubStmt_01_2016-04-28" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="mdPubStmtAllg.html" id="man_pubStmt_01_2016-04-28-d1825e1790-link">Publication Statement Grundstruktur</a></div></div></li><li role="treeitem"><div data-tocid="topic_mx5_yj2_qs-d1825e1831" class="topicref" data-id="topic_mx5_yj2_qs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="mdLicense.html" id="topic_mx5_yj2_qs-d1825e1831-link">Availability und Licence</a></div></div></li></ul></li><li role="treeitem"><div data-tocid="topic_b4h_2k2_qs-d1825e1872" class="topicref" data-id="topic_b4h_2k2_qs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="mdNotesStmt.html" id="topic_b4h_2k2_qs-d1825e1872-link">Notes Statement</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="topic_ibm_fk2_qs-d1825e1913" class="topicref" data-id="topic_ibm_fk2_qs" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action topic_ibm_fk2_qs-d1825e1913-link" class="wh-expand-btn"></span><div class="title"><a href="mdSourceDesc.html" id="topic_ibm_fk2_qs-d1825e1913-link">Source Description</a></div></div></li></ul></li><li role="treeitem"><div data-tocid="topic_k15_1lj_qs-d1825e2405" class="topicref" data-id="topic_k15_1lj_qs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="mdEncodingDesc.html" id="topic_k15_1lj_qs-d1825e2405-link">Encoding Description</a></div></div></li><li role="treeitem"><div data-tocid="topic_mcx_clj_qs-d1825e2446" class="topicref" data-id="topic_mcx_clj_qs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="mdProfileDesc.html" id="topic_mcx_clj_qs-d1825e2446-link">Profile Description</a></div></div></li><li role="treeitem"><div data-tocid="topic_omg_2lj_qs-d1825e2487" class="topicref" data-id="topic_omg_2lj_qs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="mdUeberblick.html" id="topic_omg_2lj_qs-d1825e2487-link">Überblick TEI-Header</a></div></div></li></ul></li></ul></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="- topic/title title topictitle1" id="ariaid-title1">Die Grundstruktur des <em class="+ topic/ph hi-d/i ph i">Publication Statements</em> <code class="+ topic/ph pr-d/codeph ph codeph">(//fileDesc/publicationStmt)</code></h1>
+  
+    <div class="- topic/body body">
+    <p class="- topic/p p">Das <em class="+ topic/ph hi-d/i ph i">Publication Statement</em> (<code class="+ topic/ph pr-d/codeph ph codeph">&lt;publicationStmt&gt;</code>) der <em class="+ topic/ph hi-d/i ph i">File Description</em> enthält
+      publikationsspezifische Angaben zur jeweiligen DTA-Ausgabe:
+    </p>
+    <ul class="- topic/ul ul">
+      
+      <li class="- topic/li li">publizierende Institution (i.d.R. <code class="+ topic/ph pr-d/codeph ph codeph">"Berlin-Brandenburgische Akademie der Wissenschaften"</code>);</li>
+      
+      <li class="- topic/li li">herausgebendes Projekt (i.d.R. <code class="+ topic/ph pr-d/codeph ph codeph">"Deutsches Textarchiv"</code>);</li>
+      
+      <li class="- topic/li li">Erscheinungsdatum;</li>
+      
+      <li class="- topic/li li">Erscheinungsort;</li>
+      
+      <li class="- topic/li li">Lizenz, welche für die DTA-Ausgabe gilt (s. dazu Kap. <a class="- topic/xref xref" href="mdLicense.html">Lizenzangaben</a>);</li>
+      
+      <li class="- topic/li li">Daten zur eindeutigen Identifikation des DTA-Volltextes: eindeutige ID-Nummer des DTA (<code class="+ topic/ph pr-d/codeph ph codeph">"DTAID"</code>), DTA-Verzeichnisname (<code class="+ topic/ph pr-d/codeph ph codeph">"DTADirName"</code>);</li>
+      
+      <li class="- topic/li li">Adressen der möglichen Zugänge zum Dokument, gruppiert in einem übergeordneten <code class="+ topic/ph pr-d/codeph ph codeph">&lt;idno&gt;</code>-Element:
+        <ul class="- topic/ul ul">
+          
+          <li class="- topic/li li">Web-Präsentation (<code class="+ topic/ph pr-d/codeph ph codeph">"URLWeb"</code>, <code class="+ topic/ph pr-d/codeph ph codeph">"URN"</code>)</li>
+          
+          <li class="- topic/li li">Download der XML/TEI-Fassung (<code class="+ topic/ph pr-d/codeph ph codeph">"URLXML"</code>)</li>
+          
+          <li class="- topic/li li">Download der Text-Fassung (<code class="+ topic/ph pr-d/codeph ph codeph">"URLText"</code>)</li>
+          
+          <li class="- topic/li li">Download der HTML-Fassung (<code class="+ topic/ph pr-d/codeph ph codeph">"URLHTML"</code>)</li>
+          
+          <li class="- topic/li li">Download des durch die Ergebnisse der orthographischen Normalisierung mittels CAB angereicherten XML/TEI-Textes (<code class="+ topic/ph pr-d/codeph ph codeph">"URLCAB"</code>)</li>
+          
+          <li class="- topic/li li">Download der TCF-Fassung (<code class="+ topic/ph pr-d/codeph ph codeph">"URLTCF"</code>)</li>
+          
+          <li class="- topic/li li">Handle-PID des CMDI-Metadatensatzes (<code class="+ topic/ph pr-d/codeph ph codeph">"PIDCMDI"</code>)</li>
+        	
+        	<li class="- topic/li li">DOI der digitalen Ausgabe (<code class="+ topic/ph pr-d/codeph ph codeph">"DOI"</code>)</li>
+          
+        </ul>
+        
+      </li>
+      
+    </ul>
+    <p class="- topic/p p">Dabei steht das <strong class="+ topic/ph hi-d/b ph b">
+        <code class="+ topic/ph pr-d/codeph ph codeph">&lt;publisher&gt;</code>-Element</strong> als Unterelement im <code class="+ topic/ph pr-d/codeph ph codeph">&lt;publicationStmt&gt;</code>
+      
+      <strong class="+ topic/ph hi-d/b ph b">grundsätzlich an erster Stelle</strong>.
+    </p>
+    <div class="- topic/note note attention note_attention"><span class="note__title">Achtung:</span> Bei den Adressen der möglichen Zugänge zum Dokument sollten Persistente Identifier (PIDs) verwendet werden, 
+      um zu gewährleisten, dass die Quelle langfristig über die angegebene Adresse erreichbar ist.
+    </div>
+    <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml"><strong class="hl-tag">&lt;publicationStmt&gt;</strong>
+  <strong class="hl-tag">&lt;publisher</strong> <span class="hl-attribute">xml:id</span>=<span class="hl-value">"[ID, d.i. DTACorpusPublisher]"</span><strong class="hl-tag">&gt;</strong> <em class="hl-comment">&lt;!-- grundsätzlich an erster Stelle --&gt;</em>
+    <strong class="hl-tag">&lt;orgName</strong> <span class="hl-attribute">role</span>=<span class="hl-value">"hostingInstitution"</span><strong class="hl-tag">&gt;</strong>[Publizierende Institution, d.i. Berlin-Brandenburgische Akademie der Wissenschaften]<strong class="hl-tag">&lt;/orgName&gt;</strong>
+    <strong class="hl-tag">&lt;orgName</strong> <span class="hl-attribute">role</span>=<span class="hl-value">"project"</span><strong class="hl-tag">&gt;</strong>[Herausgebendes Projekt, d.i. Deutsches Textarchiv]<strong class="hl-tag">&lt;/orgName&gt;</strong>
+    <strong class="hl-tag">&lt;email&gt;</strong>[E-Mail-Adresse der publizierenden Institution]<strong class="hl-tag">&lt;/email&gt;</strong>
+    <strong class="hl-tag">&lt;address&gt;</strong>
+      <strong class="hl-tag">&lt;addrLine&gt;</strong>[Adresse der publizierenden Institution]<strong class="hl-tag">&lt;/addrLine&gt;</strong>
+    <strong class="hl-tag">&lt;/address&gt;</strong>
+  <strong class="hl-tag">&lt;/publisher&gt;</strong>
+  <strong class="hl-tag">&lt;pubPlace&gt;</strong>[Publikationsort]<strong class="hl-tag">&lt;/pubPlace&gt;</strong>
+  <strong class="hl-tag">&lt;date</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"publication"</span><strong class="hl-tag">&gt;</strong>[Publikationsdatum]<strong class="hl-tag">&lt;/date&gt;</strong>
+  <strong class="hl-tag">&lt;availability</strong> <span class="hl-attribute">xml:id</span>=<span class="hl-value">"[ID]"</span> <span class="hl-attribute">corresp</span>=<span class="hl-value">"[ID der zugehörigen Text-/Bildvorlage]"</span><strong class="hl-tag">&gt;</strong> <em class="hl-comment">&lt;!-- ggf. mehrfach zu verwenden --&gt;</em>
+    <strong class="hl-tag">&lt;licence</strong> <span class="hl-attribute">target</span>=<span class="hl-value">"[URL]"</span><strong class="hl-tag">&gt;</strong>
+      <strong class="hl-tag">&lt;p&gt;</strong>[Hinweis zur Lizenz der Publikation]<strong class="hl-tag">&lt;/p&gt;</strong>
+    <strong class="hl-tag">&lt;/licence&gt;</strong>
+  <strong class="hl-tag">&lt;/availability&gt;</strong>
+  <strong class="hl-tag">&lt;idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"DTAID"</span><strong class="hl-tag">&gt;</strong>[ID innerhalb des DTA-Korpus]<strong class="hl-tag">&lt;/idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"DTADirName"</span><strong class="hl-tag">&gt;</strong>[Verzeichnisname innerhalb des DTA-Korpus]<strong class="hl-tag">&lt;/idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"URN"</span><strong class="hl-tag">&gt;</strong>[URN der DTA-Onlinepublikation des Werkes]<strong class="hl-tag">&lt;/idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"URLWeb"</span><strong class="hl-tag">&gt;</strong>[URL der DTA-Onlinepublikation des Werkes]<strong class="hl-tag">&lt;/idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"URLXML"</span><strong class="hl-tag">&gt;</strong>[URL zum XML/TEI-Download der DTA-Publikation]<strong class="hl-tag">&lt;/idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"URLHTML"</span><strong class="hl-tag">&gt;</strong>[URL zum HTML-Download der DTA-Publikation]<strong class="hl-tag">&lt;/idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"URLText"</span><strong class="hl-tag">&gt;</strong>[URL zum Text-Download der DTA-Publikation]<strong class="hl-tag">&lt;/idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"URLCAB"</span><strong class="hl-tag">&gt;</strong>[URL zum Download der CAB-Fassung der DTA-Publikation]<strong class="hl-tag">&lt;/idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"URLTCF"</span><strong class="hl-tag">&gt;</strong>[URL zum TCF-Download der DTA-Publikation]<strong class="hl-tag">&lt;/idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"PIDCMDI"</span><strong class="hl-tag">&gt;</strong>[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]<strong class="hl-tag">&lt;/idno&gt;</strong>
+    <strong class="hl-tag">&lt;idno</strong> <span class="hl-attribute">type</span>=<span class="hl-value">"DOI"</span><strong class="hl-tag">&gt;</strong>[DOI der digitalen Ausgabe]<strong class="hl-tag">&lt;/idno&gt;</strong>
+  <strong class="hl-tag">&lt;/idno&gt;</strong>
+<strong class="hl-tag">&lt;/publicationStmt&gt;</strong></pre>
+  </div>
+  
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="row" style="padding:1em">
+	<div class="col-sm-7">
+		<p>Alle Inhalte dieser Seite unterstehen, soweit nicht anders gekennzeichnet, der Lizenz <a href="https://creativecommons.org/licenses/by-sa/3.0/de/">CC BY-SA 3.0 DE</a>.<br/>Weitere Informationen finden Sie im <a href="impressum.html">Impressum</a> sowie in unseren <a href="datenschutz.html">Hinweisen zum Datenschutz</a>.</p>
+		<p>Zitierempfehlung: "DTABf. Deutsches Textarchiv – Basisformat (2011–2022), hrsg. v. d. Berlin-Brandenburgischen Akademie der Wissenschaften.<br/> &lt;http://deutschestextarchiv.de/doku/basisformat&gt;." Bitte beachten Sie auch die <a href="http://deutschestextarchiv.de/doku/basisformat/publikationen">Publikationen zum DTABf.</a></p>
+		<p>2011–2022 Deutsches Textarchiv, Zentrum Sprache der Berlin-Brandenburgischen Akademie der Wissenschaften<br/>Kontakt: haaf@bbaw.de</p>
+	</div>
+	<div class="col-md-2" style="vertical-align:middle">
+		<p><a href="https://www.zdl.org"><img class="img-fluid" src="img/logo_zdl.png" style="width:250px" alt="Logo of ZDL project"/></a></p>
+	</div>
+	<div class="col-md-1">
+		<p><a href="https://www.text-plus.org"><img class="img-fluid" src="img/logo_textplus.png" style="width:150px" alt="Logo of Text+ project"/></a></p>
+	</div>	
+	<div class="col-md-2">
+		<p><a href="https://www.bbaw.de"><img class="img-fluid" style="width:250px" src="img/BBAW_Logo_color.png" alt="Logo of the Berlin-Brandenburg Academy of Sciences and Humanities"/></a></p>
+	</div>
+</div>
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>
