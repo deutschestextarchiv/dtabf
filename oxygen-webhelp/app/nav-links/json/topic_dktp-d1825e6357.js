@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Einschub","href":"einschub.html","attributes":{"data-id":"topic_15"},"menu":{"hasChildren":false},"tocID":"topic_15-d1825e6398","topics":[]},{"title":"Korrespondierende Textpassagen","href":"parallelePassagen.html","attributes":{"data-id":"topic_16"},"menu":{"hasChildren":false},"tocID":"topic_16-d1825e6439","topics":[]}]});
