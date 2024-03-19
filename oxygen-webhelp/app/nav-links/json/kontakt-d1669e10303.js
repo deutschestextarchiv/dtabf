@@ -1,1 +1,0 @@
-oxy_webhelp_navlinks = {"kontakt-d1669e10303":{"topics":[{"title":"Datenschutz","href":"datenschutz.html","attributes":{"data-id":"datenschutz"},"menu":{"hasChildren":false},"tocID":"datenschutz-d1669e10347","topics":[]}]}};

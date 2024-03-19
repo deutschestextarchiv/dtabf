@@ -1,22 +1,25 @@
-var words = {};
-Object.assign(words, index1, index2, index3);
+define(["stopwords", "index-1", "index-2", "index-3", "htmlFileInfoList", "link2parent", "jquery"], function(stopwords, index1, index2, index3, fileInfoList, link2parent, $) {
 
-var index = {
-	/**
-     * The object with indexed words.
-     *
-     * {"word" : "topicID*score, topicID*score"}
-     */
-    w : words,
-    /**
-     * Auto generated list of analyzer stop words that must be ignored by search.
-     */
-    stopWords : stopwords,
+    var words = $.extend({}, index1, index2, index3);
 
-    /**
-     * File info list.
-     */
-    fil : htmlFileInfoList,
+    return {
+        /**
+         * The object with indexed words.
+         *
+         * {"word" : "topicID*score, topicID*score"}
+         */
+        w : words,
+        /**
+         * Auto generated list of analyzer stop words that must be ignored by search.
+         */
+        stopWords : stopwords,
 
-    link2parent : linkToParent
-}
+        /**
+         * File info list.
+         */
+        fil : fileInfoList,
+
+        link2parent : link2parent
+
+    };
+});

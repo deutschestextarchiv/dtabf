@@ -3,8 +3,7 @@
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
     <title>Schematron extension of the DTA ›Base Format‹ (DTABf)</title>
     <!-- This document contains the Schematron extension of the DTA ›Base Format‹ (DTABf).
-    Version: 1.1.0 (January 10, 2020).
-    First published: November 5, 2014.
+    First published on November 5th, 2014.
     Author: Susanne Haaf.
     Publisher: Deutsches Textarchiv (Matthias Boenig, Alexander Geyken, Susanne Haaf, Bryan Jurish, 
         Christian Thomas, Frank Wiegand), Berlin-Brandenburg Academy of Sciences and Humanities (BBAW), 

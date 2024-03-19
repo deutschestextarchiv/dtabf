@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Formeln Grundstruktur","href":"formelnAllg.html","attributes":{"data-id":"topic_v1h_sll_qs"},"menu":{"hasChildren":false},"tocID":"topic_v1h_sll_qs-d1825e4547","topics":[]},{"title":"Fehlerhafte Formeln","href":"formelnFehlerhaft.html","attributes":{"data-id":"topic_ffor"},"menu":{"hasChildren":false},"tocID":"topic_ffor-d1825e4588","topics":[]}]});

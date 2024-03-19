@@ -1,9 +1,4 @@
-var localization = new Array();
-localization["advanced_search_tooltip_title"]="Suchsyntax Hilfe";
-localization["reset_search_filters"]="Zurücksetzen";
-localization["search_filters"]="Filter";
-localization["indexing_in_progress"]="Der Indexierungsprozess ist in Bearbeitung. Versuchen Sie es später erneut.";
-localization["search_index_not_found"]="Kein Inhaltsindex gefunden, um diese Suchanfrage auszuführen.";
+define(function() {var localization = new Array();
 localization["index.terms.page.title"]="Index-Terme";
 localization["toggle.menu"]="Menü umschalten";
 localization["label.cleditorControls"]="Fügen Sie Ihren Kommentar ein. Um Ihren Kommentar zu übertragen, drücken Sie Alt+S oder Alt+`, um ihn zurückzunehmen.";
@@ -226,3 +221,4 @@ localization["inst.adminPass2"]="Administratorpasswort bestätigen";
 localization["inst.start"]="Starte Installation";
 localization["inst.nextStep"]="Nächster Schritt";
 localization["excluded.terms"]="Exkludierte Terme:";
+return localization;});
