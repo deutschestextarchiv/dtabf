@@ -33,7 +33,7 @@ def tei_to_odd(*args):
 def tei_to_relaxng(*args):
     tei_xsl('teitorelaxng', *args)
 
-for variant in ['', '_all', '_ms', '_phase1', '_ohne_header']:
+for variant in ['_all', '_ms', '_phase1', '_ohne_header', '']:
     tei_to_odd(
         f'/work/basisformat{variant}.odd',
         f'/work/basisformat{variant}.xml'
