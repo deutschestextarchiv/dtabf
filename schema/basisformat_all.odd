@@ -5,18 +5,18 @@
         <fileDesc>
             <titleStmt>
                 <title type="main">ODD file for the complete DTA 'Base Format' tagset</title>
-                <title type="sub">Version 1.1.0</title>
+                <title type="sub">Version 1.2.0</title>
                 <editor corresp="#DTACorpusPublisher">
                     <persName ref="http://d-nb.info/gnd/115266127"><surname>Geyken</surname><forename>Alexander</forename></persName>
-                    <persName ref="http://d-nb.info/gnd/1018099549"><surname>Haaf</surname><forename>Susanne</forename></persName>
+                	<persName ref="https://d-nb.info/gnd/1222198746"><surname>Haaf</surname><forename>Susanne</forename></persName>
                     <persName ref="http://d-nb.info/gnd/1019062681"><surname>Jurish</surname><forename>Bryan</forename></persName>
                     <persName><surname>Boenig</surname><forename>Matthias</forename></persName>
                     <persName><surname>Thomas</surname><forename>Christian</forename></persName>
                     <persName><surname>Wiegand</surname><forename>Frank</forename></persName>
                 </editor>
                 <respStmt>
-                    <persName ref="http://d-nb.info/gnd/1018099549"><surname>Haaf</surname><forename>Susanne</forename></persName>
-                    <resp>Creation of the DTABf ODD; Maintenance and updates of the DTABf components (ODD, RNG, documentation)</resp>
+                	<persName ref="https://d-nb.info/gnd/1222198746"><surname>Haaf</surname><forename>Susanne</forename></persName>
+                	<resp>Creation of the DTABf ODD; Maintenance and updates of the DTABf components (ODD, RNG, documentation) 2011–2024</resp>
                 </respStmt>
 	            	<respStmt>
 	            		<resp>Further development of the format</resp>
@@ -36,7 +36,7 @@
                     <address><addrLine>Jägerstr. 22/23, 10117 Berlin</addrLine></address>
                 </publisher>
                 <pubPlace>Berlin</pubPlace>
-                <date type="publication">2018-10-22</date>
+                <date type="publication">2024-09-30</date>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en">
                         <p>Distributed under the Creative Commons Attribution-ShareAlike 3.0 Germany (CC BY-SA 3.0 DE) Licence.</p>
@@ -54,6 +54,9 @@
                 <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html">XML/TEI P5
                     guidelines for the TEI schema personalization and customization</ref>.</p>
         </encodingDesc>
+    	<revisionDesc>
+    		<change>09.2024: Update to TEI P5 4.8.0</change>
+    	</revisionDesc>
     </teiHeader>
     <text>
         <front>
@@ -78,6 +81,13 @@
                 <moduleRef key="textcrit" include=""/><!-- @include remains empty because we only want to select attributes from that class (not elements) -->
                 <moduleRef key="transcr" include="fw metamark space subst supplied"/>
                 
+            		<classSpec ident="att.ascribed.directed" module="tei" mode="change" type="atts">
+            			<!-- includes att.ascribe with @who -->
+            			<attList>
+            				<attDef ident="toWhom" mode="delete"/>
+            			</attList>
+            		</classSpec>
+            	  <classSpec ident="att.calendarSystem" module="tei" mode="delete" type="atts"/>
                 <classSpec ident="att.breaking" module="tei" mode="delete" type="atts"/>
                 <classSpec ident="att.canonical" module="tei" mode="change" type="atts">
                     <!-- includes @ref -->
@@ -85,12 +95,12 @@
                         <attDef ident="key" mode="delete"/>
                     </attList>
                 </classSpec>
+            		<classSpec ident="att.cmc" module="tei" mode="delete" type="atts"/>
                 <classSpec ident="att.coordinated" module="transcr" mode="delete" type="atts"/>
                 <classSpec ident="att.damaged" module="tei" mode="delete" type="atts"/>
                 <classSpec ident="att.datable" module="tei" mode="change" type="atts">
                     <!-- includes att.datable.w3c -->
                     <attList>
-                        <attDef ident="calendar" mode="delete"/>
                         <attDef ident="period" mode="delete"/>
                     </attList>
                 </classSpec>
@@ -238,6 +248,7 @@
                         <attDef ident="nymRef" mode="delete"/>
                     </attList>
                 </classSpec>
+            		<classSpec ident="att.notated" module="tei" mode="delete" type="atts"/>
                 <classSpec ident="att.personal" module="tei" mode="change" type="atts">
                     <!-- includes @full -->
                     <attList>
@@ -287,6 +298,7 @@
                         <attDef ident="subtype" mode="delete"/>
                     </attList>
                 </classSpec>
+            	<!-- att.written with @hand is included for basisformat_ms -->
                 
                 
                 <elementSpec ident="abbr" module="core" mode="change">
@@ -532,8 +544,6 @@
                </elementSpec>
                <elementSpec ident="date" module="core" mode="change">
                    <attList>
-                       <attDef ident="calendar" mode="delete"/>
-                       <attDef ident="period" mode="delete"/>
                        <attDef ident="evidence" mode="delete"/>
                        <attDef ident="source" mode="delete"/>
                        <attDef ident="instant" mode="delete"/>
@@ -555,6 +565,7 @@
                        <attDef ident="sameAs" mode="delete"/>
                        <attDef ident="cert" mode="delete"/>
                        <attDef ident="resp" mode="delete"/>
+                   			<attDef ident="ref" mode="delete"/>
                    </attList>
                </elementSpec>
                <elementSpec ident="dateline" module="textstructure" mode="change">
@@ -1323,6 +1334,7 @@
                        <attDef ident="sameAs" mode="delete"/>
                        <attDef ident="cert" mode="delete"/>
                        <attDef ident="resp" mode="delete"/>
+                   		 <attDef ident="gender" mode="delete"/>
                    </attList>
                </elementSpec>
                <elementSpec ident="roleDesc" module="drama" mode="change">
@@ -1597,6 +1609,7 @@
                        <attDef ident="sameAs" mode="delete"/>
                        <attDef ident="cert" mode="delete"/>
                        <attDef ident="resp" mode="delete"/>
+                   			<attDef ident="place" mode="delete"/>
                    </attList>
                </elementSpec>
                <elementSpec ident="unclear" module="core" mode="change">
@@ -1695,7 +1708,8 @@
                </elementSpec>
                <elementSpec ident="author" module="core" mode="change">
                    <attList>
-                       <attDef ident="cert" mode="delete"/>
+                   		 <attDef ident="calendar" mode="delete"/>
+                   		 <attDef ident="cert" mode="delete"/>
                        <attDef ident="corresp" mode="delete"/>
                        <attDef ident="facs" mode="delete"/>
                        <attDef ident="n" mode="delete"/>
@@ -1707,6 +1721,7 @@
                        <attDef ident="resp" mode="delete"/>
                        <attDef ident="role" mode="delete"/>
                        <attDef ident="sameAs" mode="delete"/>
+                   		<attDef ident="when" mode="delete"/>
                        <attDef ident="xml:id" mode="delete"/>
                        <attDef ident="xml:lang" mode="delete"/>
                    </attList>
@@ -1885,23 +1900,25 @@
                                <valItem ident="#DTACorpusPublisher"/>
                            </valList>
                        </attDef>
-                       <attDef ident="role" mode="change" usage="opt">
-                           <valList type="closed" mode="replace">
-                               <valItem ident="translator"/>
-                           </valList>
-                       </attDef>
-                       <attDef ident="facs" mode="delete"/>
-                       <attDef ident="n" mode="delete"/>
-                       <attDef ident="next" mode="delete"/>
-                       <attDef ident="prev" mode="delete"/>
-                       <attDef ident="rendition" mode="delete"/>
-                       <attDef ident="xml:id" mode="delete"/>
-                       <attDef ident="xml:lang" mode="delete"/>
-                       <attDef ident="ref" mode="delete"/>
-                       <attDef ident="sameAs" mode="delete"/>
-                       <attDef ident="rend" mode="delete"/>
-                       <attDef ident="cert" mode="delete"/>
-                       <attDef ident="resp" mode="delete"/>
+												<attDef ident="role" mode="change" usage="opt">
+												   <valList type="closed" mode="replace">
+												       <valItem ident="translator"/>
+												   </valList>
+												</attDef>
+                   		  <attDef ident="calendar" mode="delete"/>
+												<attDef ident="cert" mode="delete"/>
+												<attDef ident="facs" mode="delete"/>
+												<attDef ident="n" mode="delete"/>
+												<attDef ident="next" mode="delete"/>
+												<attDef ident="prev" mode="delete"/>
+												<attDef ident="ref" mode="delete"/>
+												<attDef ident="rend" mode="delete"/>
+												<attDef ident="rendition" mode="delete"/>
+												<attDef ident="resp" mode="delete"/>
+												<attDef ident="sameAs" mode="delete"/>
+												<attDef ident="xml:id" mode="delete"/>
+												<attDef ident="xml:lang" mode="delete"/>
+												<attDef ident="when" mode="delete"/>
                    </attList>
                </elementSpec>
                <elementSpec ident="editorialDecl" module="header" mode="change">
