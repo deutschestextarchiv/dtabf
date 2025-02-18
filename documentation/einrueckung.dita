@@ -51,7 +51,7 @@
          <title>Einrückung</title><fig>
             <image href="img/LsJVxtnwNz.png"/>
             <codeblock outputclass="language-xml">&lt;p&gt;
-   &lt;hi rendition="#et>&lt;hi rendition="#g"&gt;Heidelberg,&lt;/hi&gt; den 15. Juli 1892.&lt;/hi&gt;
+   &lt;hi rendition="#et">&lt;hi rendition="#g"&gt;Heidelberg,&lt;/hi&gt; den 15. Juli 1892.&lt;/hi&gt;
 &lt;/p&gt;&lt;lb/&gt;
 &lt;p&gt;
    &lt;hi rendition="#right #b"&gt;E. Kraepelin.&lt;/hi&gt;
