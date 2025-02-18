@@ -155,22 +155,22 @@
                         <attDef ident="select" mode="delete"/>
                         <attDef ident="corresp" mode="change">
                             <datatype minOccurs="1" maxOccurs="unbounded">
-                                <rng:ref name="teidata.pointer"/>
+                                <dataRef key="teidata.pointer"/>
                             </datatype>
                         </attDef>
                         <attDef ident="next" mode="change">
                             <datatype minOccurs="1" maxOccurs="unbounded">
-                                <rng:ref name="teidata.pointer"/>
+                            	<dataRef key="teidata.pointer"/>
                             </datatype>
                         </attDef>
                         <attDef ident="prev" mode="change">
                             <datatype minOccurs="1" maxOccurs="unbounded">
-                                <rng:ref name="teidata.pointer"/>
+                                <dataRef key="teidata.pointer"/>
                             </datatype>
                         </attDef>
                         <attDef ident="sameAs" mode="change">
                             <datatype minOccurs="1" maxOccurs="unbounded">
-                                <rng:ref name="teidata.pointer"/>
+                                <dataRef key="teidata.pointer"/>
                             </datatype>
                         </attDef>
                     </attList>
@@ -181,7 +181,7 @@
                         <attDef ident="style" mode="delete"/>
                         <attDef ident="rendition" mode="change" usage="opt">
                             <datatype minOccurs="1" maxOccurs="unbounded">
-                                <rng:ref name="teidata.pointer"/>
+                                <dataRef key="teidata.pointer"/>
                             </datatype>
                             <valList type="closed" mode="replace">
                                 <valItem ident="#topBraced"><desc>horizontale Klammerung oben</desc></valItem>
@@ -473,12 +473,12 @@
                        <attDef ident="facs" mode="delete"/>
                        <attDef ident="rows" mode="change">
                            <datatype minOccurs="1" maxOccurs="1">
-                               <rng:ref name="teidata.count"/>
+                               <dataRef key="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="cols" mode="change">
                            <datatype minOccurs="1" maxOccurs="1">
-                               <rng:ref name="teidata.count"/>
+                               <dataRef key="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="cert" mode="delete"/>
@@ -679,7 +679,7 @@
                        <attDef ident="hand" mode="delete"/>
                        <attDef ident="n" mode="change">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="teidata.count"/>
+                               <dataRef key="teidata.count"/>
                            </datatype>
                        </attDef>
                     </attList>
@@ -826,7 +826,7 @@
                    <attList>
                        <attDef ident="type" mode="change" usage="req">
                            <datatype>
-                               <rng:text/>
+                           	<dataRef name="token"/>
                            </datatype>
                            <valList type="closed" mode="replace">
                                <valItem ident="header"><desc>Kolumnentitel</desc></valItem>
@@ -873,7 +873,7 @@
                        </attDef>
                        <attDef ident="quantity" mode="change" usage="opt">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="teidata.count"/>
+                               <dataRef key="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="agent" mode="delete"/>
@@ -977,7 +977,7 @@
                    <attList>
                        <attDef ident="n" mode="change">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="teidata.count"/>
+                               <dataRef key="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="sameAs" mode="delete"/>
@@ -1304,7 +1304,7 @@
                        <attDef ident="facs" mode="delete"/>
                        <attDef ident="target" mode="change">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="teidata.pointer"/>
+                               <dataRef key="teidata.pointer"/>
                            </datatype>
                        </attDef>
                        <attDef ident="sameAs" mode="delete"/>
@@ -1425,7 +1425,7 @@
                        </attDef>
                        <attDef ident="quantity" mode="change" usage="opt">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="teidata.count"/>
+                               <dataRef key="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="cert" mode="delete"/>
@@ -1905,7 +1905,7 @@
                        <attDef ident="facs" mode="delete"/>
                        <attDef ident="n" mode="change" usage="opt">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="teidata.count"/>
+                               <dataRef key="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="next" mode="delete"/>
@@ -1939,7 +1939,7 @@
                    <attList>
                        <attDef ident="corresp" mode="replace" usage="opt">
                            <datatype minOccurs="1" maxOccurs="1">
-                               <rng:ref name="teidata.pointer"/>
+                               <dataRef key="teidata.pointer"/>
                            </datatype>
                            <valList type="semi" mode="replace">
                                <valItem ident="#DTACorpusPublisher"/>
@@ -2602,7 +2602,7 @@
                        </attDef>
                        <attDef ident="n" mode="change" usage="opt">
                            <datatype minOccurs="1" maxOccurs="unbounded">
-                               <rng:ref name="teidata.count"/>
+                               <dataRef key="teidata.count"/>
                            </datatype>
                        </attDef>
                        <attDef ident="key" mode="delete"/>
