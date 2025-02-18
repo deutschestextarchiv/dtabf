@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:base="file:/C:/Users/Susanne/Documents/Arbeit/05_BBAW/DTA-Basisformat/dtabf-github/schema/basisformat_all.odd"><?TEIVERSION P5 Version 4.9.0. Last updated on
+<?xml version="1.0" encoding="utf-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:base="https://raw.githubusercontent.com/deutschestextarchiv/dtabf/refs/heads/dev/schema/dist/basisformat_all.odd"><?TEIVERSION P5 Version 4.9.0. Last updated on
         24th January 2025, revision f73186978?>
     <teiHeader>
         <fileDesc>

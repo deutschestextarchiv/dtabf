@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-02-18T06:56:30Z. .
+Schema generated from ODD source 2025-02-18T18:48:08Z. .
 TEI Edition: 
 TEI Edition Location: https://www.tei-c.org/Vault/P5//
   
@@ -61,14 +61,6 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5//
             <ref name="tei_model.global"/>
          </choice>
       </zeroOrMore>
-   </define>
-   <define name="tei_teidata.count">
-      <data type="nonNegativeInteger"/>
-   </define>
-   <define name="tei_teidata.pointer">
-      <data type="anyURI">
-         <param name="pattern">\S+</param>
-      </data>
    </define>
    <define name="tei_att.ascribed.attribute.who">
       <optional>
@@ -2442,7 +2434,7 @@ Normalization 13. Critical Apparatus]</a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the length in the units specified</a:documentation>
                <list>
                   <oneOrMore>
-                     <ref name="tei_teidata.count"/>
+                     <data type="nonNegativeInteger"/>
                   </oneOrMore>
                </list>
             </attribute>
@@ -2718,7 +2710,9 @@ Measures]</a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the destination of the reference by supplying one or more URI References.</a:documentation>
                <list>
                   <oneOrMore>
-                     <ref name="tei_teidata.pointer"/>
+                     <data type="anyURI">
+                        <param name="pattern">\S+</param>
+                     </data>
                   </oneOrMore>
                </list>
             </attribute>
@@ -3011,7 +3005,9 @@ Suggested values include: 1] #DTACorpusPublisher</a:documentation>
                <choice>
                   <value>#DTACorpusPublisher</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <ref name="tei_teidata.pointer"/>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
                </choice>
             </attribute>
          </optional>
@@ -3078,7 +3074,7 @@ Suggested values include: 1] #DTACorpusPublisher</a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(number) gives a number (or other label) for an element, which is not necessarily unique within the document.</a:documentation>
                <list>
                   <oneOrMore>
-                     <ref name="tei_teidata.count"/>
+                     <data type="nonNegativeInteger"/>
                   </oneOrMore>
                </list>
             </attribute>
@@ -3346,7 +3342,7 @@ Suggested values include: 1] DTACorpusPublisher</a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(number) gives a number (or other label) for an element, which is not necessarily unique within the document.</a:documentation>
                <list>
                   <oneOrMore>
-                     <ref name="tei_teidata.count"/>
+                     <data type="nonNegativeInteger"/>
                   </oneOrMore>
                </list>
             </attribute>
@@ -3438,7 +3434,7 @@ Suggested values include: 1] DTACorpusPublisher</a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(number) gives a number (or other label) for an element, which is not necessarily unique within the document.</a:documentation>
                <list>
                   <oneOrMore>
-                     <ref name="tei_teidata.count"/>
+                     <data type="nonNegativeInteger"/>
                   </oneOrMore>
                </list>
             </attribute>
@@ -4099,7 +4095,7 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(number) gives a number (or other label) for an element, which is not necessarily unique within the document.</a:documentation>
                <list>
                   <oneOrMore>
-                     <ref name="tei_teidata.count"/>
+                     <data type="nonNegativeInteger"/>
                   </oneOrMore>
                </list>
             </attribute>
@@ -4717,7 +4713,7 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
                        name="rows"
                        a:defaultValue="1">
                <a:documentation>(rows) indicates the number of rows occupied by this cell or row.</a:documentation>
-               <ref name="tei_teidata.count"/>
+               <data type="nonNegativeInteger"/>
             </attribute>
          </optional>
          <optional>
@@ -4725,7 +4721,7 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
                        name="cols"
                        a:defaultValue="1">
                <a:documentation>(columns) indicates the number of columns occupied by this cell or row.</a:documentation>
-               <ref name="tei_teidata.count"/>
+               <data type="nonNegativeInteger"/>
             </attribute>
          </optional>
          <empty/>
@@ -4791,7 +4787,9 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(corresponds) points to elements that correspond to the current element in some way.</a:documentation>
             <list>
                <oneOrMore>
-                  <ref name="tei_teidata.pointer"/>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
                </oneOrMore>
             </list>
          </attribute>
@@ -4803,7 +4801,9 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to an element that is the same as the current element.</a:documentation>
             <list>
                <oneOrMore>
-                  <ref name="tei_teidata.pointer"/>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
                </oneOrMore>
             </list>
          </attribute>
@@ -4815,7 +4815,9 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to the next element of a virtual aggregate of which the current element is part.</a:documentation>
             <list>
                <oneOrMore>
-                  <ref name="tei_teidata.pointer"/>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
                </oneOrMore>
             </list>
          </attribute>
@@ -4827,7 +4829,9 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(previous) points to the previous element of a virtual aggregate of which the current element is part.</a:documentation>
             <list>
                <oneOrMore>
-                  <ref name="tei_teidata.pointer"/>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
                </oneOrMore>
             </list>
          </attribute>
@@ -5172,7 +5176,7 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
          </attribute>
          <attribute name="type">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">classifies the material encoded according to some useful typology.</a:documentation>
-            <text/>
+            <data type="token"/>
          </attribute>
          <empty/>
       </element>
@@ -5204,7 +5208,7 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the length in the units specified</a:documentation>
                <list>
                   <oneOrMore>
-                     <ref name="tei_teidata.count"/>
+                     <data type="nonNegativeInteger"/>
                   </oneOrMore>
                </list>
             </attribute>
