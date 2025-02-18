@@ -68,7 +68,7 @@
             <schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en">
                 <!-- required modules -->
                 <moduleRef key="core" include="abbr add addrLine address author bibl biblScope cb choice cit corr date del editor email expan foreign gap head hi item l lb lg list listBibl measure milestone name note orig p pb pubPlace publisher q quote ref reg resp respStmt sic sp speaker stage title unclear"/>
-                <moduleRef key="header" include="abstract availability biblFull classCode edition editionStmt editorialDecl encodingDesc extent fileDesc handNote idno langUsage language licence notesStmt profileDesc publicationStmt rendition seriesStmt sourceDesc tagsDecl teiHeader textClass titleStmt"/>
+            	<moduleRef key="header" include="abstract availability biblFull classCode correspDesc correspAction correspContext edition editionStmt editorialDecl encodingDesc extent fileDesc handNote idno langUsage language licence notesStmt profileDesc publicationStmt rendition seriesStmt sourceDesc tagsDecl teiHeader textClass titleStmt"/>
                 <moduleRef key="tei"/>
                 <moduleRef key="textstructure" include="TEI argument back body byline closer dateline div docAuthor docDate docEdition docImprint docTitle epigraph floatingText front imprimatur opener postscript salute signed text titlePage titlePart trailer"/>
                 <!-- optional modules -->
@@ -849,7 +849,6 @@
                        <attDef ident="sameAs" mode="delete"/>
                        <attDef ident="cert" mode="delete"/>
                        <attDef ident="resp" mode="delete"/>
-                       <attDef ident="hand" mode="delete"/>
                    </attList>
                </elementSpec>
                <elementSpec ident="gap" module="core" mode="change">
@@ -869,6 +868,7 @@
                                <valItem ident="illegible"><desc>unleserliches Material</desc></valItem>
                                <valItem ident="fm"><desc>fremdsprachliches Material</desc></valItem>
                                <valItem ident="lost"><desc>Textverlust</desc></valItem>
+                           	<valItem ident="legal"><desc>rechtliche Gründe</desc></valItem>
                            </valList>
                        </attDef>
                        <attDef ident="quantity" mode="change" usage="opt">
@@ -1830,6 +1830,51 @@
                        <attDef ident="resp" mode="delete"/>
                    </attList>
                </elementSpec>
+            	<elementSpec ident="correspAction" module="header" mode="change">
+            		<attList>
+            			<attDef ident="cert" mode="delete"/>
+            			<attDef ident="corresp" mode="delete"/>
+            			<attDef ident="facs" mode="delete"/>
+            			<attDef ident="n" mode="delete"/>
+            			<attDef ident="next" mode="delete"/>
+            			<attDef ident="prev" mode="delete"/>
+            			<attDef ident="rend" mode="delete"/>
+            			<attDef ident="rendition" mode="delete"/>
+            			<attDef ident="resp" mode="delete"/>
+            			<attDef ident="sameAs" mode="delete"/>
+            			<attDef ident="type" mode="delete"/>
+            		</attList>
+            	</elementSpec>
+            	<elementSpec ident="correspContext" module="header" mode="change">
+            		<attList>
+            			<attDef ident="cert" mode="delete"/>
+            			<attDef ident="corresp" mode="delete"/>
+            			<attDef ident="facs" mode="delete"/>
+            			<attDef ident="n" mode="delete"/>
+            			<attDef ident="next" mode="delete"/>
+            			<attDef ident="prev" mode="delete"/>
+            			<attDef ident="rend" mode="delete"/>
+            			<attDef ident="rendition" mode="delete"/>
+            			<attDef ident="resp" mode="delete"/>
+            			<attDef ident="sameAs" mode="delete"/>
+            			<attDef ident="type" mode="delete"/>
+            		</attList>
+            	</elementSpec>
+            	<elementSpec ident="correspDesc" module="header" mode="change">
+            		<attList>
+            			<attDef ident="cert" mode="delete"/>
+            			<attDef ident="corresp" mode="delete"/>
+            			<attDef ident="facs" mode="delete"/>
+            			<attDef ident="n" mode="delete"/>
+            			<attDef ident="next" mode="delete"/>
+            			<attDef ident="prev" mode="delete"/>
+            			<attDef ident="rend" mode="delete"/>
+            			<attDef ident="rendition" mode="delete"/>
+            			<attDef ident="resp" mode="delete"/>
+            			<attDef ident="sameAs" mode="delete"/>
+            			<attDef ident="type" mode="delete"/>
+            		</attList>
+            	</elementSpec>
                <elementSpec ident="country" module="namesdates" mode="change">
                    <attList>
                        <attDef ident="xml:id" mode="delete"/>

@@ -42,11 +42,11 @@
                         <p>Distributed under the Creative Commons Attribution-ShareAlike 3.0 Germany (CC BY-SA 3.0 DE) Licence.</p>
                     </licence>
                 </availability>
-                <idno type="URLWeb">http://www.deutschestextarchiv.de/basisformat_ms.odd</idno>
+                <idno type="URLWeb">https://www.deutschestextarchiv.de/basisformat_ms.odd</idno>
             </publicationStmt>
             <notesStmt>
                 <note type="remarkDocument">This is the current ODD version (1.1.0) for the <ref
-                        target="http://www.deutschestextarchiv.de/basisformat_ms.rng">DTA base format
+                        target="https://www.deutschestextarchiv.de/basisformat_ms.rng">DTA base format
                         schema for manuscripts (DTABf-M)</ref>.</note>
             </notesStmt>
             <sourceDesc>
@@ -66,7 +66,7 @@
         <body>
             <p>This is the TEI Customization for the DTA 'base format', used by the DFG Project
                 Deutsches Textarchiv (The German Text Archive).</p>
-        	<schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="https://github.com/deutschestextarchiv/dtabf/blob/dev/schema/dist/basisformat_all.xml">
+        	<schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="path-to-github-dir//schema/basisformat_all.xml">
                 <!-- required modules -->
                 <moduleRef key="core" except="sp speaker stage"/>
                 <moduleRef key="header"/>
