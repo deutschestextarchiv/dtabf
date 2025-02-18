@@ -12,7 +12,8 @@
                 scope="external">Deutsches Textarchiv</xref> erarbeitet und wird
                 herausgegeben vom Zentrum Sprache an der
                 Berlin-Brandenburgischen Akademie der Wissenschaften (BBAW).</p>
-         <ul> <li>Vertretungsberechtigter: Prof. Dr. Dr. h. c. mult. Martin Grötschel (Präsident der BBAW)</li>
+         <ul> <li>Vertretungsberechtigter: Prof. Dr. Dr. h. c. mult. Christoph Markschies (Präsident der
+          BBAW)</li>
           <li>Organisation: Berlin-Brandenburgische Akademie der Wissenschaften (BBAW), Jägerstraße 22/23, D-10117 Berlin, Umsatzsteuer-Identifikationsnummer: DE167449058</li>
           <li>Herausgeber: Zentrum Sprache der BBAW, Jägerstraße 22/23, D-10117 Berlin</li></ul>
       </section>
@@ -28,24 +29,21 @@
     <section>
       <title>Bearbeiter und Verantwortliche</title>
         <ul>
-        <li>Weiterentwicklung des Formats: <xref href="steuerungsgruppe.dita" scope="local">DTABf-Steuerungsgruppe</xref>
-					(<xref href="http://www.bbaw.de/die-akademie/mitarbeiter/mschulz"
-					format="html" scope="external">Matthias Boenig</xref>, <xref
-					href="https://www.ghi-dc.org/ghi-staff/research-service/daniel-burckhardt.html"
-					format="html" scope="external">Daniel Burckhardt</xref>, <xref
-					href="http://www.bbaw.de/die-akademie/mitarbeiter/dumont"
-					format="html" scope="external">Stefan Dumont</xref>, <xref
-					href="http://www.bbaw.de/die-akademie/mitarbeiter/geyken"
-					format="html" scope="external">Alexander Geyken</xref>, <xref
-					href="http://textloop.de/werdegang/" format="html" scope="external"
-					>Martina Gödel</xref>, <xref
-					href="http://www.bbaw.de/die-akademie/mitarbeiter/haaf" format="html"
-					scope="external">Susanne Haaf</xref>, <xref
-					href="http://www.bbaw.de/die-akademie/mitarbeiter/herold"
-					format="html" scope="external">Axel Herold</xref>, <xref
-					href="http://www.bbaw.de/die-akademie/mitarbeiter/thomas"
-					format="html" scope="external">Christian Thomas)</xref></li>
-        <li>Schema, Dokumentation &amp; Pflege des Formats: Susanne Haaf</li>
+        <li>Weiterentwicklung des Formats: <xref href="steuerungsgruppe.dita" scope="local"
+            >DTABf-Steuerungsgruppe</xref> (Matthias Boenig, <xref
+            href="https://www.ghi-dc.org/ghi-staff/research-service/daniel-burckhardt.html"
+            format="html" scope="external">Daniel Burckhardt</xref>, <xref
+            href="http://www.bbaw.de/die-akademie/mitarbeiter/dumont" format="html" scope="external"
+            >Stefan Dumont</xref>, <xref href="http://www.bbaw.de/die-akademie/mitarbeiter/geyken"
+            format="html" scope="external">Alexander Geyken</xref>, <xref
+            href="http://textloop.de/werdegang/" format="html" scope="external">Martina
+          Gödel</xref>, <xref
+            href="https://www.uni-leipzig.de/personenprofil/mitarbeiter/susanne-haaf-dumont"
+            format="html" scope="external">Susanne Haaf</xref>, <xref
+            href="http://www.bbaw.de/die-akademie/mitarbeiter/herold" format="html" scope="external"
+            >Axel Herold</xref>, <xref href="http://www.bbaw.de/die-akademie/mitarbeiter/thomas"
+            format="html" scope="external">Christian Thomas)</xref></li>
+        <li>Schema, Dokumentation &amp; Pflege des Formats bis 2023: Susanne Haaf</li>
         <li>Entwicklung des Formats (bis 2017): Matthias Boenig, Alexander Geyken, Susanne Haaf, Christian Thomas, Frank Wiegand</li>
         <li>Vorarbeiten (bis 2010): Oliver Duntze, Christiane Fritze, Alexander Geyken</li>
         </ul>  
