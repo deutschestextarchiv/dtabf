@@ -30,7 +30,8 @@
       <title>Bearbeiter und Verantwortliche</title>
         <ul>
         <li>Weiterentwicklung des Formats: <xref href="steuerungsgruppe.dita" scope="local"
-            >DTABf-Steuerungsgruppe</xref> (Matthias Boenig, <xref
+            >DTABf-Steuerungsgruppe</xref> (<xref href="https://tboenig.github.io/" format="html"
+            scope="external">Matthias Boenig</xref>, <xref
             href="https://www.ghi-dc.org/ghi-staff/research-service/daniel-burckhardt.html"
             format="html" scope="external">Daniel Burckhardt</xref>, <xref
             href="http://www.bbaw.de/die-akademie/mitarbeiter/dumont" format="html" scope="external"
