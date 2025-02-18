@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+from pathlib import Path
+from subprocess import check_call, check_output
+
+dtabf_dir = (Path(__file__) / '..' / '..').resolve()
+
+current_branch = check_output(
+    ['git', 'rev-parse', '--abbrev-ref', 'HEAD'],
+    text=True, cwd=dtabf_dir
+).strip()
+
+def sh(cmd):
+    check_call(cmd, shell=True, cwd=dtabf_dir)
+
+sh('git checkout gh-pages')
+sh('find * -maxdepth 0 -name htdocs -prune -o -exec rm -rf {} \;')
+sh('cp -R htdocs/* .')
+sh('git rm -rf --cache .')
+sh('git add .')
+sh('git commit -m "Publishes gh-pages"')
+sh('git push origin gh-pages --force')
+sh(f'git checkout {current_branch}')

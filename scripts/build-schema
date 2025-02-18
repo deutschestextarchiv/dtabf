@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+
+from os import getcwd
+from pathlib import Path
+from shutil import copy
+from subprocess import check_call, check_output
+
+dtabf_dir = (Path(__file__) / '..' / '..').resolve()
+schema_dir = dtabf_dir / 'schema'
+htdocs_dir = dtabf_dir / 'htdocs'
+htdocs_dir.mkdir(exist_ok=True)
+
+copy(schema_dir / 'basisformat.sch', htdocs_dir)
+for variant in ['', '_ms', '_all', '_phase1', '_ohne_header']:
+    copy(schema_dir / f'basisformat{variant}.odd', htdocs_dir)
+
+uid = check_output(['id', '-u'], text=True).strip()
+gid = check_output(['id', '-g'], text=True).strip()
+
+def tei_xsl(*args):
+    check_call([
+    'docker',
+        'run', '-it', '--rm',
+        '-u', ':'.join([uid, gid]),
+        '-v', f'{htdocs_dir.as_posix()}:/work',
+        'gremid/tei-stylesheets-action:7.54.0.1',
+        *args
+    ])
+
+def tei_to_odd(*args):
+    tei_xsl('teitoodd', *args)
+
+def tei_to_relaxng(*args):
+    tei_xsl('teitorelaxng', *args)
+
+for variant in ['_all', '_ms', '_phase1', '_ohne_header', '']:
+    tei_to_odd(
+        f'/work/basisformat{variant}.odd',
+        f'/work/basisformat{variant}.xml'
+    )
+
+for variant in ['', '_ms', '_phase1', '_ohne_header']:
+    tei_to_relaxng(
+        f'/work/basisformat{variant}.odd',
+        f'/work/basisformat{variant}.rng'
+    )
