@@ -97,6 +97,34 @@
               </entry>
             </row>
             <row>
+              <entry>
+                <codeph>address</codeph>
+                <p outputclass="sg">
+                  Doku: 
+                  <xref href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-address.html" format="html" scope="external">TEI</xref>, 
+                  <xref href="brAdresse.dita">DTABf</xref>
+                </p>
+              </entry>
+              <entry>Adresse</entry>
+              <entry namest="col3" nameend="col4"/>
+              <entry><xref href="legende.dita#legende/fk06">letter</xref>, <xref href="legende.dita#legende/fk09">textStructure</xref></entry>
+              <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref></entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>addrLine</codeph>
+                <p outputclass="sg">
+                  Doku: 
+                  <xref href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-addrLine.html" format="html" scope="external">TEI</xref>, 
+                  <xref href="brAdresse.dita">DTABf</xref>
+                </p>
+              </entry>
+              <entry>Adresszeile</entry>
+              <entry namest="col3" nameend="col4"/>
+              <entry><xref href="legende.dita#legende/fk06">letter</xref>, <xref href="legende.dita#legende/fk09">textStructure</xref></entry>
+              <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref></entry>
+            </row>
+            <row>
               <entry> <codeph>argument</codeph> <p outputclass="sg">Doku: <xref
                 href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-argument.html"
                 format="html" scope="external">TEI</xref>, <xref
