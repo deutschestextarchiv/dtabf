@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_brAdresse">
+  <title>Adressen</title>
+  <body>
+    <p>Adressen in Briefen können mit <codeph>&lt;address&gt;</codeph> kodiert werden. Innerhalb von
+        <codeph>&lt;address&gt;</codeph> werden eine oder mehrere Adresszeilen mit
+        <codeph>&lt;addrLine&gt;</codeph> notiert. Die Auszeichnung von Personen- und Ortsnamen
+      sowie von Auschreibungen, Korrekturen etc. kann innerhalb <codeph>&lt;addrLine&gt;</codeph>
+      (wie in DTABf vorgesehen) vorgenommen werden.</p>
+    <p>Auch Adressen in Texten (Drucke und Manuskripte), die nicht Briefe sind, können so
+      ausgezeichnet werden.</p>
+    <codeblock outputclass="language-xml">&lt;address>
+  &lt;addrLine>[Adresszeile]&lt;/addrLine>
+  &lt;addrLine>[Weitere Adresszeile] &lt;persName>[ggf. mit weiterer Auszeichnung]&lt;/persName>&lt;/addrLine>
+  &lt;addrLine>[Weitere Adresszeile]&lt;/addrLine>
+&lt;/address></codeblock>
+    <example>
+      <title>Adresse</title>
+      <fig>
+        <image href="img/brAdresse.png"/>
+        <codeblock outputclass="language-xml">&lt;address>
+  &lt;addrLine>&lt;choice>&lt;abbr>S.&lt;/abbr>&lt;expan>Seiner&lt;/expan>&lt;/choice> Wohlgeboren&lt;/addrLine>
+  &lt;addrLine>Herrn Professor &lt;choice>&lt;abbr>D.&lt;/abbr>&lt;expan>Doktor&lt;/expan>&lt;/choice> Ehrenberg&lt;/addrLine>
+  &lt;addrLine>Dorotheenstraße&lt;/addrLine>
+  &lt;addrLine>&lt;choice>&lt;abbr>n&lt;/abbr>&lt;expan>numero&lt;/expan>&lt;/choice> 11&lt;/addrLine>
+  &lt;addrLine>Reitbahnen&lt;/addrLine>
+&lt;/address></codeblock>
+        <p><i>Quelle: <xref href="https://edition-humboldt.de/H0019594/2v" format="html"
+              scope="external">Alexander von Humboldt an Christian Gottfried Ehrenberg. [Berlin],
+              14. Juli 1828, hg. v. Anette Wendt unter Mitarbeit von Eberhard Knobloch und Linda
+              Kirsten. In: edition humboldt digital, hg. v. Ottmar Ette. Berlin-Brandenburgische
+              Akademie der Wissenschaften, Berlin. Version 11 vom 04.06.2025. URL:
+              https://edition-humboldt.de/v11/H0016733. Folio 1r:
+              https://edition-humboldt.de/v11/H0016733/1r. Digitalisat: Berlin-Brandenburgische
+              Akademie der Wissenschaften, Archiv, NL C. G. Ehrenberg - 421, Bl. 15v.</xref>
+          </i></p>
+      </fig>
+    </example>
+  </body>
+</topic>
