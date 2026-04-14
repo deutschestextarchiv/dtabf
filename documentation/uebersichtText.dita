@@ -108,7 +108,7 @@
               <entry>Adresse</entry>
               <entry namest="col3" nameend="col4"/>
               <entry><xref href="legende.dita#legende/fk06">letter</xref>, <xref href="legende.dita#legende/fk09">textStructure</xref></entry>
-              <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref></entry>
+              <entry><xref href="legende.dita#legende/l03">3 (fakultativ)</xref></entry>
             </row>
             <row>
               <entry>
@@ -122,7 +122,7 @@
               <entry>Adresszeile</entry>
               <entry namest="col3" nameend="col4"/>
               <entry><xref href="legende.dita#legende/fk06">letter</xref>, <xref href="legende.dita#legende/fk09">textStructure</xref></entry>
-              <entry><xref href="legende.dita#legende/l02">2 (empfohlen)</xref></entry>
+              <entry><xref href="legende.dita#legende/l03">3 (fakultativ)</xref></entry>
             </row>
             <row>
               <entry> <codeph>argument</codeph> <p outputclass="sg">Doku: <xref
