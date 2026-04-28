@@ -300,7 +300,7 @@
     </pattern>
 
     <pattern id="teiHeaderElements">
-        <rule context="tei:addName | tei:address | tei:addrLine | tei:email | tei:biblFull | tei:country | 
+        <rule context="tei:addName | tei:email | tei:biblFull | tei:country | 
             tei:forename | tei:genName | tei:measure | tei:msDesc | tei:nameLink | tei:publicationStmt | 
             tei:resp | tei:respStmt | tei:roleName | tei:surname | tei:titleStmt | tei:title">
             <report test="ancestor::tei:text" role="ERROR">

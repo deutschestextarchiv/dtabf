@@ -268,6 +268,7 @@
             <topicref href="brief.dita">
                 <topicref href="brAllg.dita"/>
                 <topicref href="brMehrereTage.dita"/>
+                <topicref href="brAdresse.dita"/>
                 <topicref href="brPostscriptum.dita"/>
                 <topicref href="brUnterbrCloser.dita"/>
                 <topicref href="brBericht.dita"/>
