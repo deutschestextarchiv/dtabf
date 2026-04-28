@@ -1,5 +1,9 @@
 Changelog
 ===
+# Version 1.3.0 vom XX.XX.2026
+
+* #55: Adresse
+
 # Version 1.2.0 vom 18.03.2025
 ## Dokumentation
 * Update des DITA2WebHelp-oXygen-Templates für oXygen-Versionen 18 und höher; neues Template jetzt über das Repository verfügbar
