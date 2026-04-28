@@ -1251,10 +1251,18 @@
                    <attList>
                        <attDef ident="facs" mode="delete"/>
                        <attDef ident="cert" mode="delete"/>
-                   		<attDef ident="n" mode="delete"/>
-                   		<attDef ident="place" mode="delete"/>
+                       <attDef ident="n" mode="delete"/>
                        <attDef ident="resp" mode="delete"/>
-                   		<attDef ident="sameAs" mode="delete"/>
+                   	<attDef ident="sameAs" mode="delete"/>
+                       <attDef ident="place" mode="change" usage="opt">
+                           <desc>describes where the postscript was placed, if not within the normal text flow</desc>
+                           <valList type="closed" mode="replace">
+                               <valItem ident="left"><desc>Linker Rand</desc></valItem>
+                               <valItem ident="right"><desc>Rechter Rand</desc></valItem>
+                               <valItem ident="mTop"><desc>Manuskripte: am oberen Rand</desc></valItem>
+                               <valItem ident="mBottom"><desc>Manuskripte: am unteren Rand</desc></valItem>
+                           </valList>
+                       </attDef>
                    </attList>
                </elementSpec>
                <elementSpec ident="pubPlace" module="core" mode="change">
