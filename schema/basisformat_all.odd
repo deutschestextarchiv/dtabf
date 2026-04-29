@@ -333,6 +333,8 @@
                                <valItem ident="sublinear"><desc>Manuskripte: Einfügung unter der Zeile.</desc></valItem>
                                <valItem ident="left"><desc>Manuskripte: Einfügung am linken Rand.</desc></valItem>
                                <valItem ident="right"><desc>Manuskripte: Einfügung am rechten Rand.</desc></valItem>
+                               <valItem ident="mTop"><desc>Manuskripte: am oberen Rand</desc></valItem>
+                               <valItem ident="mBottom"><desc>Manuskripte: am unteren Rand</desc></valItem>
                            </valList>
                        </attDef>
                        <attDef ident="sameAs" mode="delete"/>
