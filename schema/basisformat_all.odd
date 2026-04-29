@@ -56,6 +56,7 @@
         </encodingDesc>
     	<revisionDesc>
     		<change>09.2024: Update to TEI P5 4.8.0</change>
+    	    <change when="2026-04-28">Refer to specific version of TEI Guidelines in vault (now: 4.11.0)</change>
     	</revisionDesc>
     </teiHeader>
     <text>
@@ -65,7 +66,7 @@
         <body>
             <p>This is the TEI Customization for the DTA 'base format', used by the DFG Project
                 Deutsches Textarchiv (The German Text Archive).</p>
-            <schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en">
+            <schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="https://tei-c.org/Vault/P5/4.11.0/xml/tei/odd/p5subset.xml">
                 <!-- required modules -->
                 <moduleRef key="core" include="abbr add addrLine address author bibl biblScope cb choice cit corr date del editor email expan foreign gap head hi item l lb lg list listBibl measure milestone name note orig p pb pubPlace publisher q quote ref reg resp respStmt sic sp speaker stage title unclear"/>
             	<moduleRef key="header" include="abstract availability biblFull classCode correspDesc correspAction correspContext edition editionStmt editorialDecl encodingDesc extent fileDesc handNote idno langUsage language licence notesStmt profileDesc publicationStmt rendition seriesStmt sourceDesc tagsDecl teiHeader textClass titleStmt"/>
@@ -332,6 +333,8 @@
                                <valItem ident="sublinear"><desc>Manuskripte: Einfügung unter der Zeile.</desc></valItem>
                                <valItem ident="left"><desc>Manuskripte: Einfügung am linken Rand.</desc></valItem>
                                <valItem ident="right"><desc>Manuskripte: Einfügung am rechten Rand.</desc></valItem>
+                               <valItem ident="mTop"><desc>Manuskripte: am oberen Rand</desc></valItem>
+                               <valItem ident="mBottom"><desc>Manuskripte: am unteren Rand</desc></valItem>
                            </valList>
                        </attDef>
                        <attDef ident="sameAs" mode="delete"/>
@@ -1250,10 +1253,18 @@
                    <attList>
                        <attDef ident="facs" mode="delete"/>
                        <attDef ident="cert" mode="delete"/>
-                   		<attDef ident="n" mode="delete"/>
-                   		<attDef ident="place" mode="delete"/>
+                       <attDef ident="n" mode="delete"/>
                        <attDef ident="resp" mode="delete"/>
-                   		<attDef ident="sameAs" mode="delete"/>
+                   	<attDef ident="sameAs" mode="delete"/>
+                       <attDef ident="place" mode="change" usage="opt">
+                           <desc>describes where the postscript was placed, if not within the normal text flow</desc>
+                           <valList type="closed" mode="replace">
+                               <valItem ident="left"><desc>Linker Rand</desc></valItem>
+                               <valItem ident="right"><desc>Rechter Rand</desc></valItem>
+                               <valItem ident="mTop"><desc>Manuskripte: am oberen Rand</desc></valItem>
+                               <valItem ident="mBottom"><desc>Manuskripte: am unteren Rand</desc></valItem>
+                           </valList>
+                       </attDef>
                    </attList>
                </elementSpec>
                <elementSpec ident="pubPlace" module="core" mode="change">

@@ -26,7 +26,7 @@
           <entry>Bedeutung</entry>
         </row></thead>
         <tbody><row>
-          <entry morerows="5"><codeph>&lt;add&gt;</codeph></entry>
+          <entry morerows="7"><codeph>&lt;add&gt;</codeph></entry>
           <entry><codeph>superlinear</codeph></entry>
           <entry>über der Zeile eingetragen</entry>
         </row>
@@ -49,7 +49,16 @@
         <row>
           <entry><codeph>right</codeph></entry>
           <entry>am rechten Rand eingetragen</entry>
-        </row></tbody></tgroup>
+        </row>
+          <row>
+            <entry><codeph>mTop</codeph></entry>
+            <entry>am oberen Rand eingetragen</entry>
+          </row>
+          <row>
+            <entry><codeph>mBottom</codeph></entry>
+            <entry>am unteren Rand eingetragen</entry>
+          </row>
+        </tbody></tgroup>
       </table>
       <p>Im Fall einer Tilgung wird die Art der Tilgung mit dem <codeph>@rendition</codeph>-Attribut
         des <codeph>&lt;del&gt;</codeph>-Elements wiedergegeben. Dabei sind folgende Werte für <codeph>@rendition</codeph>

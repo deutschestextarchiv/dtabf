@@ -4,10 +4,10 @@
   <title>Unsichere Lesarten</title>
   <body>
     
-      <p>Ist die Leserlichkeit der Quelle eingeschränkt, sodass der Text rekonstruiert werden 
-        muss bzw. die Lesung des Editors nicht gesichert ist, kann dies durch die Elemente
-        <codeph>&lt;unclear&gt;</codeph> und <codeph>&lt;supplied&gt;</codeph> wiedergegeben werden.
-      </p>
+      <p>Ist die Leserlichkeit der (handschriftlichen oder gedruckten) Quelle eingeschränkt, sodass
+      der Text rekonstruiert werden muss bzw. die Lesung des Editors nicht gesichert ist, kann dies
+      durch die Elemente <codeph>&lt;unclear&gt;</codeph> und <codeph>&lt;supplied&gt;</codeph>
+      wiedergegeben werden. </p>
       <p>Dabei wird <codeph>&lt;unclear&gt;</codeph> verwendet, wenn in der
             Quelle vorhandenes Material nur undeutlich lesbar ist. Der Grund für
             die Verwendung des <codeph>&lt;unclear&gt;</codeph>-Elements wird
