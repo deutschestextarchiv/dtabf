@@ -292,6 +292,7 @@
         <chapter href="editorEingriff.dita">
             <topicref href="eeAllg.dita"/>
             <topicref href="eeDruckfehler.dita"/>
+            <topicref href="msEditorCert.dita"/>
             <topicref href="abkuerzung.dita"/>
             <topicref href="normalisierung.dita"/>
             <topicref href="sachkommentar.dita"/>
