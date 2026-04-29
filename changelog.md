@@ -3,6 +3,9 @@ Changelog
 # Version 1.3.0 vom XX.XX.2026
 
 * #55: Adresse
+* #125: place in postscript erlaubt 
+* #106: mTop/mBottom auch in add 
+* #129 unclear auch für Drucke
 
 # Version 1.2.0 vom 18.03.2025
 ## Dokumentation
