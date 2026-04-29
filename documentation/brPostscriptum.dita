@@ -47,5 +47,33 @@
                 Ein Buch des Andenkens für ihre Freunde. Bd. 2. Berlin, 1834.
                 [Faksimile 442]</xref></i></p>
             </fig> </example>
+      <p>Wird ein handschriftlicher Brief transkribiert und steht das Postskriptum nicht im allgemeinen Textfluss kann
+      der Ort des Postskriptum mit Hilfe des Attributs <codeph>@place</codeph> notiert werden. Dabei sind folgende Werte möglich:</p>
+      <table>
+        <tgroup cols="2"><thead><row>
+              <entry><tt>@place</tt>-Wert</entry>
+              <entry>Bedeutung</entry>
+        </row></thead>
+          <tbody><row>
+              <entry><tt>mTop</tt></entry>
+              <entry>Postskriptum am oberen Rand</entry>
+          </row>
+            <row>
+              <entry><tt>mBottom</tt></entry>
+              <entry>Postscriptum am unteren Rand</entry>
+            </row>
+            <row>
+              <entry><tt>left</tt></entry>
+              <entry>Postskriptum am linken Rand</entry>
+            </row>
+            <row>
+              <entry><tt>right</tt></entry>
+              <entry>Postskriptum am rechten Rand</entry>
+            </row>
+          </tbody></tgroup>
+      </table>
+      <codeblock outputclass="language-xml">&lt;postscript place="right"&gt;
+        &lt;p&gt;[Postskriptum, das am rechten Rand notiert wurde]&lt;/p&gt;
+        &lt;/postscript&gt;</codeblock>
     </body>
 </topic>
